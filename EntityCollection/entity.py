@@ -1,5 +1,4 @@
 import pandas as pd
-import spacy
 from collections import Counter
 import json
 from tqdm import tqdm
@@ -223,19 +222,18 @@ def entity_counter(input_jsonl, output_csv):
         print("错误：文件格式不是有效的 JSONL")
 
 
-
-
-def get_rare_entities(input_csv, output_csv):
+def get_rare_entities(input_csv, output_file):
 
     df = pd.read_csv(input_csv)
 
     total_entities_count = df['count'].sum()
 
     # 筛选 count = 1, specificity_score = 5 的实体
-    rare_entities = df[(df['count'] == 1) & (df['specificity_score'] == 5)].to_dict('records')
+    # rare_entities = df[(df['count'] == 1) & (df['specificity_score'] == 5)].to_dict('records')
+    rare_entities = df[(df['count'] == 1) & (df['specificity_score'] == 5) & (df['category'] != 'Metric')].to_dict('records')
 
     # 保存结果
-    with open('rare_entities.jsonl', 'w', encoding='utf-8') as f:
+    with open(output_file, 'w', encoding='utf-8') as f:
         for rare_entity in rare_entities:
             f.write(json.dumps(rare_entity, ensure_ascii=False) + '\n')
         print("Rare entities saved to 'rare_entities.jsonl'")
@@ -243,9 +241,10 @@ def get_rare_entities(input_csv, output_csv):
     print(f"Found {len(rare_entities)} rare entities.")
     print("前十个稀有实体:")
     for i, entity_info in enumerate(rare_entities[:10]):
-        print(f"{i+1}. 实体: {entity_info['entity']}, 出现次数: {entity_info['count']}, 频率: {entity_info['frequency']:.6f}")
+        print(f"{i+1}. 实体: {entity_info['name']}")
     # Example output: [{'entity': 'quicksort-x12', 'count': 2, 'frequency': 5.0e-7}]
 
 if __name__ == "__main__":
     # extract_entity_from_corpus("corpus_arxiv_2050.jsonl", "extracted_entities.jsonl")
-    entity_counter("extracted_entities.jsonl", "entity_stats.csv")
+    # entity_counter("extracted_entities.jsonl", "entity_stats.csv")
+    get_rare_entities("entity_stats.csv", "rare_entities.jsonl")
