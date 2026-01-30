@@ -1,0 +1,1779 @@
+{"entity": "mit", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "llm", "count": 91, "frequency": 0.006436553968029424}
+{"entity": "sdialog", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "api", "count": 19, "frequency": 0.001343895883434715}
+{"entity": "daily", "count": 19, "frequency": 0.001343895883434715}
+{"entity": "88%", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "0.75", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "two", "count": 532, "frequency": 0.03762908473617202}
+{"entity": "node", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "fifth", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "third", "count": 30, "frequency": 0.002121940868581129}
+{"entity": "lm-cartseg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "oaizib-cm", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "zero", "count": 72, "frequency": 0.00509265808459471}
+{"entity": "pca", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "oa", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dsc", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "0.80", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "six", "count": 37, "frequency": 0.0026170604045833924}
+{"entity": "ai", "count": 241, "frequency": 0.017046258310935068}
+{"entity": "gsr", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "the early detection window", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "f1", "count": 33, "frequency": 0.002334134955439242}
+{"entity": "0.88", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "roc", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "0.82", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "first", "count": 369, "frequency": 0.026099872683547885}
+{"entity": "avfakebench", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "seven", "count": 16, "frequency": 0.0011317017965766021}
+{"entity": "four", "count": 90, "frequency": 0.006365822605743387}
+{"entity": "three", "count": 215, "frequency": 0.01520724289149809}
+{"entity": "t3-tracer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tark", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "joe halpern", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cornell university", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "germany", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "largeshs", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mir", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bayesian", "count": 24, "frequency": 0.0016975526948649032}
+{"entity": "bo", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gaussian", "count": 49, "frequency": 0.0034658367520158436}
+{"entity": "transformer", "count": 36, "frequency": 0.002546329042297355}
+{"entity": "viper-f1", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "smiles", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "10-fold", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "9th", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mae", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "hci", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "interaction design", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "17th", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "2d", "count": 63, "frequency": 0.0044560758240203705}
+{"entity": "cephres", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "1,000", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mre", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "sdr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "2.0 mm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "85.5%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "petr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fq-petr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pe", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "1%", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ptq", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "qat", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "apex", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "rl", "count": 69, "frequency": 0.004880463997736596}
+{"entity": "group", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "mas", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "shapley", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "one", "count": 191, "frequency": 0.013509690196633187}
+{"entity": "mandarin", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "sciagent", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "covid-19", "count": 50, "frequency": 0.0035365681143018812}
+{"entity": "thailand", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "thai", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "asian", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "direct preference optimization", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "dpo", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "sft", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fsdp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mwm", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "mappo", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "marl", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "quantum", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "gpu", "count": 28, "frequency": 0.0019804781440090537}
+{"entity": "today", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "maestro", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "vlm", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "eptcs", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "italy", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "imagenet", "count": 24, "frequency": 0.0016975526948649032}
+{"entity": "clip", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "missouri", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ten", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "hitl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cot", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "cots", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "asr", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "express", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "workshop on structural operational semantics", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "petri", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "second", "count": 98, "frequency": 0.006931673504031687}
+{"entity": "3d", "count": 57, "frequency": 0.004031687650304145}
+{"entity": "lod", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "anomaly", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mobilevit", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vaar", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "average precision", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vqa", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "fetalmind", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "twelve", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "canada", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "etaps 2025", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "five", "count": 52, "frequency": 0.0036780308388739565}
+{"entity": "nsf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cpu", "count": 21, "frequency": 0.0014853586080067903}
+{"entity": "fpga", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "isaac", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "graphbfn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tornado cash", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ethereum", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "polygon", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "patmd", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "insertion hallucination", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ih", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pfc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "over 50\\%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "recent years", "count": 55, "frequency": 0.0038902249257320694}
+{"entity": "0.95", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "70 percent", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "grad-cam", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "linear", "count": 29, "frequency": 0.0020512095062950914}
+{"entity": "bobw", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nha", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "rnn", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "accurate", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "vae", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "variational autoencoder", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "iris", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "iris recognition", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "android", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cuviris", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "irisformer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cnn", "count": 62, "frequency": 0.004385344461734333}
+{"entity": "nlp", "count": 44, "frequency": 0.003112179940585656}
+{"entity": "aware", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "csp", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "csp-aware entropy", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "probabilistic csp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "english", "count": 28, "frequency": 0.0019804781440090537}
+{"entity": "10%", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "100%", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "spanish", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "91%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "puf", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "svc", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "mpc", "count": 15, "frequency": 0.0010609704342905645}
+{"entity": "fidelity", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "over 50%", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "t5", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "bleu", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "rouge", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "meteor", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "scp", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "bpe", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "as-kvhs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "about 30%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\in", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "\\emph{stochastic", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\textit{resp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vcc", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "rgb", "count": 29, "frequency": 0.0020512095062950914}
+{"entity": "posediff", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "computed tomography", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ct", "count": 43, "frequency": 0.0030414485782996182}
+{"entity": "artificial intelligence (ai", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "hemorica", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "u-net", "count": 15, "frequency": 0.0010609704342905645}
+{"entity": "dice", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "tabular", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "automatic", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "genfacts", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "two modules", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sac", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "state space models", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "tdi", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hpc", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "dof", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the university of oxford", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "quantum physics", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "multimodal large language models", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vietnamese", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "drl", "count": 17, "frequency": 0.0012024331588626398}
+{"entity": "cartesian", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ppo", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "approximately half", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "30.3%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lrs3", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "automata", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "logics", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "games", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "monte carlo tree search", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "moe", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "b-moe", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "working formal methods symposium", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "romania", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mvpbench", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "lora", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "vim-gs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gs", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "nvs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lgm", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "snr", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "chinese", "count": 35, "frequency": 0.002475597680011317}
+{"entity": "ingrid", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "3x", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "67%", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gem", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "federated learning", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "fedprox", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "non-iid", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "fl", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "natural language processing", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "4-bit", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "3.2 3b", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "firstly", "count": 27, "frequency": 0.0019097467817230159}
+{"entity": "secondly", "count": 16, "frequency": 0.0011317017965766021}
+{"entity": "convnext", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "buzzset", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "2.0", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "qa", "count": 22, "frequency": 0.001556089970292828}
+{"entity": "nli", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "kg", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "bulgaria", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "qpl", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "annual", "count": 16, "frequency": 0.0011317017965766021}
+{"entity": "flexel", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "18th", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "interaction and concurrency experience", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "france", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "crs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ct-crs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "inverse reinforcement learning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "irl", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "krr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mmif", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "multi", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "nine", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "acm", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "grand challenge", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "large language models", "count": 35, "frequency": 0.002475597680011317}
+{"entity": "pan", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dsconv", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "hmer", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ssl", "count": 16, "frequency": 0.0011317017965766021}
+{"entity": "$l_1$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "90%", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "nearly 50", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fedavg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "moo", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "pareto", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "cr", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "regionmed-clip", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\dots", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "a$", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "bringmann", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "\\tilde{o}(n+t)$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\log^2", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "stem", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "resnet", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "adversarial training", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "uaa", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "gaussian splatting", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "gaussians", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "xr", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "rm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "siamese", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "tfpie", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "one-day", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "smart", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "up to 15%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "reinforcement learning", "count": 17, "frequency": 0.0012024331588626398}
+{"entity": "g-core", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "annually", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "svm", "count": 15, "frequency": 0.0010609704342905645}
+{"entity": "random forest", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "xgboost", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "70%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fedcvd++", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "95%", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "up to", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "agba", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lanternnet", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "yolov8", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "rpo", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ff", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gnss", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "rf", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "gnc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the boyer-moore", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vineyards", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "machine learning", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "ml", "count": 66, "frequency": 0.004668269910878484}
+{"entity": "rmse", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "openai", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "meta", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dl", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "uk", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "ncma", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gpt-4", "count": 16, "frequency": 0.0011317017965766021}
+{"entity": "ap", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "6.5%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "miou", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "pii", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gnnwr", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "goalfymax", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vdp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "s3dis", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "scannet", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "idfree", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "max", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "cork", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ireland", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gvi-da", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mujoco", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "vln", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "ltm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mobilenet", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "nirs", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "hnb", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hlb", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "support vector machine", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "logistic regression", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "naive bayes", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "nb", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "neural networks", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "5-fold", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "nn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lr", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "edge", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "split", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "melanoma", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "arab", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "muslim", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "np", "count": 19, "frequency": 0.001343895883434715}
+{"entity": "ttt", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "psnr", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "fsl", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "maml", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "1d", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "sbd", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "sota", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "discrete cosine transform", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cir", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "5%", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "dct", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ltv", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "shore", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "digital twin", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "flamingo", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sap", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ai psyroom", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "18%", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "23%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "16%", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "havir", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "retrieval-augmented generation (rag", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "rag", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "14%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "37%", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "19th", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "brazil", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "iot", "count": 42, "frequency": 0.0029707172160135806}
+{"entity": "mars", "count": 15, "frequency": 0.0010609704342905645}
+{"entity": "gat", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "speech", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "yolo", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "ms-yolo", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "coda", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "ssc", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "sbom", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kt", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "knowledge tracing", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "clinicians", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "cyclegan", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "whisper", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gelu", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "6%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "phm", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "convolutional neural networks", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "vit", "count": 18, "frequency": 0.0012731645211486774}
+{"entity": "performer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nasa", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "recurrent neural networks", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pathgene", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "tmb", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "australia", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "los", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "macp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lumion", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "llama", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "sns", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "sns-bench-vl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "oar", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "icl", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "latentmove", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dit", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "chv", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "diffusion-dpo", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "stylegan", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gan", "count": 31, "frequency": 0.0021926722308671666}
+{"entity": "3r", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "10,000", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "hf-vton", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "16th", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "the workshop on programming language approaches to concurrency and communication-centric software", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hamilton", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "etaps", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "the european joint conferences on theory and practice of software", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "monte carlo", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "cwe", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "focusvul", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "unlearning shapley", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "radio frequency", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "uav", "count": 26, "frequency": 0.0018390154194369783}
+{"entity": "0.9", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mobile", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "lagrangian", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\mathtt{epspatial}$", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "accuracy", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cap", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "moe-cap", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "graph neural networks", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "cayley", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gnn", "count": 37, "frequency": 0.0026170604045833924}
+{"entity": "complexformer", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "k$", "count": 14, "frequency": 0.0009902390720045269}
+{"entity": "top-$k$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bayes", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "chartfinder", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ldm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "65%", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ditm", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cgm", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "bsr", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "non-euclidean", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "euclidean", "count": 16, "frequency": 0.0011317017965766021}
+{"entity": "riemannian", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "thedu", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "13th", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "eight", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "game", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "graph convolutional networks", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "resnet18", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "bigru", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "xlm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "a multi-layer perceptron", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "only two", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "china", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "cdea", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "xlnet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "verilog", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "mjölnir", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "senet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pearson", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "0.96", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "earth", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "$\\mathcal{w}_1$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "esl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "linc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gp", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "dce", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hbp", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "scan", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "pgan", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "the u-net", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the quality of experience (qoe", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "youtube", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "1080p", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "quality of service", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rsrq", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the era", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "semcom", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dp", "count": 19, "frequency": 0.001343895883434715}
+{"entity": "visidroid", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gui", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vfat-ws", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tf-aug", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "stf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pgd", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "uskr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "skr", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "haa", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ivn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "steia9", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gcn", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "hcai", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "p-521", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "crp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mamba", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "emo", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "lcd", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "ndt", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "a graph attention network", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kitti", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "slam", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "msr", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "japan", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "clsa", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ari", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ir", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ccsk", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "omnidrive", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\mathbb{r}^d$", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "wasserstein", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "n$", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "fsw", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "davis", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "neural machine translation (nmt", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vi-ja", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bert", "count": 22, "frequency": 0.001556089970292828}
+{"entity": "german", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gpt", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "cssl", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sora", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "github", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "topological data analysis", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tda", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "tis", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "wang", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "em", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "\\emph{reverbert", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fourier", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "\\bullet$", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "\\bullet$ programming", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "beit-3", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "biprompt-sam", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sam", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "86.5%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "iou", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "imagereward", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "approximately 25%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the netherlands", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "the international gcm workshop", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "vton", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "digital", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mobilenetv2", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "resnet50", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vision transformer", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "91.59%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "86.54%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "88.28%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ris", "count": 17, "frequency": 0.0012024331588626398}
+{"entity": "bs", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "lreid", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "reid", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "cfreid", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sda", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mda", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "prototype", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "only 5\\%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "snn", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "colanet", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "\\emph{single", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ccv", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "\\tilde{o", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dcfmn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dynstg-mamba", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "stg", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cat", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sauce", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "stylemamba", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ucf101", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eval-ppo", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "stackelberg", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "mail", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lsdn", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "mo-gbm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "advkan", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "uda", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "fps", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "fas", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "biisnet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "findings", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "4th", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "vancouver", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "bc", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ml4h symposium", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gat-s", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "0.001", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "1 second", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gate", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "big data", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cnsum", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "glove", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "sbert", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ddm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pom", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nurbs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "varpro", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "\\textsc{end", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "plan", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "noisy data", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "covid", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cxr", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "80%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kullback-leibler", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "natural language generation (nlg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "uq", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "1.8\\%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "coatnet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "scflp", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "the united states", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "graphcompnet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fourth", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "ciou", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "symbolic", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "euler", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lipschitz", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "minima", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "langevin", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ε$", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "ε)$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nest", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vertical federated learning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vfl", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "fedoptimus", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "smi", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "$r^2$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "1b", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "physics-informed neural networks", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "active learning", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "al-pinn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pde", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "hed", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "str", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cmp", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sym-q", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "sr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "token", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "adversarial estimates", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sef", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "alphaadam", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "adamw", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cegm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "koopman", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "hilbert", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "thousands", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "linkedin", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "half", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "σ$", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "non-zero", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "mimo", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "fdm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ofdm", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "nesterov", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "adam", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "stochastic gradient descent", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "brain", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lgl-bci", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "lgl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eeg", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "net-sa", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "intel", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "stable diffusion", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ssd", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "non-classical logics", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ncl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "year", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "erc", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "bcr-net", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "rpn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "1.0", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "boxmac", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "textmatch", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "dnn", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "autosculpt", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "vgg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "software", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rlsqm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eicr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ffa", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "av", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "1.5", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "llama-7b", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "5$-distortion", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "better than $\\frac{\\sqrt{5}+1}{2}$.", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "0.0001", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mci", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "nf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fgsm", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "nll", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "4.2", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "0.05", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bci", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "qac", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "$", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "random forests", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "cloud", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "computer vision", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "json", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vr", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "hipaa", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pifm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sdp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "demuvgn", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "11.1%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ddiff", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lee", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ramsey", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "h$", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "r(h", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "δ$.", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "wifi", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "hetnets", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "tcp", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "lb", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "natural language understanding", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nlu", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "python", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ea", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "knowledge graphs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "slu", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "la", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ls", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "magprompt", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "top-k", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ada-k", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "finra", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "catboost", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gru", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "60%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kd", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "ggml", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "antennas", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "c-adapter", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tinyemo", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "7b", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "3dgs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rsu", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cyber-physical systems", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "cps", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "graphprot", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "sybil", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "dos", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gip", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "gssl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vdm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rome", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "8th", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "hog", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "g$", "count": 16, "frequency": 0.0011317017965766021}
+{"entity": "n)$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "chd", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "qml", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "markov", "count": 24, "frequency": 0.0016975526948649032}
+{"entity": "mid", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "uavs", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "u.s.", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "theragen", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "1 million", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "apa", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "94%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "svd", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "pubmed", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dcmac", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sat", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "diva", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dgs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "5x", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fed", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "thirdly", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "object-centric learning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gdr", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "ogdr", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "bmi", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "alexnet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "only one", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "vc", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "zipformer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pixelbytes", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "attention", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "the last decade", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "pst", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "cad", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "bp", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "nash", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "fc-es", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "fc-eser", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "jt", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "csi", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "dmm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "igs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "qedcartographer", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "coq", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "9.6%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "34%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "coqhammer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "argentina", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kge", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "asd", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "\\textsf{root-sgd", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "har", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "s-har", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sql", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "three modules", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "iov", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "tse", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "samoye", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "avs", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "carla", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hcse", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "prisma-scr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "spiking neural networks", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ising", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\varepsilon", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "\\widetilde{o}(k\\cdot", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "seton hall university", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "usa", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "scotland", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "utah", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "md", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "sweden", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "krakow", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "poland", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "tfpie 2022", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "boston", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ma", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lfmtp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tallinn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "estonia", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fortran", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "stmttree", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "quality of experience (qoe", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "rmi", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "instagram", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "uio-llms", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "domain generalization", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pga", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "taylor", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "millions", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "generative adversarial networks", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "variational autoencoders", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "chicago", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "s$^2$ldm", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "intelligent transportation systems", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "london", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "switzerland", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "poi", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "sdpn", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "voxceleb", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "voxceleb1", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "graph neural network", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "windowmixer", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "flea", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "lyapunov", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "slowperception", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mediapipe", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "asl", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "american", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "cate", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "conpco", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "twitter", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "cycleformer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tsp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "chomsky", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pfe", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "pillarhist", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "controlnet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ultragist", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "al", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "karman", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "faith", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vi-reid", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dian", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "msr-vtt", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "activitynet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "us", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "c.f.", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "d.f.", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gms", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "seconds", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cv", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "2x2", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "w(a", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "w", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "0.5", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "$3$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vnf", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ftca", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mode", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ehr", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "3$-bit", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ssra", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "crn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "qmix", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "hcds", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "semantic frameworks with applications", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "horn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "paris", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "hcvs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "iclp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "[", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "m$", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "nerf", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "occgaussian", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "3d gaussian", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mts", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "bar-net", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vision transformers", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "vits", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "15th", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "billions", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "q-learning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "wql", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "temporal difference", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "td", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "mmd", "count": 14, "frequency": 0.0009902390720045269}
+{"entity": "ynetr", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "pslt", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nnunetv2", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "owod", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "reed-solomon", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "\\ell$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "brakensiek", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gopi", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "makam (stoc 2023", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mt", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "tgmm", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "sixth", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "models for formal analysis of real systems", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "months", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "years", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "ltl", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "mil", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cdfa-mil", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "wsi", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "wu", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "shan", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "attention network", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "toeplitz", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "st", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "ddpg", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "q$-values", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "td3", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "friendnet", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "kronos", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "b$", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "byzantine", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bft", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "sec", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "50%", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "dc-match", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ner", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "arabic", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "dozens", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hri", "count": 30, "frequency": 0.002121940868581129}
+{"entity": "feint", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "o(n^{7/3})$", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "o(m^{4/3})$", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "alon", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "boolean", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "v. v. williams", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "a.~abboud", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "idtrust", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lgbm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "subtask", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hundreds", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mia", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "fkm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "chu-ko-nu", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "cl", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "copr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "3d-gs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "udc", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ma-tisk", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "doppler", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "chatcell", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "nisq", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ibm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gs-clip", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ipfs", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cvqkd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "shannon", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sgd", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "q$-networks", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sfe-net", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cpdm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lwe", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "backdoorbench", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pl-fscil", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "fscil", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mvc", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "xxx", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "hagenberg", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "nanning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "strasbourg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "coimbra", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "edinburgh", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "munich", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "shanghai", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pontevedra", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gainesville", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "zurich", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "beijing", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "toulouse", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "14th", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "serbia", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "$k$.", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ip", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "ipr-nerf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "deveval", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "flagcn", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "the tactile signature system", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the past few years", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ras", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "convolutional neural network", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "long short-term memory", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "dm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\mathcal{u}$", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ν$", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "n$.", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sgg", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "alc", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "nvidia", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pafpn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "f-measure", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sequential", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "prer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mathagents", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nmt", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "unet", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "autoencoder", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "leiden (2018", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "oxford", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cambridge", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "glasgow", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the adjoint school", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "paintaboo", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mlcommons", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "icps", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "sicily", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "artificial intelligence", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "dht", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "thompson sampling", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "google", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "new orleans", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "louisiana", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fedemb", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fd-ran", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cod", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "99.17%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tas", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vfi", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "csgnn", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "the last two decades", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "fmas 2023", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "formal methods", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "netherlands", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fmas", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "two-day", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "glynn", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "tke", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "deep neural networks", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "multilayer perceptron", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "x-klaim", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "intervls", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "vcod", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "8.4%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "codefusion", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "rdbench", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "rdb", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "hds", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "html", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "3rd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "32nd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "blockchain", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "ami", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "washington", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "marco", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "at least 3", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "relu", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "ref 1", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "uthamacumaran", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "al.", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ndn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "international symposium on games", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cpt", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "hfmd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rgb-d slam", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "wsss", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "noma", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ps", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cheddar", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "dataset", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "7th", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "casu", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cfi", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nsfw", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "the generative adversarial network", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dcs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tcn", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "ldp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "express/sos", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "antwerp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "belgium", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "doa", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cxl", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "serverless", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "dram", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cui", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "marvel", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "memorynet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hungary", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the elastic net", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "l1", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lasso", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "bates", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rsa", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "ssp", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "logic programming", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "u-seannet", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "u-seannet's", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "loc", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "gmm", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "googlepaper", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "thermrad", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "4d", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "2nd", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "adaptive cyber defense", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cyber", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "discotec'22", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mac", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "russian", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "4.7%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "k$-means", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "qram", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "audioformer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cbp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lkh", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eax", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "2,000", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mga", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mlp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "massachusetts", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "trends in functional programming in education", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "bpl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "irs", "count": 13, "frequency": 0.0009195077097184891}
+{"entity": "monte-carlo", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rademacher", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "κ$", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "harrow", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rice-n", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "iam", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gai", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "united kingdom", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eq", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cardigraphormer", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cardinality preserving attention", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "graphormer", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cfdpm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tcfd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hamming", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "$\\mathcal{g}$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\mathcal{s}$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\varphi$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ar", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "parus", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "the next four years", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "2$.", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "optics", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ifl-lstp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bitcoin", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "mint", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "nba", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "federated", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "77.8%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "robotics", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mathematics", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eecs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gpt-3", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "4k", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "smpl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nerfbk", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "f$", "count": 15, "frequency": 0.0010609704342905645}
+{"entity": "\\cm$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hausdorff", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "si", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fd", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "qos", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sdpt3", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "98.7%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "wpd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mdd", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "pji", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "acc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "auc", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "cam", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "decom-cam", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "burgers", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cih", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "metamap", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "at least one", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "asm", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "pdf", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "swiss", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hessian", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bcs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "scp-amp", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "genetic algorithm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "weight optimization", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "continuous integration", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ci", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "hellinger", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "g$.", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "wl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dsa", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "progsg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "osdp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "adm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "linda problem", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "amazon", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "qbh", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "hanoi", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "nosql", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "ne", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "markov decision process", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "bne", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "esm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dfu", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "venn diagram", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hlrcf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "laplacian", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "llm-brain", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "language model", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "the coordinate attention", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sa", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "zk", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "circom", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "covlr", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "vadhan", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "talwar", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "yolo-drone", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "uavdt", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "visdrone", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\mathbb{r}^2$.", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "model-ii", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "opendriver", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ecg", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "selfish", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "scair", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "singleton", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "glt", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "europe", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "termgraph 2022", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "haifa", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "israel", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "defect pattern recognition", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dc transformer", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "anomaly detection", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "faglsud", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "italian", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bbct", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "depinn", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "o(\\log", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "\\textsf{fo", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\mathbb{h}$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "at least three", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mdp", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "non-markovian", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "octomap", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "z)$-clustering", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "network", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "dr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "85%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ib", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "imvc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "medical humanities", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mvms", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "deep reinforcement learning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "plp", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "cross-domain recommendation", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cdr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "crfs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dlmmd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lidar", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "lti", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cfnn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sop", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eves", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ddlm", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "pi+tod", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "education", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mvq", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "5th", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dnc", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mt-dnc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "qdec-fps", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "c-cql", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "zeros", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "p(x", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "decades", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "densenet", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "erp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vots", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "xilinx", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ovo", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "deep learning", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "two-fold", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pems-bay", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nir", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "galois", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "clc", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "plovdiv", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "acoustic", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "tts", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "sgan", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "81%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "oct", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "herein", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hsi", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "qrnn3d", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sdf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "photo rater", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "11%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ftc", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "tbo", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "smope-net", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ema", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "dst", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "absa", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "scl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vdn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "φ$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ocr", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "decision tree", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fog computing", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "c.", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "dycsc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the student forum", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "european dependable computing conference", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "target networks", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "anp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dro", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "eleven", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "urt", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "cctv", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "anshu, breuckmann", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nirkhe", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "asv", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "psvrf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "aacn-unet", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "the artificial intelligence (ai", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "human-robot interaction", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "this year", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ai-hri", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "freeseg", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "bch", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "formal methods for autonomous systems", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "september 2022", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gad", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "2022 challenge", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "subtask 6b", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "28th", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mms", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "jnd", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "amds", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "99%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "super-rec", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dc", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "csca", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "tal", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "al-stal", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "tpe", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dads", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ll", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "diana", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ot", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gupta", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gsd", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "european", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "3.0", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "target", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "brightennet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hermitian", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vector", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "epu", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "survival analysis", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gödel", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "turing", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "$\\mathcal{h}", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "miccai 2022", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eighth", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pinn", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gate with inhibition", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "supervised learning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "24th", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "international symposium on principles and practice of declarative programming", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "utel", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "7%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "31st", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "xor", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "aoii", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "v\\&l", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "transfer learning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vlc", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "fcn", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "chula", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the second day", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "weshort", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rainbow", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "minrank", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "etaps 2022", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cc", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "lebesgue", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ads", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "jetson nano", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "87%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "amr", "count": 12, "frequency": 0.0008487763474324516}
+{"entity": "musical", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "mg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ed", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "uc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "depressive disorder", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "radar-mdd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "radar", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sequence", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bnn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dynamic complexity", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "abelian", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "adatask", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mahalanobis", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sentiment analysis", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "viterbi", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "constraint", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "usr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eda", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cec", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ferrite", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "tipsy", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pet", "count": 9, "frequency": 0.0006365822605743387}
+{"entity": "mr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "masked-lmctrans", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "100x", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "efd", "count": 10, "frequency": 0.0007073136228603763}
+{"entity": "utuv", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "relation network", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kp", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ra", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rgbd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bsl", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "tose", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "sign$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ems", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "1.75b(t", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "t$.", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pad", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "ssn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cmos", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "bm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "places", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "h&e", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "fourier transform infrared", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dom", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ss", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "hyperul", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cityscapes", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gd", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "n$-fold", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ips", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "$a^{(i)}$ and", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "scd", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "peersum", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mds", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "rc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eppac", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "graphormer-v2", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\em", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "$ε>0$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "stafn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "afc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\ell_{1}/\\ell_{\\infty}$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the hidden subgroup problem", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hdam", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "pytorch", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "50 kg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kirin", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "qdd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ann", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "histgnn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "p$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "90.1%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "msa", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "turkish", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "svrep", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "eastern", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "information technology", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "amc", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "pamc", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "karp", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "vazirani", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gap", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gazeseg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fov", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lut", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "als", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ope", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "hope", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "avbench", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "grn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mixatt", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "raw", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "lr raw", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "mna", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "many years", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fpt", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mv", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mse", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "austria", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "stdt", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "safety ltl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "linear temporal logic", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the past decade", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "model-agnostic meta-learning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "j. acm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the past decades", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "psw", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "about 20%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pagerank", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "ita", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "cpral", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cogent", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "20%", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dcc", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "aoi", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "mab", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "gpg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the machine learning for health (ml4h", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gcc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "neural architecture search", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "plm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mcts", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "1st", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "rubiks", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cubetr", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "alphagarden", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "arabic qa", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nas", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "nas-g", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ga", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sfd-inf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sfd-tinf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "t$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vot2018", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "trackingnet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lasot", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vega", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kannan", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "karpinski", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "srl", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ecm", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "deepecmp", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "sneak", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "uwb", "count": 11, "frequency": 0.000778044985146414}
+{"entity": "queer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\ldots", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\min\\{\\fracα{2", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "nlos", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "tusnády", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "nikolov", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "70k", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "international conference on quantum physics", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "quantum computing", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "more than two", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ipmc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "alberto pettorossi", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "chainer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lego", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "erik jan van leeuwen", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ptas", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "n^{o(1", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "warhol", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "un", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "235 million", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "humanitarian mapping research program", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "humanitarian mapping", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "h&n", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "uanet", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "anatomynet", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "socs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gbm", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "one-year", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "glm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cox", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rfc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "indian", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "india", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "deep convolutional neural network", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dcnn", "count": 8, "frequency": 0.0005658508982883011}
+{"entity": "iacono", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "özkan", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ict", "count": 7, "frequency": 0.0004951195360022634}
+{"entity": "emnet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "spatiotemporal", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "maf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "modules", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ide", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "knowledge", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kep", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "qe", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "fab", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "c$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pac", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "pxtp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bologna", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hsm", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "slm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ece", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pakistan", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "whatsapp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "banker-omd", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ethiopia", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "the year", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bernoulli", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "arora et al", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "$\\mathcal{l}_1$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "south african", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "versatilegait", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "n})$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "americans", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "african americans", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "crm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "soundfence", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "feature table", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cargo tracking system", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "aws", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "smartcrawler", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "adsnorm", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "twenty", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "portuguese", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sar", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "lai", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "nand", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "im", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "amharic", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gsa", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "resgsa-transformer", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "quantum machine learning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "cg", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "nlm", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "\\mathbb", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "6d", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mln", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "vxslate", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "srn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "\\mathbf{^2}$l", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bsd", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "seqgan", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "salt & pepper", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sgdm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sgdem", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "crf", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "financial documents", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hmgm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bubeck et al.", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ppg", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gwi", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "bfs", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sfb", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ici", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "vgd", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "giid-net", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "mgae", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "flat", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "qcqp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "srp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "raspberry pi 4", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ai + hadr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the neural information processing systems", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "sepnet", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "sbo", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "groebner", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "song", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "sg", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "mingb algorithm", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "addis ababa", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "messenger", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "pcp", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "ppr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ppt", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "realsense", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "d435i", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "kinect v2", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "lln", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "paraphrasesampler", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "gep", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "bosphorus", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "unsupervised learning", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "afl", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "iran", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "occ", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "rdf", "count": 6, "frequency": 0.0004243881737162258}
+{"entity": "pos", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "mrc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kpi", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "r@1", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "chen", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "rao", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "tutte", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "$|n(φ)|\\leq f(|e(g)|)$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "uppaal", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "vcn", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "rsm", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "dodge", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "evidence lower bound", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "q$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "subset sampling", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "seqdialn", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "ndcg", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "newton", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "luc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "l$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "va", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "algebraic branching programs", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "abp", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "alpha-refine", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ntk", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "hadwiger", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the 1980s", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kostochka", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "thomason", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "$o(t\\sqrt{\\log t})$-colorable", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "norin", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "o(t(\\log", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "1/4$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "o(t", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "lfgp", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "fcm", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "c(i", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "blensor", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "gab", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "cdil", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "rgd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "spg", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "infernet", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "dip-fat", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "etaps 2020", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "the international conference on learning representations", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "vced", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "litedensenet", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "osi-snr", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "po", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "$n/2$", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ghtorrent", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "dsn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "blockchain ecosystems", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "ids", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "khanna", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "$\\mathsf{hpc}^4$", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "$\\mathsf{hpc}^2$", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "dd", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "navier-stokes", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "hcc", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "luenberger", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "qpd", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ssvep", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "ns", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kkt", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "model selection", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "ic-connection", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "isd", "count": 3, "frequency": 0.0002121940868581129}
+{"entity": "bigearthnet", "count": 5, "frequency": 0.00035365681143018817}
+{"entity": "boninger et al", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "at least two", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "jacobi", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "kgd", "count": 4, "frequency": 0.00028292544914415053}
+{"entity": "fgnn", "count": 2, "frequency": 0.00014146272457207527}
+{"entity": "dlt", "count": 3, "frequency": 0.0002121940868581129}
