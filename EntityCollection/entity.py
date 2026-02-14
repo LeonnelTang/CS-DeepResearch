@@ -190,7 +190,8 @@ def entity_counter(input_jsonl, output_csv):
                         entity_stats[name] = {
                             "count": 0,
                             "category": entity.get("category"),
-                            "specificity_score": entity.get("specificity_score")
+                            "specificity_score": entity.get("specificity_score"),
+                            "paper_id": data.get("paper_id")
                         }
 
                     # 计数加 1
@@ -209,7 +210,7 @@ def entity_counter(input_jsonl, output_csv):
             print(item)
 
         # 保存为 CSV 文件
-        keys = ["name", "count", "category", "specificity_score"]
+        keys = ["name", "count", "category", "specificity_score", "paper_id"]
         with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=keys)
             writer.writeheader()
@@ -228,9 +229,29 @@ def get_rare_entities(input_csv, output_file):
 
     total_entities_count = df['count'].sum()
 
-    # 筛选 count = 1, specificity_score = 5 的实体
-    # rare_entities = df[(df['count'] == 1) & (df['specificity_score'] == 5)].to_dict('records')
-    rare_entities = df[(df['count'] == 1) & (df['specificity_score'] == 5) & (df['category'] != 'Metric')].to_dict('records')
+    # 1. 筛选 count = 1, specificity_score = 5 的实体
+    df_filtered = df[(df['count'] == 1) & (df['specificity_score'] == 5)]
+
+    # 2. 过滤出 Method, Dataset
+    df_filtered = df_filtered[(df_filtered['category'].isin(['Method']))]
+
+    # 3. 过滤掉长度小于 2 的
+    df_filtered = df_filtered[df_filtered['name'].str.len() > 2]
+
+    # 2. 过滤掉单词数过多的
+    df_filtered = df_filtered[df_filtered['name'].str.split().str.len() < 5]
+
+    # 3. 过滤掉不包含大写字母的
+    df_filtered = df_filtered[df_filtered['name'].str.contains('[A-Z]')]
+
+    # 4. 过滤掉包含 $ 的（数学公式）
+    df_filtered = df_filtered[~df_filtered['name'].str.contains('\$')]
+
+    # 5. 过滤掉包含非英文字母的
+    df_filtered = df_filtered[df_filtered['name'].str.contains('[a-zA-Z]')]
+
+
+    rare_entities = df_filtered.to_dict('records')
 
     # 保存结果
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -246,5 +267,25 @@ def get_rare_entities(input_csv, output_file):
 
 if __name__ == "__main__":
     # extract_entity_from_corpus("corpus_arxiv_2050.jsonl", "extracted_entities.jsonl")
-    # entity_counter("extracted_entities.jsonl", "entity_stats.csv")
+    entity_counter("extracted_entities.jsonl", "entity_stats.csv")
     get_rare_entities("entity_stats.csv", "rare_entities.jsonl")
+
+    # with open("rare_entities.jsonl", "r", encoding="utf-8") as f:
+    #     rare_entities = [json.loads(line) for line in f]
+    #
+    # # 考察 rare_entities 中的 category 键有哪些值，每个展示几条示例
+    # category_examples = {}
+    # for entity in rare_entities:
+    #     category = entity.get("category")
+    #     if category not in category_examples:
+    #         category_examples[category] = []
+    #     if len(category_examples[category]) < 3:  # 每个类别最多展示3条示例
+    #         category_examples[category].append(entity["name"])
+    #
+    # print("Rare entities by category:")
+    # for category, examples in category_examples.items():
+    #     print(f"Category: {category}")
+    #     for example in examples:
+    #         print(f"  - {example}")
+    #
+    # print()
