@@ -233,7 +233,7 @@ def get_rare_entities(input_csv, output_file):
     df_filtered = df[(df['count'] == 1) & (df['specificity_score'] == 5)]
 
     # 2. 过滤出 Method, Dataset
-    df_filtered = df_filtered[(df_filtered['category'].isin(['Method']))]
+    # df_filtered = df_filtered[(df_filtered['category'].isin(['Method']))]
 
     # 3. 过滤掉长度小于 2 的
     df_filtered = df_filtered[df_filtered['name'].str.len() > 2]
@@ -247,9 +247,9 @@ def get_rare_entities(input_csv, output_file):
     # 4. 过滤掉包含 $ 的（数学公式）
     df_filtered = df_filtered[~df_filtered['name'].str.contains('\$')]
 
-    # 5. 过滤掉包含非英文字母的
-    df_filtered = df_filtered[df_filtered['name'].str.contains('[a-zA-Z]')]
+    df_filtered = filter_entities_by_llm(df_filtered)
 
+    df_filtered = df_filtered[df_filtered['keep'] == True]
 
     rare_entities = df_filtered.to_dict('records')
 
@@ -260,32 +260,141 @@ def get_rare_entities(input_csv, output_file):
         print("Rare entities saved to 'rare_entities.jsonl'")
 
     print(f"Found {len(rare_entities)} rare entities.")
-    print("前十个稀有实体:")
-    for i, entity_info in enumerate(rare_entities[:10]):
-        print(f"{i+1}. 实体: {entity_info['name']}")
+    # print("前十个稀有实体:")
+    # for i, entity_info in enumerate(rare_entities[:10]):
+    #     print(f"{i+1}. 实体: {entity_info['name']}")
     # Example output: [{'entity': 'quicksort-x12', 'count': 2, 'frequency': 5.0e-7}]
+
+def filter_entities_by_llm(entity_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    使用LLM批量评估实体是否适合作为种子实体，每次处理10个实体。
+    
+    参数:
+    - entity_df: 包含实体信息的DataFrame，必须有'name'列
+    
+    返回:
+    - 带有'keep'列的DataFrame，标记每个实体是否保留
+    """
+    # 获取实体列表
+    entity_list = entity_df['name'].to_list()
+    
+    # 分批处理，每次10个实体
+    batch_size = 10
+    all_results = []
+    
+    system_prompt = """
+    You are a strict Editor for a Computer Science Knowledge Graph Benchmark. 
+    Your task is to evaluate a list of extracted entities (Methods, Datasets, Tools) and decide if they are suitable as "Seed Entities" for generating hard QA questions.
+
+    Criteria for "YES" (Keep):
+    1. **Specific Proper Noun**: It must be a specific name (e.g., "Faster R-CNN", "ImageNet-1k", "AdamW").
+    2. **Complete**: It should not be a fragment (e.g., "based on", "the proposed method").
+    3. **Standalone**: It allows for a meaningful question without needing the specific context of a single obscure sentence.
+
+    Criteria for "NO" (Discard):
+    1. **Generic Terms**: Common nouns (e.g., "deep learning", "ablation study", "linear regression").
+    2. **Fragments**: Half-sentences or verb phrases (e.g., "using the algorithm", "data processing").
+    3. **Ambiguous**: Abbreviations that are too short or unclear without context (e.g., "M", "S1", "Model A").
+
+    Output ONLY a valid JSON object with a list of results.
+    Format:
+    {
+        "results": [
+            {"entity": "Entity Name", "keep": true, "reason": "Specific method name"},
+            {"entity": "Entity Name", "keep": false, "reason": "Too generic"}
+        ]
+    }
+    """
+
+    user_prompt_template = """
+    Here is the batch of entities to evaluate:
+    {entity_list}
+    """
+
+    # 分批处理实体
+    for i in tqdm(range(0, len(entity_list), batch_size), desc="Processing batches", total=(len(entity_list)-1)//batch_size + 1):
+        batch = entity_list[i:i + batch_size]
+        
+        try:
+            response = client.chat.completions.create(
+                model="deepseek-chat",
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt_template.format(entity_list=json.dumps(batch, ensure_ascii=False))},
+                ],
+                max_tokens=1024,
+                temperature=0.0,
+                response_format={"type": "json_object"}
+            )
+            
+            # 解析LLM返回的结果
+            llm_response = safe_json_loads(response.choices[0].message.content)
+            batch_results = llm_response.get("results", [])
+            all_results.extend(batch_results)
+            
+            # print(f"Processed batch {i//batch_size + 1}/{(len(entity_list)-1)//batch_size + 1}")
+            
+        except Exception as e:
+            print(f"Error processing batch {i//batch_size + 1}: {e}")
+            # 为失败的批次添加默认结果（全部标记为False）
+            for entity in batch:
+                all_results.append({"entity": entity, "keep": False, "reason": "Processing error"})
+    
+    # 创建映射字典
+    keep_map = {item["entity"]: item["keep"] for item in all_results}
+    
+    # 应用到原DataFrame
+    entity_df["keep"] = entity_df["name"].map(keep_map).fillna(False)
+    
+    return entity_df
+
+def convert_rare_entities_to_csv(input_jsonl, output_csv):
+    """
+    将稀有实体的 JSONL 文件转换为 CSV 格式。
+
+    参数:
+    - input_jsonl: 输入的 JSONL 文件路径，每行是一个包含稀有实体信息的 JSON 对象。
+    - output_csv: 输出的 CSV 文件路径。
+
+    示例输入行:
+    {"name": "LM-CartSeg", "count": 1, "category": "Method", "specificity_score": 5, "paper_id": 2512.03449}
+
+    输出 CSV 包含列: name, count, category, specificity_score, paper_id
+    """
+    try:
+        # 读取 JSONL 文件
+        rare_entities = []
+        with open(input_jsonl, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                rare_entities.append(json.loads(line))
+
+        # 定义 CSV 列名
+        keys = ["name", "count", "category", "specificity_score", "paper_id", "keep"]
+
+        # 写入 CSV 文件
+        with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=keys)
+            writer.writeheader()
+            writer.writerows(rare_entities)
+
+        print(f"稀有实体已成功转换并保存至: {output_csv}")
+
+    except FileNotFoundError:
+        print(f"错误：找不到文件 {input_jsonl}")
+    except json.JSONDecodeError:
+        print("错误：文件格式不是有效的 JSONL")
+    except Exception as e:
+        print(f"发生未知错误: {e}")
 
 if __name__ == "__main__":
     # extract_entity_from_corpus("corpus_arxiv_2050.jsonl", "extracted_entities.jsonl")
-    entity_counter("extracted_entities.jsonl", "entity_stats.csv")
-    get_rare_entities("entity_stats.csv", "rare_entities.jsonl")
+    # entity_counter("extracted_entities.jsonl", "entity_stats.csv")
+    get_rare_entities("rare_entities.csv", "rare_entities.jsonl")
 
-    # with open("rare_entities.jsonl", "r", encoding="utf-8") as f:
-    #     rare_entities = [json.loads(line) for line in f]
-    #
-    # # 考察 rare_entities 中的 category 键有哪些值，每个展示几条示例
-    # category_examples = {}
-    # for entity in rare_entities:
-    #     category = entity.get("category")
-    #     if category not in category_examples:
-    #         category_examples[category] = []
-    #     if len(category_examples[category]) < 3:  # 每个类别最多展示3条示例
-    #         category_examples[category].append(entity["name"])
-    #
-    # print("Rare entities by category:")
-    # for category, examples in category_examples.items():
-    #     print(f"Category: {category}")
-    #     for example in examples:
-    #         print(f"  - {example}")
-    #
-    # print()
+    convert_rare_entities_to_csv("rare_entities.jsonl", "rare_entities.csv")
+
+
+
