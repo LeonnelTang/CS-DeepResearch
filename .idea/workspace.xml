@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcb105ba-b168-4af3-bd87-f8563e3b4a8d" name="Changes" comment="get 1460 rare entities">
-      <change afterPath="$PROJECT_DIR$/SFT/context_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SFT/tool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EntityCollection/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/EntityCollection/entity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EntityCollection/rare_entities.jsonl" beforeDir="false" />
-    </list>
+    <list default="true" id="dcb105ba-b168-4af3-bd87-f8563e3b4a8d" name="Changes" comment="add ReAct SFT code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771082737011</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add ReAct SFT code">
+      <option name="closed" value="true" />
+      <created>1771242275726</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1771242275726</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +225,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="process entity data" />
     <MESSAGE value="get 1460 rare entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="get 1460 rare entities" />
+    <MESSAGE value="add ReAct SFT code" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ReAct SFT code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DissertationProject$extract_entities.coverage" NAME="extract_entities Coverage Results" MODIFIED="1768577236168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntityCollection" />
