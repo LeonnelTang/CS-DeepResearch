@@ -2,10 +2,12 @@ import pandas as pd
 import re
 
 # 1. 读取数据
-df = pd.read_csv('metadata.csv')
+df = pd.read_csv('data/Chelsea707Conference_2020-2025.csv')
 
 print(f"原始数据量: {len(df)}")
 
+# 为DataFrame添加自增ID列
+df['id'] = range(1, len(df) + 1)
 
 # 2. 清洗函数
 def clean_abstract(text):
@@ -33,7 +35,7 @@ df_corpus.rename(columns={'clean_id': 'id'}, inplace=True)
 print(f"清洗后数据量: {len(df_corpus)}")
 
 # 4. 导出语料库
-output_jsonl = 'corpus_arxiv_2050.jsonl'
+output_jsonl = 'data/corpus_ICLR_2020-2025.jsonl'
 df_corpus[['id', 'title', 'abstract']].to_json(
     output_jsonl,
     orient='records',

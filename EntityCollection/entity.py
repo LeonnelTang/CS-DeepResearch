@@ -1,20 +1,32 @@
+import asyncio
+
 import pandas as pd
 from collections import Counter
 import json
 from tqdm import tqdm
+from tqdm.asyncio import tqdm as async_tqdm
 import csv
 from typing import List, Optional
 from pydantic import BaseModel, Field
-from openai import OpenAI
+from openai import OpenAI, AsyncOpenAI
 import os
 from dotenv import load_dotenv
 import re
+from collections import defaultdict
 
 load_dotenv()
 
 client = OpenAI(
+    base_url=os.environ.get("DEEPSEEK_API_BASE"),
     api_key=os.environ.get("DEEPSEEK_API_KEY"),
-    base_url="https://api.deepseek.com/v1",
+    max_retries=3,
+    timeout=60
+)
+
+# 新增异步 aclient 供并行抽取使用
+aclient = AsyncOpenAI(
+    base_url=os.environ.get("DEEPSEEK_API_BASE"),
+    api_key=os.environ.get("DEEPSEEK_API_KEY"),
     max_retries=3,
     timeout=60
 )
@@ -55,7 +67,7 @@ def safe_json_loads(json_str):
         # 3. 解析修复后的字符串 (如果还报错，说明不是转义问题，而是格式真错了，直接抛出异常)
         return json.loads(fixed_str)
 
-def extract_entity_from_corpus(corpus_path, output_file):
+async def extract_entity_from_corpus(corpus_path, output_file, max_concurrent_tasks=20):
     """
     Extract entities from a corpus of scientific papers.
 
@@ -68,63 +80,77 @@ def extract_entity_from_corpus(corpus_path, output_file):
     with open(corpus_path, 'r', encoding='utf-8') as f:
         corpus = [json.loads(line) for line in f]
 
-    extracted_results = []
+    extracted_paper_ids = set()
 
     if os.path.exists(output_file):
         with open(output_file, 'r', encoding='utf-8') as f:
-            extracted_results = [json.loads(line) for line in f]
-            extracted_paper_id = [paper['paper_id'] for paper in extracted_results if 'entities' in paper]
-    else:
-        extracted_paper_id = []
+            for line in f:
+                try:
+                    data = json.loads(line)
+                    if "entities" in data:
+                        extracted_paper_ids.add(data['paper_id'])
+                except json.JSONDecodeError:
+                    continue
 
-    print(f"Already extracted {len(extracted_results)} papers from '{output_file}'\n")
+    print(f"Already extracted {len(extracted_paper_ids)} papers from '{output_file}'\n")
 
-    for paper in tqdm(corpus, desc="Extracting entities", total=len(corpus)):
-        if paper['id'] in extracted_paper_id:
-            continue
+    # 过滤出尚未处理的文献
+    pending_papers = [paper for paper in corpus if paper['id'] not in extracted_paper_ids]
 
+    if not pending_papers:
+        print("All papers have been processed.")
+        return
+
+    semaphore = asyncio.Semaphore(max_concurrent_tasks)
+    file_write_lock = asyncio.Lock()
+
+    async def process_and_save(paper):
         abstract_text = paper['abstract']
-        try :
-            entity_list = extract_entity_from_single_text(abstract_text)
+        try:
+            entity_list = await extract_entity_from_single_text(abstract_text, semaphore)
             result = {"paper_id": paper['id'], "entities": entity_list}
         except Exception as e:
-            print(f"Error: {e}")
+            print(f"Error processing paper {paper['id']}: {e}")
             result = {"paper_id": paper['id']}
-            continue
 
-        extracted_results.append(result)
+        # 拿到结果后，加锁写入文件，避免并发写入时的行错乱
+        async with file_write_lock:
+            with open(output_file, 'a', encoding='utf-8') as f:
+                f.write(json.dumps(result, ensure_ascii=False) + '\n')
 
-    with open(output_file, 'w', encoding='utf-8') as f:
-        for extracted_result in extracted_results:
-            f.write(json.dumps(extracted_result, ensure_ascii=False) + '\n')
+    # 创建所有任务
+    tasks = [process_and_save(paper) for paper in pending_papers]
+
+    # 运行并显示进度条
+    for task in async_tqdm.as_completed(tasks, desc="Extracting entities", total=len(tasks)):
+        await task
 
     print(f"Entity extraction completed. Processed {corpus_path} saved to '{output_file}'\n")
 
-def extract_entity_from_single_text(abstract_text: str):
+async def extract_entity_from_single_text(abstract_text: str, semaphore: asyncio.Semaphore):
 
     system_prompt = """
-    You are an expert Computer Science researcher building a Knowledge Graph.
-    Extract technical entities from the provided abstract and output them in JSON format.
-
+    You are an expert Computer Science researcher building a Knowledge Graph focused on rare, niche, and long-tail technologies.
+    Extract highly specialized, obscure, or novel technical entities from the provided abstract and output them in JSON format.
+    
     CRITICAL RULES:
-    1. **Be Specific:** Do NOT extract generic terms like "model", "algorithm", "data", "accuracy", or "deep learning". 
-       - BAD: "neural network"
-       - GOOD: "Convolutional Neural Network", "ResNet-101"
-    2. **Version/Variant:** Always include version numbers or variants if present (e.g., "YOLOv3" instead of "YOLO").
-    3. **Completeness:** If a dataset or metric is mentioned specifically, extract it.
+    1. **Focus on Rarity, Not Just Specificity:** Do NOT extract entities that are specific but universally known in the CS community (e.g., "ResNet-50", "BERT", "Adam optimizer", "ImageNet"). Target obscure, deeply specialized, or long-tail entities.
+       - BAD (Specific but Common): "Transformer", "YOLOv3", "BLEU score", "CIFAR-10"
+       - GOOD (Rare/Niche): "Performer architecture", "MADRAD optimizer", "Sinkhorn-Knopp algorithm", "Gromov-Wasserstein distance"
+    2. **Novel & Bespoke Terms:** Pay special attention to newly proposed algorithms, custom niche datasets, or highly specific variants/ablations introduced in a very narrow subfield.
+    3. **Mainstream Exclusion:** Completely ignore standard foundational models, ubiquitous metrics (e.g., Accuracy, F1, RMSE), and benchmark datasets, regardless of whether they have exact version numbers attached.
     
     JSON OUTPUT FORMAT:
     [
         {
-            "name": "The precise name of the entity (e.g., 'ResNet-50'). Keep original capitalization.",
-            "category": 'Method', 'Task', 'Dataset', 'Metric', or 'Tool' etc.",
-            "specificity_score": "1-5 score. 1=Generic (e.g., 'Network'), 5=Highly Specific (e.g., 'GPT-4o-mini')."
-        },
-        ...
+            "name": "The precise name of the rare entity. Keep original capitalization.",
+            "category": "'Method', 'Task', 'Dataset', 'Metric', or 'Tool'",
+            "rarity_score": "1-5 score. 1=Familiar to most subfield specialists (e.g., 'Capsule Networks'), 5=Extremely Obscure/Novel (e.g., a newly minted algorithm or bespoke dataset)."
+        }
     ]
     """
 
-    # 3. 运行提取 (模拟单条)
+    # # 3. 运行提取 (模拟单条)
     # abstract_text = """
     # We present MedResearcher-R1, a novel agentic framework for medical deep research.
     # Evaluated on the MedBrowseComp benchmark, it achieves a score of 27.5, surpassing Qwen2.5-32B.
@@ -136,28 +162,30 @@ def extract_entity_from_single_text(abstract_text: str):
         {"role": "user", "content": f"Abstract: {abstract_text}"}
     ]
 
-    try:
-        response = client.chat.completions.create(
-            model="deepseek-chat",
-            messages=messages,
-            max_tokens=8192,
-            temperature=0.7,
-            response_format={"type": "json_object"}
-        )
+    # 使用信号量控制并发请求数
+    async with semaphore:
+        try:
+            response = await aclient.chat.completions.create(
+                model="deepseek-chat",
+                messages=messages,
+                max_tokens=8192,
+                temperature=0.7,
+                response_format={"type": "json_object"}
+            )
 
-        response_content = response.choices[0].message.content
-        entities = safe_json_loads(response_content)
+            response_content = response.choices[0].message.content
+            entities = safe_json_loads(response_content)
 
 
-        # # 打印结果
-        # print(f"--- Extracted {len(entities)} Entities ---")
-        # for entity in entities:
-        #     # 这里我们可以直接过滤掉泛化词 (Specificity < 3)
-        #     if entity['specificity_score'] >= 3:
-        #         print(f"[{entity['category']}] {entity['name']} (Score: {entity['specificity_score']})")
+            # # 打印结果
+            # print(f"--- Extracted {len(entities)} Entities ---")
+            # for entity in entities:
+            #     # 这里我们可以直接过滤掉泛化词 (Rarity < 4)
+            #     if entity['rarity_score'] >= 4:
+            #         print(f"[{entity['category']}] {entity['name']} (Score: {entity['rarity_score']})")
 
-    except Exception as e:
-        print(f"Error: {e}")
+        except Exception as e:
+            print(f"Error: {e}")
 
     # 输出示例预期：
     # [Method] MedResearcher-R1 (Score: 5)
@@ -167,7 +195,6 @@ def extract_entity_from_single_text(abstract_text: str):
     # [Method] MTG (Score: 4)
 
     return entities
-
 
 def entity_counter(input_jsonl, output_csv):
     entity_stats = {}
@@ -190,7 +217,7 @@ def entity_counter(input_jsonl, output_csv):
                         entity_stats[name] = {
                             "count": 0,
                             "category": entity.get("category"),
-                            "specificity_score": entity.get("specificity_score"),
+                            "rarity_score": entity.get("rarity_score"),
                             "paper_id": data.get("paper_id")
                         }
 
@@ -205,12 +232,12 @@ def entity_counter(input_jsonl, output_csv):
         )
 
         # 打印前 5 个查看结果
-        print(f"总共发现 {len(sorted_results)} 个唯一实体。前 5 个稀有实体：")
+        print(f"总共发现 {len(sorted_results)} 个实体。前 5 个稀有实体：")
         for item in sorted_results[:5]:
             print(item)
 
         # 保存为 CSV 文件
-        keys = ["name", "count", "category", "specificity_score", "paper_id"]
+        keys = ["name", "count", "category", "rarity_score", "paper_id"]
         with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=keys)
             writer.writeheader()
@@ -222,48 +249,69 @@ def entity_counter(input_jsonl, output_csv):
     except json.JSONDecodeError:
         print("错误：文件格式不是有效的 JSONL")
 
-
-def get_rare_entities(input_csv, output_file):
+def get_rare_entities(input_csv, output_csv):
 
     df = pd.read_csv(input_csv)
 
-    total_entities_count = df['count'].sum()
+    print(f"原始数据量: {len(df)}")
 
-    # 1. 筛选 count = 1, specificity_score = 5 的实体
-    df_filtered = df[(df['count'] == 1) & (df['specificity_score'] == 5)]
+    df_filtered = df.copy()
 
-    # 2. 过滤出 Method, Dataset
-    # df_filtered = df_filtered[(df_filtered['category'].isin(['Method']))]
+    # 第一步：规则剔除
+    # 剔除长度过长（>30字符）、包含怪异符号的实体
+    df_filtered = df_filtered[
+        (df_filtered['name'].str.len() <= 30) & 
+        (~df_filtered['name'].str.contains(r'[^\w\s\-]', regex=True))
+    ]
+    
+    # 第二步：保留高价值类别
+    # 把少数类别（Framework, Model等）拉出来，人工 review
+    core_entities = df[
+        (df['category'].isin(['Framework', 'Model', 'Environment', 'Phenomenon', 'Concept']))
+    ].copy()
+    
+    # 第三步：候选长尾实体
+    # 过滤出 count <= 2 且 rarity_score == 5 的实体
+    df_filtered = df_filtered[
+        (df_filtered['count'] <= 2) & 
+        (df_filtered['rarity_score'] == 5)
+    ]
 
-    # 3. 过滤掉长度小于 2 的
-    df_filtered = df_filtered[df_filtered['name'].str.len() > 2]
+    # 第四步：图谱连通性 保留在同一paper_id下存在另外两个以上不同category的实体
+    # 1. 构建论文ID到实体列表的映射
+    paper_entities = defaultdict(list)
+    for p_id, name, cat in zip(df['paper_id'], df['name'], df['category']):
+        paper_entities[p_id].append((name, cat))
 
-    # 2. 过滤掉单词数过多的
-    df_filtered = df_filtered[df_filtered['name'].str.split().str.len() < 5]
+    # 2. 定义连通性检查函数
+    def check_connection(p_id, current_name, current_category) -> bool:
+        # 直接在集合推导式中过滤：名字不同，且类别也不同
+        other_cats = {
+            cat for name, cat in paper_entities.get(p_id, [])
+            if name != current_name and cat != current_category
+        }
+        return len(other_cats) >= 2
 
-    # 3. 过滤掉不包含大写字母的
-    df_filtered = df_filtered[df_filtered['name'].str.contains('[A-Z]')]
+    # 3. 使用列表推导式生成布尔掩码 (Boolean Mask)
+    keep_mask = [
+        check_connection(p_id, name, cat)
+        for p_id, name, cat in zip(df_filtered['paper_id'], df_filtered['name'], df_filtered['category'])
+    ]
 
-    # 4. 过滤掉包含 $ 的（数学公式）
-    df_filtered = df_filtered[~df_filtered['name'].str.contains('\$')]
+    # 4. 过滤 DataFrame
+    df_filtered = df_filtered[keep_mask]
 
-    df_filtered = filter_entities_by_llm(df_filtered)
+    # 合并核心实体和过滤后的实体
+    rare_entities = pd.concat([core_entities, df_filtered]).drop_duplicates(subset=['name'])
 
-    df_filtered = df_filtered[df_filtered['keep'] == True]
 
-    rare_entities = df_filtered.to_dict('records')
+    print(f"过滤出 {len(rare_entities)} 个稀有实体。")
 
-    # 保存结果
-    with open(output_file, 'w', encoding='utf-8') as f:
-        for rare_entity in rare_entities:
-            f.write(json.dumps(rare_entity, ensure_ascii=False) + '\n')
-        print("Rare entities saved to 'rare_entities.jsonl'")
+    # 保存结果为 CSV 格式
+    rare_entities.to_csv(output_csv, index=False, encoding='utf-8')
 
+    print(f"Rare entities saved to '{output_csv}'")
     print(f"Found {len(rare_entities)} rare entities.")
-    # print("前十个稀有实体:")
-    # for i, entity_info in enumerate(rare_entities[:10]):
-    #     print(f"{i+1}. 实体: {entity_info['name']}")
-    # Example output: [{'entity': 'quicksort-x12', 'count': 2, 'frequency': 5.0e-7}]
 
 def filter_entities_by_llm(entity_df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -348,53 +396,32 @@ def filter_entities_by_llm(entity_df: pd.DataFrame) -> pd.DataFrame:
     
     return entity_df
 
-def convert_rare_entities_to_csv(input_jsonl, output_csv):
-    """
-    将稀有实体的 JSONL 文件转换为 CSV 格式。
 
-    参数:
-    - input_jsonl: 输入的 JSONL 文件路径，每行是一个包含稀有实体信息的 JSON 对象。
-    - output_csv: 输出的 CSV 文件路径。
+async def extract_entites():
+    # max_concurrent_tasks 根据 API 的并发额度调整。
+    await extract_entity_from_corpus("data/corpus_ICLR_2020-2025.jsonl", "data/extracted_entities.jsonl", max_concurrent_tasks=1)
 
-    示例输入行:
-    {"name": "LM-CartSeg", "count": 1, "category": "Method", "specificity_score": 5, "paper_id": 2512.03449}
+    entity_counter("data/extracted_entities.jsonl", "data/entity_stats.csv")
 
-    输出 CSV 包含列: name, count, category, specificity_score, paper_id
-    """
-    try:
-        # 读取 JSONL 文件
-        rare_entities = []
-        with open(input_jsonl, 'r', encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                rare_entities.append(json.loads(line))
+    df = pd.read_csv("data/entity_stats.csv")
+    # 输出count列和rarity_score列的数据分布情况
+    print("Count列数据分布:")
+    print(df['count'].value_counts().sort_index())
+    print("\nRarity_score列数据分布:")
+    print(df['rarity_score'].value_counts().sort_index())
+    print("Category列数据分布:")
+    print(df['category'].value_counts().sort_index())
 
-        # 定义 CSV 列名
-        keys = ["name", "count", "category", "specificity_score", "paper_id", "keep"]
+    total_entities_count = df['count'].sum()
+    print(f"实体出现次数共 {total_entities_count} 次。")
 
-        # 写入 CSV 文件
-        with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=keys)
-            writer.writeheader()
-            writer.writerows(rare_entities)
+def main():
+    # asyncio.run(extract_entites())
 
-        print(f"稀有实体已成功转换并保存至: {output_csv}")
+    get_rare_entities("data/entity_stats.csv", "data/rare_entities.csv")
 
-    except FileNotFoundError:
-        print(f"错误：找不到文件 {input_jsonl}")
-    except json.JSONDecodeError:
-        print("错误：文件格式不是有效的 JSONL")
-    except Exception as e:
-        print(f"发生未知错误: {e}")
 
 if __name__ == "__main__":
-    # extract_entity_from_corpus("corpus_arxiv_2050.jsonl", "extracted_entities.jsonl")
-    # entity_counter("extracted_entities.jsonl", "entity_stats.csv")
-    get_rare_entities("rare_entities.csv", "rare_entities.jsonl")
-
-    convert_rare_entities_to_csv("rare_entities.jsonl", "rare_entities.csv")
-
+    main()
 
 

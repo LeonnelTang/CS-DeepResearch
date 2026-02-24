@@ -2,6 +2,7 @@ from typing import List, Dict, Any, Optional, Callable, Tuple
 from react_agent.tools import BaseTool
 from .parser import LLMOutputParser
 from .memory import ContextManager
+from react_agent import ChatMLBuilder
 
 
 class ReactCoreLoop:
@@ -129,6 +130,9 @@ class ReactCoreLoop:
             (最终结果, 完整执行轨迹) 元组
         """
         context_manager = ContextManager()
+
+        chatml_builder = ChatMLBuilder()
+        chatml_builder.add_message("user", task)
 
         for step in range(self.max_steps):
             # 1. 构建提示词并调用LLM
