@@ -2,7 +2,7 @@ from typing import List, Dict, Any, Optional, Callable, Tuple
 from react_agent.tools import BaseTool
 from .parser import LLMOutputParser
 from .memory import ContextManager
-from react_agent import ChatMLBuilder
+from .chatml import ChatMLBuilder
 
 
 class ReactCoreLoop:
@@ -11,7 +11,8 @@ class ReactCoreLoop:
     def __init__(self,
                  tools: List[BaseTool],
                  llm_executor: Callable[[str], str],
-                 max_steps: int = 6
+                 max_steps: int = 6,
+                 output_file: str = "trajectories/trajectories.jsonl"
                  ):
         """
         初始化ReAct循环
@@ -24,6 +25,7 @@ class ReactCoreLoop:
         self.max_steps = max_steps
         self.llm_executor = llm_executor
         self.parser = LLMOutputParser()
+        self.output_file = output_file
 
         # 提示词模板（含Few-shot示例）
         self.prompt_template = """你是ReAct智能体，需通过"思维→行动→观察"循环完成任务，严格遵循以下规则：
@@ -141,12 +143,16 @@ class ReactCoreLoop:
             # 调用LLM
             llm_output = self._call_llm(prompt)
 
+            chatml_builder.add_message("assistant", llm_output)
+
             try:
                 # 2. 解析思维与行动
                 thought, action = self.parser.parse_thought_action(llm_output)
 
                 # 3. 执行行动并获取观察
                 observation = self._execute_action(action)
+
+                chatml_builder.add_message("user", f"<observation>{observation}</observation>")
 
                 # 4. 更新上下文
                 context_manager.add_tao(thought, action, observation)
@@ -157,11 +163,13 @@ class ReactCoreLoop:
                 # 5. 检查是否完成任务
                 if action.startswith("finish["):
                     result = self.parser.parse_finish_action(action)
+                    chatml_builder.save_to_jsonl(self.output_file)
                     return result, context_manager.get_context_str()
 
             except ValueError as e:
                 # 处理解析错误
                 error_observation = f"解析错误：{e}"
+                chatml_builder.add_message("user", error_observation)
                 context_manager.add_tao("解析错误", action if 'action' in locals() else "未知", error_observation)
                 print(f"step {step + 1} 错误：{error_observation}")
 

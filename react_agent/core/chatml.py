@@ -1,5 +1,5 @@
 import json
-
+import os
 
 class ChatMLBuilder:
     """
@@ -18,4 +18,13 @@ class ChatMLBuilder:
         """
         返回ChatML格式字符串
         """
-        return json.dumps(self.trajectory, ensure_ascii=False, indent=4)
+        return json.dumps(self.trajectory, ensure_ascii=False)
+
+    def save_to_jsonl(self, file_path: str):
+        """
+        将ChatML格式数据保存到文件
+        """
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, 'a', encoding='utf-8') as f:
+            f.write(self.to_str() + '\n')
+

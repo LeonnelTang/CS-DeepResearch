@@ -11,3 +11,7 @@ class BaseTool:
     def run(self, params: Any) ->str:
         """核心执行方法，子类必须实现，返回结构化观察结果"""
         raise NotImplementedError("所有工具子类必须实现run方法")
+
+    def to_str(self) -> str:
+        """返回工具的字符串表示，包含名称和描述"""
+        return f"Tool Name: {self.name}, Description: {self.description}"
