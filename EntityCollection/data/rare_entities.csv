@@ -1,0 +1,479 @@
+name,count,category,rarity_score,paper_id
+IPT,1,Model,3,2886
+deep bootstrap,1,Phenomenon,5,8080
+HoloBench,1,Framework,5,1586
+Agent Security Bench (ASB),1,Framework,4,1656
+MM-Ego,1,Model,4,3442
+lottery of mistakes,1,Concept,4,3553
+regretful decisions,1,Concept,4,3553
+transient nature of ICL,1,Concept,4,174
+World Values Survey,1,Framework,2,261
+Moral Foundations Theory,1,Framework,2,261
+Maslow's Hierarchy of Needs,1,Framework,1,261
+Aristotle's Virtues,1,Framework,2,261
+Plutchik's Wheel of Emotions,1,Framework,3,261
+ExploreToM,1,Framework,4,363
+Cybench,1,Framework,4,2296
+UnStereoEval (USE),1,Framework,4,3838
+VVC-Gym,1,Environment,4,269
+pattern machine,1,Concept,3,5581
+AmP,3,Framework,4,4846
+S3 suite,1,Dataset,5,4276
+DR3,1,Method,5,7672
+PolyCom,1,Method,5,899
+2T multi-modal tokens,1,Dataset,5,2596
+MALMEN,1,Method,5,4294
+T3-Agent,1,Method,5,2602
+RxnFlow,1,Method,5,909
+ANAH,1,Dataset,5,2607
+safety-critic data sources,1,Dataset,5,7698
+Mini-Monkey,1,Method,5,925
+negative-power distance metric,1,Metric,5,9406
+AbNovo,1,Method,5,926
+CARTS,1,Method,5,940
+Engagement Arena,1,Metric,5,947
+TRAIL,1,Method,5,2640
+NISQ-TDA,1,Method,5,4336
+1D-ARC challenge,1,Dataset,5,954
+transsuasion,1,Task,5,958
+ICoPro,1,Method,5,955
+MSEDI,1,Metric,5,6051
+Codestal-Mamba,1,Method,5,962
+GraphDoc,1,Dataset,5,976
+mAP_g,1,Metric,5,976
+Proteina,1,Method,5,979
+generalized Bregman divergence,1,Metric,5,2678
+receptive token,1,Method,5,6074
+THePUff,1,Method,5,992
+Permian Extinction,1,Dataset,5,997
+Fordism,1,Dataset,5,997
+Robot Resume,1,Method,5,2695
+Watch-Less-Do-More,1,Method,5,2696
+lottery subspaces,1,Method,5,7785
+DreMa,1,Method,5,1007
+GeoILP,1,Dataset,5,1010
+GEASS,1,Method,5,6101
+OVOR,1,Tool,5,4412
+SIU dataset,1,Dataset,5,1027
+LFPT5,1,Method,5,7812
+cake-slicing problem,1,Task,5,1031
+PGVAE,1,Method,5,4424
+SUBLEQ,1,Task,5,2731
+Sein Soft Actor-Critic,1,Method,5,4422
+CLIORA,1,Method,5,7825
+CCRA,1,Metric,5,7825
+Mutation Explainer,1,Method,5,1043
+IV-Mixed Sampler,1,Method,5,2741
+gnot,1,Tool,5,4441
+hypervolume learning,1,Task,5,7843
+PSR-SCI,1,Method,5,1061
+adaptive LoRA-Rounding,1,Method,5,1067
+VidDiffBench,1,Dataset,5,16
+GANDALF,1,Method,5,17
+Intent3D dataset,1,Dataset,5,2773
+IntentNet,1,Method,5,2773
+uniINF,1,Method,5,1078
+RTTDP,1,Tool,5,2775
+Moshi,1,Dataset,5,19
+Open-CK,1,Dataset,5,2779
+meta-learning surrogate score,1,Metric,5,9561
+ComaDICE,1,Method,5,23
+Dynamic Token Morphing,1,Method,5,2781
+CKL metric,1,Metric,5,7872
+SimBelief,1,Method,5,1094
+latent task belief metric,1,Metric,5,1094
+neural interactive proofs,1,Method,5,35
+δ-stationarity measurement,1,Metric,5,7883
+LPWP,1,Task,5,4494
+delphic uncertainty,1,Method,5,4497
+LLM4Hypergraph,1,Dataset,5,2799
+Hyper-BAG,1,Method,5,2799
+Hyper-COT,1,Method,5,2799
+EditNet,1,Method,5,2815
+synthetic gradient network,1,Method,5,9606
+synthetic gradient descent,1,Method,5,9606
+R2D3,1,Method,5,9611
+CREAM,1,Method,5,2825
+LGGMs,1,Method,5,2831
+Text-to-Graph generation,1,Task,5,2831
+power-1138-bus graph,1,Dataset,5,2831
+Dec-POMFC,1,Method,5,4524
+latent attention layer,1,Method,5,1135
+AIR Benchmark,1,Dataset,5,1135
+FunkNN,1,Method,5,6227
+PHIER,1,Method,5,2840
+labeled graph motif parameters,1,Task,5,4537
+anarchic FL,1,Task,5,1151
+FL plug-in market,1,Task,5,1151
+Neuroformer,1,Method,5,4546
+OPTAMI,1,Tool,5,2851
+POR-UCRL,1,Method,5,1160
+POR-UCBVI,1,Method,5,1160
+NLPO,1,Method,5,6258
+Diffuse Risk Management,1,Task,5,2869
+GraphANGEL,1,Method,5,7959
+16 million latent autoencoder,1,Method,5,1176
+pseudo-glosses,1,Method,5,4581
+Magnushammer,1,Method,5,4585
+WAKER,1,Method,5,4589
+VideoNIAH,1,Method,5,1199
+outsider identification,1,Task,5,9685
+ZETA,1,Method,5,1203
+Dropsembles,1,Method,5,2907
+DCScore,1,Metric,5,2910
+primitive information units,1,Method,5,2910
+FeedQuill,1,Tool,5,2910
+EquiLoPO Network,1,Method,5,2917
+OOO framework,1,Method,5,1227
+contrastive entropy loss,1,Method,5,1227
+glocal-aware scoring mechanism,1,Method,5,1227
+OOO-LLM-UNLEARNING,1,Tool,5,1227
+Symb4CO,1,Method,5,4623
+Q-GenX,1,Method,5,6327
+Euler Diagram Syllogism,1,Task,5,9725
+D-TRAK,1,Method,5,4645
+CACM,1,Method,5,6342
+Path-X task,1,Task,5,8044
+M4-Instruct dataset,1,Dataset,5,2954
+LLaVA-Interleave Bench,1,Tool,5,2954
+3D-MoIT,1,Dataset,5,4653
+HarmAug_generated_dataset,1,Dataset,5,2962
+BRUSLEATTACK,1,Method,5,4656
+ReNovo,1,Method,5,1267
+SoftHebb,1,Method,5,6362
+multilayer SoftHebb,1,Method,5,6362
+AssembleFlow,1,Method,5,1286
+probabilistic under-reaching,1,Method,5,1302
+deduction in latent space,1,Task,5,9790
+MACTA,1,Method,5,6400
+MA-AUTOCAT,1,Dataset,5,6400
+Celcomen,1,Method,5,3008
+spatial counterfactuals,1,Task,5,3008
+IntersectionZoo,1,Dataset,5,1315
+neuromechanical autoencoders,1,Method,5,6415
+digital MNIST,1,Dataset,5,6415
+ECHOPulse,1,Method,5,3035
+Law of the Weakest Link,1,Metric,5,1342
+ImpScore,1,Metric,5,3039
+perplexity-correlations,1,Tool,5,1349
+LoLCATs,1,Method,5,1352
+MMAD,1,Dataset,5,3058
+worst-case sensitivity,1,Metric,5,4759
+ARPO,1,Method,5,1370
+DiffSkill,1,Method,5,8170
+brain-tuning,1,Method,5,1388
+disease-aware pairing,1,Method,5,3086
+GOOD-AT,1,Method,5,4784
+IOD-Bench,1,Dataset,5,4805
+Ins-DetCLIP,1,Method,5,4805
+SpikePoint,1,Method,5,4815
+Confidential-PROFITT,1,Method,5,6513
+Halo plot,1,Tool,5,4825
+FB-CPR,1,Method,5,3132
+stiffness-aware index,1,Metric,5,8222
+DGS Corpus,1,Dataset,5,6525
+language-space noise embedding,1,Method,5,4831
+twin-nphard,1,Tool,5,6534
+limited hyperspherical space,1,Method,5,4840
+FILIP300M,1,Dataset,5,8234
+INT_HMR_Model,1,Method,5,6540
+neural-based weighted CFR,1,Method,5,8259
+making wishes,1,Dataset,5,4870
+forml-Basic,1,Dataset,5,3178
+anti-causal binning,1,Method,5,8272
+anti-causal second transformer,1,Method,5,8272
+MDVP-Instruct-Data,1,Dataset,5,3192
+MDVP-Bench,1,Benchmark,5,3192
+perturbational landscapes,1,Task,5,1496
+MoleBLEND,1,Method,5,4904
+dualformer,1,Method,5,1511
+BatchTopK SAEs,1,Method,5,1514
+LongWriter-6k,1,Dataset,5,3219
+LongBench-Write,1,Benchmark,5,3219
+port-Hamiltonian scheme,1,Method,5,1522
+CLN2INV,1,Tool,5,10009
+MDSLR,1,Tool,5,3222
+Ψ,1,Metric,5,8316
+modemrl,1,Tool,5,6621
+VideoCon-Physics,1,Tool,5,1536
+Cold Brew,1,Method,5,8323
+XR-Transformers,1,Method,5,8336
+UA-L2O,1,Method,5,8355
+Bayesian-L2O,1,Method,5,8355
+uncertainty-aware L2O,1,Method,5,8355
+ProtoSnap,1,Method,5,3272
+SpHAM,1,Tool,5,8368
+MOTOR,1,Method,5,4981
+motor-t-base,1,Tool,5,4981
+Hydra-SGG,1,Method,5,3284
+Hybrid Relation Assignment,1,Method,5,3284
+Hydra Branch,1,Method,5,3284
+SIMPL,1,Method,5,1595
+ArtGS,1,Method,5,3291
+tracker hijacking,1,Method,5,10084
+LDM-3DG,1,Tool,5,5001
+CMDP-within-online framework,1,Method,5,6702
+loconav Ant Maze,1,Task,5,5010
+ISG-Agent,1,Tool,5,1619
+FSPool,1,Method,5,10104
+LLM-KICK,1,Dataset,5,5029
+Neural Atoms,1,Method,5,5035
+kinetic-optimal mixture paths,1,Method,5,3339
+inorganic material generation,1,Task,5,3339
+RSNN_bfd,1,Tool,5,1644
+VisCoIN,1,Method,5,3343
+FairMT-1K,1,Dataset,5,1652
+CAMBranch,1,Method,5,5044
+Choquet-Toland distance,1,Metric,5,6741
+probe concatenate effect,1,Method,5,1653
+natural backdoors,1,Task,5,1653
+CoSAlign,1,Method,5,1660
+CoSA-Score,1,Metric,5,1660
+CoSApien,1,Dataset,5,1660
+maximum absolute determinants,1,Method,5,5064
+NExUME,1,Method,5,1680
+MRSeg benchmark,1,Dataset,5,3378
+AdaND,1,Method,5,1697
+PONITA,1,Tool,5,5085
+Perplexity-Trap,1,Tool,5,3397
+ReAttention,1,Method,5,1702
+graph-informed DyVal,1,Method,5,5098
+SNAC,1,Tool,5,6802
+diti,1,Tool,5,5112
+TLDR,1,Method,5,3423
+Dirac likelihood functions,1,Method,5,5122
+CoIT,1,Method,5,6816
+DrM,1,Method,5,5134
+Capability-Neuron-Localization,1,Tool,5,1745
+AnyWord-3M,1,Dataset,5,5139
+AnyText-benchmark,1,Metric,5,5139
+Herald,1,Dataset,5,50
+Herald Translator,1,Method,5,50
+GNPE,1,Method,5,8533
+KL-Top loss function,1,Method,5,3460
+β-Intact-VAE,1,Method,5,8560
+Preference Proxy Evaluations,1,Dataset,5,99
+Temporal Grounded Caption,1,Task,5,3497
+VLOG,1,Method,5,8593
+hyperportfolio,1,Task,5,5209
+GlycanML-MTL,1,Dataset,5,1814
+game-theoretic diffusion model,1,Method,5,5207
+clustering information gain,1,Metric,5,5207
+heuristic shape score,1,Metric,5,5207
+QuaDiM,1,Method,5,1818
+Booster,1,Method,5,3516
+DroneBird,1,Dataset,5,3517
+biological design task,1,Task,5,5219
+VDCscore,1,Metric,5,3527
+LMM Agent Bootstrapping,1,Method,5,1835
+PathGen-CLIP,1,Method,5,1838
+rosmo,1,Tool,5,6924
+UAV-Need-Help,1,Benchmark,5,3536
+ramification constraints,1,Method,5,143
+Spreading COVID-19,1,Dataset,5,1842
+TASAR,1,Method,5,3540
+GUE benchmark datasets,1,Dataset,5,149
+HGE,1,Tool,5,149
+ProFS,1,Method,5,163
+BABILong,1,Dataset,5,169
+PAS,1,Method,5,3569
+SVDQuant,1,Method,5,3577
+Nunchaku,1,Tool,5,3577
+L2C,1,Tool,5,3582
+Bio-CDL,1,Dataset,5,1892
+copy-forwarded diagnoses,1,Task,5,199
+functional Eluder dimension,1,Metric,5,6982
+SC-OmniGS,1,Method,5,1895
+TOMATO,1,Dataset,5,204
+Semantix,1,Method,5,3605
+τJp,1,Metric,5,213
+distribution regularization,1,Method,5,3613
+weight perturbation technique,1,Method,5,224
+preventive learning,1,Method,5,7012
+VINE,1,Method,5,3625
+elongation filter,1,Method,5,3621
+iVoro,1,Method,5,7018
+SpecTTTra,1,Method,5,3636
+MDSGen,1,Method,5,3634
+fused block FFT algorithm,1,Method,5,7031
+state passing algorithm,1,Method,5,7031
+TCNP,1,Metric,5,3645
+metric distortion,1,Metric,5,5344
+CWE-Bench-Java,1,Dataset,5,1962
+NeRAF,1,Method,5,1972
+AWS_ICLR2025,1,Tool,5,3681
+rule-focused attention,1,Method,5,675
+Meta-MolNet,1,Dataset,5,3690
+DataEnvGym,1,Tool,5,684
+360-Motion Dataset,1,Dataset,5,3689
+CSVRG,1,Method,5,4125
+qpcert,1,Tool,5,693
+bigsparse,1,Tool,5,5625
+MOKA,1,Task,5,3702
+BroGNet,1,Method,5,4126
+SemVarEffect,1,Metric,5,703
+SemVarBench,1,Dataset,5,703
+AFbT,1,Metric,5,7582
+CivRealm,1,Dataset,5,5652
+Ground-A-Video,1,Method,5,5651
+Length-Controlled win rate,1,Metric,5,2226
+SFBC,1,Tool,5,5655
+iLRG,1,Tool,5,7165
+A-PARL,1,Method,5,4158
+self-contrast metric,1,Metric,5,3738
+SelfCipher,1,Method,5,5663
+MANTRA,1,Dataset,5,731
+Flux-dev,1,Method,5,309
+tropical zonotopes,1,Method,5,7598
+tropical geometrical viewpoint,1,Method,5,7598
+Neural Field Artifact Analysis,1,Method,5,740
+BOIL,1,Method,5,9111
+Body Only update in Inner Loop,1,Method,5,9111
+GAVIE,1,Metric,5,3756
+FIRMBOUND,1,Method,5,2254
+looping-based regularization,1,Method,5,328
+APIBench,1,Dataset,5,5689
+DrugFlow,1,Method,5,335
+Instant Policy,1,Method,5,761
+ILLUSION,1,Dataset,5,765
+SUFO,1,Method,5,3770
+accelerated ISRL-DP algorithm,1,Method,5,7214
+hyper-subjective opinions,1,Method,5,4204
+vagueness,1,Metric,5,4204
+LR-TK0,1,Method,5,2279
+SymmetricMemory,1,Method,5,351
+FDFPN solver,1,Tool,5,7639
+coRMAB,1,Task,5,2280
+single token backdoor,1,Method,5,354
+RIGBD,1,Tool,5,2285
+BooookScore,1,Metric,5,3791
+novel linear time algorithm,1,Method,5,364
+GSA-R2R,1,Dataset,5,790
+Prompt-OIRL,1,Method,5,5726
+Palu,1,Method,5,369
+Foudation-Model_Multitask,1,Tool,5,5730
+P3O,1,Method,5,7239
+Confidence Bootstrapping,1,Method,5,4230
+satisficing regret,1,Metric,5,2305
+SELECT,1,Method,5,2305
+ESMDiff,1,Method,5,2307
+Matryoshka Multimodal Models,1,Method,5,2309
+BrainCodec,1,Method,5,806
+pits,1,Tool,5,5739
+CREMA,1,Method,5,2310
+Image Grounding score,1,Metric,5,2317
+GDA-SpecReg,1,Tool,5,7254
+LeBeD,1,Metric,5,4246
+Steve-Eye,1,Method,5,4247
+GReTo,1,Method,5,7257
+Seq-VCR,1,Method,5,395
+dabbing liquids with a sponge,1,Task,5,9187
+XAIguiFormer,1,Method,5,824
+smug_saliency,1,Tool,5,9190
+ASAP,1,Method,5,3834
+ALLD,1,Method,5,830
+progressive camera rotations,1,Method,5,5762
+PFGuard,1,Method,5,841
+DUET,1,Method,5,420
+single target function,1,Task,5,8785
+SNOWS,1,Method,5,421
+DD100,1,Dataset,5,5355
+Duolando,1,Method,5,5355
+non-differentiable oracle,1,Method,5,424
+Helix-Gating,1,Method,5,862
+scTM,1,Metric,5,862
+ToolE,1,Dataset,5,5369
+KinPFN,1,Method,5,863
+SketikZ,1,Dataset,5,864
+ImgTikZ,1,Method,5,864
+Invertible X-Net,1,Method,5,450
+MUSTARDSAUCE,1,Dataset,5,5390
+chemical feedback paradigm,1,Method,5,5389
+GMValuator,1,Method,5,2390
+Generative Model Valuator,1,Method,5,2390
+metabolic costs of plasticity,1,Task,5,5822
+H2DiLR,1,Method,5,2401
+Causal Dropout Model,1,Method,5,5832
+attributability lower bound,1,Metric,5,8841
+BaFT,1,Method,5,2405
+deepsloth,1,Tool,5,9268
+FreeReg,1,Tool,5,5412
+range independence,1,Method,5,2411
+Poisoned Forgery Face,1,Method,5,5418
+PFF,1,Tool,5,5418
+CrysBFN,1,Method,5,2418
+periodic Bayesian flow,1,Method,5,2418
+muscly-supervised,1,Method,5,9282
+muscleTorch,1,Tool,5,9282
+I-STAR,1,Method,5,5431
+Adaptive Relaxed-Greedy,1,Method,5,2002
+Predictive Relaxed-Greedy,1,Method,5,2002
+STRAP,1,Method,5,504
+MLPInit,1,Method,5,7376
+sophisticated torus datasets,1,Dataset,5,515
+TDM,1,Method,5,515
+structurally informalise,1,Method,5,2021
+Con-NF,1,Dataset,5,2021
+Hölder in expectation,1,Method,5,2020
+lower-Hölder in expectation,1,Method,5,2020
+lower Lipschitz in expectation,1,Method,5,2020
+Minecraft SkillForge,1,Dataset,5,5876
+hexagon flat torus,1,Method,5,2030
+IterGen,1,Tool,5,529
+heartbeat-based ECG vocabulary,1,Dataset,5,2461
+synthetic canonical solutions,1,Dataset,5,7396
+4D Ring,1,Dataset,5,541
+6D Unimodal,1,Dataset,5,541
+6D Multi-modal,1,Dataset,5,541
+Pfaffian activation functions,1,Method,5,547
+ANN2SNN_COS,1,Tool,5,7413
+sketch-based modeling testbed,1,Dataset,5,9337
+FLaRe,1,Dataset,5,548
+uqdm,1,Tool,5,554
+DEMON,1,Dataset,5,5917
+Slice-and-Sandwich,1,Method,5,564
+coarsened surfaces,1,Method,5,2493
+event-RAW paired dataset,1,Dataset,5,2506
+HalentNet,1,Method,5,8944
+hallucinative loss,1,Method,5,8944
+VWFormer,1,Method,5,5937
+generative predictive p-value,1,Metric,5,2516
+ShEPhERD,1,Method,5,593
+Dragging Accuracy Index,1,Metric,5,2098
+Gemini Score,1,Metric,5,2098
+SemSI-Set,1,Dataset,5,2101
+SemSI-Bench,1,Benchmark,5,2101
+BackdoorMSPC,1,Tool,5,4028
+EAGLE,1,Dataset,5,7466
+alignment distillation,1,Method,5,7470
+GCORN,1,Method,5,4039
+LNAMD,1,Method,5,5960
+RsCIN,1,Method,5,5960
+SMORe,1,Method,5,4040
+16 curated datasets,1,Dataset,5,4043
+concentratability coefficient,1,Metric,5,4053
+measure of ill-posedness,1,Metric,5,4053
+AMS,1,Method,5,2547
+OpenMMlo,1,Dataset,5,2135
+MSSBench,1,Dataset,5,2559
+PaCA,1,Method,5,2560
+AIOS-LSFS,1,Tool,5,2133
+Drops,1,Method,5,7080
+Harvard-FairSeg,1,Dataset,5,4072
+equity-scaled Dice coefficient,1,Metric,5,4072
+MixEval-X,1,Benchmark,5,2146
+GPGapE,1,Method,5,264
+GazeReward,1,Method,5,645
+CyberHost,1,Method,5,2572
+deducibility graph,1,Method,5,278
+CamTrol,1,Method,5,2152
+EQGAT-diff,1,Method,5,4080
+Fused-DeepGate4,1,Method,5,3655
+3D consistency scoring,1,Metric,5,7102
+Chain-of-States technique,1,Method,5,293
+MedRegInstruct,1,Dataset,5,3674
+MedRegA,1,Method,5,3674
+Recognize Any Surgical Object,1,Task,5,3679
+DiffTaichi,2,Tool,5,9522
+G-SphereNet,2,Method,5,8168
+INT,2,Dataset,5,6882

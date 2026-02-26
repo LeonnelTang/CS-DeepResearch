@@ -1,0 +1,1461 @@
+name,count,category,specificity_score,paper_id
+LM-CartSeg,1,Method,5,2512.03449
+nnU-Net,1,Method,5,2512.03449
+Frequency-Guided Supervision (FGS),1,Method,5,2511.22505
+Discrepancy-Guided Optimization (DGO),1,Method,5,2511.22505
+T3-Tracer,1,Method,5,2511.21237
+function-on-function Bayesian optimization,1,Method,5,2511.12783
+FFBO,1,Method,5,2511.12783
+function-on-function Gaussian process,1,Method,5,2511.12783
+FFGP,1,Method,5,2511.12783
+FGA,1,Method,5,2511.12783
+Viper-F1,1,Method,5,2511.11177
+Hybrid State-Space Vision-Language Model,1,Method,5,2511.11177
+Liquid State-Space Dynamics,1,Method,5,2511.11177
+Token-Grid Correlation Module,1,Method,5,2511.11177
+FiLM conditioning,1,Method,5,2511.11177
+CephRes-MHNet,1,Method,5,2511.10173
+AFPF-Net,1,Method,5,2511.10173
+StreamPETR,1,Method,5,2511.09347
+PETRv2,1,Method,5,2511.09347
+FQ-PETR,1,Method,5,2511.09347
+Quantization-Friendly LiDAR-ray Position Embedding,1,Method,5,2511.09347
+QFPE,1,Method,5,2511.09347
+Dual-Lookup Table,1,Method,5,2511.09347
+DULUT,1,Method,5,2511.09347
+Quantization After Numerical Stabilization,1,Method,5,2511.09347
+QANS,1,Method,5,2511.09347
+LiDAR-prior-guided single-point sampling,1,Method,5,2511.09347
+W8A8,1,Method,5,2511.09347
+APEX,1,Method,5,2511.09091
+Neuro-symbolic,1,Method,5,2511.09575
+FAST-CAD,1,Method,5,2511.08887
+process reward modeling (PRM),1,Method,5,2511.10687
+SciAgent,1,Method,5,2511.08151
+GT-Pair,1,Method,5,2511.0145
+Reg-DPO,1,Method,5,2511.0145
+Multimodal World Model (MWM),1,Method,5,2511.0131
+MAPPO,1,Method,5,2511.0131
+Maestro,1,Method,5,2511.00917
+DRIP,1,Method,5,2510.25067
+Shared Cognitive Space (SCS),1,Method,5,2510.2403
+Cross-Species Trust Calibration (CSTC),1,Method,5,2510.2403
+Kernel Temporal Segmentation (KTS),1,Method,5,2510.16781
+MIN-Merging,1,Method,5,2510.1789
+Code Digital Twin,1,Method,5,2510.16395
+DistilBERT,1,Method,5,2510.15843
+Face-MakeUpV2,1,Method,5,2510.21775
+Learning to Detect (LoD),1,Method,5,2510.1543
+Safety Pattern Auto-Encoder module,1,Method,5,2510.1543
+LayoutRL,1,Method,5,2510.15349
+Infinity-Parser,1,Method,5,2510.15349
+AVAR-Net,1,Method,5,2510.1363
+Wav2Vec2,1,Method,5,2510.1363
+MobileViT,1,Method,5,2510.1363
+FetalMind,1,Method,5,2510.12953
+Salient Epistemic Disentanglement (SED),1,Method,5,2510.12953
+GraphBFN,1,Method,5,2510.10211
+First-In-First-Out (FIFO) temporal-matching heuristic,1,Method,5,2510.09433
+PatMD,1,Method,5,2510.15946
+MATRIX Agent,1,Method,5,2510.08567
+Posterior Feature Correction,1,Method,5,2510.08078
+Feature Pyramid Network (FPN),1,Method,5,2510.07681
+Matrix Geometric Resampling,1,Method,5,2510.07424
+Best-of-Both-Worlds (BOBW),1,Method,5,2510.07424
+BOBW algorithm,1,Method,5,2510.07424
+Native Hybrid Attention (NHA),1,Method,5,2510.07019
+Evo-WISVA,1,Method,5,2510.06884
+Attention-driven Latent Memory Module,1,Method,5,2510.06884
+ConvLSTM,1,Method,5,2510.06884
+MobileNetV3,1,Method,5,2510.0617
+LightIrisNet,1,Method,5,2510.0617
+IrisFormer,1,Method,5,2510.0617
+OSIRIS,1,Method,5,2510.0617
+PointNSP,1,Method,5,2510.05613
+AWARE,1,Method,5,2510.04983
+CSP-Aware Entropy,1,Method,5,2510.02855
+Probabilistic CSP,1,Method,5,2510.02855
+RAG-BioQA,1,Method,5,2510.01612
+BioBERT,1,Method,5,2510.01612
+ColBERT,1,Method,5,2510.01612
+MonoT5,1,Method,5,2510.01612
+PoseDiff,1,Method,5,2509.24591
+MobileViT-XS,1,Method,5,2509.22993
+Zeroth-Order Optimization,1,Method,5,2509.2206
+GenFacts,1,Method,5,2509.20936
+security semantic ISAC (SS-ISAC),1,Method,5,2509.20835
+linear time-invariant SSMs,1,Method,5,2509.20789
+Task-Dependent Initialization (TDI),1,Method,5,2509.20789
+SHARP,1,Method,5,2509.19486
+Structured Semantic Identifiers,1,Method,5,2509.17359
+Rationale-Guided Supervision Strategy,1,Method,5,2509.17359
+LSTM-ResB-PPO,1,Method,5,2509.15582
+Llama-2-13B,1,Method,5,2509.1488
+StableTracker,1,Method,5,2509.14147
+AutoCO (Automated Constraint Optimization),1,Method,5,2509.12643
+blockchain-aided trustworthy MoE (B-MoE),1,Method,5,2509.12141
+VIM-GS,1,Method,5,2509.06685
+visual-inertial Structure-from-Motion,1,Method,5,2509.06685
+INGRID,1,Method,5,2509.03842
+Holographic Knowledge Manifold (HKM),1,Method,5,2509.10518
+Llama-3,1,Method,5,2509.10518
+Grok-4,1,Method,5,2509.10518
+FedAdagrad,1,Method,5,2509.10517
+FedAdam,1,Method,5,2509.10517
+FedCluster,1,Method,5,2509.10517
+SMOTE-Tomek,1,Method,5,2509.10517
+16-bit Brain Float,1,Method,5,2509.03054
+LLaMA 3.2 3B,1,Method,5,2509.03054
+GPTQ,1,Method,5,2509.03054
+CNSCA,1,Method,5,2509.01704
+PDB4Rec,1,Method,5,2508.20427
+Boostrapping Balancer,1,Method,5,2508.20427
+YOLOv12,1,Method,5,2508.19762
+RF-DETR,1,Method,5,2508.19762
+FSFM,1,Method,5,2508.1973
+ESFP-RM,1,Method,5,2508.18212
+ProMSC-MIS,1,Method,5,2508.1792
+squeeze-and-excitation (SE) networks,1,Method,5,2508.1792
+Insights-on-Graph (IOG),1,Method,5,2509.00054
+ERF-BA-TFD+,1,Method,5,2508.17282
+MMIF-AMIN,1,Method,5,2508.08679
+Invertible Dense Network (IDN),1,Method,5,2508.08679
+Chain-of-Alpha,1,Method,5,2508.06312
+Factor Generation Chain,1,Method,5,2508.06312
+Factor Optimization Chain,1,Method,5,2508.06312
+DSConv,1,Method,5,2508.06147
+Conically-Regularised FMOL,1,Method,5,2508.05424
+Federated multi-gradient descent averaging,1,Method,5,2508.05424
+RegionMed-CLIP,1,Method,5,2508.05244
+region-of-interest (ROI) processor,1,Method,5,2508.05244
+Bringmann [SODA 2017],1,Method,5,2508.04726
+Kane's Logspace algorithm,1,Method,5,2508.04726
+4D-PreNet,1,Method,5,2508.03775
+Universal Adversarial Augmenter (UAA),1,Method,5,2508.03213
+SA-3DGS,1,Method,5,2508.03017
+LightGaussian,1,Method,5,2508.03017
+Meta-Cognitive Module,1,Method,5,2508.02961
+Arbitration Module,1,Method,5,2508.02961
+Interaction Distillation,1,Method,5,2508.02618
+SMART-Editor,1,Method,5,2507.23095
+Reward-Refine,1,Method,5,2507.23095
+RewardDPO,1,Method,5,2507.23095
+InstructPix2Pix,1,Method,5,2507.23095
+FedCVD++,1,Method,5,2507.22963
+federated SMOTE synchronization,1,Method,5,2507.22963
+Adaptive Gated Dual-Branch Attention,1,Method,5,2507.21949
+AGBA,1,Method,5,2507.21949
+Frequency-Contrast Fusion Network,1,Method,5,2507.21949
+FCFN,1,Method,5,2507.21949
+LanternNet,1,Method,5,2507.208
+multi-modal GNC software stack,1,Method,5,2507.20034
+Exemplar Med-DETR,1,Method,5,2507.19621
+Synergos-VQA,1,Method,5,2507.17659
+hybrid CNN-Transformer architecture,1,Method,5,2507.17396
+OrthoInsight,1,Method,5,2507.13993
+YOLOv9,1,Method,5,2507.13993
+Claude-3,1,Method,5,2507.13993
+RS-TinyNet,1,Method,5,2507.1312
+auxiliary reversible branch (ARB),1,Method,5,2507.1312
+Atrous Strip Convolution Network,1,Method,5,2507.12744
+GNNWR,1,Method,5,2507.09958
+Geographically Weighted Regression,1,Method,5,2507.09958
+Discrete-Variable QKD,1,Method,5,2507.09719
+Continuous-Variable QKD,1,Method,5,2507.09719
+GoalfyMax,1,Method,5,2507.09497
+Model Context Protocol (MCP),1,Method,5,2507.09497
+Experience Pack (XP) architecture,1,Method,5,2507.09497
+PointVDP,1,Method,5,2507.06618
+KT-Net,1,Method,5,2507.05814
+IDFREE,1,Method,5,2507.05715
+QR-DQN (Quantile Regression DQN),1,Method,5,2507.05465
+Horizon-DQN (H-DQN),1,Method,5,2507.05465
+SElf-Evolving Distillation (SEED),1,Method,5,2507.0468
+Hallucination Elimination Adapter,1,Method,5,2507.0468
+LLaVA-1.5,1,Method,5,2507.0468
+InternVL2,1,Method,5,2507.0468
+GVI-DA,1,Method,5,2507.03291
+Size-Based Adaptive Federated Learning,1,Method,5,2506.20685
+SAFL,1,Method,5,2506.20685
+Mem4Nav,1,Method,5,2506.19433
+EfficientNet-B0,1,Method,5,2506.1933
+Principal Component Analysis,1,Method,5,2507.02903
+Linear Discriminant Analysis,1,Method,5,2507.02903
+K-Nearest Neighbors,1,Method,5,2507.02903
+SESLR,1,Method,5,2507.02901
+Conditional Variational Autoencoder,1,Method,5,2506.18414
+Prompt Nodes,1,Method,5,2506.17761
+Transcendental Encoding Conjecture,1,Method,5,2506.18921
+DiffRWKVIR,1,Method,5,2506.14541
+Omni-Scale 2D State Evolution,1,Method,5,2506.14541
+Chunk-Optimized Flash Processing,1,Method,5,2506.14541
+Prior-Guided Efficient Diffusion,1,Method,5,2506.14541
+Image Prior Representation (IPR),1,Method,5,2506.14541
+MambaIR/v2,1,Method,5,2506.14541
+InceptionTime,1,Method,5,2506.13909
+Moment,1,Method,5,2506.13909
+SilentBadDiffusion,1,Method,5,2506.10776
+Discrete Cosine Transform,1,Method,5,2506.10776
+SHORE,1,Method,5,2506.10487
+DTwinSeger,1,Method,5,2506.07943
+BLIP,1,Method,5,2506.07236
+BioViL-T,1,Method,5,2506.07236
+GLoRIA,1,Method,5,2506.07236
+MLLM-SAP,1,Method,5,2506.07196
+AI PsyRoom,1,Method,5,2506.0674
+multi-agent PsyRoom A,1,Method,5,2506.0674
+PsyRoom B,1,Method,5,2506.0674
+Versatile Diffusion,1,Method,5,2506.06035
+Dynamic Context Tuning (DCT),1,Method,5,2506.11092
+EECD-Net,1,Method,5,2506.04526
+Spike Convolution Unit (SCU),1,Method,5,2506.04526
+Continuous Integrate-and-Fire (CIF) neurons,1,Method,5,2506.04526
+Gated Attention Transformer (GAT),1,Method,5,2506.04526
+Hybrid-Segmentor,1,Method,5,2506.04526
+early-stop interleaved (ESI) pattern,1,Method,5,2506.04518
+QA-HFL,1,Method,5,2506.05411
+Quality-Weighted Fusion Mechanism,1,Method,5,2506.05411
+FedRolex,1,Method,5,2506.05411
+Device-Specific Regularization,1,Method,5,2506.05411
+Intelligent Client Selection,1,Method,5,2506.05411
+Server-Side Knowledge Distillation,1,Method,5,2506.05411
+MS-YOLO,1,Method,5,2506.03972
+C3K2 modules,1,Method,5,2506.03972
+AD-EE,1,Method,5,2506.05404
+VAPO framework,1,Method,5,2506.03038
+Decoupled GAE,1,Method,5,2506.03038
+CRDP-KT,1,Method,5,2506.02949
+Switching Tokenizers Method,1,Method,5,2506.00291
+PerFormer,1,Method,5,2506.00259
+MaCP,1,Method,5,2505.2387
+Llama 3.2,1,Method,5,2505.23105
+LatentMove,1,Method,5,2505.22046
+EnsemW2S,1,Method,5,2505.21959
+Diffusion-DPO,1,Method,5,2505.21893
+DPO-C&M,1,Method,5,2505.21893
+Mentor3AD,1,Method,5,2505.2142
+Voting Module (VM),1,Method,5,2505.2142
+HF-VTON,1,Method,5,2505.19638
+Adversarial Evolution Training (AET),1,Method,5,2506.15685
+NOTEARS acyclicity constraint,1,Method,5,2506.03163
+FocusVul,1,Method,5,2505.1746
+LLaMA 3.1-8B,1,Method,5,2505.17413
+Power-Law Decay Loss,1,Method,5,2505.169
+SMART,1,Method,5,2505.16646
+Unlearning Shapley,1,Method,5,2505.16147
+CrossRF,1,Method,5,2505.182
+Mobile-Agent-V,1,Method,5,2505.13887
+3-RRR spherical parallel mechanism,1,Method,5,2505.13762
+Lagrangian-based dynamic modeling,1,Method,5,2505.13762
+EPSpatial,1,Method,5,2505.12612
+"SL(2,ℤ_n)",1,Method,5,2505.10392
+Schrier-Coset Graph Propagation,1,Method,5,2505.10392
+SCGP,1,Method,5,2505.10392
+Schreier-coset embeddings,1,Method,5,2505.10392
+ComplexFormer,1,Method,5,2505.10222
+Complex Multi-Head Attention (CMHA),1,Method,5,2505.10222
+"semantic angle differences (ASmn,i)",1,Method,5,2505.10222
+"relative positional encodings (Delta(Pmn),i)",1,Method,5,2505.10222
+RoPE-Transformers,1,Method,5,2505.10222
+ChartFinder,1,Method,5,2505.10043
+proximal policy optimization (PPO),1,Method,5,2505.10027
+Diffusion Transformers (DiT),1,Method,5,2505.05209
+Enhancing Anything Model (EAM),1,Method,5,2505.05209
+Reward-guided sampling Alignment (ReAlign),1,Method,5,2505.04974
+Maximum Likelihood Estimation (MLE),1,Method,5,2505.06288
+Geo Two-Stream Network,1,Method,5,2505.03846
+VGGish,1,Method,5,2505.03846
+Channel Attention-based Fusion,1,Method,5,2505.03846
+Behavior Change Wheel (BCW),1,Method,5,2505.0152
+CDEA,1,Method,5,2505.00977
+XLNet,1,Method,5,2505.00977
+Qwen2.5,1,Method,5,2504.20653
+DeepSeek-V3,1,Method,5,2504.20653
+Mjölnir,1,Method,5,2504.19822
+Anatomy Shaping Extraction module,1,Method,5,2504.18215
+Twins Negotiating Reconstruction U-Net,1,Method,5,2504.18215
+Observation-Confirmation (OC) scheme,1,Method,5,2504.17287
+Generative adversarial network inversion,1,Method,5,2504.18581
+PTMT,1,Method,5,2504.15979
+Vascular-Oriented Attention Mechanism,1,Method,5,2504.14888
+WMKA-Net,1,Method,5,2504.14888
+QLLM,1,Method,5,2504.12961
+TFCAF,1,Method,5,2504.12961
+Pandora,1,Method,5,2504.12734
+Hierarchical Anti-Aesthetic (HAA) framework,1,Method,5,2504.12129
+MDHP-Net,1,Method,5,2504.11867
+Multi-Dimensional Hawkes Process (MDHP),1,Method,5,2504.11867
+VGGish CNN,1,Method,5,2504.11515
+Geo-based two-stream network,1,Method,5,2504.11515
+HistLLM,1,Method,5,2504.1015
+Human-Centered Explainable AI,1,Method,5,2504.13926
+NIST P-521,1,Method,5,2504.09584
+Brainpool-P512,1,Method,5,2504.09584
+Eccfrog512ck2,1,Method,5,2504.09584
+GROUD,1,Method,5,2504.09348
+RouterKT,1,Method,5,2504.08989
+EMO-X,1,Method,5,2504.08718
+Scan-based Global-Local Decoder,1,Method,5,2504.08718
+SGLD,1,Method,5,2504.08718
+PNE-SGAN,1,Method,5,2504.0828
+Curriculum-DPO,1,Method,5,2504.07856
+2D-Curri-DPO,1,Method,5,2504.07856
+Multi-head Attention Mechanism,1,Method,5,2504.10498
+Gradient-Conflict-Elimination Scheme,1,Method,5,2504.05355
+OmniDrive-Agent,1,Method,5,2504.04348
+Omni-L,1,Method,5,2504.04348
+Omni-Q,1,Method,5,2504.04348
+Object Selection Predicates,1,Method,5,2504.03155
+Fourier Sliced-Wasserstein (FSW) embedding,1,Method,5,2504.02544
+PointNet,1,Method,5,2504.02544
+MultiTSF,1,Method,5,2504.02279
+GPT-4o-mini,1,Method,5,2504.02894
+Gemini-1.5,1,Method,5,2504.02894
+GISE-TTT,1,Method,5,2504.00879
+DeepSeek-R1,1,Method,5,2503.24157
+GPT-o3-mini,1,Method,5,2503.24157
+GPT-4.5,1,Method,5,2503.24157
+LLM4FS,1,Method,5,2503.24157
+CaSSLe,1,Method,5,2503.24088
+On-device Sora,1,Method,5,2503.23796
+Linear Proportional Leap (LPL),1,Method,5,2503.23796
+TIS-BiGRU,1,Method,5,2503.23757
+TIS-Informer,1,Method,5,2503.23757
+Graph-based uncertainty-aware self-training (GUST),1,Method,5,2503.22745
+Expectation-Maximization (EM) regularization scheme,1,Method,5,2503.22744
+EM-inspired uncertainty measure,1,Method,5,2503.22744
+ASSM,1,Method,5,2503.22743
+LSS-VC,1,Method,5,2503.20999
+ReverBERT,1,Method,5,2503.20992
+Transformer-based SSM,1,Method,5,2503.20992
+Cross-Modal State-Space Graph Reasoning,1,Method,5,2503.20988
+CSS-GR,1,Method,5,2503.20988
+Segment Anything Model (SAM),1,Method,5,2503.19769
+BEIT-3,1,Method,5,2503.19769
+BiPrompt-SAM,1,Method,5,2503.19769
+EVF-SAM,1,Method,5,2503.19769
+DeepSeek R1,1,Method,5,2503.19948
+OpenAI O1,1,Method,5,2503.19948
+Ebbinghaus Forgetting Curve,1,Method,5,2503.19271
+ResNET50,1,Method,5,2503.19223
+MC-LLaVA,1,Method,5,2503.18854
+Commander-GPT framework,1,Method,5,2503.18681
+Continual Few-shot ReID (CFReID),1,Method,5,2503.18469
+Stable Distribution Alignment (SDA),1,Method,5,2503.18469
+Meta Distribution Alignment (MDA),1,Method,5,2503.18469
+Prototype-based Few-shot Adaptation (PFA),1,Method,5,2503.18469
+CoLaNET (columnar layered network),1,Method,5,2503.17111
+Multi-Prompt Style Interpolation,1,Method,5,2503.16133
+Multi-Prompt Embedding Mixer,1,Method,5,2503.16133
+Adaptive Blending Weights,1,Method,5,2503.16133
+Hierarchical Masked Directional Loss,1,Method,5,2503.16133
+DynSTG-Mamba,1,Method,5,2503.13156
+DF-STGNN,1,Method,5,2503.13156
+STG-Mamba,1,Method,5,2503.13156
+Cross-Graph Relational Knowledge Distillation,1,Method,5,2503.13156
+Cohort-Attention Evaluation Metrics,1,Method,5,2503.12755
+SAUCE,1,Method,5,2503.1453
+LLaVA-v1.5-7B,1,Method,5,2503.1453
+LLaMA-3.2-11B-Vision-Instruct,1,Method,5,2503.1453
+Video State-Space Fusion Module,1,Method,5,2503.12291
+Temporal Masked Directional Loss,1,Method,5,2503.12291
+Temporal Second-Order Loss,1,Method,5,2503.12291
+Eval-PPO,1,Method,5,2503.12098
+DP-GPL,1,Method,5,2503.10544
+PATE framework,1,Method,5,2503.10544
+PRISM,1,Method,5,2503.10177
+CoDAIL,1,Method,5,2503.08883
+Kolmogorov-Arnold Networks (KANs),1,Method,5,2503.06276
+AdvKAN,1,Method,5,2503.06276
+Breakthrough-Defense Surrogate Model (BDSM),1,Method,5,2503.06276
+Global-Local Interaction (GLI),1,Method,5,2503.06276
+Multiple overlapping-echo detachment (MOLED),1,Method,5,2503.03475
+Frequency-aware adaptive selection (FAS),1,Method,5,2503.03475
+Compact FAS (cFAS),1,Method,5,2503.03475
+Feature-aware architecture integration (FAI),1,Method,5,2503.03475
+Dot Binary Convolution,1,Method,5,2503.02662
+Dynamic Softsign function,1,Method,5,2503.02662
+GAT-S,1,Method,5,2503.00786
+Difficulty Mastery Ratio (DMR),1,Method,5,2502.19915
+CNsum,1,Method,5,2502.19723
+Word2Vec,1,Method,5,2502.19607
+GloVe,1,Method,5,2502.19607
+Sentence-BERT,1,Method,5,2502.19607
+Universal Sentence Encoder,1,Method,5,2502.19607
+USE,1,Method,5,2502.19607
+Diffusion Discriminative Module (DDM),1,Method,5,2502.192
+Probability Optimization Module (POM),1,Method,5,2502.192
+Riemann mapping theorem,1,Method,5,2502.19088
+NURBS,1,Method,5,2502.19088
+variable projection (VarPro),1,Method,5,2502.19088
+nonlinear extension of VarPro,1,Method,5,2502.19088
+Early Noise Dropping (END),1,Method,5,2502.18915
+Progressive Local Alignment Network,1,Method,5,2502.18047
+Noise2Score3D,1,Method,5,2502.16826
+Tweedie's formula,1,Method,5,2502.16826
+Covariate Shift Correction C^2A,1,Method,5,2502.12949
+Fibonacci,1,Method,5,2502.11045
+Lucas,1,Method,5,2502.11045
+Pell,1,Method,5,2502.11045
+Jacobsthal,1,Method,5,2502.11045
+Synaptic Resonance,1,Method,5,2502.10699
+Statistical Coherence Alignment,1,Method,5,2502.09815
+CoAtNet,1,Method,5,2502.09782
+Contextual Subspace Manifold Projection,1,Method,5,2502.08026
+Hierarchical manifold projection,1,Method,5,2502.08013
+Non-Euclidean feature separability,1,Method,5,2502.08013
+GraphCompNet,1,Method,5,2502.09652
+Magic 1-For-1 (Magic141),1,Method,5,2502.07701
+ShuffleNetV2,1,Method,5,2502.05988
+C2PSA-TriAtt,1,Method,5,2502.05988
+Inner-FocalerIoU,1,Method,5,2502.05988
+Transformer Flow Approximation Theorem,1,Method,5,2502.05656
+Vertical Federated Learning (VFL),1,Method,5,2502.04243
+FedOptimus,1,Method,5,2502.04243
+FedAvgM,1,Method,5,2502.04243
+SLOWMO,1,Method,5,2502.04243
+Size-dependent Mutual Information (SMI),1,Method,5,2502.04066
+Physics-Informed Neural Networks (PINNs),1,Method,5,2502.03963
+Active Learning-Driven PINNs (AL-PINN),1,Method,5,2502.03963
+Monte Carlo Dropout,1,Method,5,2502.03963
+Hierarchical Entropic Diffusion (HED),1,Method,5,2502.03882
+Structured Token Retention (STR),1,Method,5,2502.03102
+Computational Memory Paths (CMP),1,Method,5,2502.03102
+Symbolic Q-network,1,Method,5,2502.02917
+Sym-Q,1,Method,5,2502.02917
+Probabilistic Latent Encryption Mapping,1,Method,5,2502.0273
+Layered Latent State Reconstruction,1,Method,5,2502.02046
+Gradient-Regularized Latent Space Modulation,1,Method,5,2502.01979
+GRLSM,1,Method,5,2502.01979
+Latent Lexical Projection (LLP),1,Method,5,2502.01882
+Adversarial Estimates,1,Method,5,2502.01558
+Spectral Entanglement Fingerprinting,1,Method,5,2502.01275
+SimGuard,1,Method,5,2502.01272
+Entropy-Synchronized Neural Hashing (ESNH),1,Method,5,2501.18131
+AlphaAdam,1,Method,5,2501.18094
+Context-Aware Semantic Recomposition Mechanism,1,Method,5,2501.17386
+CASRM,1,Method,5,2501.17386
+360Brew V1.0,1,Method,5,2501.1645
+Context-Aware Neural Gradient Mapping,1,Method,5,2501.14936
+GF(q^{m R_k}),1,Method,5,2501.10251
+GF(q^{M}),1,Method,5,2501.10251
+Twin Machine Unlearning (TMU),1,Method,5,2501.08615
+Spreading Factor (SF),1,Method,5,2501.07148
+LoRa MIMO system,1,Method,5,2501.07148
+Nesterov-accelerated Adam,1,Method,5,2501.06922
+LGL-BCI,1,Method,5,2501.05589
+NET-SA,1,Method,5,2501.01187
+Boundary-Category Refinement Network (BCR-Net),1,Method,5,2412.18918
+TextMatch,1,Method,5,2412.18185
+AutoSculpt,1,Method,5,2412.18091
+ClarityEthic,1,Method,5,2412.12848
+EICR,1,Method,5,2412.12808
+DARWIN 1.5,1,Method,5,2412.1197
+LLaMA-7B,1,Method,5,2412.1197
+ResNet1D,1,Method,5,2412.08672
+Inverse Autoregressive Flow (IAF),1,Method,5,2412.08672
+ResNet layers (7-16),1,Method,5,2412.08672
+Phase-Locking Value (PLV),1,Method,5,2412.12149
+Inverse Autoregressive Flow,1,Method,5,2412.07559
+AVATAR,1,Method,5,2412.12145
+DM4Steal,1,Method,5,2411.03364
+3-player Number-on-Forehead model,1,Method,5,2411.02702
+Linial-Mansour-Nisan theorem,1,Method,5,2411.00976
+Razborov-Smolensky result,1,Method,5,2411.00976
+Distilled SPTQ,1,Method,5,2411.00907
+SPTQ Partition,1,Method,5,2411.00907
+DSPTQ,1,Method,5,2411.00907
+asymmetric data Shapley,1,Method,5,2411.00388
+LAMA,1,Method,5,2410.21111
+XLM-RoBERTa,1,Method,5,2410.21337
+Planning-Integrated Forecasting Model,1,Method,5,2410.19639
+PIFM,1,Method,5,2410.19639
+DeMuVGN,1,Method,5,2410.1955
+DDiff,1,Method,5,2410.18492
+information diffusion hypergraphs (IDH),1,Method,5,2410.18492
+Optimized BERT,1,Method,5,2410.13498
+straight-through Gumbel SoftMax estimator,1,Method,5,2410.13498
+SLU,1,Method,5,2410.13263
+LCAT,1,Method,5,2410.13263
+TimeDRL,1,Method,5,2410.12606
+[CLS] token strategy,1,Method,5,2410.12606
+Llama3-8B,1,Method,5,2410.11533
+Llama2-7B,1,Method,5,2410.11533
+Artifact-resilient image translation method,1,Method,5,2410.13896
+Local-global translation framework,1,Method,5,2410.13896
+Noise-resilient feature extraction strategy,1,Method,5,2410.13896
+Ada-K routing,1,Method,5,2410.10456
+Mixtral-8x22B,1,Method,5,2410.10456
+TAFD-Net,1,Method,5,2410.09797
+CatBoost,1,Method,5,2410.09763
+Conformal Training,1,Method,5,2410.09408
+Conformal Adapter,1,Method,5,2410.09408
+C-Adapter,1,Method,5,2410.09408
+TinyEmo,1,Method,5,2410.07062
+Metric Projector,1,Method,5,2410.07062
+ES-Gaussian,1,Method,5,2410.06613
+Visual Error Construction (VEC),1,Method,5,2410.06613
+GraphProt,1,Method,5,2410.04916
+Admissibly rational strategies,1,Method,5,2410.04573
+Graph Interplay,1,Method,5,2410.04061
+GIP,1,Method,5,2410.04061
+Vienna Development Method (VDM),1,Method,5,2410.00071
+Contrastive Unpaired Translation (CUT),1,Method,5,2409.16042
+ScaleFlow++,1,Method,5,2409.12202
+Linear Programming (LP),1,Method,5,2409.09959
+Betti numbers,1,Method,5,2409.09392
+LLaMA 2 7B,1,Method,5,2409.13748
+AP-interreducible,1,Method,5,2409.07035
+Diffusion Generative Steganography,1,Method,5,2409.04878
+PA-B2G,1,Method,5,2409.04878
+SPIRIT,1,Method,5,2409.04838
+Grouped Discrete Representation,1,Method,5,2409.03553
+Organized GDR,1,Method,5,2409.03553
+Codebook PCA,1,Method,5,2409.03553
+InceptionV3,1,Method,5,2409.02584
+Pureformer-VC,1,Method,5,2409.01668
+PixelCNN,1,Method,5,2409.15512
+Mamba-Bytes,1,Method,5,2409.15512
+PxBy embedding technique,1,Method,5,2409.15512
+FC-ES,1,Method,5,2408.13431
+FC-ESER,1,Method,5,2408.13431
+noncoherent joint transmission (JT),1,Method,5,2408.12067
+Decision MetaMamba,1,Method,5,2408.10517
+DMM,1,Method,5,2408.10517
+Implicit Gaussian Splatting,1,Method,5,2408.10041
+IGS,1,Method,5,2408.10041
+Latent Diffusion Models,1,Method,5,2408.02035
+Grid R-CNN,1,Method,5,2407.19184
+Sparse R-CNN,1,Method,5,2407.19184
+Cascade R-CNN,1,Method,5,2407.19184
+Dynamic R-CNN,1,Method,5,2407.19184
+Libra R-CNN,1,Method,5,2407.19184
+GPT4,1,Method,5,2407.17866
+Plantinga and Vegter,1,Method,5,2407.16911
+STransE,1,Method,5,2407.16326
+TransComplEx,1,Method,5,2407.16326
+STransCoRe,1,Method,5,2407.16326
+TransCoRe,1,Method,5,2407.16326
+MFCCs,1,Method,5,2407.14328
+MTPR,1,Method,5,2407.15869
+MPSD,1,Method,5,2407.15869
+Dual Bayesian strategy,1,Method,5,2407.08572
+RB-SQL,1,Method,5,2407.08273
+Convolutional Retentive Network (CRNet),1,Method,5,2407.08047
+SaMoye,1,Method,5,2407.07728
+PRISMA-ScR,1,Method,5,2407.07322
+Ising-type pairwise interaction framework,1,Method,5,2407.07014
+Nominal State Separating Proofs,1,Method,5,2407.05822
+Learn2Diss,1,Method,5,2407.02543
+BoTNet,1,Method,5,2407.01864
+GAM attention mechanism,1,Method,5,2407.01864
+EIoU loss function,1,Method,5,2407.01864
+Grouped Discrete Representation (GDR),1,Method,5,2407.01726
+Network Digital Twin (NDT),1,Method,5,2407.00513
+DP-Weights model,1,Method,5,2406.19507
+RLKD,1,Method,5,2407.00115
+UIO-LLMs,1,Method,5,2406.18173
+Llama2-7b-chat,1,Method,5,2406.18173
+SMG-Learning,1,Method,5,2406.18037
+Parallel Gradient Alignment (PGA),1,Method,5,2406.18037
+Site-Modulated Diffusion (SMD),1,Method,5,2406.18037
+Lamini-1,1,Method,5,2406.17642
+Variational Autoencoders,1,Method,5,2406.17112
+Surrogate condItional Data Extraction,1,Method,5,2406.12752
+SIDE,1,Method,5,2406.12752
+PrivacyGuard,1,Method,5,2406.12736
+Claude3,1,Method,5,2406.11285
+Self-Distillation Prototypes Network,1,Method,5,2406.11169
+SDPN,1,Method,5,2406.11169
+DIPPER,1,Method,5,2406.10892
+YOLOv8x,1,Method,5,2406.10723
+Multi-Relations-aware Graph Neural Network,1,Method,5,2406.11904
+MRGNN,1,Method,5,2406.11904
+WindowMixer,1,Method,5,2406.12921
+Intra-Window-Mixer,1,Method,5,2406.12921
+Inter-Window-Mixer,1,Method,5,2406.12921
+FLea,1,Method,5,2406.09547
+AODFD-R,1,Method,5,2406.07031
+AODFD-A,1,Method,5,2406.07031
+SlowPerception,1,Method,5,2406.058
+CycleFormer,1,Method,5,2405.20042
+PillarHist,1,Method,5,2405.18734
+CoCoGesture,1,Method,5,2405.16874
+audio ControlNet,1,Method,5,2405.16874
+Mixture-of-Gesture-Experts (MoGE) block,1,Method,5,2405.16874
+UltraGist,1,Method,5,2405.16635
+truncated Gaussian distribution,1,Method,5,2405.16078
+FAITH,1,Method,5,2405.133
+GPT-4V,1,Method,5,2407.06194
+DIAN,1,Method,5,2405.12713
+Inter-Consistency Loss (ICL),1,Method,5,2405.1271
+Intra-Diversity Loss (IDL),1,Method,5,2405.1271
+binary quadratic program (BQP),1,Method,5,2405.11359
+Voxel2Pillar feature encoding,1,Method,5,2405.09828
+sparse ConvNeXt,1,Method,5,2405.09828
+GPT 4-Turbo,1,Method,5,2405.06713
+Ernie-Bot 4,1,Method,5,2405.06713
+Reinforced Retriever-Reorder-Responder,1,Method,5,2405.02659
+Kac-Bernstein theorem,1,Method,5,2405.01707
+Cramér theorem,1,Method,5,2405.01707
+Federated Transfer Component Analysis,1,Method,5,2404.17553
+Mode 2(a),1,Method,5,2404.17532
+LLaMA-7b,1,Method,5,2404.15206
+Luby--Rackoff construction,1,Method,5,2404.14648
+Hybrid Soft Actor Critic,1,Method,5,2404.14319
+MHSAC,1,Method,5,2404.14319
+QMIX Mixing Scheme,1,Method,5,2404.14319
+HySSRA,1,Method,5,2404.14319
+OccGaussian,1,Method,5,2404.08449
+Gaussian Feature MLP,1,Method,5,2404.08449
+HCL-MTSAD,1,Method,5,2404.08224
+Band-Attention modulated RetNet,1,Method,5,2404.06022
+BAR-Net,1,Method,5,2404.06022
+Graph-based Vision Transformer (GvT),1,Method,5,2404.04924
+Maximum Mean Discrepancy Q-Learning,1,Method,5,2404.00686
+MMD-QL,1,Method,5,2404.00686
+Wasserstein Q-Learning,1,Method,5,2404.00686
+WQL,1,Method,5,2404.00686
+MMD barycenter,1,Method,5,2404.00686
+Maximum Mean Discrepancy,1,Method,5,2404.00686
+PAC-MDP,1,Method,5,2404.00686
+MMD Q-Network,1,Method,5,2404.00686
+MMD-QN,1,Method,5,2404.00686
+YNetr,1,Method,5,2404.00327
+UNet 3+,1,Method,5,2404.00327
+Swin UNetr,1,Method,5,2404.00327
+nnUNetv2 (2D),1,Method,5,2404.00327
+nnUNetv2 (3D fullres),1,Method,5,2404.00327
+MedNext (2D),1,Method,5,2404.00327
+MedNext (3D fullres),1,Method,5,2404.00327
+YOLOOC,1,Method,5,2404.00257
+3D U-Net architecture,1,Method,5,2404.00234
+Polynomial Distance,1,Method,5,2403.19285
+GPT series,1,Method,5,2403.18969
+Triplet Mamba-UNet,1,Method,5,2403.17701
+VSS Blocks,1,Method,5,2403.17701
+Triplet SSM,1,Method,5,2403.17701
+TM-UNet,1,Method,5,2403.17701
+VM-UNet,1,Method,5,2403.17701
+Concentric Dual Fusion Attention-MIL,1,Method,5,2403.14346
+CDFA-MIL,1,Method,5,2403.14346
+SHAN,1,Method,5,2403.09172
+AADNet,1,Method,5,2403.08384
+Attention Aware Demoireing Network,1,Method,5,2403.08384
+Global attentive flow embedding,1,Method,5,2403.07032
+Conservative DDPG,1,Method,5,2403.05732
+Multi-Tower Multi-Interest Framework,1,Method,5,2403.05122
+FriendNet,1,Method,5,2403.04443
+Guidance Fusion Block (GFB),1,Method,5,2403.04443
+Guidance Attention Block (GAB),1,Method,5,2403.04443
+Kronos,1,Method,5,2403.03655
+DC-Match,1,Method,5,2403.02975
+MCP-SM,1,Method,5,2403.02975
+FuseCountNet,1,Method,5,2403.01932
+Patch-based normalization (PN) blocks,1,Method,5,2402.17561
+eGeMAPS,1,Method,5,2402.17496
+GPT3.5,1,Method,5,2402.17411
+Pythia,1,Method,5,2402.17012
+Chu-ko-nu,1,Method,5,2402.15111
+GenSERP,1,Method,5,2402.14301
+Continual Optimal Policy Regularization,1,Method,5,2402.14228
+GMSK,1,Method,5,2402.10307
+QPSK-modulation,1,Method,5,2402.10307
+SimMLP,1,Method,5,2402.08918
+ChatCell,1,Method,5,2402.08303
+randomized benchmarking (RB),1,Method,5,2402.06952
+simultaneous randomized benchmarking (SRB),1,Method,5,2402.06952
+controlled-NOT (CNOT) gate,1,Method,5,2402.06952
+GS-CLIP,1,Method,5,2402.06198
+Gaussian-Aware Fusion,1,Method,5,2402.06198
+Proxy Re-Encryption (PRE),1,Method,5,2402.05498
+Continuous-Variable Quantum Key Distribution,1,Method,5,2402.0477
+SGD without momentum,1,Method,5,2402.02325
+MinMaxMin Q-learning,1,Method,5,2402.05951
+min-batch MaxMin Q-networks distance,1,Method,5,2402.05951
+Spectrum-guided Feature Enhancement Network,1,Method,5,2402.01269
+SFE-Net,1,Method,5,2402.01269
+Multi-grain Spectrum Attention Mechanism,1,Method,5,2402.01269
+MSAM,1,Method,5,2402.01269
+Consecutive Patch Dropout Module,1,Method,5,2402.01269
+CPDM,1,Method,5,2402.01269
+K_2,1,Method,5,2401.16191
+learning-with-errors (LWE),1,Method,5,2401.16116
+Prompt Learning for FSCIL,1,Method,5,2401.14807
+PL-FSCIL,1,Method,5,2401.14807
+Domain Prompt,1,Method,5,2401.14807
+FSCIL Prompt,1,Method,5,2401.14807
+Neural Radiance Field (NeRF),1,Method,5,2401.09495
+IPR-NeRF,1,Method,5,2401.09495
+CodeLLaMa,1,Method,5,2401.06401
+StarCoder,1,Method,5,2401.06401
+IOACDE,1,Method,5,2401.06337
+FLAGCN,1,Method,5,2401.02723
+GraphFL,1,Method,5,2401.02723
+Plug-in Generative Watermarking (PiGW),1,Method,5,2403.12053
+C-L-A model,1,Method,5,2401.01491
+CNN-LSTM,1,Method,5,2401.01491
+CNN-Attention,1,Method,5,2401.01491
+LSTM-Attention,1,Method,5,2401.01491
+Generalized Benders Decomposition,1,Method,5,2401.00917
+Adaptive Label Finetuning (ALF),1,Method,5,2312.17425
+Adaptive Label Construction (ALC),1,Method,5,2312.17425
+Adaptive Iterative Learning (AIL),1,Method,5,2312.17425
+Tesla FSD V12,1,Method,5,2401.08658
+Motional RoboTaxi 2022,1,Method,5,2401.08658
+perceptual deadband (DB),1,Method,5,2312.15634
+EODECA,1,Method,5,2312.14681
+AS-HRFPN,1,Method,5,2312.11153
+AREAL,1,Method,5,2312.10885
+Enlighten-Your-Voice,1,Method,5,2312.10109
+Semantic Feature Fusion (SFM),1,Method,5,2312.10109
+Planner-Reasoner-Executor-Reflector (PRER),1,Method,5,2312.08926
+MathAgent-M,1,Method,5,2312.08926
+MathAgent-H,1,Method,5,2312.08926
+Paillier,1,Method,5,2312.06987
+PCDP-SGD,1,Method,5,2312.03792
+Dynamic Hierarchical Transformer (DHT),1,Method,5,2312.03038
+FedEmb,1,Method,5,2312.00102
+FD-RAN,1,Method,5,2312.02184
+RMCPNet,1,Method,5,2312.02184
+Constructive Lyapunov Function (CLF),1,Method,5,2311.17297
+Control Barrier Function (CBF),1,Method,5,2311.17297
+CLF-CBF-QP approach,1,Method,5,2311.17297
+OWinCA,1,Method,5,2311.16618
+OWinCANet,1,Method,5,2311.16618
+EfficientNetB4,1,Method,5,2311.16593
+Domain Representation Images,1,Method,5,2311.12589
+SHOT-B*,1,Method,5,2311.12589
+CDTrans,1,Method,5,2311.12589
+Causal Abstraction Segmentation Refiner,1,Method,5,2311.12401
+multi-in-single-out (MISO),1,Method,5,2311.11602
+MISO-VFI,1,Method,5,2311.11602
+CSGNN,1,Method,5,2311.11473
+Number Theoretic Transform (NTT),1,Method,5,2311.09922
+row-homogeneous Chow-decomposition,1,Method,5,2311.0589
+rank revealing row-homogeneous Chow-decompositions,1,Method,5,2311.0589
+Hybrid Task Cascade,1,Method,5,2311.05524
+Random Forest Regressor,1,Method,5,2311.05128
+Gaussian Process Regressor,1,Method,5,2311.05128
+XGeoS-AI,1,Method,5,2311.0494
+X-Klaim,1,Method,5,2311.04126
+Bayesian quadrature policy optimization,1,Method,5,2311.0368
+TokenMotion (TMNet),1,Method,5,2311.02535
+Swin-UNETR,1,Method,5,2310.17974
+CodeFusion,1,Method,5,2310.1768
+FormaT5,1,Method,5,2310.17306
+GloVe model,1,Method,5,2312.03707
+CNN-BiLSTM network,1,Method,5,2312.03707
+Bi-Discriminator Domain Adversarial Network,1,Method,5,2310.13959
+BACG,1,Method,5,2310.13959
+Multinomial Dirichlet Hierarchical Model,1,Method,5,2310.13959
+Fast-BACG,1,Method,5,2310.13959
+AllTogether,1,Method,5,2310.18331
+Llama-2,1,Method,5,2310.18331
+PATCH-CLIP,1,Method,5,2310.12753
+Nicholas Carlini's attack,1,Method,5,2310.08808
+Two-layer ReLU network,1,Method,5,2310.05495
+AlignProp,1,Method,5,2310.03739
+Named Data Networking (NDN),1,Method,5,2310.01594
+cumulative prospect theory (CPT),1,Method,5,2310.00029
+Random Smoothing,1,Method,5,2309.16631
+TeraHertz (THz) frequencies,1,Method,5,2309.13836
+3D-U-SAM,1,Method,5,2309.11015
+Span-BERT,1,Method,5,2309.09075
+Gumbel-Softmax trick,1,Method,5,2309.09075
+Topology-inspired Cross-domain Network (TCN),1,Method,5,2309.06825
+Chained-DP,1,Method,5,2309.07075
+Sparse-SubspaceNet,1,Method,5,2309.05109
+Moggi's Powerset Monad,1,Method,5,2309.04624
+Dual Relation Alignment,1,Method,5,2309.02169
+Vision Compositor,1,Method,5,2309.02169
+Marvel,1,Method,5,2309.01662
+MemoryNet,1,Method,5,2309.01377
+classification Random Forests,1,Method,5,2309.00736
+Bates et al. (2023),1,Method,5,2309.00736
+Prenet penalty,1,Method,5,2308.14388
+mixed Prenet penalty,1,Method,5,2308.14388
+Alpaca,1,Method,5,2308.14306
+Vicuna,1,Method,5,2308.14306
+Flan-T5-XL,1,Method,5,2308.14306
+Flan-T5-XXL,1,Method,5,2308.14306
+T0++,1,Method,5,2308.14306
+U-SEANNet,1,Method,5,2308.14081
+Monte-Carlo Marginalization,1,Method,5,2308.13612
+RTDF-RCNN,1,Method,5,2308.10161
+GPT-3.5-Turbo,1,Method,5,2308.11521
+QRAM model,1,Method,5,2308.08167
+Entropy-Regularized Optimistic-Multiplicative-Weights-Update,1,Method,5,2308.07873
+ER-OMWU,1,Method,5,2308.07873
+AudioFormer,1,Method,5,2308.07221
+CBPUDA,1,Method,5,2308.07017
+contrastive bi-projector (CBP),1,Method,5,2308.07017
+contrastive discrepancy (CD) loss,1,Method,5,2308.07017
+gradient scaling (GS) scheme,1,Method,5,2308.07017
+Lin-Kernighan-Helsgaun (LKH) heuristic,1,Method,5,2308.07347
+Edge Assembly crossover (EAX),1,Method,5,2308.07347
+Mixing Genetic Algorithm (MGA),1,Method,5,2308.07347
+VANYA Model,1,Method,5,2308.06471
+N-BEATS,1,Method,5,2308.06471
+Ho-Kashyap rule,1,Method,5,2308.06221
+WavLM,1,Method,5,2308.05995
+Frequency-Restricted Identity-Agnostic (FRIA) framework,1,Method,5,2308.05983
+DB-SGG,1,Method,5,2308.05286
+DynSGG-MTL,1,Method,5,2308.05274
+Multi-Concept Learning,1,Method,5,2308.04802
+Concept Regularization,1,Method,5,2308.04802
+Balanced Prototypical Memory,1,Method,5,2308.04802
+DP-SimAgg,1,Method,5,2308.00856
+3D Morphable Model,1,Method,5,2308.00462
+Neural Radiance Field,1,Method,5,2308.00462
+Soft Introspective VAE,1,Method,5,2307.12618
+Soft-Intro VAE,1,Method,5,2307.12618
+Attributed regularized VAE,1,Method,5,2307.12618
+Moore-Penrose inverse,1,Method,5,2307.06627
+RICE-N,1,Method,5,2307.06951
+Grover's search algorithm,1,Method,5,2307.04479
+EfficientNetV2,1,Method,5,2307.0398
+IMU2SKELETON network,1,Method,5,2307.03638
+CardiGraphormer,1,Method,5,2307.00859
+Cardinality Preserving Attention,1,Method,5,2307.00859
+Temporal Supervised Knowledge Distillation,1,Method,5,2307.00811
+Conv-LSTM,1,Method,5,2307.00811
+CFDPM,1,Method,5,2306.1702
+PaRUS,1,Method,5,2306.14208
+TextBlob,1,Method,5,2306.14203
+Multinomial Naïve Bayes (MNB),1,Method,5,2306.14203
+Savitzky-Golay filtering,1,Method,5,2307.06377
+adaptive OPTICS clustering,1,Method,5,2306.12859
+IFL-LSTP,1,Method,5,2306.12857
+expectation-maximization (EM) algorithm,1,Method,5,2306.12244
+FedINIBoost,1,Method,5,2306.12088
+FedAVG,1,Method,5,2306.12088
+Moon,1,Method,5,2306.12088
+FedFTG,1,Method,5,2306.12088
+Utility-Orient Needs Paradigm,1,Method,5,2306.09445
+LUT-GCE,1,Method,5,2306.07083
+GCENet,1,Method,5,2306.07083
+NCSN,1,Method,5,2306.07077
+Neural ODEs,1,Method,5,2306.07077
+reconfigurable intelligent surfaces (RIS),1,Method,5,2306.05693
+RIS-FD,1,Method,5,2306.05693
+conditional value-at-risk (CVaR),1,Method,5,2306.05693
+penalty convex-concave programming (PCCP),1,Method,5,2306.05693
+"H_{n,λ}",1,Method,5,2305.1983
+"H_{n,μ}",1,Method,5,2305.1983
+wavelet packet decomposition (WPD),1,Method,5,2306.05281
+MDD,1,Method,5,2306.05281
+DDD,1,Method,5,2306.05281
+2D-Convolutional neural network (2D-CNN),1,Method,5,2306.05281
+Unidirectional Selective Attention (USA),1,Method,5,2305.18022
+GPT-3.5 Turbo,1,Method,5,2305.17353
+BLUEBERT,1,Method,5,2305.17353
+Hybrid-update-based (HUB) optimization strategy,1,Method,5,2305.16823
+BinaryViT,1,Method,5,2305.1473
+DeiT-S,1,Method,5,2305.1473
+SCP-AMP,1,Method,5,2305.12986
+MDANet,1,Method,5,2305.12986
+ResNet50V2,1,Method,5,2305.12844
+ResNet152V2,1,Method,5,2305.12844
+InceptionResNetV2,1,Method,5,2305.12844
+Hellinger Distance,1,Method,5,2305.12736
+Weisfeiler-Lehman (WL) algorithm,1,Method,5,2305.12688
+ProgSG,1,Method,5,2305.10838
+Optimal Sharded Data Parallel,1,Method,5,2305.0994
+OSDP,1,Method,5,2305.0994
+ProxMaP,1,Method,5,2305.05519
+Onset Detection Function (ODF),1,Method,5,2305.05139
+Restricted Frequency Range Spectrogram,1,Method,5,2305.05139
+PELvis Extraction (PELE) module,1,Method,5,2305.04294
+Bayesian Nash Equilibrium,1,Method,5,2305.06924
+SmartConfig Mode,1,Method,5,2304.12041
+hypergraph Laplacian regularization,1,Method,5,2304.11435
+self-weighted tensor Schatten p-norm,1,Method,5,2304.11435
+Buß et al.,1,Method,5,2304.09791
+Rymar et al.,1,Method,5,2304.09791
+LLM-Brain,1,Method,5,2304.09349
+Prisoners' Dilemma,1,Method,5,2304.12234
+Kantian peers,1,Method,5,2304.12234
+Coordinated Vision-Language Retrieval (CoVLR),1,Method,5,2304.07567
+YOLO-Drone,1,Method,5,2304.06925
+Darknet59,1,Method,5,2304.06925
+MSPP-FPN,1,Method,5,2304.06925
+Model-I,1,Method,5,2304.0678
+Model-II,1,Method,5,2304.0678
+Decision Stream Calibration,1,Method,5,2304.04354
+ViT-Calibrator,1,Method,5,2304.04354
+TC-VAE,1,Method,5,2304.04103
+DI-QSDC protocol,1,Method,5,2304.03201
+DI Quantum Dialogue protocol,1,Method,5,2304.03201
+SketchFFusion,1,Method,5,2304.03174
+SCAIR,1,Method,5,2304.08495
+randomly punctured Reed-Solomon codes,1,Method,5,2304.01403
+pFedLA,1,Method,5,2304.01783
+global-local transformer (GLT) module,1,Method,5,2304.00242
+GLT-T,1,Method,5,2304.00242
+GLT-T++,1,Method,5,2304.00242
+sequential RNN-LSTM,1,Method,5,2304.00192
+DC Transformer,1,Method,5,2303.13827
+Blockchain quantum machine learning,1,Method,5,2303.11753
+TB-FLOW,1,Method,5,2303.11668
+FAGLSUD-based FS-ML,1,Method,5,2303.11949
+Multi-objective FAGLSUD-based FS-MLP,1,Method,5,2303.11949
+BBCT,1,Method,5,2303.09184
+Dense Residual U-shaped Network,1,Method,5,2302.10602
+DR-U-Net,1,Method,5,2302.10602
+Spacecraft U-shaped Network,1,Method,5,2302.10602
+SU-Net,1,Method,5,2302.10602
+Two-level viewpoint determination method,1,Method,5,2302.10419
+Sampling-based frontier detection method,1,Method,5,2302.10419
+Adagrad,1,Method,5,2302.09566
+Adadelta,1,Method,5,2302.09566
+RMSprop,1,Method,5,2302.09566
+Nesterov accelerated gradient,1,Method,5,2302.09566
+Adam,1,Method,5,2302.09566
+Nadam,1,Method,5,2302.09566
+AdaMax,1,Method,5,2302.09566
+AMSGrad,1,Method,5,2302.09566
+Informative Multi-View Clustering (IMVC),1,Method,5,2302.08743
+AEIUOrder,1,Method,5,2302.02123
+Alphabet Set Multipliers (ASMs),1,Method,5,2302.0199
+ASM-alphabet aware training,1,Method,5,2302.0199
+context-specific likelihood weighting (CS-LW),1,Method,5,2302.00496
+DC#,1,Method,5,2302.00496
+FO-CS-LW,1,Method,5,2302.00496
+DiceML,1,Method,5,2302.00496
+W2SAT,1,Method,5,2302.00272
+Optimal Weight Coverage (OWC),1,Method,5,2302.00272
+Fairness-aware Cross-Domain Recommendation,1,Method,5,2302.00158
+FairCDR,1,Method,5,2302.00158
+CLIP model,1,Method,5,2301.13591
+Category-Relevant Feature Selection (CRFS),1,Method,5,2301.13337
+PI+ToD,1,Method,5,2301.11168
+Turn-Over Dropout,1,Method,5,2301.11168
+LA-GAN,1,Method,5,2301.13853
+BayesAug,1,Method,5,2301.06657
+Masked Vector Quantization,1,Method,5,2301.06626
+Multiple Hypothese Dropout,1,Method,5,2301.06626
+FNM,1,Method,5,2301.04483
+FMN operators,1,Method,5,2301.04483
+QDec-FP,1,Method,5,2301.01246
+QDec-FPS,1,Method,5,2301.01246
+Contextual Conservative Q-Learning (C-CQL),1,Method,5,2301.01298
+Conservative Q-Learning (CQL),1,Method,5,2301.01298
+State Deviation Correction (SDC),1,Method,5,2301.01298
+ResNet-152v2,1,Method,5,2212.14744
+ResNeXt101,1,Method,5,2212.14744
+SeResNet152,1,Method,5,2212.14744
+DenseNet201,1,Method,5,2212.14744
+TOPSIS,1,Method,5,2301.00693
+Mixed Logit Models,1,Method,5,2301.00666
+OVO,1,Method,5,2212.13766
+OVO-Ti,1,Method,5,2212.13766
+Spatio-Temporal Meta-Graph Learning,1,Method,5,2212.05989
+NFResblock,1,Method,5,2212.05909
+NFResnet,1,Method,5,2212.05909
+NFResnet+,1,Method,5,2212.05909
+2D-πeCM,1,Method,5,2212.05462
+Constrained Intrinsic Motivation (CIM),1,Method,5,2211.15205
+3D Quasi-Recurrent Neural Network,1,Method,5,2211.14811
+QRNN3D,1,Method,5,2211.14811
+CycleGAN watermarking (CycleGANWM),1,Method,5,2211.13737
+AugResNet,1,Method,5,2211.12514
+PointCMC,1,Method,5,2211.12032
+Twin-Space object labeling method,1,Method,5,2211.11188
+Evidence-based Match-status-Aware Gait Recognition,1,Method,5,2211.08007
+Evidential Deep Learning,1,Method,5,2211.08007
+Dempster-Shafer Theory of Evidence,1,Method,5,2211.08007
+MultiCrossViT,1,Method,5,2211.06726
+onlineFGO,1,Method,5,2211.054
+SA2MA,1,Method,5,2211.15411
+GazeCWL,1,Method,5,2211.03073
+Laughter-Splicing based Network (LSN),1,Method,5,2210.16028
+pollsite E2E-V voting protocols,1,Method,5,2210.14833
+Functional Regularization,1,Method,5,2210.12282
+Howey test,1,Method,5,2211.00063
+STformer,1,Method,5,2210.09043
+Causal-Convolution ProbSparse Self-Attention (CPSA),1,Method,5,2210.09043
+"Freedman and Hastings, 2014",1,Method,5,2210.02999
+"Eldar and Harrow, 2017",1,Method,5,2210.02999
+control Lyapunov function (cLf),1,Method,5,2210.02837
+PSVRF,1,Method,5,2210.02731
+AACN-UNet,1,Method,5,2210.00227
+Momentum Gradient Descent,1,Method,5,2209.14086
+H-MixUp,1,Method,5,2209.13912
+Wold-level MixUp,1,Method,5,2209.13912
+Word-level CutMix,1,Method,5,2209.13912
+Manifold MixUp,1,Method,5,2209.13912
+Document-level MixUp,1,Method,5,2209.13912
+FreeSeg,1,Method,5,2209.13558
+Image-Text Similarity Map (ITSM),1,Method,5,2209.13558
+AugAN,1,Method,5,2209.10168
+PolyMPCNet,1,Method,5,2209.09424
+2P-ReLU operator,1,Method,5,2209.09424
+maximin share (MMS),1,Method,5,2209.0633
+MMS allocations,1,Method,5,2209.0633
+EMARL,1,Method,5,2209.04696
+ExtFvAMDS,1,Method,5,2209.04588
+Ensemble Bagged Tree classifier,1,Method,5,2209.04588
+SUPER-Rec,1,Method,5,2209.04154
+DC-GAN,1,Method,5,2209.02847
+AL-STAL,1,Method,5,2208.14856
+Diana,1,Method,5,2208.14602
+Affinity-based reinforcement learning,1,Method,5,2208.14037
+Message franking,1,Method,5,2208.11147
+Perceptual hashing,1,Method,5,2208.11147
+Gupta et al. [2010],1,Method,5,2208.09365
+BrightenNet,1,Method,5,2208.0933
+MTCSNN,1,Method,5,2208.06917
+ResNet-34,1,Method,5,2208.06917
+DyPFL,1,Method,5,2208.06192
+Time-dependent KL discrimination information,1,Method,5,2208.051
+Gödel incompleteness theorems,1,Method,5,2208.04752
+PhyGNNet,1,Method,5,2208.04319
+gi-CycleMLP,1,Method,5,2208.00929
+DeBERTaV3,1,Method,5,2208.00929
+giDeBERTa,1,Method,5,2208.00929
+ResNet3D-18,1,Method,5,2208.00444
+RT-PCR,1,Method,5,2208.00032
+UTel,1,Method,5,2207.13979
+YOLOv2,1,Method,5,2207.13165
+Lattice discrete Fourier transform,1,Method,5,2207.13135
+Pathloss,1,Method,5,2207.11446
+TROVON,1,Method,5,2207.11018
+Devign,1,Method,5,2207.11018
+LSTM-RF,1,Method,5,2207.11018
+soft actor-critic (SAC) algorithm,1,Method,5,2207.10438
+DeltaGAN,1,Method,5,2207.10271
+O(|V|^{2.5} log |V|) algorithm,1,Method,5,2207.09063
+Time-delay reservoir computing (TDRC),1,Method,5,2207.06245
+RUSH,1,Method,5,2207.05127
+PGD attack,1,Method,5,2207.05127
+PoCoformer,1,Method,5,2207.00215
+HADES,1,Method,5,2207.02918
+Q-rMinRank attack,1,Method,5,2206.10898
+Trajectory-based Style Estimation,1,Method,5,2206.10706
+TraSE,1,Method,5,2206.10706
+Bi-stream Generative Model (BGM),1,Method,5,2206.09362
+Constant Curvature Riemannian Manifolds,1,Method,5,2206.08855
+RDGCN,1,Method,5,2206.07665
+SRGCL,1,Method,5,2206.07665
+E2V-SDE,1,Method,5,2206.07578
+Stochastic differential equations (SDE),1,Method,5,2206.07578
+ET-Net,1,Method,5,2206.07578
+Abstract Meaning Representation (AMR),1,Method,5,2206.07328
+Pre-trained Language Model (PLM)-based,1,Method,5,2206.07328
+deep Q-network (DQN),1,Method,5,2206.01663
+finite-horizon dynamic programming (DP),1,Method,5,2206.01663
+HARD-Training,1,Method,5,2206.01542
+BAPAL,1,Method,5,2206.00903
+Immerman and Patnaik PI97,1,Method,5,2206.00371
+DKMSZ18,1,Method,5,2206.00371
+DMVZ18,1,Method,5,2206.00371
+DKMTVZ20,1,Method,5,2206.00371
+DTV21,1,Method,5,2206.00371
+BarringtonM06,1,Method,5,2206.00371
+McKenzieCook,1,Method,5,2206.00371
+Generalizable Risk-Sensitive Policy (GRSP),1,Method,5,2205.15859
+Felder-Silverman learning style model,1,Method,5,2205.14822
+Viterbi algorithm,1,Method,5,2205.13148
+Hidden Markov Model,1,Method,5,2205.13148
+Constraint based Viterbi algorithm,1,Method,5,2205.13148
+Service Requirement Zone (SRZ),1,Method,5,2205.09944
+XSDA-Net,1,Method,5,2205.09943
+LAGr (Label Aligned Graphs),1,Method,5,2205.09607
+Strongly-supervised LAGr,1,Method,5,2205.09607
+Weakly-supervised LAGr,1,Method,5,2205.09607
+POViT,1,Method,5,2205.09045
+Rectified Linear Unit (ReLU),1,Method,5,2205.0657
+Leaky ReLU,1,Method,5,2205.0657
+Sigmoid function,1,Method,5,2205.0657
+Vehicular Visible Light Communication,1,Method,5,2205.06496
+Non-Orthogonal Multiple Access,1,Method,5,2205.06496
+TIPSy-GAN,1,Method,5,2205.0598
+TIPSy,1,Method,5,2205.0598
+TartanVO,1,Method,5,2205.05916
+Masked-LMCTrans,1,Method,5,2205.04044
+M2FSA,1,Method,5,2205.00511
+Stacked Denoising Autoencoder (SDAE),1,Method,5,2205.00511
+Brandes' algorithm,1,Method,5,2205.00162
+Dual-Population Coevolutionary Algorithm,1,Method,5,2204.11575
+Dynamic Pointer Network,1,Method,5,2204.11575
+SMPL human models,1,Method,5,2204.10477
+Cycle Reconstruction Consistency,1,Method,5,2204.10477
+Regional Depth-Inpainting module,1,Method,5,2204.10477
+Dunning-Kruger effect,1,Method,5,2204.04061
+Parallel-Depth Grasp Generation (PDG-Generation),1,Method,5,2204.03874
+Maximum-Similarity-Mixing,1,Method,5,2204.03737
+θ-Similarity Mixing,1,Method,5,2204.03737
+n-times Random Mixing,1,Method,5,2204.03737
+Style-Guided Domain Adaptation (SGDA),1,Method,5,2203.14565
+Style-Selective Normalization (SSN),1,Method,5,2203.14565
+Style-Aware Meta-Learning (SAML),1,Method,5,2203.14565
+XAX-Module,1,Method,5,2203.14358
+Pt /TaOx/Ta memristor device,1,Method,5,2203.14358
+STA-MGCN,1,Method,5,2203.12505
+ERNIE-ViL,1,Method,5,2203.1148
+Oscar,1,Method,5,2203.1148
+UNIMO,1,Method,5,2203.1148
+Hyperbolic Uncertainty Loss,1,Method,5,2203.08881
+HyperUL,1,Method,5,2203.08881
+GCGD,1,Method,5,2203.08345
+GC-W,1,Method,5,2203.08345
+GC-ODE,1,Method,5,2203.08345
+AFFIG,1,Method,5,2203.03091
+Access Class Barring (ACB),1,Method,5,2204.03504
+SMTNet,1,Method,5,2203.01429
+Swin-FFT,1,Method,5,2203.01429
+1-D DHRB,1,Method,5,2203.01429
+EPPAC,1,Method,5,2203.00193
+Graphormer-V2,1,Method,5,2203.06123
+DistAD,1,Method,5,2202.13898
+One-Class Neural Network (OCNN),1,Method,5,2202.13898
+Fedego Lasso,1,Method,5,2202.13448
+Multi-Graph Attention Network,1,Method,5,2203.00007
+HDAM,1,Method,5,2202.09556
+GeomE,1,Method,5,2202.09464
+TGeomE,1,Method,5,2202.09464
+Diffusive computation,1,Method,5,2202.09418
+prismatic quasi-direct-drive (QDD) leg,1,Method,5,2202.0862
+C JTVAE,1,Method,5,2202.06794
+Entropic regularization,1,Method,5,2202.0646
+Simultaneous gradient ascent-descent,1,Method,5,2202.0646
+Particle discretization,1,Method,5,2202.0646
+Entropic mirror descent,1,Method,5,2202.0646
+Entropy-regularized loss,1,Method,5,2202.0646
+Timescale separation,1,Method,5,2202.0646
+Particle dynamics,1,Method,5,2202.0646
+Balanced Domain Classifier,1,Method,5,2202.05941
+STG-GAN,1,Method,5,2202.06727
+Deep-ECG,1,Method,5,2202.05154
+ResNet50-backbone model,1,Method,5,2202.0147
+DPT ViT-Large model,1,Method,5,2202.0147
+boomerang connectivity table (BCT),1,Method,5,2201.10905
+F_{2^{2m}},1,Method,5,2201.10905
+Gold function G(x)=x^{2^t+1},1,Method,5,2201.10905
+F_{2^n},1,Method,5,2201.10905
+Voxel-Pixel Lookup Table (LUT),1,Method,5,2201.08266
+FRA-LSTM,1,Method,5,2201.07606
+Stratified client selection scheme,1,Method,5,2201.05762
+TextRGNN,1,Method,5,2112.1506
+FEMT,1,Method,5,2412.066
+PAMC,1,Method,5,2412.06509
+GazeSeg,1,Method,5,2412.00309
+QUADOL,1,Method,5,2411.1833
+QUADOL+,1,Method,5,2411.1833
+FAMES,1,Method,5,2411.18055
+Homomorphic OPE,1,Method,5,2411.17009
+HOPE,1,Method,5,2411.17009
+IND-OCPA model,1,Method,5,2411.17009
+SAVEnVideo,1,Method,5,2411.16213
+ViT-diffusion model,1,Method,5,2411.15595
+Nadaraya-Watson regression,1,Method,5,2411.11748
+Graph Retention Network,1,Method,5,2411.11259
+GRN,1,Method,5,2411.11259
+Mixing Attention (MixAtt) decoder,1,Method,5,2411.10881
+DilateFormer,1,Method,5,2411.10881
+Depthwise Multi-Kernel (DMK) convolution,1,Method,5,2411.10881
+Context-Aware Fusion (CAF) block,1,Method,5,2411.10881
+Monte Carlo attention,1,Method,5,2411.10881
+D-Flow,1,Method,5,2411.10618
+MobileNetV3-SSD,1,Method,5,2411.07802
+ViTOC,1,Method,5,2411.07265
+Object-aware Captioner,1,Method,5,2411.07265
+Kernel Mean Embedding,1,Method,5,2202.0121
+Neural Indicator Kernel,1,Method,5,2202.0121
+MHSnet,1,Method,5,2201.13392
+Compactness Score (CSUFS),1,Method,5,2201.13194
+Debiased-CAM,1,Method,5,2201.12835
+Mondal's algorithm,1,Method,5,2201.12612
+GX₀,1,Method,5,2112.14102
+R-Miner,1,Method,5,2112.13485
+word QRAM model,1,Method,5,2112.13005
+ODIN,1,Method,5,2112.11226
+Leaded Gradient Method (LGM),1,Method,5,2112.09428
+Explanation Container,1,Method,5,2112.0678
+Information Transmitting Algorithm (ITA),1,Method,5,2112.07363
+CPRAL,1,Method,5,2112.05975
+RGA,1,Method,5,2112.05975
+CLE,1,Method,5,2112.05975
+Channel Whitening,1,Method,5,2112.05958
+Batch Embedded Training (BET),1,Method,5,2112.05958
+Residual Block for SNNs,1,Method,5,2201.07209
+SRM-ResNet104,1,Method,5,2201.07209
+AoI-constrained Multi-Armed Bandit,1,Method,5,2112.02786
+Teacher-Student Consistency Network (TSC-Net),1,Method,5,2112.00729
+Dynamic Enhancement Module (DEM),1,Method,5,2112.00729
+Digital lock-in filtering (DLF),1,Method,5,2111.12884
+Generalized cross-correlation (GCC),1,Method,5,2111.12884
+NASAR-GNN,1,Method,5,2111.11406
+MDS symbol-pair code,1,Method,5,2111.10281
+knowledge enhanced T5,1,Method,5,2111.07658
+TreeMesh,1,Method,5,2111.07613
+CubeTR,1,Method,5,2111.06036
+AraBERTv2-base,1,Method,5,2111.05671
+AraBERTv0.2-large,1,Method,5,2111.05671
+AraELECTRA,1,Method,5,2111.05671
+Büchi automaton,1,Method,5,2110.14824
+Linear Temporal Logic (LTL),1,Method,5,2110.14824
+ConAM,1,Method,5,2110.14369
+NAS-G,1,Method,5,2110.15277
+SFD-INF,1,Method,5,2110.134
+SFD-TINF,1,Method,5,2110.134
+SFD-LBINF,1,Method,5,2110.134
+1/2-Tsallis entropy regularizer,1,Method,5,2110.134
+Sepconv-slomo,1,Method,5,2110.1104
+EDSC,1,Method,5,2110.1104
+InterpolationSLAM,1,Method,5,2110.1104
+Goemans-Williamson algorithm,1,Method,5,2110.08016
+LayoutT-CVAE,1,Method,5,2110.06794
+DeepECMP,1,Method,5,2110.03689
+EigneNail,1,Method,5,2109.15231
+RoBERTa language model,1,Method,5,2109.14927
+Queer epistemology,1,Method,5,2110.09271
+Audiomer,1,Method,5,2109.10252
+Performer Attention,1,Method,5,2109.10252
+BiLinear attention block,1,Method,5,2109.0889
+Exponential Linear Unit (ELU),1,Method,5,2109.0889
+Dynamic Feature Fusion Layer,1,Method,5,2109.0889
+Higher-order Attention Network,1,Method,5,2109.0889
+NLOS photography,1,Method,5,2109.07783
+DynSTGAT,1,Method,5,2109.05491
+SOLS,1,Method,5,2109.05182
+CRMLnet,1,Method,5,2109.04767
+Shapley-Shubik index,1,Method,5,2109.0389
+Banzhaf index,1,Method,5,2109.0389
+WARHOL,1,Method,5,2109.01093
+OARnet,1,Method,5,2108.13987
+UaNet,1,Method,5,2108.13987
+AnatomyNet,1,Method,5,2108.13987
+Multi-Atlas Segmentation (MAS),1,Method,5,2108.13987
+DSFP-GA,1,Method,5,2108.13775
+Spiking Neural Networks (SNN),1,Method,5,2108.13307
+Runtime Neural Architecture (RTNA),1,Method,5,2108.13307
+Earth Mover's Distance algorithm,1,Method,5,2108.09711
+VGG16-RCNN,1,Method,5,2108.08636
+HHGNN,1,Method,5,2108.07574
+m-RevNet,1,Method,5,2108.05862
+Patch-wise Wasserstein AutoEncoder (P-WAE),1,Method,5,2108.03815
+MAF-GNN,1,Method,5,2108.03594
+Multi-adaptive Adjacency Matrices Mechanism,1,Method,5,2108.03594
+Spatiotemporal-flow Modules,1,Method,5,2108.03594
+Inception-V3,1,Method,5,2108.03288
+ResNet50,1,Method,5,2108.03288
+DCGAN,1,Method,5,2108.03288
+CLKD,1,Method,5,2108.03084
+NeuralDP,1,Method,5,2107.14582
+Asynchronous Quorum-Based Methods,1,Method,5,2108.13176
+Cuntz algebra O_2,1,Method,5,2107.1401
+pruning ternary quantization (PTQ),1,Method,5,2107.10998
+Affine Combination Module,1,Method,5,2107.10756
+BART summarization model,1,Method,5,2107.10443
+hypergraph tri-attention network (HGTAN),1,Method,5,2107.14033
+Texture Transfer Block (TTB),1,Method,5,2107.09237
+Semantic Reasoning Block (SRB),1,Method,5,2107.09237
+Fusion Attention Block (FAB),1,Method,5,2107.09237
+K-means algorithm,1,Method,5,2107.04124
+MA2C,1,Method,5,2107.01347
+IA2C,1,Method,5,2107.01347
+ARIMA,1,Method,5,2107.01273
+Credit-assessment Algorithm,1,Method,5,2107.00679
+VideoLightFormer,1,Method,5,2107.00451
+Square Root Factorization,1,Method,5,2106.14565
+Holographic Spectral Multiplexing (HSM),1,Method,5,2106.13896
+spectrally-decomposed Fourier plane,1,Method,5,2106.13896
+SelfKG,1,Method,5,2106.09395
+LPT algorithm,1,Method,5,2106.07501
+Sinkhorn algorithm,1,Method,5,2106.07501
+Fiedler vector,1,Method,5,2106.07501
+Heterogeneous Temperature Parameters,1,Method,5,2106.07172
+T5 transformer,1,Method,5,2106.01072
+RapifXfer Data transfer framework,1,Method,5,2105.14613
+DAGNN,1,Method,5,2105.14428
+Taylor attribution framework,1,Method,5,2105.13841
+SoundFence,1,Method,5,2105.07574
+ResNet101,1,Method,5,2105.09906
+DenseNet121,1,Method,5,2105.09906
+Linear Quadratic Regulator (LQR),1,Method,5,2105.06344
+Proportional-Integral-Derivative (PID),1,Method,5,2105.06344
+VANET,1,Method,5,2105.05751
+Generative Actor-Critic (GAC),1,Method,5,2105.03733
+MMD-entropy regularizer,1,Method,5,2105.03733
+adaptive domain-specific normalization (AdsNorm),1,Method,5,2105.03042
+mel-frequency cepstral coefficients (MFCCs),1,Method,5,2105.00933
+irregular-mapped accumulate-repeat-accumulate (IMARA) codes,1,Method,5,2104.02856
+IMARA-aided IM-BICM-ID scheme,1,Method,5,2104.02856
+relative-position-awareness self-attention (RPSA),1,Method,5,2103.15722
+Gaussian-based self-attention (GSA),1,Method,5,2103.15722
+residual Gaussian self-attention (resGSA),1,Method,5,2103.15722
+SA-Transformer,1,Method,5,2103.15722
+RPSA-Transformer,1,Method,5,2103.15722
+resGSA-Transformer,1,Method,5,2103.15722
+Ano-Graph,1,Method,5,2103.10502
+ALWA,1,Method,5,2103.09488
+Strong small set expanders,1,Method,5,2103.08743
+Weaker small set expanders,1,Method,5,2103.08743
+Fortified unique games,1,Method,5,2103.08743
+VXSlate,1,Method,5,2103.07964
+Self Distillation (SD),1,Method,5,2103.0735
+Sequence Random Network,1,Method,5,2103.0723
+Tanh-Dropout blocks,1,Method,5,2103.0723
+BiLSTM-TDN,1,Method,5,2103.0723
+Active^2 Learning (A^2L),1,Method,5,2103.0649
+Stern's diatomic sequence,1,Method,5,2103.0581
+SeqGAN,1,Method,5,2103.04794
+Attack-GAN,1,Method,5,2103.04794
+VPAN,1,Method,5,2103.04789
+Instance-wise Randomized Smoothing (Insta-RS),1,Method,5,2103.04436
+Insta-RS Train,1,Method,5,2103.04436
+HS-PCL,1,Method,5,2103.04258
+MNSDA,1,Method,5,2103.04258
+heavy-ball momentum (SGDM),1,Method,5,2102.13653
+smooth Lipschitz loss functions,1,Method,5,2102.13653
+Syllable-based CRF constituency parser,1,Method,5,2102.12136
+Pontryagin's maximum principle,1,Method,5,2102.11696
+Stackelberg game,1,Method,5,2102.11696
+SynthTriplet GAN,1,Method,5,2102.08871
+Non-Autoregressive Transformer,1,Method,5,2102.05624
+n-variable s-symmetric Boolean NCFs,1,Method,5,2102.05435
+VeeAlign,1,Method,5,2102.04081
+Bansal et al. 2020,1,Method,5,2102.02765
+GREPING,1,Method,5,2102.00835
+Model-Agnostic Meta-Learning,1,Method,5,2101.12208
+Prototypical Networks,1,Method,5,2101.12208
+low-rank Hankel matrix completion,1,Method,5,2101.08547
+GIID-Net,1,Method,5,2101.07419
+ACRNet,1,Method,5,2101.06618
+F3SNet,1,Method,5,2101.05105
+Multiple-graphs autoencoder MGAE,1,Method,5,2101.04053
+arXiv:2011.10115,1,Method,5,2101.02966
+Lebesgue integrable functions,1,Method,5,2101.02966
+Sequential Convex Programming (SCP),1,Method,5,2101.00202
+RSA,1,Method,5,2012.11072
+CLSWGAN,1,Method,5,2012.10657
+distributed Thompson Sampling,1,Method,5,2012.01789
+Patch-Based Image Reconstruction (PBIR),1,Method,5,2011.14301
+distribution correction (DC) module,1,Method,5,2011.14301
+SepNet,1,Method,5,2011.14285
+MinGb algorithm,1,Method,5,2011.10924
+SG algorithm,1,Method,5,2011.10924
+HHK algorithm,1,Method,5,2011.10924
+COoperative Differential Evolution (CODE),1,Method,5,2011.0678
+sub-linear PCP theorem,1,Method,5,2011.0232
+PPR,1,Method,5,2011.0141
+PPT,1,Method,5,2011.0141
+BMFRepair,1,Method,5,2011.0141
+MSRepair,1,Method,5,2011.0141
+Elastic Weight Consolidation (EWC),1,Method,5,2011.01272
+Gradient Episodic Memory (GEM),1,Method,5,2011.01272
+Activation Map Adaptive Module,1,Method,5,2010.135
+CNN-BiLSTM-CNN,1,Method,5,2010.13285
+ParaphraseSampler,1,Method,5,2010.11869
+Ultra Wide Band (UWB),1,Method,5,2010.10387
+ExpNet,1,Method,5,2010.08391
+Number Ordering,1,Method,5,2010.07606
+Significance Ordering,1,Method,5,2010.07606
+Bayesian optimised 2D-CNN,1,Method,5,2010.03902
+Hyper-Rectangle (H-RTGL),1,Method,5,2011.06388
+Partially Observable Stochastic Games,1,Method,5,2009.13051
+Agent Environment Cycle Games,1,Method,5,2009.13051
+POSGs,1,Method,5,2009.13051
+AEC Games,1,Method,5,2009.13051
+Resource Description Framework (RDF),1,Method,5,2009.10331
+SPARQL,1,Method,5,2009.10331
+Message-Passing Neural Networks,1,Method,5,2009.09919
+Proof-of-Work (PoW),1,Method,5,2009.0948
+Proof-of-Stake (PoS),1,Method,5,2009.0948
+Byzantine Fault-Tolerant (BFT) Protocols,1,Method,5,2009.0948
+CAP-type Impossibility Theorem,1,Method,5,2009.0948
+Answer-Set Programming,1,Method,5,2009.09158
+Inductive Logic Programming,1,Method,5,2009.09158
+Co-inductive Logic Programming,1,Method,5,2009.09158
+Probabilistic Logic Programming,1,Method,5,2009.09158
+Neural-Symbolic Machine Learning,1,Method,5,2009.09158
+RenoSD,1,Method,5,2009.08162
+UIS-RNN,1,Method,5,2009.08162
+Value Decomposition Network,1,Method,5,2009.04197
+QR-MIX,1,Method,5,2009.04197
+Implicit Quantile Network,1,Method,5,2009.04197
+Nash-Equilibrium,1,Method,5,2008.07188
+Z_5-flow,1,Method,5,2008.07152
+Z_4-flow,1,Method,5,2008.07152
+Z_3-flow,1,Method,5,2008.07152
+tock-CSP,1,Method,5,2008.06935
+lexicographic RSMs,1,Method,5,2008.06295
+Stochastic Evidence Lower Bound,1,Method,5,2008.07587
+CovMUNET,1,Method,5,2007.14318
+Hall's Marriage Theorem,1,Method,5,2007.1416
+Mini-Batch K-Means,1,Method,5,2007.13072
+ResNet-20,1,Method,5,2007.12515
+Shape-CD,1,Method,5,2007.11985
+View Alignment GAN,1,Method,5,2007.07066
+VA-GAN,1,Method,5,2007.07066
+unlayered Algebraic Branching Programs,1,Method,5,2007.06819
+layered Algebraic Branching Programs,1,Method,5,2007.06819
+Alpha-Refine,1,Method,5,2007.02024
+DiMP,1,Method,5,2007.02024
+ATOM,1,Method,5,2007.02024
+SiamRPN++,1,Method,5,2007.02024
+RTMDNet,1,Method,5,2007.02024
+ECO,1,Method,5,2007.02024
+Ricci curvature term,1,Method,5,2006.14788
+discrete Forman-Ricci curvature,1,Method,5,2006.14788
+FB-GACN,1,Method,5,2006.13863
+likelihood-free Gaussian process (LFGP),1,Method,5,2006.13456
+Fuzzy C-Means (FCM),1,Method,5,2006.1151
+patching algorithm of Karp,1,Method,5,2006.10804
+Exploration Enhanced Q-learning,1,Method,5,2006.04354
+EE-QL,1,Method,5,2006.04354
+spherical UV unwrapping,1,Method,5,2006.04345
+Equirectangular Z-Buffer images,1,Method,5,2006.04345
+Contextual Hierarchical Attention Network,1,Method,5,2006.01554
+Markov perfect Nash equilibrium,1,Method,5,2005.13527
+InferNet,1,Method,5,2005.12741
+DIP-FAT,1,Method,5,2005.07606
+FD-NOMA,1,Method,5,2005.01384
+optimized FD-NOMA algorithm,1,Method,5,2005.01384
+Rician K Factor Theory,1,Method,5,2004.09889
+CDKGen,1,Method,5,2004.098
+Bhandari and Chakraborty algorithm,1,Method,5,2004.08716
+LiteDenseNet,1,Method,5,2004.08112
+3D two-way dense layer,1,Method,5,2004.08112
+conv-TasNet,1,Method,5,2004.06332
+Pre-Frontal Cortex (PFC),1,Method,5,2004.06213
+Basal Ganglia (BG),1,Method,5,2004.06213
+Temporal Difference (TD) Learning,1,Method,5,2004.06213
+Abstract Task Representations (ATRs),1,Method,5,2004.06213
+PONOWMtk,1,Method,5,2004.06213
+Matern Cluster Process,1,Method,5,2004.01964
+SegNet,1,Method,5,2003.13648
+LinkNet,1,Method,5,2003.13648
+first-order MAML,1,Method,5,2003.11768
+Reptile,1,Method,5,2003.11768
+Dynamic Hierarchical Mimicking,1,Method,5,2003.10739
+STAN-SC,1,Method,5,2003.06107
+"Hosseini et al., 2014",1,Method,5,2003.11517
+Proof of Work,1,Method,5,2003.05067
+Chebyshev polynomial,1,Method,5,2003.01565
+geometric Goppa codes,1,Method,5,2003.00145
+F/ \mathbb{F}_{q},1,Method,5,2003.00145
+\mathbb{F}_{p},1,Method,5,2003.00145
+Schoenberg-Rao distances,1,Method,5,2002.08345
+surface Navier-Stokes equations,1,Method,5,2002.06842
+Darcy friction,1,Method,5,2002.06842
+Attention CNN,1,Method,5,2002.04836
+Luenberger-type Observer,1,Method,5,2003.00835
+meta-domain adaptation (MDA),1,Method,5,2002.04274
+meta-knowledge distillation (MKD),1,Method,5,2002.04274
+KASM,1,Method,5,2002.0335
+High-Dimensional Gaussian mechanism,1,Method,5,2002.02061
+Information Compensation Connection,1,Method,5,2001.08559
+IC-Connection,1,Method,5,2001.08559
+MALT parser,1,Method,5,2001.08279
+LSTM parser,1,Method,5,2001.08279
+Gödel incompleteness theorem,1,Method,5,2001.07592
+Gödel sentence,1,Method,5,2001.07592
+SILNR maximization precoding,1,Method,5,2001.04073
+Bidirectional LSTM,1,Method,5,2001.01717
+FGNNs,1,Method,5,2001.04026
+Conditional Random Field (CRF),1,Method,5,2001.01167
+2-Galois LCD codes,1,Method,5,2208.07708
+Banker-OMD,1,Method,5,2106.08943

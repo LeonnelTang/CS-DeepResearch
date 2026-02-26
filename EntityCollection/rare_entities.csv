@@ -1,0 +1,1743 @@
+name,count,category,specificity_score,paper_id,keep
+SDialog,1,Tool,5,2512.09142,True
+LM-CartSeg,1,Method,5,2512.03449,True
+nnU-Net,1,Method,5,2512.03449,True
+SKM-TEA,1,Dataset,5,2512.03449,True
+OAIZIB-CM,1,Dataset,5,2512.03449,True
+SKI-10,1,Dataset,5,2512.03449,True
+ASSD,1,Metric,5,2512.03449,True
+Frequency-Guided Supervision (FGS),1,Method,5,2511.22505,True
+Discrepancy-Guided Optimization (DGO),1,Method,5,2511.22505,True
+OpenCV,1,Tool,5,2511.21908,True
+AVFakeBench,1,Dataset,5,2511.21251,True
+T3-Tracer,1,Method,5,2511.21237,True
+Viper-F1,1,Method,5,2511.11177,True
+Hybrid State-Space Vision-Language Model,1,Method,5,2511.11177,True
+Liquid State-Space Dynamics,1,Method,5,2511.11177,True
+Token-Grid Correlation Module,1,Method,5,2511.11177,True
+FiLM conditioning,1,Method,5,2511.11177,True
+Open Polymer Prediction Challenge,1,Dataset,5,2511.10893,True
+CephRes-MHNet,1,Method,5,2511.10173,True
+Aariz Cephalometric dataset,1,Dataset,5,2511.10173,True
+AFPF-Net,1,Method,5,2511.10173,True
+StreamPETR,1,Method,5,2511.09347,True
+PETRv2,1,Method,5,2511.09347,True
+FQ-PETR,1,Method,5,2511.09347,True
+DULUT,1,Method,5,2511.09347,True
+QANS,1,Method,5,2511.09347,True
+APEX,1,Method,5,2511.09091,True
+Unitree Go2,1,Tool,5,2511.09091,True
+FAST-CAD,1,Method,5,2511.08887,True
+process reward modeling (PRM),1,Method,5,2511.10687,True
+VocalBench-zh,1,Dataset,5,2511.0823,True
+SciAgent,1,Method,5,2511.08151,True
+GT-Pair,1,Method,5,2511.0145,True
+Reg-DPO,1,Method,5,2511.0145,True
+Multimodal World Model (MWM),1,Method,5,2511.0131,True
+MAPPO,1,Method,5,2511.0131,True
+NVIDIA Tesla V100 SXM2,1,Tool,5,2511.01298,True
+Maestro,1,Method,5,2511.00917,True
+DRIP,1,Method,5,2510.25067,True
+Shared Cognitive Space (SCS),1,Method,5,2510.2403,True
+Cross-Species Trust Calibration (CSTC),1,Method,5,2510.2403,True
+PRISM-Bench,1,Dataset,5,2510.23594,True
+Kernel Temporal Segmentation (KTS),1,Method,5,2510.16781,True
+MIN-Merging,1,Method,5,2510.1789,True
+Code Digital Twin,1,Method,5,2510.16395,True
+DistilBERT,1,Method,5,2510.15843,True
+Face-MakeUpV2,1,Method,5,2510.21775,True
+FaceCaptionMask-1M,1,Dataset,5,2510.21775,True
+Learning to Detect (LoD),1,Method,5,2510.1543,True
+LayoutRL,1,Method,5,2510.15349,True
+Infinity-Doc-400K,1,Dataset,5,2510.15349,True
+Infinity-Parser,1,Method,5,2510.15349,True
+OmniDocBench,1,Dataset,5,2510.15349,True
+olmOCR-Bench,1,Dataset,5,2510.15349,True
+PubTabNet,1,Dataset,5,2510.15349,True
+FinTabNet,1,Dataset,5,2510.15349,True
+AVAR-Net,1,Method,5,2510.1363,True
+Wav2Vec2,1,Method,5,2510.1363,True
+MobileViT,1,Method,5,2510.1363,True
+XD-Violence dataset,1,Dataset,5,2510.1363,True
+FetalMind,1,Method,5,2510.12953,True
+Salient Epistemic Disentanglement (SED),1,Method,5,2510.12953,True
+FetalSigma-1M,1,Dataset,5,2510.12953,True
+GraphBFN,1,Method,5,2510.10211,True
+QM9,1,Dataset,5,2510.10211,True
+ZINC250k,1,Dataset,5,2510.10211,True
+PatMD,1,Method,5,2510.15946,True
+M-TRACE,1,Dataset,5,2510.08567,True
+MATRIX Agent,1,Method,5,2510.08567,True
+Pref-X,1,Dataset,5,2510.08567,True
+Agent-X,1,Benchmark,5,2510.08567,True
+GAIA,1,Benchmark,5,2510.08567,True
+Insertion Hallucination,1,Task,5,2510.08078,True
+Posterior Feature Correction,1,Method,5,2510.08078,True
+FinMR,1,Dataset,5,2510.07852,True
+Feature Pyramid Network (FPN),1,Method,5,2510.07681,True
+NODE21,1,Dataset,5,2510.07681,True
+VinDr-CXR,1,Dataset,5,2510.07681,True
+CheXpert,1,Dataset,5,2510.07681,True
+Matrix Geometric Resampling,1,Method,5,2510.07424,True
+Best-of-Both-Worlds (BOBW),1,Method,5,2510.07424,True
+Native Hybrid Attention (NHA),1,Method,5,2510.07019,True
+Evo-WISVA,1,Method,5,2510.06884,True
+Attention-driven Latent Memory Module,1,Method,5,2510.06884,True
+ConvLSTM,1,Method,5,2510.06884,True
+ISO/IEC 29794-6,1,Standard,5,2510.0617,True
+CUVIRIS,1,Dataset,5,2510.0617,True
+MobileNetV3,1,Method,5,2510.0617,True
+LightIrisNet,1,Method,5,2510.0617,True
+IrisFormer,1,Method,5,2510.0617,True
+OSIRIS,1,Method,5,2510.0617,True
+UBIRIS.v2,1,Dataset,5,2510.0617,True
+PointNSP,1,Method,5,2510.05613,True
+ShapeNet,1,Dataset,5,2510.05613,True
+Chamfer Distance,1,Metric,5,2510.04781,True
+CSP-Aware Entropy,1,Method,5,2510.02855,True
+Probabilistic CSP,1,Method,5,2510.02855,True
+Fisher's exact test,1,Metric,5,2510.02855,True
+Physical ReRAM device,1,Tool,5,2510.02643,True
+Hexapod Driving Simulator,1,Tool,5,2510.01986,True
+RAG-BioQA,1,Method,5,2510.01612,True
+BioBERT,1,Method,5,2510.01612,True
+FAISS,1,Tool,5,2510.01612,True
+ColBERT,1,Method,5,2510.01612,True
+MonoT5,1,Method,5,2510.01612,True
+PubMedQA,1,Dataset,5,2510.01612,True
+SAGE-Music,1,Dataset,5,2510.00395,True
+Stochastic Online Sorting,1,Task,5,2509.26073,True
+Stochastic Online TSP,1,Task,5,2509.26073,True
+PoseDiff,1,Method,5,2509.24591,True
+DREAM dataset,1,Dataset,5,2509.24591,True
+Libero-Object manipulation tasks,1,Dataset,5,2509.24591,True
+Hemorica,1,Dataset,5,2509.22993,True
+MobileViT-XS,1,Method,5,2509.22993,True
+GenFacts,1,Method,5,2509.20936,True
+security semantic ISAC (SS-ISAC),1,Method,5,2509.20835,True
+Task-Dependent Initialization (TDI),1,Method,5,2509.20789,True
+SHARP,1,Method,5,2509.19486,True
+MedEV dataset,1,Dataset,5,2509.1564,True
+Meddict,1,Tool,5,2509.1564,True
+LSTM-ResB-PPO,1,Method,5,2509.15582,True
+LRS2,1,Dataset,5,2509.1488,True
+LRS3,1,Dataset,5,2509.1488,True
+WildVSR,1,Dataset,5,2509.1488,True
+Llama-2-13B,1,Method,5,2509.1488,True
+StableTracker,1,Method,5,2509.14147,True
+AutoCO (Automated Constraint Optimization),1,Method,5,2509.12643,True
+blockchain-aided trustworthy MoE (B-MoE),1,Method,5,2509.12141,True
+SCRITA,1,Tool,5,2509.11402,True
+MVPBench,1,Dataset,5,2509.08022,True
+VIM-GS,1,Method,5,2509.06685,True
+INGRID,1,Method,5,2509.03842,True
+Holographic Knowledge Manifold (HKM),1,Method,5,2509.10518,True
+Llama-3,1,Method,5,2509.10518,True
+Grok-4,1,Method,5,2509.10518,True
+FedAdagrad,1,Method,5,2509.10517,True
+FedAdam,1,Method,5,2509.10517,True
+FedCluster,1,Method,5,2509.10517,True
+MIMIC-IV,1,Dataset,5,2509.10517,True
+SMOTE-Tomek,1,Method,5,2509.10517,True
+LLaMA 3.2 3B,1,Method,5,2509.03054,True
+GPTQ,1,Method,5,2509.03054,True
+PDB4Rec,1,Method,5,2508.20427,True
+BuzzSet v1.0,1,Dataset,5,2508.19762,True
+YOLOv12,1,Method,5,2508.19762,True
+RF-DETR,1,Method,5,2508.19762,True
+BuzzSet version 2.0,1,Dataset,5,2508.19762,True
+ESFP-RM,1,Method,5,2508.18212,True
+ProMSC-MIS,1,Method,5,2508.1792,True
+Insights-on-Graph (IOG),1,Method,5,2509.00054,True
+ERF-BA-TFD+,1,Method,5,2508.17282,True
+DDL-AV Dataset,1,Dataset,5,2508.17282,True
+LastFM,1,Dataset,5,2508.13209,True
+Amazon-Book,1,Dataset,5,2508.13209,True
+MMIF-AMIN,1,Method,5,2508.08679,True
+Invertible Dense Network (IDN),1,Method,5,2508.08679,True
+Chain-of-Alpha,1,Method,5,2508.06312,True
+DSConv,1,Method,5,2508.06147,True
+CROHME,1,Dataset,5,2508.06107,True
+LLMEval-3,1,Tool,5,2508.05452,True
+Conically-Regularised FMOL,1,Method,5,2508.05424,True
+RegionMed-CLIP,1,Method,5,2508.05244,True
+MedRegion-500k,1,Dataset,5,2508.05244,True
+Kane's Logspace algorithm,1,Method,5,2508.04726,True
+4D-PreNet,1,Method,5,2508.03775,True
+Universal Adversarial Augmenter (UAA),1,Method,5,2508.03213,True
+SA-3DGS,1,Method,5,2508.03017,True
+LightGaussian,1,Method,5,2508.03017,True
+AdvBench,1,Dataset,5,2508.02961,True
+Prompt-Injection-Mixed-Techniques-2024,1,Dataset,5,2508.02961,True
+SpeechRole-Data,1,Dataset,5,2508.02013,True
+SpeechRole-Eval,1,Metric,5,2508.02013,True
+SMART-Editor,1,Method,5,2507.23095,True
+Reward-Refine,1,Method,5,2507.23095,True
+RewardDPO,1,Method,5,2507.23095,True
+SMARTEdit-Bench,1,Dataset,5,2507.23095,True
+InstructPix2Pix,1,Method,5,2507.23095,True
+FedCVD++,1,Method,5,2507.22963,True
+Framingham dataset,1,Dataset,5,2507.22963,True
+Adaptive Gated Dual-Branch Attention,1,Method,5,2507.21949,True
+Frequency-Contrast Fusion Network,1,Method,5,2507.21949,True
+LanternNet,1,Method,5,2507.208,True
+Space Rendezvous Laboratory (SLAB),1,Tool,5,2507.20034,True
+Exemplar Med-DETR,1,Method,5,2507.19621,True
+ACL2,1,Tool,5,2507.18567,True
+Synergos-VQA,1,Method,5,2507.17659,True
+Lottery Ticket Hypothesis,1,Task,5,2507.17107,True
+OrthoInsight,1,Method,5,2507.13993,True
+YOLOv9,1,Method,5,2507.13993,True
+Claude-3,1,Method,5,2507.13993,True
+RS-TinyNet,1,Method,5,2507.1312,True
+AI-TOD,1,Dataset,5,2507.1312,True
+DIOR benchmark dataset,1,Dataset,5,2507.1312,True
+Atrous Strip Convolution Network,1,Method,5,2507.12744,True
+Jetson platform,1,Tool,5,2507.12744,True
+Discrete-Variable QKD,1,Method,5,2507.09719,True
+Continuous-Variable QKD,1,Method,5,2507.09719,True
+GoalfyMax,1,Method,5,2507.09497,True
+Model Context Protocol (MCP),1,Method,5,2507.09497,True
+Experience Pack (XP) architecture,1,Method,5,2507.09497,True
+PointVDP,1,Method,5,2507.06618,True
+KT-Net,1,Method,5,2507.05814,True
+IDFREE,1,Method,5,2507.05715,True
+Recall@50,1,Metric,5,2507.05715,True
+NDCG@5,1,Metric,5,2507.05715,True
+NDCG@50,1,Metric,5,2507.05715,True
+Gym-2048,1,Dataset,5,2507.05465,True
+QR-DQN (Quantile Regression DQN),1,Method,5,2507.05465,True
+Horizon-DQN (H-DQN),1,Method,5,2507.05465,True
+SElf-Evolving Distillation (SEED),1,Method,5,2507.0468,True
+Hallucination Elimination Adapter,1,Method,5,2507.0468,True
+LLaVA-1.5,1,Method,5,2507.0468,True
+InternVL2,1,Method,5,2507.0468,True
+POPE-Random,1,Metric,5,2507.0468,True
+Mujoco,1,Tool,5,2506.23036,True
+Size-Based Adaptive Federated Learning,1,Method,5,2506.20685,True
+Mem4Nav,1,Method,5,2506.19433,True
+Touchdown,1,Dataset,5,2506.19433,True
+Map2Seq,1,Dataset,5,2506.19433,True
+EfficientNet-B0,1,Method,5,2506.1933,True
+NMNIST,1,Dataset,5,2507.02901,True
+CIFAR10-DVS,1,Dataset,5,2507.02901,True
+Split CIFAR10,1,Dataset,5,2507.02901,True
+Split CIFAR10-DVS,1,Dataset,5,2507.02901,True
+Transcendental Encoding Conjecture,1,Method,5,2506.18921,True
+PRIMES,1,Task,5,2506.18921,True
+DiffRWKVIR,1,Method,5,2506.14541,True
+Omni-Scale 2D State Evolution,1,Method,5,2506.14541,True
+Chunk-Optimized Flash Processing,1,Method,5,2506.14541,True
+Prior-Guided Efficient Diffusion,1,Method,5,2506.14541,True
+Image Prior Representation (IPR),1,Method,5,2506.14541,True
+Set5,1,Dataset,5,2506.14541,True
+Set14,1,Dataset,5,2506.14541,True
+BSD100,1,Dataset,5,2506.14541,True
+Urban100,1,Dataset,5,2506.14541,True
+Places365,1,Dataset,5,2506.14541,True
+MambaIR/v2,1,Method,5,2506.14541,True
+InceptionTime,1,Method,5,2506.13909,True
+SilentBadDiffusion,1,Method,5,2506.10776,True
+Discrete Cosine Transform,1,Method,5,2506.10776,True
+SHORE,1,Method,5,2506.10487,True
+LTV-15,1,Metric,5,2506.10487,True
+LTV-30,1,Metric,5,2506.10487,True
+LTV-60,1,Metric,5,2506.10487,True
+DTwinSeger,1,Method,5,2506.07943,True
+Seg-DT,1,Dataset,5,2506.07943,True
+BLIP,1,Method,5,2506.07236,True
+BioViL-T,1,Method,5,2506.07236,True
+GLoRIA,1,Method,5,2506.07236,True
+LIDC-IDRI,1,Dataset,5,2506.07236,True
+NLST,1,Dataset,5,2506.07236,True
+MIMIC-CXR,1,Dataset,5,2506.07236,True
+SAP-Bench,1,Dataset,5,2506.07196,True
+MLLM-SAP,1,Method,5,2506.07196,True
+OpenAI-o1,1,Tool,5,2506.07196,True
+QwenVL2.5-72B,1,Tool,5,2506.07196,True
+Claude-3.5-Sonnet,1,Tool,5,2506.07196,True
+GeminiPro2.5,1,Tool,5,2506.07196,True
+GLM-4v,1,Tool,5,2506.07196,True
+AI PsyRoom,1,Method,5,2506.0674,True
+multi-agent PsyRoom A,1,Method,5,2506.0674,True
+EmoPsy,1,Dataset,5,2506.0674,True
+PsyRoom B,1,Method,5,2506.0674,True
+Versatile Diffusion,1,Method,5,2506.06035,True
+Dynamic Context Tuning (DCT),1,Method,5,2506.11092,True
+EECD-Net,1,Method,5,2506.04526,True
+Spike Convolution Unit (SCU),1,Method,5,2506.04526,True
+Continuous Integrate-and-Fire (CIF) neurons,1,Method,5,2506.04526,True
+Gated Attention Transformer (GAT),1,Method,5,2506.04526,True
+CrackVision12K,1,Dataset,5,2506.04526,True
+Hybrid-Segmentor,1,Method,5,2506.04526,True
+QA-HFL,1,Method,5,2506.05411,True
+FedRolex,1,Method,5,2506.05411,True
+MS-YOLO,1,Method,5,2506.03972,True
+WBCDD dataset,1,Dataset,5,2506.03972,True
+Waymo,1,Dataset,5,2506.05404,True
+Autoware Universe,1,Tool,5,2506.05404,True
+ISO/IEC 25019:2023 Quality-in-Use model,1,Tool,5,2506.03507,True
+VAPO framework,1,Method,5,2506.03038,True
+Decoupled GAE,1,Method,5,2506.03038,True
+Switching Tokenizers Method,1,Method,5,2506.00291,True
+ASCEND dataset,1,Dataset,5,2506.00291,True
+PerFormer,1,Method,5,2506.00259,True
+C-MAPSS dataset,1,Dataset,5,2506.00259,True
+PathGene,1,Dataset,5,2506.00096,True
+TCGA-LUAD,1,Dataset,5,2506.00096,True
+LUMION,1,Tool,5,2505.23105,True
+Llama 3.2,1,Method,5,2505.23105,True
+SNS-Bench-VL,1,Dataset,5,2505.23065,True
+LatentMove,1,Method,5,2505.22046,True
+Complex-Human-Videos (CHV),1,Dataset,5,2505.22046,True
+EnsemW2S,1,Method,5,2505.21959,True
+Diffusion-DPO,1,Method,5,2505.21893,True
+DPO-C&M,1,Method,5,2505.21893,True
+CogVideoX-2B,1,Dataset,5,2505.21893,True
+CogVideoX-5B,1,Dataset,5,2505.21893,True
+Wan2.1-1.3B,1,Dataset,5,2505.21893,True
+VBench,1,Metric,5,2505.21893,True
+Mentor3AD,1,Method,5,2505.2142,True
+Voting Module (VM),1,Method,5,2505.2142,True
+MVTec 3D-AD,1,Dataset,5,2505.2142,True
+Eyecandies,1,Dataset,5,2505.2142,True
+HF-VTON,1,Method,5,2505.19638,True
+SAMP-VTONS,1,Dataset,5,2505.19638,True
+VITON-HD,1,Dataset,5,2505.19638,True
+Adversarial Evolution Training (AET),1,Method,5,2506.15685,True
+FocusVul,1,Method,5,2505.1746,True
+LLaMA 3.1-8B,1,Method,5,2505.17413,True
+Power-Law Decay Loss,1,Method,5,2505.169,True
+SMART-Bench,1,Dataset,5,2505.16646,True
+Unlearning Shapley,1,Method,5,2505.16147,True
+CrossRF,1,Method,5,2505.182,True
+UAVSig dataset,1,Dataset,5,2505.182,True
+Mobile-Agent-V,1,Method,5,2505.13887,True
+3-RRR spherical parallel mechanism,1,Method,5,2505.13762,True
+EPSpatial,1,Method,5,2505.12612,True
+KGAlign,1,Tool,5,2505.14714,True
+MoE-CAP,1,Dataset,5,2505.11415,True
+CAP Radar Diagram,1,Tool,5,2505.11415,True
+TCC-Bench,1,Dataset,5,2505.11275,True
+"SL(2,ℤ_n)",1,Method,5,2505.10392,True
+Schrier-Coset Graph Propagation,1,Method,5,2505.10392,True
+Schreier-coset embeddings,1,Method,5,2505.10392,True
+ComplexFormer,1,Method,5,2505.10222,True
+Complex Multi-Head Attention (CMHA),1,Method,5,2505.10222,True
+RoPE-Transformers,1,Method,5,2505.10222,True
+SVHN,1,Dataset,5,2505.1016,True
+ChartFinder,1,Method,5,2505.10043,True
+CRBench,1,Dataset,5,2505.10043,True
+proximal policy optimization (PPO),1,Method,5,2505.10027,True
+RESISC45,1,Dataset,5,2505.10027,True
+Flickr30K,1,Dataset,5,2505.09997,True
+HierarCaps,1,Dataset,5,2505.09997,True
+Blind Super-Resolution (BSR),1,Task,5,2505.05209,True
+Diffusion Transformers (DiT),1,Method,5,2505.05209,True
+Enhancing Anything Model (EAM),1,Method,5,2505.05209,True
+BiHumanML3D,1,Dataset,5,2505.04974,True
+Reward-guided sampling Alignment (ReAlign),1,Method,5,2505.04974,True
+MovieLens-100K,1,Dataset,5,2505.04948,True
+Geo Two-Stream Network,1,Method,5,2505.03846,True
+VGGish,1,Method,5,2505.03846,True
+Behavior Change Wheel (BCW),1,Method,5,2505.0152,True
+XLNet,1,Method,5,2505.00977,True
+ComplexVCoder,1,Tool,5,2504.20653,True
+Qwen2.5,1,Method,5,2504.20653,True
+DeepSeek-V3,1,Method,5,2504.20653,True
+Mjölnir,1,Method,5,2504.19822,True
+ERA5,1,Dataset,5,2504.19822,True
+Anatomy Shaping Extraction module,1,Method,5,2504.18215,True
+Twins Negotiating Reconstruction U-Net,1,Method,5,2504.18215,True
+Observation-Confirmation (OC) scheme,1,Method,5,2504.17287,True
+RBCTest,1,Tool,5,2504.17287,True
+VisiDroid,1,Tool,5,2504.15917,True
+UCF-101,1,Dataset,5,2504.14921,True
+HMDB-51,1,Dataset,5,2504.14921,True
+Vascular-Oriented Attention Mechanism,1,Method,5,2504.14888,True
+WMKA-Net,1,Method,5,2504.14888,True
+DRIVE,1,Dataset,5,2504.14888,True
+STARE,1,Dataset,5,2504.14888,True
+CHASE-DB1,1,Dataset,5,2504.14888,True
+Hierarchical Anti-Aesthetic (HAA) framework,1,Method,5,2504.12129,True
+OBD-II,1,Tool,5,2504.11867,True
+Controller Area Network (CAN),1,Tool,5,2504.11867,True
+MDHP-Net,1,Method,5,2504.11867,True
+Multi-Dimensional Hawkes Process (MDHP),1,Method,5,2504.11867,True
+Sollya,1,Tool,5,2504.11708,True
+VGGish CNN,1,Method,5,2504.11515,True
+HistLLM,1,Method,5,2504.1015,True
+NIST P-521,1,Method,5,2504.09584,True
+Brainpool-P512,1,Method,5,2504.09584,True
+Eccfrog512ck2,1,Method,5,2504.09584,True
+GROUD,1,Method,5,2504.09348,True
+RouterKT,1,Method,5,2504.08989,True
+EMO-X,1,Method,5,2504.08718,True
+Scan-based Global-Local Decoder,1,Method,5,2504.08718,True
+PNE-SGAN,1,Method,5,2504.0828,True
+Curriculum-DPO,1,Method,5,2504.07856,True
+2D-Curri-DPO,1,Method,5,2504.07856,True
+MT-Bench,1,Dataset,5,2504.07856,True
+Vicuna Bench,1,Dataset,5,2504.07856,True
+UltraFeedback,1,Dataset,5,2504.07856,True
+Canadian Longitudinal Study,1,Dataset,5,2504.1227,True
+OmniDrive,1,Dataset,5,2504.04348,True
+OmniDrive-Agent,1,Method,5,2504.04348,True
+Omni-L,1,Method,5,2504.04348,True
+Omni-Q,1,Method,5,2504.04348,True
+DriveLM Q&A benchmark,1,Metric,5,2504.04348,True
+nuScenes open-loop planning,1,Task,5,2504.04348,True
+Fourier Sliced-Wasserstein (FSW) embedding,1,Method,5,2504.02544,True
+PointNet,1,Method,5,2504.02544,True
+MultiTSF,1,Method,5,2504.02279,True
+MultiSensor-Home,1,Dataset,5,2504.02279,True
+MM-Office,1,Dataset,5,2504.02279,True
+GPT-4o-mini,1,Method,5,2504.02894,True
+Gemini-1.5,1,Method,5,2504.02894,True
+GISE-TTT,1,Method,5,2504.00879,True
+DAVIS 2017,1,Dataset,5,2504.00879,True
+VNJPTranslate,1,Tool,5,2504.00339,True
+DeepSeek-R1,1,Method,5,2503.24157,True
+GPT-o3-mini,1,Method,5,2503.24157,True
+GPT-4.5,1,Method,5,2503.24157,True
+LLM4FS,1,Method,5,2503.24157,True
+CaSSLe,1,Method,5,2503.24088,True
+On-device Sora,1,Method,5,2503.23796,True
+Linear Proportional Leap (LPL),1,Method,5,2503.23796,True
+TIS-BiGRU,1,Method,5,2503.23757,True
+TIS-Informer,1,Method,5,2503.23757,True
+Graph-based uncertainty-aware self-training (GUST),1,Method,5,2503.22745,True
+Expectation-Maximization (EM) regularization scheme,1,Method,5,2503.22744,True
+LSS-VC,1,Method,5,2503.20999,True
+ReverBERT,1,Method,5,2503.20992,True
+CSS-GR,1,Method,5,2503.20988,True
+Segment Anything Model (SAM),1,Method,5,2503.19769,True
+BEIT-3,1,Method,5,2503.19769,True
+BiPrompt-SAM,1,Method,5,2503.19769,True
+EVF-SAM,1,Method,5,2503.19769,True
+Endovis17,1,Dataset,5,2503.19769,True
+RefCOCO series,1,Dataset,5,2503.19769,True
+DeepSeek R1,1,Method,5,2503.19948,True
+OpenAI O1,1,Method,5,2503.19948,True
+ImageReward,1,Dataset,5,2503.19948,True
+ImageReward test set,1,Dataset,5,2503.19948,True
+MVHumanNet,1,Dataset,5,2503.19486,True
+ResNET50,1,Method,5,2503.19223,True
+MC-LLaVA,1,Method,5,2503.18854,True
+Commander-GPT framework,1,Method,5,2503.18681,True
+MMSD 2.0,1,Dataset,5,2503.18681,True
+Continual Few-shot ReID (CFReID),1,Method,5,2503.18469,True
+Stable Distribution Alignment (SDA),1,Method,5,2503.18469,True
+Meta Distribution Alignment (MDA),1,Method,5,2503.18469,True
+Prototype-based Few-shot Adaptation (PFA),1,Method,5,2503.18469,True
+CoLaNET (columnar layered network),1,Method,5,2503.17111,True
+MNIST dataset,1,Dataset,5,2503.17111,True
+Multi-Prompt Style Interpolation,1,Method,5,2503.16133,True
+Multi-Prompt Embedding Mixer,1,Method,5,2503.16133,True
+NetSquid,1,Tool,5,2503.1322,True
+DynSTG-Mamba,1,Method,5,2503.13156,True
+DF-STGNN,1,Method,5,2503.13156,True
+STG-Mamba,1,Method,5,2503.13156,True
+Cross-Graph Relational Knowledge Distillation,1,Method,5,2503.13156,True
+KOA-NM,1,Dataset,5,2503.13156,True
+PD-WALK,1,Dataset,5,2503.13156,True
+ATAXIA,1,Dataset,5,2503.13156,True
+Cohort-Attention Evaluation Metrics,1,Method,5,2503.12755,True
+CATSensitivity,1,Metric,5,2503.12755,True
+CATSpecificity,1,Metric,5,2503.12755,True
+LLaVA-v1.5-7B,1,Method,5,2503.1453,True
+LLaMA-3.2-11B-Vision-Instruct,1,Method,5,2503.1453,True
+Video State-Space Fusion Module,1,Method,5,2503.12291,True
+Temporal Masked Directional Loss,1,Method,5,2503.12291,True
+Temporal Second-Order Loss,1,Method,5,2503.12291,True
+DAVIS,1,Dataset,5,2503.12291,True
+Eval-PPO,1,Method,5,2503.12098,True
+PATE framework,1,Method,5,2503.10544,True
+CoDAIL,1,Method,5,2503.08883,True
+Kolmogorov-Arnold Networks (KANs),1,Method,5,2503.06276,True
+AdvKAN,1,Method,5,2503.06276,True
+Breakthrough-Defense Surrogate Model (BDSM),1,Method,5,2503.06276,True
+Global-Local Interaction (GLI),1,Method,5,2503.06276,True
+Multiple overlapping-echo detachment (MOLED),1,Method,5,2503.03475,True
+Frequency-aware adaptive selection (FAS),1,Method,5,2503.03475,True
+Compact FAS (cFAS),1,Method,5,2503.03475,True
+Feature-aware architecture integration (FAI),1,Method,5,2503.03475,True
+Diffusion tensor imaging (DTI),1,Task,5,2503.03475,True
+Dot Binary Convolution,1,Method,5,2503.02662,True
+Dynamic Softsign function,1,Method,5,2503.02662,True
+GATE question-answering framework,1,Tool,5,2503.00781,True
+Difficulty Mastery Ratio (DMR),1,Method,5,2502.19915,True
+THUCNews,1,Dataset,5,2502.19723,True
+Word2Vec,1,Method,5,2502.19607,True
+GloVe,1,Method,5,2502.19607,True
+Sentence-BERT,1,Method,5,2502.19607,True
+Universal Sentence Encoder,1,Method,5,2502.19607,True
+Diffusion Discriminative Module (DDM),1,Method,5,2502.192,True
+Probability Optimization Module (POM),1,Method,5,2502.192,True
+NURBS,1,Method,5,2502.19088,True
+variable projection (VarPro),1,Method,5,2502.19088,True
+Early Noise Dropping (END),1,Method,5,2502.18915,True
+Progressive Local Alignment Network,1,Method,5,2502.18047,True
+Noise2Score3D,1,Method,5,2502.16826,True
+Covariate Shift Correction C^2A,1,Method,5,2502.12949,True
+LegalCore,1,Dataset,5,2502.12509,True
+Synaptic Resonance,1,Method,5,2502.10699,True
+LockBit 3.0,1,Dataset,5,2502.09833,True
+BlackCat,1,Dataset,5,2502.09833,True
+Statistical Coherence Alignment,1,Method,5,2502.09815,True
+CoAtNet,1,Method,5,2502.09782,True
+Contextual Subspace Manifold Projection,1,Method,5,2502.08026,True
+GraphCompNet,1,Method,5,2502.09652,True
+Magic 1-For-1 (Magic141),1,Method,5,2502.07701,True
+ShuffleNetV2,1,Method,5,2502.05988,True
+C2PSA-TriAtt,1,Method,5,2502.05988,True
+Inner-FocalerIoU,1,Method,5,2502.05988,True
+Transformer Flow Approximation Theorem,1,Method,5,2502.05656,True
+Vertical Federated Learning (VFL),1,Method,5,2502.04243,True
+FedOptimus,1,Method,5,2502.04243,True
+FedAvgM,1,Method,5,2502.04243,True
+SLOWMO,1,Method,5,2502.04243,True
+FMNIST,1,Dataset,5,2502.04243,True
+Size-dependent Mutual Information (SMI),1,Method,5,2502.04066,True
+Physics-Informed Neural Networks (PINNs),1,Method,5,2502.03963,True
+Active Learning-Driven PINNs (AL-PINN),1,Method,5,2502.03963,True
+Monte Carlo Dropout,1,Method,5,2502.03963,True
+WeatherBench,1,Dataset,5,2502.03963,True
+Hierarchical Entropic Diffusion (HED),1,Method,5,2502.03882,True
+Structured Token Retention (STR),1,Method,5,2502.03102,True
+Computational Memory Paths (CMP),1,Method,5,2502.03102,True
+Symbolic Q-network,1,Method,5,2502.02917,True
+SSDNC benchmark,1,Dataset,5,2502.02917,True
+Probabilistic Latent Encryption Mapping,1,Method,5,2502.0273,True
+Layered Latent State Reconstruction,1,Method,5,2502.02046,True
+Gradient-Regularized Latent Space Modulation,1,Method,5,2502.01979,True
+Latent Lexical Projection (LLP),1,Method,5,2502.01882,True
+Spectral Entanglement Fingerprinting,1,Method,5,2502.01275,True
+SimGuard,1,Method,5,2502.01272,True
+RLlib,1,Tool,5,2502.01129,True
+Entropy-Synchronized Neural Hashing (ESNH),1,Method,5,2501.18131,True
+AlphaAdam,1,Method,5,2501.18094,True
+Llama-7B,1,Dataset,5,2501.18094,True
+Context-Aware Semantic Recomposition Mechanism,1,Method,5,2501.17386,True
+360Brew V1.0,1,Method,5,2501.1645,True
+WMT19 dataset,1,Dataset,5,2501.17187,True
+Context-Aware Neural Gradient Mapping,1,Method,5,2501.14936,True
+LockBit,1,Dataset,5,2501.12811,True
+REvil,1,Dataset,5,2501.12811,True
+BlackMatter,1,Dataset,5,2501.12811,True
+Twin Machine Unlearning (TMU),1,Method,5,2501.08615,True
+Roboflow dataset,1,Dataset,5,2501.06922,True
+Nesterov-accelerated Adam,1,Method,5,2501.06922,True
+Intel Tofino programmable switch,1,Tool,5,2501.01187,True
+Fréchet Inception Distance,1,Metric,5,2501.01156,True
+CLIP Score,1,Metric,5,2501.01156,True
+Boundary-Category Refinement Network (BCR-Net),1,Method,5,2412.18918,True
+TextMatch,1,Method,5,2412.18185,True
+AutoSculpt,1,Method,5,2412.18091,True
+ClarityEthic,1,Method,5,2412.12848,True
+Fundus fluorescein angiography (FFA),1,Task,5,2412.12778,True
+DARWIN 1.5,1,Method,5,2412.1197,True
+LLaMA-7B,1,Method,5,2412.1197,True
+ResNet1D,1,Method,5,2412.08672,True
+Inverse Autoregressive Flow (IAF),1,Method,5,2412.08672,True
+Phase-Locking Value (PLV),1,Method,5,2412.12149,True
+Inverse Autoregressive Flow,1,Method,5,2412.07559,True
+AVATAR,1,Method,5,2412.12145,True
+DM4Steal,1,Method,5,2411.03364,True
+3-player Number-on-Forehead model,1,Method,5,2411.02702,True
+Linial-Mansour-Nisan theorem,1,Method,5,2411.00976,True
+Razborov-Smolensky result,1,Method,5,2411.00976,True
+Distilled SPTQ,1,Method,5,2411.00907,True
+SPTQ Partition,1,Method,5,2411.00907,True
+DSPTQ,1,Method,5,2411.00907,True
+LAMA,1,Method,5,2410.21111,True
+XLM-RoBERTa,1,Method,5,2410.21337,True
+Planning-Integrated Forecasting Model,1,Method,5,2410.19639,True
+PIFM,1,Method,5,2410.19639,True
+DeMuVGN,1,Method,5,2410.1955,True
+DDiff,1,Method,5,2410.18492,True
+information diffusion hypergraphs (IDH),1,Method,5,2410.18492,True
+Optimized BERT,1,Method,5,2410.13498,True
+straight-through Gumbel SoftMax estimator,1,Method,5,2410.13498,True
+TimeDRL,1,Method,5,2410.12606,True
+Gemini-pro,1,Tool,5,2410.11701,True
+Llama3-8B,1,Method,5,2410.11533,True
+Llama2-7B,1,Method,5,2410.11533,True
+Ada-K routing,1,Method,5,2410.10456,True
+Mixtral-8x22B,1,Method,5,2410.10456,True
+LinkedIn Tango,1,Task,5,2501.00002,True
+TAFD-Net,1,Method,5,2410.09797,True
+CatBoost,1,Method,5,2410.09763,True
+C-Adapter,1,Method,5,2410.09408,True
+TinyEmo,1,Method,5,2410.07062,True
+ES-Gaussian,1,Method,5,2410.06613,True
+Visual Error Construction (VEC),1,Method,5,2410.06613,True
+Dreame-SR dataset,1,Dataset,5,2410.06613,True
+GraphProt,1,Method,5,2410.04916,True
+Hugging Face transformers library,1,Tool,5,2410.05305,True
+Vienna Development Method (VDM),1,Method,5,2410.00071,True
+VDM-SL,1,Tool,5,2410.00071,True
+VDM++,1,Tool,5,2410.00071,True
+VDM-RT,1,Tool,5,2410.00071,True
+VDMTools,1,Tool,5,2410.00071,True
+Crescendo,1,Tool,5,2410.00071,True
+Symphony,1,Tool,5,2410.00071,True
+INTO-CPS chain,1,Tool,5,2410.00071,True
+ViennaTalk,1,Tool,5,2410.00071,True
+Contrastive Unpaired Translation (CUT),1,Method,5,2409.16042,True
+GTA5 dataset,1,Dataset,5,2409.16042,True
+ScaleFlow++,1,Method,5,2409.12202,True
+TheraGen,1,Tool,5,2409.13748,True
+LLaMA 2 7B,1,Method,5,2409.13748,True
+Cora,1,Dataset,5,2409.07725,True
+Citeseer,1,Dataset,5,2409.07725,True
+Re-DocRED,1,Dataset,5,2409.13717,True
+DocRED,1,Dataset,5,2409.13717,True
+Diffusion Generative Steganography,1,Method,5,2409.04878,True
+SPIRIT,1,Method,5,2409.04838,True
+Codebook PCA,1,Method,5,2409.03553,True
+InceptionV3,1,Method,5,2409.02584,True
+Pureformer-VC,1,Method,5,2409.01668,True
+PixelCNN,1,Method,5,2409.15512,True
+Mamba-Bytes,1,Method,5,2409.15512,True
+PixelBytes Pok{é}mon dataset,1,Dataset,5,2409.15512,True
+DeepXDE framework,1,Tool,5,2409.00651,True
+Decision MetaMamba,1,Method,5,2408.10517,True
+Implicit Gaussian Splatting,1,Method,5,2408.10041,True
+QEDCartographer,1,Tool,5,2408.09237,True
+CoqGym,1,Dataset,5,2408.09237,True
+Proverbot9001,1,Tool,5,2408.09237,True
+Grid R-CNN,1,Method,5,2407.19184,True
+Sparse R-CNN,1,Method,5,2407.19184,True
+Cascade R-CNN,1,Method,5,2407.19184,True
+Dynamic R-CNN,1,Method,5,2407.19184,True
+Libra R-CNN,1,Method,5,2407.19184,True
+GPT4,1,Method,5,2407.17866,True
+STransE,1,Method,5,2407.16326,True
+TransComplEx,1,Method,5,2407.16326,True
+STransCoRe,1,Method,5,2407.16326,True
+TransCoRe,1,Method,5,2407.16326,True
+CoSAm,1,Dataset,5,2407.14328,True
+MFCCs,1,Method,5,2407.14328,True
+Skeleton-based HAR (S-HAR),1,Task,5,2407.08572,True
+HDM05,1,Dataset,5,2407.08572,True
+NTU 60,1,Dataset,5,2407.08572,True
+RB-SQL,1,Method,5,2407.08273,True
+BIRD,1,Dataset,5,2407.08273,True
+Convolutional Retentive Network (CRNet),1,Method,5,2407.08047,True
+CARLA Simulator,1,Tool,5,2407.07684,True
+PRISMA-ScR,1,Method,5,2407.07322,True
+sPyNNaker,1,Tool,5,2407.07014,True
+Nominal State Separating Proofs,1,Method,5,2407.05822,True
+StmtTree,1,Tool,5,2407.05652,True
+Learn2Diss,1,Method,5,2407.02543,True
+BoTNet,1,Method,5,2407.01864,True
+GAM attention mechanism,1,Method,5,2407.01864,True
+EIoU loss function,1,Method,5,2407.01864,True
+Grouped Discrete Representation (GDR),1,Method,5,2407.01726,True
+DSRL benchmark,1,Dataset,5,2407.00741,True
+Network Digital Twin (NDT),1,Method,5,2407.00513,True
+DP-Weights model,1,Method,5,2406.19507,True
+UIO-LLMs,1,Method,5,2406.18173,True
+Llama2-7b-chat,1,Method,5,2406.18173,True
+SMG-Learning,1,Method,5,2406.18037,True
+Parallel Gradient Alignment (PGA),1,Method,5,2406.18037,True
+Site-Modulated Diffusion (SMD),1,Method,5,2406.18037,True
+Lamini-1,1,Method,5,2406.17642,True
+WHU-Hi-LongKou,1,Dataset,5,2406.1408,True
+WHU-Hi-HanChuan,1,Dataset,5,2406.1408,True
+WHU-Hi-HongHu,1,Dataset,5,2406.1408,True
+GASCom,1,Conference,5,2406.14588,True
+Optima-Mode,1,Dataset,5,2406.13558,True
+CelebA dataset,1,Dataset,5,2406.12752,True
+PrivacyGuard,1,Method,5,2406.12736,True
+Claude3,1,Method,5,2406.11285,True
+Self-Distillation Prototypes Network,1,Method,5,2406.11169,True
+VoxCeleb1,1,Dataset,5,2406.11169,True
+VoxCeleb1-O,1,Dataset,5,2406.11169,True
+VoxCeleb1-E,1,Dataset,5,2406.11169,True
+VoxCeleb1-H,1,Dataset,5,2406.11169,True
+DIPPER,1,Method,5,2406.10892,True
+YOLOv8x,1,Method,5,2406.10723,True
+Multi-Relations-aware Graph Neural Network,1,Method,5,2406.11904,True
+WindowMixer,1,Method,5,2406.12921,True
+Intra-Window-Mixer,1,Method,5,2406.12921,True
+Inter-Window-Mixer,1,Method,5,2406.12921,True
+FLea,1,Method,5,2406.09547,True
+AODFD-R,1,Method,5,2406.07031,True
+AODFD-A,1,Method,5,2406.07031,True
+SlowPerception,1,Method,5,2406.058,True
+Empathetic-Dialogues,1,Dataset,5,2406.02642,True
+EmpatheticIntent,1,Dataset,5,2406.02642,True
+GoEmotions,1,Dataset,5,2406.02642,True
+CycleFormer,1,Method,5,2405.20042,True
+TSP-50,1,Dataset,5,2405.20042,True
+TSP-500,1,Dataset,5,2405.20042,True
+PillarHist,1,Method,5,2405.18734,True
+CoCoGesture,1,Method,5,2405.16874,True
+GES-X,1,Dataset,5,2405.16874,True
+audio ControlNet,1,Method,5,2405.16874,True
+Mixture-of-Gesture-Experts (MoGE) block,1,Method,5,2405.16874,True
+UltraGist,1,Method,5,2405.16635,True
+GPT-4V,1,Method,5,2407.06194,True
+Inter-Consistency Loss (ICL),1,Method,5,2405.1271,True
+Intra-Diversity Loss (IDL),1,Method,5,2405.1271,True
+MSVD,1,Dataset,5,2405.1271,True
+DiDeMo,1,Dataset,5,2405.1271,True
+LSMDC,1,Dataset,5,2405.1271,True
+ActivityNet,1,Dataset,5,2405.1271,True
+Voxel2Pillar feature encoding,1,Method,5,2405.09828,True
+sparse ConvNeXt,1,Method,5,2405.09828,True
+Waymo Open Dataset,1,Dataset,5,2405.09828,True
+GPT 4-Turbo,1,Method,5,2405.06713,True
+Ernie-Bot 4,1,Method,5,2405.06713,True
+Reinforced Retriever-Reorder-Responder,1,Method,5,2405.02659,True
+Kac-Bernstein theorem,1,Method,5,2405.01707,True
+Cramér theorem,1,Method,5,2405.01707,True
+Federated Transfer Component Analysis,1,Method,5,2404.17553,True
+LLaMA-7b,1,Method,5,2404.15206,True
+Luby--Rackoff construction,1,Method,5,2404.14648,True
+Hybrid Soft Actor Critic,1,Method,5,2404.14319,True
+QMIX Mixing Scheme,1,Method,5,2404.14319,True
+HySSRA,1,Method,5,2404.14319,True
+OccGaussian,1,Method,5,2404.08449,True
+HCL-MTSAD,1,Method,5,2404.08224,True
+Band-Attention modulated RetNet,1,Method,5,2404.06022,True
+BAR-Net,1,Method,5,2404.06022,True
+Graph-based Vision Transformer (GvT),1,Method,5,2404.04924,True
+Sketchfab Testset,1,Dataset,5,2404.01112,True
+SCUT Dataset,1,Dataset,5,2404.01112,True
+Maximum Mean Discrepancy Q-Learning,1,Method,5,2404.00686,True
+MMD-QL,1,Method,5,2404.00686,True
+Wasserstein Q-Learning,1,Method,5,2404.00686,True
+MMD barycenter,1,Method,5,2404.00686,True
+Maximum Mean Discrepancy,1,Method,5,2404.00686,True
+PAC-MDP,1,Method,5,2404.00686,True
+MMD Q-Network,1,Method,5,2404.00686,True
+YNetr,1,Method,5,2404.00327,True
+UNet 3+,1,Method,5,2404.00327,True
+Swin UNetr,1,Method,5,2404.00327,True
+nnUNetv2 (2D),1,Method,5,2404.00327,True
+nnUNetv2 (3D fullres),1,Method,5,2404.00327,True
+MedNext (2D),1,Method,5,2404.00327,True
+MedNext (3D fullres),1,Method,5,2404.00327,True
+YOLOOC,1,Method,5,2404.00257,True
+GPT series,1,Method,5,2403.18969,True
+Triplet Mamba-UNet,1,Method,5,2403.17701,True
+ISIC17,1,Dataset,5,2403.17701,True
+ISIC18,1,Dataset,5,2403.17701,True
+CVC-300,1,Dataset,5,2403.17701,True
+CVC-ClinicDB,1,Dataset,5,2403.17701,True
+Kvasir-SEG,1,Dataset,5,2403.17701,True
+CVC-ColonDB,1,Dataset,5,2403.17701,True
+Kvasir-Instrument,1,Dataset,5,2403.17701,True
+TM-UNet,1,Method,5,2403.17701,True
+VM-UNet,1,Method,5,2403.17701,True
+Concentric Dual Fusion Attention-MIL,1,Method,5,2403.14346,True
+CDFA-MIL,1,Method,5,2403.14346,True
+Camelyon16,1,Dataset,5,2403.14346,True
+TCGA-NSCLC,1,Dataset,5,2403.14346,True
+AADNet,1,Method,5,2403.08384,True
+Attention Aware Demoireing Network,1,Method,5,2403.08384,True
+StarFlow,1,Tool,5,2403.07032,True
+Conservative DDPG,1,Method,5,2403.05732,True
+FriendNet,1,Method,5,2403.04443,True
+Guidance Fusion Block (GFB),1,Method,5,2403.04443,True
+Guidance Attention Block (GAB),1,Method,5,2403.04443,True
+OpenAI gym,1,Dataset,5,2403.04162,True
+LODB dataset,1,Dataset,5,2403.0374,True
+Kronos,1,Method,5,2403.03655,True
+Speeding Dumbo,1,Tool,5,2403.03655,True
+Hotstuff,1,Tool,5,2403.03655,True
+DC-Match,1,Method,5,2403.02975,True
+MCP-SM,1,Method,5,2403.02975,True
+QQP,1,Dataset,5,2403.02975,True
+MRPC,1,Dataset,5,2403.02975,True
+Medical-SM,1,Dataset,5,2403.02975,True
+MQ2Q,1,Dataset,5,2403.02975,True
+XNLI,1,Dataset,5,2403.02975,True
+DareFightingICE Sound Design Competition,1,Task,5,2403.02687,True
+DareFightingICE AI Competition,1,Task,5,2403.02687,True
+NeonTreeCount,1,Dataset,5,2403.01932,True
+FuseCountNet,1,Method,5,2403.01932,True
+MIDV-2020,1,Dataset,5,2403.00573,True
+L3i-ID,1,Dataset,5,2403.00573,True
+Patch-based normalization (PN) blocks,1,Method,5,2402.17561,True
+iHarmony4,1,Dataset,5,2402.17561,True
+FFHQ,1,Dataset,5,2402.17561,True
+EMOVOME,1,Dataset,5,2402.17496,True
+eGeMAPS,1,Method,5,2402.17496,True
+GPT3.5,1,Method,5,2402.17411,True
+Pythia,1,Method,5,2402.17012,True
+GenSERP,1,Method,5,2402.14301,True
+Continual Optimal Policy Regularization,1,Method,5,2402.14228,True
+Mip-NeRF360,1,Dataset,5,2402.13827,True
+SimMLP,1,Method,5,2402.08918,True
+ChatCell,1,Method,5,2402.08303,True
+controlled-NOT (CNOT) gate,1,Method,5,2402.06952,True
+GS-CLIP,1,Method,5,2402.06198,True
+Gaussian-Aware Fusion,1,Method,5,2402.06198,True
+IPFS,1,Tool,5,2402.05498,True
+Proxy Re-Encryption (PRE),1,Method,5,2402.05498,True
+Continuous-Variable Quantum Key Distribution,1,Method,5,2402.0477,True
+MinMaxMin Q-learning,1,Method,5,2402.05951,True
+Spectrum-guided Feature Enhancement Network,1,Method,5,2402.01269,True
+SFE-Net,1,Method,5,2402.01269,True
+Multi-grain Spectrum Attention Mechanism,1,Method,5,2402.01269,True
+Consecutive Patch Dropout Module,1,Method,5,2402.01269,True
+learning-with-errors (LWE),1,Method,5,2401.16116,True
+BackdoorBench,1,Tool,5,2401.15002,True
+Prompt Learning for FSCIL,1,Method,5,2401.14807,True
+CUB-200,1,Dataset,5,2401.14807,True
+SCORPION,1,Tool,5,2401.12594,True
+STM32H7 microcontroller,1,Tool,5,2401.11983,True
+Neural Radiance Field (NeRF),1,Method,5,2401.09495,True
+IPR-NeRF,1,Method,5,2401.09495,True
+DevEval,1,Dataset,5,2401.06401,True
+CodeLLaMa,1,Method,5,2401.06401,True
+StarCoder,1,Method,5,2401.06401,True
+FLAGCN,1,Method,5,2401.02723,True
+GraphFL,1,Method,5,2401.02723,True
+Tactile Signature System,1,Tool,5,2401.04126,True
+Plug-in Generative Watermarking (PiGW),1,Method,5,2403.12053,True
+CNN-LSTM,1,Method,5,2401.01491,True
+CNN-Attention,1,Method,5,2401.01491,True
+LSTM-Attention,1,Method,5,2401.01491,True
+Generalized Benders Decomposition,1,Method,5,2401.00917,True
+Gurobi,1,Tool,5,2401.00917,True
+Adaptive Label Finetuning (ALF),1,Method,5,2312.17425,True
+Adaptive Label Construction (ALC),1,Method,5,2312.17425,True
+Adaptive Iterative Learning (AIL),1,Method,5,2312.17425,True
+Tesla FSD V12,1,Method,5,2401.08658,True
+Motional RoboTaxi 2022,1,Method,5,2401.08658,True
+EODECA,1,Method,5,2312.14681,True
+Fashion MNIST,1,Dataset,5,2312.14681,True
+MODEVAR 2024,1,Task,5,2402.15511,True
+AS-HRFPN,1,Method,5,2312.11153,True
+MSRA-TD500,1,Dataset,5,2312.11153,True
+ICDAR2017MLT,1,Dataset,5,2312.11153,True
+ICDAR2015,1,Dataset,5,2312.11153,True
+Enlighten-Your-Voice,1,Method,5,2312.10109,True
+Semantic Feature Fusion (SFM),1,Method,5,2312.10109,True
+Planner-Reasoner-Executor-Reflector (PRER),1,Method,5,2312.08926,True
+MathAgent-M,1,Method,5,2312.08926,True
+MathAgent-H,1,Method,5,2312.08926,True
+miniF2F,1,Dataset,5,2312.08926,True
+MATH,1,Dataset,5,2312.08926,True
+IWSLT13 En→Fr,1,Dataset,5,2312.08585,True
+IWSLT14 En→De,1,Dataset,5,2312.08585,True
+IWSLT14 de→en,1,Dataset,5,2312.08585,True
+ACT2023,1,Event,5,2312.08138,True
+PAINTaboo,1,Dataset,5,2312.07294,True
+Paillier,1,Method,5,2312.06987,True
+Any-Maze,1,Tool,5,2312.06914,True
+DeepLabCut,1,Tool,5,2312.06914,True
+NYU HPC Greene,1,Infrastructure,5,2401.08636,True
+Transkribus,1,Tool,5,2312.11505,True
+PCDP-SGD,1,Method,5,2312.03792,True
+Dynamic Hierarchical Transformer (DHT),1,Method,5,2312.03038,True
+DevilFinder,1,Tool,5,2312.0184,True
+FedEmb,1,Method,5,2312.00102,True
+FD-RAN,1,Method,5,2312.02184,True
+RMCPNet,1,Method,5,2312.02184,True
+DeepMIMO dataset,1,Dataset,5,2312.02184,True
+Constructive Lyapunov Function (CLF),1,Method,5,2311.17297,True
+Control Barrier Function (CBF),1,Method,5,2311.17297,True
+CLF-CBF-QP approach,1,Method,5,2311.17297,True
+OWinCA,1,Method,5,2311.16618,True
+OWinCANet,1,Method,5,2311.16618,True
+EfficientNetB4,1,Method,5,2311.16593,True
+KNVQA-Eval,1,Tool,5,2311.12639,True
+KNVQA dataset,1,Dataset,5,2311.12639,True
+VQA-Eval,1,Tool,5,2311.12639,True
+CDTrans,1,Method,5,2311.12589,True
+Causal Abstraction Segmentation Refiner,1,Method,5,2311.12401,True
+Causal Edit Distance,1,Metric,5,2311.12401,True
+MISO-VFI,1,Method,5,2311.11602,True
+Vimeo90K,1,Dataset,5,2311.11602,True
+Middlebury,1,Dataset,5,2311.11602,True
+CSGNN,1,Method,5,2311.11473,True
+Number Theoretic Transform (NTT),1,Method,5,2311.09922,True
+ACL2 Theorem Prover,1,Tool,5,2311.08373,True
+ACL2-2023,1,Dataset,5,2311.08373,True
+row-homogeneous Chow-decomposition,1,Method,5,2311.0589,True
+rank revealing row-homogeneous Chow-decompositions,1,Method,5,2311.0589,True
+SeaTurtleID2022,1,Dataset,5,2311.05524,True
+Hybrid Task Cascade,1,Method,5,2311.05524,True
+XGeoS-AI,1,Method,5,2311.0494,True
+X-Klaim,1,Method,5,2311.04126,True
+B2XKLAIM,1,Tool,5,2311.04126,True
+Bayesian quadrature policy optimization,1,Method,5,2311.0368,True
+InterVLS,1,Tool,5,2311.03547,True
+Dieharder randomness test suite,1,Metric,5,2311.03489,True
+NanoVDB,1,Tool,5,2311.02762,True
+TokenMotion (TMNet),1,Method,5,2311.02535,True
+MoCA-Mask dataset,1,Dataset,5,2311.02535,True
+Swin-UNETR,1,Method,5,2310.17974,True
+Thebe dataset,1,Dataset,5,2310.17974,True
+CodeFusion,1,Method,5,2310.1768,True
+FormaT5,1,Method,5,2310.17306,True
+RDBench,1,Dataset,5,2310.16837,True
+DBGym,1,Tool,5,2310.16837,True
+GloVe model,1,Method,5,2312.03707,True
+CNN-BiLSTM network,1,Method,5,2312.03707,True
+Bi-Discriminator Domain Adversarial Network,1,Method,5,2310.13959,True
+Multinomial Dirichlet Hierarchical Model,1,Method,5,2310.13959,True
+Llama-2,1,Method,5,2310.18331,True
+PATCH-CLIP,1,Method,5,2310.12753,True
+ROUGE-L,1,Metric,5,2310.12753,True
+Nicholas Carlini's attack,1,Method,5,2310.08808,True
+Molecular Assembly Indices,1,Metric,5,2403.12452,True
+AlignProp,1,Method,5,2310.03739,True
+Office-31,1,Dataset,5,2310.01701,True
+Office-Home,1,Dataset,5,2310.01701,True
+VisDA,1,Dataset,5,2310.01701,True
+HIPAA,1,Tool,5,2310.01701,True
+COPPA,1,Tool,5,2310.01701,True
+FERPA,1,Tool,5,2310.01701,True
+Named Data Networking (NDN),1,Method,5,2310.01594,True
+NetSim,1,Tool,5,2310.01594,True
+GandALF 2023,1,Tool,5,2309.17318,True
+cumulative prospect theory (CPT),1,Method,5,2310.00029,True
+Hardware-in-the-Loop (HiL),1,Tool,5,2310.00029,True
+Random Smoothing,1,Method,5,2309.16631,True
+MUStARD,1,Dataset,5,2309.15877,True
+CMU-MOSI,1,Dataset,5,2309.15877,True
+PASCAL VOC 2012,1,Dataset,5,2309.14057,True
+ChEDDAR,1,Dataset,5,2309.13243,True
+3D-U-SAM,1,Method,5,2309.11015,True
+CensorChat,1,Dataset,5,2309.09749,True
+Span-BERT,1,Method,5,2309.09075,True
+Gumbel-Softmax trick,1,Method,5,2309.09075,True
+Topology-inspired Cross-domain Network (TCN),1,Method,5,2309.06825,True
+Chained-DP,1,Method,5,2309.07075,True
+SUBJPQA,1,Task,5,2309.05938,True
+SupQA,1,Dataset,5,2309.05938,True
+Sparse-SubspaceNet,1,Method,5,2309.05109,True
+Moggi's Powerset Monad,1,Method,5,2309.04624,True
+Dual Relation Alignment,1,Method,5,2309.02169,True
+Vision Compositor,1,Method,5,2309.02169,True
+FashionIQ,1,Dataset,5,2309.02169,True
+Compute Express Link (CXL),1,Tool,5,2309.01736,True
+Apache OpenWhisk,1,Tool,5,2309.01662,True
+Apache Hadoop,1,Tool,5,2309.01662,True
+AWS Lambda,1,Tool,5,2309.01662,True
+MemoryNet,1,Method,5,2309.01377,True
+Alpaca,1,Method,5,2308.14306,True
+Vicuna,1,Method,5,2308.14306,True
+Flan-T5-XL,1,Method,5,2308.14306,True
+Flan-T5-XXL,1,Method,5,2308.14306,True
+T0++,1,Method,5,2308.14306,True
+U-SEANNet,1,Method,5,2308.14081,True
+7-NasalEID,1,Dataset,5,2308.14081,True
+Monte-Carlo Marginalization,1,Method,5,2308.13612,True
+MIT GazeCapture dataset,1,Dataset,5,2308.13495,True
+ThermRad,1,Dataset,5,2308.10161,True
+RTDF-RCNN,1,Method,5,2308.10161,True
+Arrayed Waveguide Grating,1,Tool,5,2308.08236,True
+GPT-3.5-Turbo,1,Method,5,2308.11521,True
+QRAM model,1,Method,5,2308.08167,True
+QRAM data structure,1,Tool,5,2308.08167,True
+Entropy-Regularized Optimistic-Multiplicative-Weights-Update,1,Method,5,2308.07873,True
+AudioFormer,1,Method,5,2308.07221,True
+"AudioSet (2M,20K)",1,Dataset,5,2308.07221,True
+FSD50K,1,Dataset,5,2308.07221,True
+contrastive bi-projector (CBP),1,Method,5,2308.07017,True
+contrastive discrepancy (CD) loss,1,Method,5,2308.07017,True
+Lin-Kernighan-Helsgaun (LKH) heuristic,1,Method,5,2308.07347,True
+Edge Assembly crossover (EAX),1,Method,5,2308.07347,True
+Mixing Genetic Algorithm (MGA),1,Method,5,2308.07347,True
+VANYA Model,1,Method,5,2308.06471,True
+N-BEATS,1,Method,5,2308.06471,True
+Ho-Kashyap rule,1,Method,5,2308.06221,True
+WavLM,1,Method,5,2308.05995,True
+Frequency-Restricted Identity-Agnostic (FRIA) framework,1,Method,5,2308.05983,True
+SGG-VG dataset,1,Dataset,5,2308.05286,True
+SGG-GQA dataset,1,Dataset,5,2308.05286,True
+DynSGG-MTL,1,Method,5,2308.05274,True
+Action Genome,1,Dataset,5,2308.05274,True
+Balanced Prototypical Memory,1,Method,5,2308.04802,True
+VG-SGG,1,Dataset,5,2308.04802,True
+OI-SGG,1,Dataset,5,2308.04802,True
+DP-SimAgg,1,Method,5,2308.00856,True
+3D Morphable Model,1,Method,5,2308.00462,True
+Neural Radiance Field,1,Method,5,2308.00462,True
+Soft Introspective VAE,1,Method,5,2307.12618,True
+Soft-Intro VAE,1,Method,5,2307.12618,True
+Attributed regularized VAE,1,Method,5,2307.12618,True
+complexity class ♯P,1,Task,5,2307.08724,True
+P^♯P,1,Task,5,2307.08724,True
+BPP,1,Task,5,2307.08724,True
+Moore-Penrose inverse,1,Method,5,2307.06627,True
+RICE-N,1,Method,5,2307.06951,True
+Grover's search algorithm,1,Method,5,2307.04479,True
+EfficientNetV2,1,Method,5,2307.0398,True
+FFHQ dataset,1,Dataset,5,2307.03898,True
+IMU2SKELETON network,1,Method,5,2307.03638,True
+Berkeley-MHAD,1,Dataset,5,2307.03638,True
+UTD-MHAD,1,Dataset,5,2307.03638,True
+MMAct,1,Dataset,5,2307.03638,True
+CardiGraphormer,1,Method,5,2307.00859,True
+Conv-LSTM,1,Method,5,2307.00811,True
+WiKSQL dataset,1,Dataset,5,2306.17727,True
+CAIL-big,1,Dataset,5,2306.1702,True
+OSS-FUZZ,1,Tool,5,2306.15596,True
+LLVM's LibFuzzer,1,Tool,5,2306.15596,True
+CHATREPORT,1,Tool,5,2306.15518,True
+PaRUS,1,Method,5,2306.14208,True
+Tweepy,1,Tool,5,2306.14203,True
+TextBlob,1,Method,5,2306.14203,True
+Multinomial Naïve Bayes (MNB),1,Method,5,2306.14203,True
+Stance-Detection-Ghana-2020-Elections dataset,1,Dataset,5,2306.14203,True
+CurvPy,1,Tool,5,2307.06377,True
+Savitzky-Golay filtering,1,Method,5,2307.06377,True
+IFL-LSTP,1,Method,5,2306.12857,True
+Chaumian Mints,1,Tool,5,2306.12783,True
+NBA basketball player dataset,1,Dataset,5,2306.12244,True
+FedINIBoost,1,Method,5,2306.12088,True
+FedAVG,1,Method,5,2306.12088,True
+FedFTG,1,Method,5,2306.12088,True
+Codeforces,1,Dataset,5,2306.10077,True
+Leetcode,1,Dataset,5,2306.10077,True
+Cognitive Reflection Test (CRT),1,Task,5,2306.07622,True
+LUT-GCE,1,Method,5,2306.07083,True
+GCENet,1,Method,5,2306.07083,True
+NCSN,1,Method,5,2306.07077,True
+Neural ODEs,1,Method,5,2306.07077,True
+reconfigurable intelligent surfaces (RIS),1,Method,5,2306.05693,True
+conditional value-at-risk (CVaR),1,Method,5,2306.05693,True
+penalty convex-concave programming (PCCP),1,Method,5,2306.05693,True
+WESAD dataset,1,Dataset,5,2306.0111,True
+wavelet packet decomposition (WPD),1,Method,5,2306.05281,True
+Unidirectional Selective Attention (USA),1,Method,5,2305.18022,True
+GPT-3.5 Turbo,1,Method,5,2305.17353,True
+BLUEBERT,1,Method,5,2305.17353,True
+Hybrid-update-based (HUB) optimization strategy,1,Method,5,2305.16823,True
+BinaryViT,1,Method,5,2305.1473,True
+DeiT-S,1,Method,5,2305.1473,True
+SCP-AMP,1,Method,5,2305.12986,True
+MDANet,1,Method,5,2305.12986,True
+ResNet50V2,1,Method,5,2305.12844,True
+ResNet152V2,1,Method,5,2305.12844,True
+InceptionResNetV2,1,Method,5,2305.12844,True
+Hellinger Distance,1,Method,5,2305.12736,True
+Weisfeiler-Lehman (WL) algorithm,1,Method,5,2305.12688,True
+Google's TPUs,1,Tool,5,2305.10838,True
+Optimal Sharded Data Parallel,1,Method,5,2305.0994,True
+ProxMaP,1,Method,5,2305.05519,True
+QBH System,1,Tool,5,2305.05139,True
+Onset Detection Function (ODF),1,Method,5,2305.05139,True
+PELvis Extraction (PELE) module,1,Method,5,2305.04294,True
+Towers of Hanoi,1,Dataset,5,2305.04134,True
+DFUC2021,1,Dataset,5,2305.01044,True
+iTieProbe,1,Tool,5,2304.12041,True
+Domma,1,Dataset,5,2304.11679,True
+FoodNet,1,Dataset,5,2304.10829,True
+LLM-Brain,1,Method,5,2304.09349,True
+Coordinated Vision-Language Retrieval (CoVLR),1,Method,5,2304.07567,True
+YOLO-Drone,1,Method,5,2304.06925,True
+Darknet59,1,Method,5,2304.06925,True
+MSPP-FPN,1,Method,5,2304.06925,True
+UAVDT,1,Dataset,5,2304.06925,True
+VisDrone,1,Dataset,5,2304.06925,True
+Decision Stream Calibration,1,Method,5,2304.04354,True
+ViT-Calibrator,1,Method,5,2304.04354,True
+OpenDriver,1,Dataset,5,2304.04203,True
+TC-VAE,1,Method,5,2304.04103,True
+DI-QSDC protocol,1,Method,5,2304.03201,True
+DI Quantum Dialogue protocol,1,Method,5,2304.03201,True
+SketchFFusion,1,Method,5,2304.03174,True
+SUN RGB-D,1,Dataset,5,2304.00788,True
+pFedLA,1,Method,5,2304.01783,True
+GLT-T,1,Method,5,2304.00242,True
+GLT-T++,1,Method,5,2304.00242,True
+Neo4j,1,Tool,5,2304.00192,True
+DC Transformer,1,Method,5,2303.13827,True
+Libri-trans,1,Dataset,5,2304.03169,True
+LEVIR-CD,1,Dataset,5,2303.11668,True
+WHU-CD,1,Dataset,5,2303.11668,True
+S2Looking,1,Dataset,5,2303.11668,True
+xView2,1,Dataset,5,2303.11668,True
+AED-RS,1,Dataset,5,2303.11668,True
+TB-FLOW,1,Method,5,2303.11668,True
+ThEdu'22,1,Tool,5,2303.0536,True
+ThEdu'23,1,Tool,5,2303.0536,True
+OctoMap,1,Tool,5,2302.14445,True
+Nvidia Jetson Nano,1,Tool,5,2302.14445,True
+Dense Residual U-shaped Network,1,Method,5,2302.10602,True
+DR-U-Net,1,Method,5,2302.10602,True
+Spacecraft U-shaped Network,1,Method,5,2302.10602,True
+SU-Net,1,Method,5,2302.10602,True
+Adagrad,1,Method,5,2302.09566,True
+Adadelta,1,Method,5,2302.09566,True
+RMSprop,1,Method,5,2302.09566,True
+Nesterov accelerated gradient,1,Method,5,2302.09566,True
+Adam,1,Method,5,2302.09566,True
+Nadam,1,Method,5,2302.09566,True
+AdaMax,1,Method,5,2302.09566,True
+AMSGrad,1,Method,5,2302.09566,True
+Informative Multi-View Clustering (IMVC),1,Method,5,2302.08743,True
+Heavy-Tailed Self-Regularization (HT-SR),1,Metric,5,2302.02123,True
+Alphabet Set Multipliers (ASMs),1,Method,5,2302.0199,True
+context-specific likelihood weighting (CS-LW),1,Method,5,2302.00496,True
+DiceML,1,Method,5,2302.00496,True
+Optimal Weight Coverage (OWC),1,Method,5,2302.00272,True
+FairCDR,1,Method,5,2302.00158,True
+CLIP model,1,Method,5,2301.13591,True
+Category-Relevant Feature Selection (CRFS),1,Method,5,2301.13337,True
+Turn-Over Dropout,1,Method,5,2301.11168,True
+LA-GAN,1,Method,5,2301.13853,True
+BayesAug,1,Method,5,2301.06657,True
+Masked Vector Quantization,1,Method,5,2301.06626,True
+Multiple Hypothese Dropout,1,Method,5,2301.06626,True
+ImageNet 64×64,1,Dataset,5,2301.06626,True
+bAbI question answering task,1,Dataset,5,2301.02809,True
+QDec-FP,1,Method,5,2301.01246,True
+QDec-FPS,1,Method,5,2301.01246,True
+Contextual Conservative Q-Learning (C-CQL),1,Method,5,2301.01298,True
+Conservative Q-Learning (CQL),1,Method,5,2301.01298,True
+State Deviation Correction (SDC),1,Method,5,2301.01298,True
+MPSolve,1,Tool,5,2301.11268,True
+Mandelbrot polynomials,1,Dataset,5,2301.11268,True
+ResNet-152v2,1,Method,5,2212.14744,True
+ResNeXt101,1,Method,5,2212.14744,True
+SeResNet152,1,Method,5,2212.14744,True
+DenseNet201,1,Method,5,2212.14744,True
+TOPSIS,1,Method,5,2301.00693,True
+Mixed Logit Models,1,Method,5,2301.00666,True
+MuJoCo Environments,1,Dataset,5,2301.00009,True
+MuJoCo Control Suite,1,Dataset,5,2301.00009,True
+STAC-A2,1,Dataset,5,2212.13977,True
+Intel Stratix-10 FPGA,1,Tool,5,2212.13977,True
+Xilinx Alveo U280 FPGA,1,Tool,5,2212.13977,True
+Medical Out-of-Distribution challenge,1,Dataset,5,2212.06506,True
+Spatio-Temporal Meta-Graph Learning,1,Method,5,2212.05989,True
+PEMS-BAY,1,Dataset,5,2212.05989,True
+NFResblock,1,Method,5,2212.05909,True
+NFResnet,1,Method,5,2212.05909,True
+NFResnet+,1,Method,5,2212.05909,True
+Deep Video Deblurring dataset,1,Dataset,5,2212.05909,True
+SCface dataset,1,Dataset,5,2212.0551,True
+2D-πeCM,1,Method,5,2212.05462,True
+AI-Challenge 2018,1,Dataset,5,2212.0033,True
+ReliableRESeg,1,Tool,5,2212.0033,True
+DCDetector,1,Tool,5,2211.16235,True
+Constrained Intrinsic Motivation (CIM),1,Method,5,2211.15205,True
+3D Quasi-Recurrent Neural Network,1,Method,5,2211.14811,True
+QRNN3D,1,Method,5,2211.14811,True
+Wiki80,1,Dataset,5,2211.13883,True
+CycleGAN watermarking (CycleGANWM),1,Method,5,2211.13737,True
+AugResNet,1,Method,5,2211.12514,True
+Cifar-10,1,Dataset,5,2211.12514,True
+PointCMC,1,Method,5,2211.12032,True
+Twin-Space object labeling method,1,Method,5,2211.11188,True
+KITTI-6DoF dataset,1,Dataset,5,2211.11188,True
+LineMod dataset,1,Dataset,5,2211.11188,True
+LabelImg3D labeling tool,1,Tool,5,2211.11188,True
+Evidence-based Match-status-Aware Gait Recognition,1,Method,5,2211.08007,True
+Evidential Deep Learning,1,Method,5,2211.08007,True
+Dempster-Shafer Theory of Evidence,1,Method,5,2211.08007,True
+OUMVLP,1,Dataset,5,2211.08007,True
+MultiCrossViT,1,Method,5,2211.06726,True
+onlineFGO,1,Method,5,2211.054,True
+time-differenced carrier phase (TDCP),1,Metric,5,2211.054,True
+Dec-POMDP,1,Task,5,2211.15411,True
+GazeCWL,1,Method,5,2211.03073,True
+Laughter-Splicing based Network (LSN),1,Method,5,2210.16028,True
+VoxCeleb1 test set,1,Dataset,5,2210.16028,True
+Hume-VB,1,Dataset,5,2210.15754,True
+pollsite E2E-V voting protocols,1,Method,5,2210.14833,True
+Howey test,1,Method,5,2211.00063,True
+STformer,1,Method,5,2210.09043,True
+Causal-Convolution ProbSparse Self-Attention (CPSA),1,Method,5,2210.09043,True
+FOON objects,1,Dataset,5,2210.07428,True
+control Lyapunov function (cLf),1,Method,5,2210.02837,True
+AISHELL-3,1,Dataset,5,2210.02731,True
+Photospheric bright points (BPs),1,Task,5,2210.02635,True
+TiO-band,1,Dataset,5,2210.02635,True
+AACN-UNet,1,Method,5,2210.00227,True
+H-MixUp,1,Method,5,2209.13912,True
+Word-level CutMix,1,Method,5,2209.13912,True
+Manifold MixUp,1,Method,5,2209.13912,True
+Document-level MixUp,1,Method,5,2209.13912,True
+FreeSeg,1,Method,5,2209.13558,True
+Image-Text Similarity Map (ITSM),1,Method,5,2209.13558,True
+VOC dataset,1,Dataset,5,2209.13558,True
+AugAN,1,Method,5,2209.10168,True
+DCASE 2022 Challenge,1,Dataset,5,2209.09967,True
+PolyMPCNet,1,Method,5,2209.09424,True
+2P-ReLU operator,1,Method,5,2209.09424,True
+VTM-15.0,1,Tool,5,2209.05856,True
+EMARL,1,Method,5,2209.04696,True
+ExtFvAMDS,1,Method,5,2209.04588,True
+Med-Node Dataset,1,Dataset,5,2209.04588,True
+SUPER-Rec,1,Method,5,2209.04154,True
+DC-GAN,1,Method,5,2209.02847,True
+miniImagenet,1,Dataset,5,2209.01332,True
+Tiered-ImageNet,1,Dataset,5,2209.01332,True
+CIFAR-FS,1,Dataset,5,2209.01332,True
+CUB-200-2011,1,Dataset,5,2209.01332,True
+AL-STAL,1,Method,5,2208.14856,True
+THUMOS'14,1,Dataset,5,2208.14856,True
+ActivityNet 1.3,1,Dataset,5,2208.14856,True
+Smart-PLS (3.0),1,Tool,5,2208.09364,True
+BrightenNet,1,Method,5,2208.0933,True
+MTCSNN,1,Method,5,2208.06917,True
+RetinaMNIST,1,Dataset,5,2208.06917,True
+ResNet-34,1,Method,5,2208.06917,True
+DyPFL,1,Method,5,2208.06192,True
+MICCAI 2022 KIPA challenge,1,Task,5,2208.04525,True
+PhyGNNet,1,Method,5,2208.04319,True
+gi-CycleMLP,1,Method,5,2208.00929,True
+DeBERTaV3,1,Method,5,2208.00929,True
+giDeBERTa,1,Method,5,2208.00929,True
+ResNet3D-18,1,Method,5,2208.00444,True
+Kinetics-400,1,Dataset,5,2208.00444,True
+RT-PCR,1,Method,5,2208.00032,True
+Web of Science,1,Tool,5,2208.00032,True
+Google Scholar,1,Tool,5,2208.00032,True
+LOPSTR 2022,1,Event,5,2208.04235,True
+PPDP 2022,1,Event,5,2208.04235,True
+CLAS 2022,1,Event,5,2208.04235,True
+Surrounding Word Prediction (SWP),1,Task,5,2207.13979,True
+Masked Layout-Language Modeling (MLLM),1,Task,5,2207.13979,True
+YOLOv2,1,Method,5,2207.13165,True
+AOLP dataset,1,Dataset,5,2207.13165,True
+Pediatric COVID-19 data challenge,1,Task,5,2207.12283,True
+TROVON,1,Method,5,2207.11018,True
+Devign,1,Method,5,2207.11018,True
+LSTM-RF,1,Method,5,2207.11018,True
+OpenSSL,1,Dataset,5,2207.11018,True
+Wireshark,1,Dataset,5,2207.11018,True
+National Vulnerability Database (NVD),1,Dataset,5,2207.11018,True
+Matthews Correlation Coefficient (MCC),1,Metric,5,2207.11018,True
+soft actor-critic (SAC) algorithm,1,Method,5,2207.10438,True
+DeltaGAN,1,Method,5,2207.10271,True
+Time-delay reservoir computing (TDRC),1,Method,5,2207.06245,True
+Asymmetric Mach-Zehnder interferometer (MZI),1,Tool,5,2207.06245,True
+PGD attack,1,Method,5,2207.05127,True
+STL-10,1,Dataset,5,2207.05127,True
+SECUREMARK-DL,1,Tool,5,2207.04668,True
+OpenFlow,1,Protocol,5,2207.0218,True
+Chula-ParasiteEgg-11 dataset,1,Dataset,5,2207.00997,True
+PoCoformer,1,Method,5,2207.00215,True
+HADES,1,Method,5,2207.02918,True
+Q-rMinRank attack,1,Method,5,2206.10898,True
+TraSE,1,Method,5,2206.10706,True
+Bi-stream Generative Model (BGM),1,Method,5,2206.09362,True
+RDGCN,1,Method,5,2206.07665,True
+SRGCL,1,Method,5,2206.07665,True
+Twitter15,1,Dataset,5,2206.07665,True
+Twitter16,1,Dataset,5,2206.07665,True
+E2V-SDE,1,Method,5,2206.07578,True
+ET-Net,1,Method,5,2206.07578,True
+Abstract Meaning Representation (AMR),1,Method,5,2206.07328,True
+DICE coefficient,1,Metric,5,2206.10455,True
+mean absolute error (MAE),1,Metric,5,2206.10455,True
+unified parallel C++ (UPC++),1,Tool,5,2206.03231,True
+deep Q-network (DQN),1,Method,5,2206.01663,True
+RADAR-MDD speech corpus,1,Dataset,5,2206.01542,True
+Generalizable Risk-Sensitive Policy (GRSP),1,Method,5,2205.15859,True
+Felder-Silverman learning style model,1,Method,5,2205.14822,True
+Viterbi algorithm,1,Method,5,2205.13148,True
+Constraint based Viterbi algorithm,1,Method,5,2205.13148,True
+Service Requirement Zone (SRZ),1,Method,5,2205.09944,True
+User Satisfaction Ratio (USR),1,Metric,5,2205.09944,True
+XSDA-Net,1,Method,5,2205.09943,True
+LAGr (Label Aligned Graphs),1,Method,5,2205.09607,True
+Strongly-supervised LAGr,1,Method,5,2205.09607,True
+Weakly-supervised LAGr,1,Method,5,2205.09607,True
+POViT,1,Method,5,2205.09045,True
+Rectified Linear Unit (ReLU),1,Method,5,2205.0657,True
+Leaky ReLU,1,Method,5,2205.0657,True
+Sigmoid function,1,Method,5,2205.0657,True
+Vehicular Visible Light Communication,1,Method,5,2205.06496,True
+Non-Orthogonal Multiple Access,1,Method,5,2205.06496,True
+TIPSy-GAN,1,Method,5,2205.0598,True
+MPI-INF-3DHP,1,Dataset,5,2205.0598,True
+TartanVO,1,Method,5,2205.05916,True
+Masked-LMCTrans,1,Method,5,2205.04044,True
+Stacked Denoising Autoencoder (SDAE),1,Method,5,2205.00511,True
+Brandes' algorithm,1,Method,5,2205.00162,True
+Unit-to-Unit Variability (UtUV),1,Task,5,2204.12637,True
+Dual-Population Coevolutionary Algorithm,1,Method,5,2204.11575,True
+Dynamic Pointer Network,1,Method,5,2204.11575,True
+IEMOCAP,1,Dataset,5,2204.11382,True
+MSP-Improv,1,Dataset,5,2204.11382,True
+RAVDESS,1,Dataset,5,2204.11382,True
+SMPL human models,1,Method,5,2204.10477,True
+Cycle Reconstruction Consistency,1,Method,5,2204.10477,True
+Regional Depth-Inpainting module,1,Method,5,2204.10477,True
+Human-Things Interactions dataset,1,Dataset,5,2204.10477,True
+HTI dataset,1,Dataset,5,2204.10477,True
+Parallel-Depth Grasp Generation (PDG-Generation),1,Method,5,2204.03874,True
+Maximum-Similarity-Mixing,1,Method,5,2204.03737,True
+θ-Similarity Mixing,1,Method,5,2204.03737,True
+n-times Random Mixing,1,Method,5,2204.03737,True
+RML2016.10a,1,Dataset,5,2204.03737,True
+Style-Guided Domain Adaptation (SGDA),1,Method,5,2203.14565,True
+Style-Selective Normalization (SSN),1,Method,5,2203.14565,True
+Style-Aware Meta-Learning (SAML),1,Method,5,2203.14565,True
+MSU-MFSD,1,Dataset,5,2203.14565,True
+CASIA-FASD,1,Dataset,5,2203.14565,True
+OULU-NPU,1,Dataset,5,2203.14565,True
+Idiap REPLAYATTACK,1,Dataset,5,2203.14565,True
+XAX-Module,1,Method,5,2203.14358,True
+Cadence Virtuoso,1,Tool,5,2203.14358,True
+STA-MGCN,1,Method,5,2203.12505,True
+New-York dataset,1,Dataset,5,2203.12505,True
+Chicago dataset,1,Dataset,5,2203.12505,True
+Chengdu dataset,1,Dataset,5,2203.12505,True
+ERNIE-ViL,1,Method,5,2203.1148,True
+Oscar,1,Method,5,2203.1148,True
+UNIMO,1,Method,5,2203.1148,True
+WuDaoMM,1,Dataset,5,2203.1148,True
+MOT17,1,Dataset,5,2203.10729,True
+MOT20,1,Dataset,5,2203.10729,True
+Hyperbolic Uncertainty Loss,1,Method,5,2203.08881,True
+HyperUL,1,Method,5,2203.08881,True
+UAVid,1,Dataset,5,2203.08881,True
+GC-ODE,1,Method,5,2203.08345,True
+Santa Claus objective,1,Task,5,2203.036,True
+Access Class Barring (ACB),1,Method,5,2204.03504,True
+PeerSum,1,Dataset,5,2203.01769,True
+SMTNet,1,Method,5,2203.01429,True
+Swin-FFT,1,Method,5,2203.01429,True
+1-D DHRB,1,Method,5,2203.01429,True
+TACREV,1,Dataset,5,2203.00193,True
+Graphormer-V2,1,Method,5,2203.06123,True
+PCQM4M quantum chemistry dataset,1,Dataset,5,2203.06123,True
+KDD Cup 2021,1,Task,5,2203.06123,True
+Open Catalyst Challenge,1,Task,5,2203.06123,True
+DistAD,1,Method,5,2202.13898,True
+One-Class Neural Network (OCNN),1,Method,5,2202.13898,True
+Cassandra,1,Dataset,5,2202.13898,True
+CoNIC Challenge 2022,1,Dataset,5,2202.13588,True
+Fedego Lasso,1,Method,5,2202.13448,True
+Multi-Graph Attention Network,1,Method,5,2203.00007,True
+GeomE,1,Method,5,2202.09464,True
+TGeomE,1,Method,5,2202.09464,True
+prismatic quasi-direct-drive (QDD) leg,1,Method,5,2202.0862,True
+C JTVAE,1,Method,5,2202.06794,True
+Balanced Domain Classifier,1,Method,5,2202.05941,True
+STG-GAN,1,Method,5,2202.06727,True
+CC-STOI,1,Metric,5,2202.04172,True
+Deep-ECG,1,Method,5,2202.05154,True
+boomerang connectivity table (BCT),1,Method,5,2201.10905,True
+Voxel-Pixel Lookup Table (LUT),1,Method,5,2201.08266,True
+FRA-LSTM,1,Method,5,2201.07606,True
+StreetHazards dataset,1,Dataset,5,2201.05869,True
+TextRGNN,1,Method,5,2112.1506,True
+ICDAR2015(video),1,Dataset,5,2112.14976,True
+GazeSeg,1,Method,5,2412.00309,True
+GazeFollow dataset,1,Dataset,5,2412.00309,True
+Dual-output LUT,1,Tool,5,2411.1833,True
+QUADOL,1,Method,5,2411.1833,True
+QUADOL+,1,Method,5,2411.1833,True
+FAMES,1,Method,5,2411.18055,True
+Homomorphic OPE,1,Method,5,2411.17009,True
+HOPE,1,Method,5,2411.17009,True
+IND-OCPA model,1,Method,5,2411.17009,True
+SAVEn-Vid,1,Dataset,5,2411.16213,True
+SAVEnVideo,1,Method,5,2411.16213,True
+AVBench,1,Dataset,5,2411.16213,True
+Video-MME,1,Dataset,5,2411.16213,True
+Music-AVQA,1,Dataset,5,2411.16213,True
+AdaptLIL,1,Tool,5,2411.11768,True
+Nadaraya-Watson regression,1,Method,5,2411.11748,True
+Graph Retention Network,1,Method,5,2411.11259,True
+GraphRetentionNet,1,Tool,5,2411.11259,True
+Mixing Attention (MixAtt) decoder,1,Method,5,2411.10881,True
+DilateFormer,1,Method,5,2411.10881,True
+Depthwise Multi-Kernel (DMK) convolution,1,Method,5,2411.10881,True
+Context-Aware Fusion (CAF) block,1,Method,5,2411.10881,True
+RealSR-RAW,1,Dataset,5,2411.10798,True
+D-Flow,1,Method,5,2411.10618,True
+PepMerge benchmark,1,Dataset,5,2411.10618,True
+PyLEnM,1,Tool,5,2411.10214,True
+MobileNetV3-SSD,1,Method,5,2411.07802,True
+ViTOC,1,Method,5,2411.07265,True
+COCO dataset,1,Dataset,5,2411.07265,True
+Neural Indicator Kernel,1,Method,5,2202.0121,True
+MHSnet,1,Method,5,2201.13392,True
+Compactness Score (CSUFS),1,Method,5,2201.13194,True
+Debiased-CAM,1,Method,5,2201.12835,True
+Mixed Chinese Postman Problem,1,Task,5,2201.1279,True
+Minimum Vulnerability problem (MV),1,Task,5,2201.1279,True
+Mondal's algorithm,1,Method,5,2201.12612,True
+Erdős-Kac theorem,1,Theorem,5,2202.11694,True
+RGB-D indoor SLAM,1,Task,5,2201.12047,True
+EXP-complete,1,Metric,5,2112.14102,True
+2EXP-complete,1,Metric,5,2112.14102,True
+R-Miner,1,Method,5,2112.13485,True
+MiniImagenet,1,Dataset,5,2112.13121,True
+ODIN,1,Method,5,2112.11226,True
+Leaded Gradient Method (LGM),1,Method,5,2112.09428,True
+Biomedical Data Translator,1,Tool,5,2112.0678,True
+xARA,1,Tool,5,2112.0678,True
+Information Transmitting Algorithm (ITA),1,Method,5,2112.07363,True
+CPRAL,1,Method,5,2112.05975,True
+BDD10K,1,Dataset,5,2112.05975,True
+BilbyFs,1,Dataset,5,2112.05964,True
+Batch Embedded Training (BET),1,Method,5,2112.05958,True
+CIFAR-LT,1,Dataset,5,2112.05958,True
+ImageNet-LT,1,Dataset,5,2112.05958,True
+SRM-ResNet104,1,Method,5,2201.07209,True
+Market-1501,1,Dataset,5,2112.04662,True
+VeRi-776,1,Dataset,5,2112.04662,True
+Market1501,1,Dataset,5,2112.01839,True
+DukeMTMC-reID,1,Dataset,5,2112.01839,True
+Teacher-Student Consistency Network (TSC-Net),1,Method,5,2112.00729,True
+Dynamic Enhancement Module (DEM),1,Method,5,2112.00729,True
+Digital lock-in filtering (DLF),1,Method,5,2111.12884,True
+Generalized cross-correlation (GCC),1,Method,5,2111.12884,True
+NASAR-GNN,1,Method,5,2111.11406,True
+MDS symbol-pair code,1,Method,5,2111.10281,True
+NLPCC-ICCPOL 2016 KBQA dataset,1,Dataset,5,2111.07658,True
+TreeMesh,1,Method,5,2111.07613,True
+AppFM 2021,1,Tool,5,2111.07538,True
+CubeTR,1,Method,5,2111.06036,True
+AlphaGarden,1,Tool,5,2111.06014,True
+Arabic-SQuAD,1,Dataset,5,2111.05671,True
+TyDiQA-GoldP,1,Dataset,5,2111.05671,True
+AraBERTv2-base,1,Method,5,2111.05671,True
+AraBERTv0.2-large,1,Method,5,2111.05671,True
+AraELECTRA,1,Method,5,2111.05671,True
+Büchi automaton,1,Method,5,2110.14824,True
+Linear Temporal Logic (LTL),1,Method,5,2110.14824,True
+NAS-G,1,Method,5,2110.15277,True
+SAO/NASA Astrophysics Data System,1,Tool,5,2110.14115,True
+SFD-INF,1,Method,5,2110.134,True
+SFD-TINF,1,Method,5,2110.134,True
+SFD-LBINF,1,Method,5,2110.134,True
+1/2-Tsallis entropy regularizer,1,Method,5,2110.134,True
+OTB-100,1,Dataset,5,2110.12194,True
+VOT2019,1,Dataset,5,2110.12194,True
+GOT-10k,1,Dataset,5,2110.12194,True
+Sepconv-slomo,1,Method,5,2110.1104,True
+InterpolationSLAM,1,Method,5,2110.1104,True
+Goemans-Williamson algorithm,1,Method,5,2110.08016,True
+LayoutT-CVAE,1,Method,5,2110.06794,True
+DeepXDE,1,Tool,5,2110.05531,True
+DeepECMP,1,Method,5,2110.03689,True
+EigneNail,1,Method,5,2109.15231,True
+RoBERTa language model,1,Method,5,2109.14927,True
+Audiomer,1,Method,5,2109.10252,True
+Performer Attention,1,Method,5,2109.10252,True
+PyTorch,1,Tool,5,2109.10252,True
+BiLinear attention block,1,Method,5,2109.0889,True
+Exponential Linear Unit (ELU),1,Method,5,2109.0889,True
+Dynamic Feature Fusion Layer,1,Method,5,2109.0889,True
+Higher-order Attention Network,1,Method,5,2109.0889,True
+GandALF 2021,1,Tool,5,2109.07798,True
+Vector-LabPics,1,Dataset,5,2109.05585,True
+DynSTGAT,1,Method,5,2109.05491,True
+DiaRE,1,Task,5,2109.05182,True
+SOLS,1,Method,5,2109.05182,True
+CRMLnet,1,Method,5,2109.04767,True
+Shapley-Shubik index,1,Method,5,2109.0389,True
+Banzhaf index,1,Method,5,2109.0389,True
+Adult-Income dataset,1,Dataset,5,2109.0389,True
+PSPACE,1,Metric,5,2109.02458,True
+WARHOL,1,Method,5,2109.01093,True
+OARnet,1,Method,5,2108.13987,True
+UaNet,1,Method,5,2108.13987,True
+AnatomyNet,1,Method,5,2108.13987,True
+Multi-Atlas Segmentation (MAS),1,Method,5,2108.13987,True
+Dice similarity coefficient (DSC),1,Metric,5,2108.13987,True
+Wilcoxon signed-rank test,1,Tool,5,2108.13987,True
+DSFP-GA,1,Method,5,2108.13775,True
+Runtime Neural Architecture (RTNA),1,Method,5,2108.13307,True
+VGG16-RCNN,1,Method,5,2108.08636,True
+HHGNN,1,Method,5,2108.07574,True
+m-RevNet,1,Method,5,2108.05862,True
+DarkRain,1,Dataset,5,2108.03873,True
+Patch-wise Wasserstein AutoEncoder (P-WAE),1,Method,5,2108.03815,True
+MVTec AD dataset,1,Dataset,5,2108.03815,True
+Caltech-UCSD Birds 200,1,Dataset,5,2108.04238,True
+MAF-GNN,1,Method,5,2108.03594,True
+Spatiotemporal-flow Modules,1,Method,5,2108.03594,True
+PeMS-Bay,1,Dataset,5,2108.03594,True
+Inception-V3,1,Method,5,2108.03288,True
+ResNet50,1,Method,5,2108.03288,True
+DCGAN,1,Method,5,2108.03288,True
+NeuralDP,1,Method,5,2107.14582,True
+Pediatric Pneumonia Dataset (PPD),1,Dataset,5,2107.14582,True
+SketchyCOCO dataset,1,Dataset,5,2108.04351,True
+Kirchberg Embedding Problem,1,Task,5,2107.1401,True
+Cuntz algebra O_2,1,Method,5,2107.1401,True
+Connes Embedding Problem,1,Task,5,2107.1401,True
+MIP*=RE,1,Metric,5,2107.1401,True
+pruning ternary quantization (PTQ),1,Method,5,2107.10998,True
+BART summarization model,1,Method,5,2107.10443,True
+hypergraph tri-attention network (HGTAN),1,Method,5,2107.14033,True
+Texture Transfer Block (TTB),1,Method,5,2107.09237,True
+Semantic Reasoning Block (SRB),1,Method,5,2107.09237,True
+Fusion Attention Block (FAB),1,Method,5,2107.09237,True
+CFI-query,1,Task,5,2107.03778,True
+Cai-Fürer-Immerman graphs,1,Dataset,5,2107.03778,True
+3-Guard Problem,1,Task,5,2107.0554,True
+Art Gallery Problem,1,Task,5,2107.0554,True
+CADE-28,1,Tool,5,2107.01544,True
+SUMO,1,Tool,5,2107.01347,True
+ARIMA,1,Method,5,2107.01273,True
+NTIRE 2021,1,Tool,5,2107.01189,True
+CVPR,1,Tool,5,2107.01189,True
+BreakHis,1,Dataset,5,2107.01063,True
+Quorum Blockchain,1,Tool,5,2107.00679,True
+VideoLightFormer,1,Method,5,2107.00451,True
+Kinetics dataset,1,Dataset,5,2107.00451,True
+EPIC-KITCHENS-100,1,Dataset,5,2107.00451,True
+Something-Something-V2,1,Dataset,5,2107.00451,True
+Holographic Spectral Multiplexing (HSM),1,Method,5,2106.13896,True
+Hi-Phy,1,Dataset,5,2106.09692,True
+SelfKG,1,Method,5,2106.09395,True
+MORPH database,1,Dataset,5,2106.08049,True
+Sinkhorn algorithm,1,Method,5,2106.07501,True
+Fiedler vector,1,Method,5,2106.07501,True
+MNIST Dataset,1,Dataset,5,2106.07172,True
+T5 transformer,1,Method,5,2106.01072,True
+SARI score,1,Metric,5,2106.01072,True
+MeerKAT telescope,1,Tool,5,2105.14613,True
+Square Kilometre Array,1,Tool,5,2105.14613,True
+IRIS computing facility,1,Tool,5,2105.14613,True
+RapifXfer Data transfer framework,1,Method,5,2105.14613,True
+VersatileGait,1,Dataset,5,2105.14421,True
+Unity3D,1,Tool,5,2105.14421,True
+Taylor attribution framework,1,Method,5,2105.13841,True
+English Switchboard corpus,1,Dataset,5,2105.12667,True
+METIS,1,Tool,5,2105.11236,True
+ADAPT platform,1,Tool,5,2105.11236,True
+SoundFence,1,Method,5,2105.07574,True
+Feature Table Analysis Tool,1,Tool,5,2105.07157,True
+ResNet101,1,Method,5,2105.09906,True
+DenseNet121,1,Method,5,2105.09906,True
+CIDEr,1,Metric,5,2105.09906,True
+Visual Attention Maps (VAM),1,Tool,5,2105.09906,True
+SmartCrawler,1,Tool,5,2105.06344,True
+Linear Quadratic Regulator (LQR),1,Method,5,2105.06344,True
+Proportional-Integral-Derivative (PID),1,Method,5,2105.06344,True
+VANET,1,Method,5,2105.05751,True
+Generative Actor-Critic (GAC),1,Method,5,2105.03733,True
+MMD-entropy regularizer,1,Method,5,2105.03733,True
+adaptive domain-specific normalization (AdsNorm),1,Method,5,2105.03042,True
+mel-frequency cepstral coefficients (MFCCs),1,Method,5,2105.00933,True
+London philharmonic orchestra dataset,1,Dataset,5,2105.00933,True
+irregular-mapped accumulate-repeat-accumulate (IMARA) codes,1,Method,5,2104.02856,True
+IMARA-aided IM-BICM-ID scheme,1,Method,5,2104.02856,True
+Wasserstein-1 distance,1,Metric,5,2103.16938,True
+NYU Depth v2,1,Dataset,5,2103.16938,True
+relative-position-awareness self-attention (RPSA),1,Method,5,2103.15722,True
+Gaussian-based self-attention (GSA),1,Method,5,2103.15722,True
+residual Gaussian self-attention (resGSA),1,Method,5,2103.15722,True
+SA-Transformer,1,Method,5,2103.15722,True
+RPSA-Transformer,1,Method,5,2103.15722,True
+resGSA-Transformer,1,Method,5,2103.15722,True
+Ano-Graph,1,Method,5,2103.10502,True
+ShanghaiTech,1,Dataset,5,2103.10502,True
+UCSD,1,Dataset,5,2103.10502,True
+Cube-Connected-Cycles,1,Task,5,2103.09801,True
+PASCAL VOC,1,Dataset,5,2103.09488,True
+MS COCO,1,Dataset,5,2103.09488,True
+SmoothL1 loss,1,Metric,5,2103.09488,True
+CIoU loss,1,Metric,5,2103.09488,True
+Unique Games Conjecture,1,Task,5,2103.08743,True
+FashionMNIST,1,Dataset,5,2103.08249,True
+VXSlate,1,Method,5,2103.07964,True
+Self Distillation (SD),1,Method,5,2103.0735,True
+Sequence Random Network,1,Method,5,2103.0723,True
+Tanh-Dropout blocks,1,Method,5,2103.0723,True
+BiLSTM-TDN,1,Method,5,2103.0723,True
+FGVC-Aircraft,1,Dataset,5,2103.0723,True
+Active^2 Learning (A^2L),1,Method,5,2103.0649,True
+Stern's diatomic sequence,1,Method,5,2103.0581,True
+SeqGAN,1,Method,5,2103.04794,True
+Attack-GAN,1,Method,5,2103.04794,True
+Pix3D,1,Dataset,5,2103.04789,True
+Pascal 3D+,1,Dataset,5,2103.04789,True
+Instance-wise Randomized Smoothing (Insta-RS),1,Method,5,2103.04436,True
+Hausdorff95,1,Metric,5,2103.04258,True
+heavy-ball momentum (SGDM),1,Method,5,2102.13653,True
+Syllable-based CRF constituency parser,1,Method,5,2102.12136,True
+Ultra-Wideband (UWB) sensor,1,Tool,5,2102.11696,True
+Pontryagin's maximum principle,1,Method,5,2102.11696,True
+Stackelberg game,1,Method,5,2102.11696,True
+SynthTriplet GAN,1,Method,5,2102.08871,True
+Non-Autoregressive Transformer,1,Method,5,2102.05624,True
+VeeAlign,1,Method,5,2102.04081,True
+MIMIC II database,1,Dataset,5,2102.03542,True
+ROSALIND,1,Tool,5,2102.02878,True
+Graph500,1,Dataset,5,2102.01254,True
+Tianhe-2,1,Tool,5,2102.01254,True
+Student Feedback Dataset,1,Dataset,5,2102.05439,True
+GREPING,1,Method,5,2102.00835,True
+Model-Agnostic Meta-Learning,1,Method,5,2101.12208,True
+Prototypical Networks,1,Method,5,2101.12208,True
+GIID-Net,1,Method,5,2101.07419,True
+ACRNet,1,Method,5,2101.06618,True
+F3SNet,1,Method,5,2101.05105,True
+Multiple-graphs autoencoder MGAE,1,Method,5,2101.04053,True
+Ontonotes,1,Dataset,5,2101.00396,True
+ZhCrossNER,1,Dataset,5,2101.00396,True
+Sequential Convex Programming (SCP),1,Method,5,2101.00202,True
+CLSWGAN,1,Method,5,2012.10657,True
+USPTO MIT dataset,1,Dataset,5,2012.12124,True
+Raspberry Pi 4,1,Tool,5,2012.02907,True
+ogbn-papers100M,1,Dataset,5,2012.0138,True
+Patch-Based Image Reconstruction (PBIR),1,Method,5,2011.14301,True
+SepNet,1,Method,5,2011.14285,True
+HHK algorithm,1,Method,5,2011.10924,True
+COoperative Differential Evolution (CODE),1,Method,5,2011.0678,True
+Cassini2,1,Dataset,5,2011.0678,True
+GTOC1,1,Dataset,5,2011.0678,True
+Messenger (reduced),1,Dataset,5,2011.0678,True
+Rosetta,1,Dataset,5,2011.0678,True
+Messenger (full),1,Dataset,5,2011.0678,True
+Vissim,1,Tool,5,2011.05798,True
+LibriSpeech corpus,1,Dataset,5,2011.04196,True
+Rate My Professors,1,Dataset,5,2011.01897,True
+BMFRepair,1,Method,5,2011.0141,True
+MSRepair,1,Method,5,2011.0141,True
+Mininet,1,Tool,5,2011.0141,True
+Aliyun cloud platform ECS,1,Tool,5,2011.0141,True
+Elastic Weight Consolidation (EWC),1,Method,5,2011.01272,True
+Gradient Episodic Memory (GEM),1,Method,5,2011.01272,True
+RealSense D435i,1,Tool,5,2011.01022,True
+Kinect V2,1,Tool,5,2011.01022,True
+Activation Map Adaptive Module,1,Method,5,2010.135,True
+CNN-BiLSTM-CNN,1,Method,5,2010.13285,True
+ParaphraseSampler,1,Method,5,2010.11869,True
+Speaker in the Wild,1,Dataset,5,2010.10919,True
+NASA-TLX,1,Metric,5,2010.10658,True
+VGGFace2,1,Dataset,5,2010.08391,True
+ExpNet,1,Method,5,2010.08391,True
+FRGC v2.0,1,Dataset,5,2010.08391,True
+Bosphorus,1,Dataset,5,2010.08391,True
+BU-3DFE,1,Dataset,5,2010.08391,True
+Astir,1,Tool,5,2010.07874,True
+ROTOWIRE,1,Dataset,5,2010.07606,True
+Indiana Pines hyperspectral dataset,1,Dataset,5,2010.03902,True
+Compcars dataset,1,Dataset,5,2010.03815,True
+NAS-Benchmark 101,1,Dataset,5,2010.02871,True
+Hyper-Rectangle (H-RTGL),1,Method,5,2011.06388,True
+Resource Description Framework (RDF),1,Method,5,2009.10331,True
+SPARQL,1,Method,5,2009.10331,True
+Proof-of-Work (PoW),1,Method,5,2009.0948,True
+Proof-of-Stake (PoS),1,Method,5,2009.0948,True
+CAP-type Impossibility Theorem,1,Method,5,2009.0948,True
+Answer-Set Programming,1,Method,5,2009.09158,True
+Inductive Logic Programming,1,Method,5,2009.09158,True
+Co-inductive Logic Programming,1,Method,5,2009.09158,True
+Probabilistic Logic Programming,1,Method,5,2009.09158,True
+Neural-Symbolic Machine Learning,1,Method,5,2009.09158,True
+UIS-RNN,1,Method,5,2009.08162,True
+IBZSL,1,Tool,5,2009.07451,True
+MS MARCO,1,Dataset,5,2009.06141,True
+Value Decomposition Network,1,Method,5,2009.04197,True
+QR-MIX,1,Method,5,2009.04197,True
+Implicit Quantile Network,1,Method,5,2009.04197,True
+StarCraft Multi-Agent Challenge,1,Dataset,5,2009.04197,True
+CoNLL03,1,Dataset,5,2009.0207,True
+Multi-30k,1,Dataset,5,2009.0207,True
+IWSLT14,1,Dataset,5,2009.0207,True
+WMT-14,1,Dataset,5,2009.0207,True
+EXPRESS/SOS 2020,1,Event,5,2008.12414,True
+CONCUR 2020,1,Event,5,2008.12414,True
+Tutte's 5-flow conjecture,1,Task,5,2008.07152,True
+Z_5-flow,1,Method,5,2008.07152,True
+Tutte's 4-flow conjecture,1,Task,5,2008.07152,True
+Z_4-flow,1,Method,5,2008.07152,True
+Tutte's 3-flow conjecture,1,Task,5,2008.07152,True
+Z_3-flow,1,Method,5,2008.07152,True
+tock-CSP,1,Method,5,2008.06935,True
+UPPAAL,1,Tool,5,2008.06935,True
+LSUN,1,Dataset,5,2008.10399,True
+CelebA,1,Dataset,5,2008.10399,True
+VisDial v1.0,1,Dataset,5,2008.00397,True
+WirelessID,1,Tool,5,2007.15348,True
+CovMUNET,1,Method,5,2007.14318,True
+Hall's Marriage Theorem,1,Method,5,2007.1416,True
+Mini-Batch K-Means,1,Method,5,2007.13072,True
+ResNet-20,1,Method,5,2007.12515,True
+PROMISE12,1,Dataset,5,2007.11726,True
+NCI-ISBI 2013,1,Dataset,5,2007.11726,True
+Shape-CD,1,Method,5,2007.11985,True
+ExtraSensory Dataset,1,Dataset,5,2007.11985,True
+IPFS (Inter-Planetary File System),1,Tool,5,2007.1065,True
+Nottingham Dataset,1,Dataset,5,2007.1061,True
+View Alignment GAN,1,Method,5,2007.07066,True
+VA-GAN,1,Method,5,2007.07066,True
+unlayered Algebraic Branching Programs,1,Method,5,2007.06819,True
+layered Algebraic Branching Programs,1,Method,5,2007.06819,True
+Alpha-Refine,1,Method,5,2007.02024,True
+DiMP,1,Method,5,2007.02024,True
+ATOM,1,Method,5,2007.02024,True
+SiamRPN++,1,Method,5,2007.02024,True
+RTMDNet,1,Method,5,2007.02024,True
+FB-GACN,1,Method,5,2006.13863,True
+likelihood-free Gaussian process (LFGP),1,Method,5,2006.13456,True
+Fuzzy C-Means (FCM),1,Method,5,2006.1151,True
+KG-BIAS 2020,1,Tool,5,2007.11659,True
+HowTo100M,1,Dataset,5,2006.07203,True
+EPIC-Kitchens,1,Dataset,5,2006.07203,True
+TVQA,1,Dataset,5,2006.07203,True
+YouCook2,1,Dataset,5,2006.07203,True
+Exploration Enhanced Q-learning,1,Method,5,2006.04354,True
+Blensor,1,Tool,5,2006.04345,True
+CARLA,1,Tool,5,2006.04345,True
+Velodyne HDL64-E2,1,Tool,5,2006.04345,True
+Contextual Hierarchical Attention Network,1,Method,5,2006.01554,True
+MultiWOZ 2.0,1,Dataset,5,2006.01554,True
+InferNet,1,Method,5,2005.12741,True
+DIP-FAT,1,Method,5,2005.07606,True
+MITCheetah,1,Tool,5,2005.11134,True
+HyQ,1,Tool,5,2005.11134,True
+ANYmal,1,Tool,5,2005.11134,True
+BigDog,1,Tool,5,2005.11134,True
+FD-NOMA,1,Method,5,2005.01384,True
+Vision-CSI Emotion Database,1,Dataset,5,2004.09889,True
+CDKGen,1,Method,5,2004.098,True
+Bhandari and Chakraborty algorithm,1,Method,5,2004.08716,True
+LiteDenseNet,1,Method,5,2004.08112,True
+conv-TasNet,1,Method,5,2004.06332,True
+Working Memory Toolkit (WMtk),1,Tool,5,2004.06213,True
+Matern Cluster Process,1,Method,5,2004.01964,True
+OpenStreetMap,1,Dataset,5,2004.01101,True
+KITTI Lane dataset,1,Dataset,5,2004.01101,True
+TerraSAR-X DLR,1,Tool,5,2003.13648,True
+SegNet,1,Method,5,2003.13648,True
+LinkNet,1,Method,5,2003.13648,True
+first-order MAML,1,Method,5,2003.11768,True
+Reptile,1,Method,5,2003.11768,True
+Java GitHub corpus,1,Dataset,5,2003.11768,True
+GHTorrent,1,Dataset,5,2003.1075,True
+Dynamic Hierarchical Mimicking,1,Method,5,2003.10739,True
+STAN-SC,1,Method,5,2003.06107,True
+ETH-UCY datasets,1,Dataset,5,2003.06107,True
+Gap Games for Bitcoin,1,Task,5,2003.05067,True
+MClass-D,1,Dataset,5,2003.02597,True
+UNSW_NB15,1,Dataset,5,2003.00476,True
+Geometry Automated Provers Competition,1,Task,5,2002.11895,True
+Schoenberg-Rao distances,1,Method,5,2002.08345,True
+Luenberger-type Observer,1,Method,5,2003.00835,True
+Bouncing Balls Dataset,1,Dataset,5,2003.00835,True
+Pendulum Dataset,1,Dataset,5,2003.00835,True
+meta-domain adaptation (MDA),1,Method,5,2002.04274,True
+meta-knowledge distillation (MKD),1,Method,5,2002.04274,True
+High-Dimensional Gaussian mechanism,1,Method,5,2002.02061,True
+MALT parser,1,Method,5,2001.08279,True
+LSTM parser,1,Method,5,2001.08279,True
+BigEarthNet,1,Dataset,5,2001.06372,True
+Sentinel-2,1,Dataset,5,2001.06372,True
+Intelligent Process Automation (IPA-20),1,Task,5,2001.05214,True
+SILNR maximization precoding,1,Method,5,2001.04073,True
+HiPEAC,1,Tool,5,2005.07619,True
+Bidirectional LSTM,1,Method,5,2001.01717,True
+Conditional Random Field (CRF),1,Method,5,2001.01167,True
+CoNLL 2003,1,Dataset,5,2001.01167,True
+TensorFlow,1,Tool,5,2001.01167,True
+DyNet,1,Tool,5,2001.01167,True
+SP175 database,1,Dataset,5,2504.19355,True
+2-Galois LCD codes,1,Method,5,2208.07708,True
+Banker-OMD,1,Method,5,2106.08943,True
+delayed best-of-both-worlds MAB,1,Task,5,2106.08943,True
