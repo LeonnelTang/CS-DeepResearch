@@ -28,13 +28,13 @@ class ContextManager:
         self._prune_trajectory()
 
     def _prune_trajectory(self) -> None:
-        """裁剪超长轨迹：保留近期3轮+早期摘要"""
+        """裁剪超长轨迹：保留近期5轮+早期摘要"""
         trajectory_str = str(self.tao_trajectory)
         if len(trajectory_str) <= self.max_length:
             return
 
         # 保留近期3轮完整轨迹
-        recent_count = min(3, len(self.tao_trajectory))
+        recent_count = min(5, len(self.tao_trajectory))
         recent_trajectory = self.tao_trajectory[-recent_count:]
 
         # 生成早期轨迹摘要（如果有早期轨迹）

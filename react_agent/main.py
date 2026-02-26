@@ -2,24 +2,26 @@
 from react_agent import ReactCoreLoop, openai_executor
 
 # 导入工具 (从工具包导入)
-from react_agent.tools import get_tool_list
+from react_agent.tools import ToolConfig
 import datetime
 
 def main():
     """主函数：演示ReAct循环的使用"""
     # 初始化工具
-    tools = get_tool_list()
+    mcp_config_path = "tools/mcp_configs.json"
+    tool_config = ToolConfig(mcp_config_path)
+    tools = tool_config.interactive_select_tools()
 
-    print("工具列表：")
+    print("可用工具列表：")
     for tool in tools:
         print(f"- {tool.name}")
 
     # 定义任务
-    task = "编写一个输出当前时间的python代码，并运行查看结果"
+    task = "整理最新ai科研进展"
 
     # 轨迹文件名 时间+数据集名字
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    dataset_name = "code_test"
+    dataset_name = "arxiv_test"
     trajectory_filename = f"trajectories/{timestamp}_{dataset_name}.jsonl"
 
 

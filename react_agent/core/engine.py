@@ -134,11 +134,12 @@ class ReactCoreLoop:
         context_manager = ContextManager()
 
         chatml_builder = ChatMLBuilder()
-        chatml_builder.add_message("user", task)
 
         for step in range(self.max_steps):
             # 1. 构建提示词并调用LLM
             prompt = self._build_prompt(task, context_manager.get_context_str())
+
+            chatml_builder.add_message("user", prompt)
 
             # 调用LLM
             llm_output = self._call_llm(prompt)
