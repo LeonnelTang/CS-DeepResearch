@@ -10,7 +10,7 @@ client = OpenAI(
     api_key=os.getenv("DEEPSEEK_API_KEY")
 )
 
-def openai_executor(prompt: str) -> str:
+def llm_executor(prompt: str) -> str:
     """
     这是一个符合 ReactCoreLoop 要求的 llm_executor 函数
     """

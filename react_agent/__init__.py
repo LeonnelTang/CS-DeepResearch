@@ -8,10 +8,11 @@ from .schema import TAO
 from .core import ReactCoreLoop
 
 # 导入 llm client
-from .llm_client import openai_executor
+from .llm_client import llm_executor, client
 
 __all__ = [
     "TAO",
     "ReactCoreLoop",
-    "openai_executor"
+    "llm_executor",
+    "client"
 ]
