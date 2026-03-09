@@ -28,5 +28,11 @@
     "description": "GitHub 官方提供的服务，为开发人员和工具提供连接 GitHub 的高级自动化和交互功能。",
     "env_url": "Bailian_GitHub_MCP_URL",
     "env_api_key": "DASHSCOPE_API_KEY"
+  },
+  {
+    "name": "StockStar",
+    "description": "该服务目前支持A股、港股等各项基础数据、衍生数据、财务分析、商业模式分析等。",
+    "env_url": "Bailian_StockStar_MCP_URL",
+    "env_api_key": "DASHSCOPE_API_KEY"
   }
 ]

@@ -5,6 +5,8 @@ from react_agent import ReactCoreLoop, llm_executor
 from react_agent.tools import ToolConfig
 import datetime
 
+
+
 def main():
     """主函数：演示ReAct循环的使用"""
     # 初始化工具
@@ -17,11 +19,11 @@ def main():
         print(f"- {tool.name}")
 
     # 定义任务
-    task = "有一种多功能的Transformer架构，它通过一种独特的训练策略来同时适应多种图像修复任务。这种训练策略涉及同步更新模型的核心部分和针对特定任务的调整部分。此外，这种方法还基于另一种技术路线（一种为生成模型设计的去噪技术）得到了扩展和应用。请问，这种采用了上述同步训练策略，并且其方法被扩展到另一种去噪技术上的、能处理多种图像修复任务的核心Transformer架构具体是什么？"
+    task = "2026年3月10日 A股小散户的股票操作建议"
 
     # 轨迹文件名 时间+数据集名字
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    dataset_name = "qa_test"
+    dataset_name = "DR_test"
     trajectory_filename = f"D:\\DissertationProject\\DissertationProject\\react_agent\\trajectories\\{timestamp}_{dataset_name}.jsonl"
 
 

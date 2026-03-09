@@ -71,9 +71,22 @@ class LLMOutputParser:
         Raises:
             ValueError: 解析失败时抛出异常
         """
-        for tool_name in tool_names:
-            if action.startswith(tool_name):
-                param_str = action[len(tool_name) + 1:-1].strip()
-                return tool_name, param_str
 
-        raise ValueError(f"未识别的工具调用：{action}")
+        # 找到第一个左括号的位置，这是工具名和参数的分界线
+        bracket_idx = action.find('[')
+
+        if bracket_idx == -1:
+            raise ValueError(f"工具调用格式错误，缺少参数括号：{action}")
+
+        tool_name = action[:bracket_idx].strip()
+
+        if tool_name not in tool_names:
+            raise ValueError(f"未识别的工具调用：{tool_name}")
+
+        # 提取参数字符串并确保尾部闭合
+        if not action.strip().endswith(']'):
+            raise ValueError(f"工具调用格式错误，未找到闭合括号：{action}")
+
+        param_str = action[bracket_idx + 1:action.rfind(']')].strip()
+
+        return tool_name, param_str

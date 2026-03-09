@@ -19,9 +19,10 @@ local_tools = [
 
 class ToolConfig:
     """工具配置类"""
-    def __init__(self, config_path):
+    def __init__(self, config_path, cache_path="mcp_tools_cache.json"):
         self.config_path = config_path
         self.all_mcp_configs = []
+        self.cache_path = cache_path
 
         """获取所有MCP配置信息"""
         with open(self.config_path, "r", encoding="utf-8") as f:
@@ -29,10 +30,38 @@ class ToolConfig:
 
     async def load_mcp_tools(self, server_url: str, api_key: str) -> list[BaseTool]:
         """连接 MCP 服务器并拉取所有可用工具，转换为 BaseTool 列表"""
-        headers = {"Authorization": f"Bearer {api_key}"}
+
+        # 1. 尝试读取本地缓存
+        cache_data = {}
+        if os.path.exists(self.cache_path):
+            try:
+                with open(self.cache_path, "r", encoding="utf-8") as f:
+                    cache_data = json.load(f)
+            except Exception as e:
+                print(f"⚠️ 读取缓存失败，将重新拉取: {e}")
+
         mcp_base_tools = []
 
+        # 2. 如果缓存命中，直接使用本地数据构建工具 (跳过网络请求)
+        if server_url in cache_data:
+            print(f"⚡ 从本地缓存极速加载 MCP 工具: {server_url}")
+            for t_data in cache_data[server_url]:
+                mcp_base_tools.append(
+                    MCPToolAdapter(
+                        name=t_data["name"],
+                        description=t_data["description"],
+                        server_url=server_url,
+                        mcp_tool_name=t_data["mcp_tool_name"],
+                        api_key=api_key  # 注意：API Key 从环境变量动态获取，不写入缓存保证安全
+                    )
+                )
+            return mcp_base_tools
+
+        # 3. 如果没有缓存，建立连接拉取远程工具
+        headers = {"Authorization": f"Bearer {api_key}"}
         print(f"正在连接 MCP 服务器加载工具: {server_url} ...")
+        server_cache_entry = []  # 用于保存当前服务器的工具元数据
+
         async with sse_client(url=server_url, headers=headers) as (read_stream, write_stream):
             async with ClientSession(read_stream, write_stream) as session:
                 await session.initialize()
@@ -44,7 +73,14 @@ class ToolConfig:
                     schema_str = json.dumps(t.inputSchema, ensure_ascii=False)
                     tool_description = f"{t.description}\n参数格式: {schema_str}"
 
-                    # 将每个远程工具包装成你的 BaseTool
+                    # 将构建好的工具信息记录下来，准备写入缓存
+                    server_cache_entry.append({
+                        "name": t.name,
+                        "description": tool_description,
+                        "mcp_tool_name": t.name
+                    })
+
+                    # 将每个远程工具包装成 BaseTool
                     mcp_base_tools.append(
                         MCPToolAdapter(
                             name=t.name,
@@ -54,7 +90,13 @@ class ToolConfig:
                             api_key=api_key
                         )
                     )
-        print(f"成功加载 {len(mcp_base_tools)} 个 MCP 工具。")
+
+        # 4. 更新缓存文件
+        cache_data[server_url] = server_cache_entry
+        with open(self.cache_path, "w", encoding="utf-8") as f:
+            json.dump(cache_data, f, ensure_ascii=False, indent=4)
+
+        print(f"✅ 成功加载并缓存 {len(mcp_base_tools)} 个 MCP 工具。")
         return mcp_base_tools
 
     async def fetch_all_mcp_tools(self, mcp_configs: list[dict]) -> list:
@@ -118,7 +160,9 @@ class ToolConfig:
             print("没有有效的MCP配置需要加载")
             mcp_tools = []
 
-        all_tools = local_tools + mcp_tools
+        # all_tools = local_tools + mcp_tools
+        all_tools=mcp_tools
+
         print(f"✅ 工具总数: {len(all_tools)} (本地: {len(local_tools)}, MCP: {len(mcp_tools)})")
 
         return all_tools

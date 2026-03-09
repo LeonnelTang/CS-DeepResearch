@@ -148,7 +148,7 @@ class ContextManager:
 
         try:
             response = client.chat.completions.create(
-                model="deepseek-chat",
+                model="qwen-flash",
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
