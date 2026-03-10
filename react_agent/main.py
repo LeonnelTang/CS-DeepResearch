@@ -1,5 +1,5 @@
 # 导入核心引擎 (从顶层包直接导入)
-from react_agent import ReactCoreLoop, llm_executor
+from react_agent import ResearchLoop, llm_executor
 
 # 导入工具 (从工具包导入)
 from react_agent.tools import ToolConfig
@@ -19,7 +19,7 @@ def main():
         print(f"- {tool.name}")
 
     # 定义任务
-    task = "2026年3月10日 A股小散户的股票操作建议"
+    task = "简单总结论文 Humanity's Last Exam"
 
     # 轨迹文件名 时间+数据集名字
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -28,7 +28,14 @@ def main():
 
 
     # 创建并运行ReAct循环
-    reactor = ReactCoreLoop(
+    # reactor = ReactCoreLoop(
+    #     tools=tools,
+    #     llm_executor=llm_executor,
+    #     max_steps=30,
+    #     output_file=trajectory_filename,
+    # )
+
+    reactor = ResearchLoop(
         tools=tools,
         llm_executor=llm_executor,
         max_steps=30,
@@ -41,7 +48,7 @@ def main():
     print("\n" + "=" * 50)
     print("最终结果：", final_result)
     print("\n完整执行轨迹：")
-    print(trajectory)
+    # print(trajectory)
     print("=" * 50)
 
 

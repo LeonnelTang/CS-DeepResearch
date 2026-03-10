@@ -2,37 +2,43 @@
   {
     "name": "WebSearch",
     "description": "联网搜索\n基于通义实验室 Text-Embedding，GTE-reRank，Query 改写，搜索判定等多种检索模型及语义理解，串接专业搜索工程框架及各类型实时信息检索工具，提供实时互联网全栈信息检索，提升 LLM 回答准确性及时效性。",
-    "env_url": "Bailian_WebSearch_MCP_URL",
+    "env_url": "BAILIAN_WEBSEARCH_MCP_URL",
     "env_api_key": "DASHSCOPE_API_KEY"
   },
   {
     "name": "WebParser",
     "description": "网页解析\n网页解析（WebParser）MCP 服务，一个专用于网页内容解析的工具包。",
-    "env_url": "Bailian_WebParser_MCP_URL",
+    "env_url": "BAILIAN_WEBPARSER_MCP_URL",
     "env_api_key": "DASHSCOPE_API_KEY"
   },
   {
     "name": "YepCode",
     "description": "YepCode 代码沙盒\n运行LLM生成的代码(Python, JavaScript)",
-    "env_url": "Bailian_YepCode_MCP_URL",
+    "env_url": "BAILIAN_YEPCODE_MCP_URL",
     "env_api_key": "DASHSCOPE_API_KEY"
   },
   {
     "name": "ArxivPaper",
     "description": "Arxiv 论文助手\n一个基于 arXiv 的论文解读与知识整理助手。支持搜索 Arxiv 论文，论文PDF链接获取，论文解读，获取最新AI论文，适合自用或自动化工具集成。",
-    "env_url": "Bailian_ArxivPaper_MCP_URL",
+    "env_url": "BAILIAN_ARXIVPAPER_MCP_URL",
     "env_api_key": "DASHSCOPE_API_KEY"
   },
   {
     "name": "Github",
     "description": "GitHub 官方提供的服务，为开发人员和工具提供连接 GitHub 的高级自动化和交互功能。",
-    "env_url": "Bailian_GitHub_MCP_URL",
+    "env_url": "BAILIAN_GITHUB_MCP_URL",
     "env_api_key": "DASHSCOPE_API_KEY"
   },
   {
     "name": "StockStar",
     "description": "该服务目前支持A股、港股等各项基础数据、衍生数据、财务分析、商业模式分析等。",
-    "env_url": "Bailian_StockStar_MCP_URL",
+    "env_url": "BAILIAN_STOCKSTAR_MCP_URL",
     "env_api_key": "DASHSCOPE_API_KEY"
+  },
+  {
+    "name": "ArxivMcpServer",
+    "description": "它允许AI模型以编程方式搜索论文并访问其内容。",
+    "env_url": "MODELSCOPE_ARXIV_MCP_SERVER_URL",
+    "env_api_key": "MODELSCOPE_API_KEY"
   }
 ]

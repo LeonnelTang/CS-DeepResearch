@@ -1,11 +1,11 @@
 # react_agent/core/__init__.py
 
-from .engine import ReactCoreLoop
-from .memory import ContextManager
+from .engine import ResearchLoop
+from .memory import StateManager
 from .parser import LLMOutputParser
 
 __all__ = [
-    "ReactCoreLoop",
-    "ContextManager",
-    "LLMOutputParser",
+    "ResearchLoop",
+    "StateManager",
+    "LLMOutputParser"
 ]

@@ -5,15 +5,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # 配置 OpenAI 客户端
-deepseek_client = OpenAI(
+client = OpenAI(
     base_url=os.getenv("DEEPSEEK_API_BASE"),
     api_key=os.getenv("DEEPSEEK_API_KEY")
 )
 
-client = OpenAI(
-    base_url=os.getenv("DMX_API_BASE"),
-    api_key=os.getenv("DMX_API_KEY")
-)
+# client = OpenAI(
+#     base_url=os.getenv("DMX_API_BASE"),
+#     api_key=os.getenv("DMX_API_KEY")
+# )
 
 def llm_executor(prompt: str) -> str:
     """
@@ -21,7 +21,7 @@ def llm_executor(prompt: str) -> str:
     """
     try:
         response = client.chat.completions.create(
-            model="qwen-flash",  # 或者 gpt-3.5-turbo
+            model="deepseek-chat",  # 或者 gpt-3.5-turbo
             messages=[
                 {"role": "user", "content": prompt}
             ],

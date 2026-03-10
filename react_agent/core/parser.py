@@ -6,34 +6,34 @@ class LLMOutputParser:
     """LLM输出解析器"""
 
     @staticmethod
-    def parse_thought_action(llm_output: str) -> Tuple[str, str]:
+    def parse_tra(llm_output: str) -> Tuple[str, str, str]:
         """
         解析 XML 格式的 LLM 输出，提取思维和行动
-        格式：<thought>...</thought>\n<action>...</action>
+        格式：<thought>...</thought>\n<report>...</report>\n<action>...</action>
 
         Args:
             llm_output: LLM原始输出
 
         Returns:
-            (思维内容, 行动内容) 元组
+            (思维内容, 演进报告，行动内容) 元组
 
         Raises:
             ValueError: 解析失败时抛出异常
         """
         try:
-            # 使用正则提取 thought 标签内容
-            thought_match = re.search(r'<thought>(.*?)</thought>', llm_output, re.DOTALL)
+            # 使用正则提取标签内容
+            think_match = re.search(r'<think>(.*?)</think>', llm_output, re.DOTALL)
+            report_match = re.search(r'<report>(.*?)</report>', llm_output, re.DOTALL)
             action_match = re.search(r'<action>(.*?)</action>', llm_output, re.DOTALL)
 
-            if not thought_match or not action_match:
-                # 如果解析失败，尝试向后兼容旧格式（可选）
-                # 或者直接抛出异常
-                raise ValueError(f"无法从输出中解析 thought/action XML 标签：{llm_output}")
+            think = think_match.group(1).strip() if think_match else ""
+            report = report_match.group(1).strip() if report_match else ""
+            action = action_match.group(1).strip() if action_match else ""
 
-            thought = thought_match.group(1).strip()
-            action = action_match.group(1).strip()
+            if not action:
+                raise ValueError("未在输出中找到 <action> 标签")
 
-            return thought, action
+            return think, report, action
         except (IndexError, ValueError) as e:
             raise ValueError(f"解析LLM输出失败：{e}，原始输出：{llm_output}")
 
