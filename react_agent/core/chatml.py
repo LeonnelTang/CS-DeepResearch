@@ -28,3 +28,7 @@ class ChatMLBuilder:
         with open(file_path, 'a', encoding='utf-8') as f:
             f.write(self.to_str() + '\n')
 
+    # 清空轨迹
+    def clear(self):
+        self.trajectory = {"messages": []}
+

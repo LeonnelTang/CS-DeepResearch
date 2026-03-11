@@ -99,10 +99,12 @@ class ResearchLoop:
                 print(f"[Action]: {action}")
                 print(f"[Observation]: {str(observation)[:50]}...")
 
+                chatml_builder.save_to_jsonl(self.output_file)
+                chatml_builder.clear()
+
                 # 6. 检查是否完成任务
                 if action.startswith("finish["):
                     result = self.parser.parse_finish_action(action)
-                    chatml_builder.save_to_jsonl(self.output_file)
                     return result, workspace.full_trajectory
 
             except ValueError as e:

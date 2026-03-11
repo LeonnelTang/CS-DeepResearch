@@ -24,7 +24,7 @@ class LLMOutputParser:
             # 使用正则提取标签内容
             think_match = re.search(r'<think>(.*?)</think>', llm_output, re.DOTALL)
             report_match = re.search(r'<report>(.*?)</report>', llm_output, re.DOTALL)
-            action_match = re.search(r'<action>(.*?)</action>', llm_output, re.DOTALL)
+            action_match = re.search(r'.*<action>(.*?)</action>', llm_output, re.DOTALL)
 
             think = think_match.group(1).strip() if think_match else ""
             report = report_match.group(1).strip() if report_match else ""

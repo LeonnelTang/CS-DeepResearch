@@ -160,12 +160,38 @@ class ToolConfig:
             print("没有有效的MCP配置需要加载")
             mcp_tools = []
 
-        # all_tools = local_tools + mcp_tools
-        all_tools=mcp_tools
+        all_tools = local_tools + mcp_tools
 
         print(f"✅ 工具总数: {len(all_tools)} (本地: {len(local_tools)}, MCP: {len(mcp_tools)})")
 
         return all_tools
+
+    def get_tools_by_indices(self, indices: list[int]):
+        """
+        根据传入的索引列表获取对应的MCP工具配置 (用于自动化批量测试)
+
+        Args:
+            indices (list[int]): 对应 all_mcp_configs 列表的索引
+
+        Returns:
+            list[BaseTool]: 实例化的工具列表
+        """
+        selected_names = []
+        for idx in indices:
+            # 确保索引在有效范围内
+            if 0 <= idx < len(self.all_mcp_configs):
+                selected_names.append(self.all_mcp_configs[idx]["name"])
+            else:
+                print(f"⚠️ 警告: 工具配置索引 {idx} 超出范围 (最大索引为 {len(self.all_mcp_configs) - 1})，已忽略。")
+
+        if not selected_names:
+            print("⚠️ 警告: 未匹配到任何有效的 MCP 配置，将返回空工具列表。")
+            return []
+
+        print(f"🔄 准备加载配置: {selected_names}")
+        # 复用现有的 config_tools 方法加载并初始化工具
+        tools = self.config_tools(selected_names)
+        return tools
 
     def interactive_select_tools(self):
         """交互式选择要加载的MCP工具"""

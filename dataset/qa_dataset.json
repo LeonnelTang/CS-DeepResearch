@@ -1,0 +1,10 @@
+[
+  {
+    "question": "查询昨天从深圳到广州最便宜上午的航班",
+    "selected_tools": [0, 2]
+  },
+  {
+    "question": "搜索这篇关于强化学习中 GRPO 算法的最新论文摘要",
+    "selected_tools": [1, 3, 4]
+  }
+]
