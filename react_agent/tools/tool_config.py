@@ -1,5 +1,5 @@
 import json
-from .local_tool import ArxivSearchEngine, GetRecentAIPapers
+from .local_tool import ArxivSearchEngine, GetRecentAIPapers, ListSkillsTool, GetSkillPromptTool
 import os
 from .mcp_tool import MCPToolAdapter, BaseTool
 import asyncio
@@ -13,19 +13,21 @@ load_dotenv()
 
 # 5. 将MCP工具与本地工具合并
 local_tools = [
-    ArxivSearchEngine(),
-    GetRecentAIPapers()
+    # ArxivSearchEngine(),
+    # GetRecentAIPapers(),
+    ListSkillsTool(),
+    GetSkillPromptTool()
 ]
 
 class ToolConfig:
     """工具配置类"""
-    def __init__(self, config_path, cache_path="mcp_tools_cache.json"):
-        self.config_path = config_path
+    def __init__(self, mcp_config_path, cache_path="mcp_tools_cache.json"):
+        self.mcp_config_path = mcp_config_path
         self.all_mcp_configs = []
         self.cache_path = cache_path
 
         """获取所有MCP配置信息"""
-        with open(self.config_path, "r", encoding="utf-8") as f:
+        with open(self.mcp_config_path, "r", encoding="utf-8") as f:
             self.all_mcp_configs = json.load(f)
 
     async def load_mcp_tools(self, server_url: str, api_key: str) -> list[BaseTool]:

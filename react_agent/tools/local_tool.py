@@ -250,12 +250,95 @@ class GetRecentAIPapers(BaseTool):
             logger.error(f"抓取或解析 arXiv 网页失败: {e}")
             return f"获取最新 AI 论文时发生错误: {str(e)}"
 
-if __name__ == "__main__":
-    # 创建一个工具实例
-    # tool = GetRecentAIPapersTool()
-    #
-    # # 运行工具并打印结果
-    # print(tool.run({"limit": 5}))
 
-    tool = ArxivSearchEngine()
-    print(tool.run({"query": "LLM-as-a-judge", "limit": 5}))
+import json
+import os
+from typing import Any
+from base import BaseTool  # 假设你的基类保存在 base.py 中
+
+
+class ListSkillsTool(BaseTool):
+    """工具：列出当前系统支持的所有技能及描述"""
+
+    def __init__(self, skills_file_path: str = "skills.json"):
+        # 满足基类的描述要求：功能描述 + 参数格式
+        description = "获取所有可用的技能（Skills）列表及其功能描述。参数格式为 {}"
+        super().__init__(name="list_skills", description=description)
+        self.skills_file_path = os.path.abspath(skills_file_path)
+
+    def run(self, params: Any = None) -> str:
+        """读取本地文件，返回所有技能的概览"""
+        if not os.path.exists(self.skills_file_path):
+            return "Error: 技能配置文件不存在，请检查路径。"
+
+        try:
+            with open(self.skills_file_path, 'r', encoding='utf-8') as f:
+                skills_data = json.load(f)
+
+            if not skills_data:
+                return "Observation: 当前没有可用的技能。"
+
+            result_lines = ["当前可用的技能列表如下："]
+            for skill_name, skill_info in skills_data.items():
+                desc = skill_info.get("description", "无描述")
+                result_lines.append(f"- {skill_name}: {desc}")
+
+            return "\n".join(result_lines)
+
+        except Exception as e:
+            return f"Error: 读取技能列表时发生错误: {str(e)}"
+
+
+class GetSkillPromptTool(BaseTool):
+    """工具：根据技能名称获取对应的工作流程 Prompt"""
+
+    def __init__(self, skills_file_path: str = "skills.json"):
+        description = "获取某一具体技能的详细 Prompt（工作流程提示）。参数格式为 {'skill_name': '需要获取的技能名称'}"
+        super().__init__(name="get_skill_prompt", description=description)
+        self.skills_file_path = skills_file_path
+
+    def run(self, params: Any) -> str:
+        """解析参数，返回特定的 Prompt"""
+        # 1. 解析和校验参数
+        if not isinstance(params, dict) or "skill_name" not in params:
+            return "Error: 参数格式错误，必须包含 'skill_name' 键。例如: {'skill_name': 'data_analyst'}"
+
+        skill_name = params["skill_name"]
+
+        # 2. 读取本地 JSON 库
+        if not os.path.exists(self.skills_file_path):
+            return "Error: 技能配置文件不存在，请检查路径。"
+
+        try:
+            with open(self.skills_file_path, 'r', encoding='utf-8') as f:
+                skills_data = json.load(f)
+
+            # 3. 匹配并返回对应的 Prompt
+            if skill_name in skills_data:
+                prompt_content = skills_data[skill_name].get("prompt", "")
+                return f"Observation: 成功获取技能 '{skill_name}' 的 Prompt:\n{prompt_content}"
+            else:
+                return f"Observation: 未找到名为 '{skill_name}' 的技能，请先使用 list_skills 工具查看可用列表。"
+
+        except Exception as e:
+            return f"Error: 读取技能 Prompt 时发生错误: {str(e)}"
+
+
+# ==========================================
+# 测试代码 (Test Cases)
+# ==========================================
+if __name__ == "__main__":
+
+    # 1. 测试获取列表
+    list_tool = ListSkillsTool()
+    print("--- 测试 ListSkillsTool ---")
+    print(list_tool.to_str())
+    print(list_tool.run({}))
+
+    # 2. 测试获取具体 Prompt
+    get_tool = GetSkillPromptTool()
+    print("\n--- 测试 GetSkillPromptTool ---")
+    print(get_tool.to_str())
+    # 模拟大模型传入的参数
+    print(get_tool.run({"skill_name": "data_analyst"}))
+    print(get_tool.run({"skill_name": "unknown_skill"}))

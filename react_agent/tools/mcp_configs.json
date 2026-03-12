@@ -1,5 +1,17 @@
 [
   {
+    "name": "Jina AI MCP 工具",
+    "description": "Jina Web Reader, Jina Web Search",
+    "env_url": "MODELSCOPE_JINA_MCP_URL",
+    "env_api_key": "MODELSCOPE_API_KEY"
+  },
+  {
+    "name": "ArxivMcpServer",
+    "description": "它允许AI模型以编程方式搜索论文并访问其内容。",
+    "env_url": "MODELSCOPE_ARXIV_MCP_SERVER_URL",
+    "env_api_key": "MODELSCOPE_API_KEY"
+  },
+  {
     "name": "WebSearch",
     "description": "联网搜索\n基于通义实验室 Text-Embedding，GTE-reRank，Query 改写，搜索判定等多种检索模型及语义理解，串接专业搜索工程框架及各类型实时信息检索工具，提供实时互联网全栈信息检索，提升 LLM 回答准确性及时效性。",
     "env_url": "BAILIAN_WEBSEARCH_MCP_URL",
@@ -34,11 +46,5 @@
     "description": "该服务目前支持A股、港股等各项基础数据、衍生数据、财务分析、商业模式分析等。",
     "env_url": "BAILIAN_STOCKSTAR_MCP_URL",
     "env_api_key": "DASHSCOPE_API_KEY"
-  },
-  {
-    "name": "ArxivMcpServer",
-    "description": "它允许AI模型以编程方式搜索论文并访问其内容。",
-    "env_url": "MODELSCOPE_ARXIV_MCP_SERVER_URL",
-    "env_api_key": "MODELSCOPE_API_KEY"
   }
 ]

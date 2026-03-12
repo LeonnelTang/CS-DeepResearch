@@ -5,7 +5,7 @@ class BaseTool:
 
     def __init__(self, name:str, description:str):
         self.name = name   # 工具名称（用于行动解析）
-        self.description = description   # 工具功能描述（用于模型理解）
+        self.description = description   # 工具功能描述+参数格式为 {'': , '': }（用于模型理解）
 
 
     def run(self, params: Any) ->str:

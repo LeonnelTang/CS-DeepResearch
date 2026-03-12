@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcb105ba-b168-4af3-bd87-f8563e3b4a8d" name="Changes" comment="implement IterResearch">
-      <change afterPath="$PROJECT_DIR$/SFT/run_sft_traj.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/qa_dataset.json" afterDir="false" />
+    <list default="true" id="dcb105ba-b168-4af3-bd87-f8563e3b4a8d" name="Changes" comment="add code for sft traj">
+      <change afterPath="$PROJECT_DIR$/dataset/build_data.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_agent/tools/skills.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DissertationProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DissertationProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_agent/core/chatml.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/core/chatml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_agent/core/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/core/engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_agent/core/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/core/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_agent/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFT/run_sft_traj.py" beforeDir="false" afterPath="$PROJECT_DIR$/SFT/run_sft_traj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_agent/tools/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/tools/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_agent/tools/local_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/tools/local_tool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_agent/tools/mcp_configs.json" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/tools/mcp_configs.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react_agent/tools/tool_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/tools/tool_config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -69,35 +71,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.__init__.executor": "Run",
-    "Python.arxiv_search.executor": "Run",
-    "Python.clean_data.executor": "Run",
-    "Python.corpus.executor": "Run",
-    "Python.entity (1).executor": "Run",
-    "Python.entity.executor": "Run",
-    "Python.extract_entities.executor": "Run",
-    "Python.filter_rare_entity.executor": "Debug",
-    "Python.local_tool.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mcp_tool.executor": "Debug",
-    "Python.run_sft_traj.executor": "Debug",
-    "Python.tavily_search.executor": "Run",
-    "Python.tool_config.executor": "Run",
-    "Python.tools_list.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/DissertationProject/DissertationProject/SFT/data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Python",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.arxiv_search.executor&quot;: &quot;Run&quot;,
+    &quot;Python.clean_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.corpus.executor&quot;: &quot;Run&quot;,
+    &quot;Python.entity (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.entity.executor&quot;: &quot;Run&quot;,
+    &quot;Python.extract_entities.executor&quot;: &quot;Run&quot;,
+    &quot;Python.filter_rare_entity.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.local_tool.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mcp_tool.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.run_sft_traj.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.tavily_search.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tool_config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tools_list.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DissertationProject/DissertationProject/SFT/data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Python&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\DissertationProject\DissertationProject\SFT\data" />
@@ -111,7 +113,7 @@
       <recent name="D:\DissertationProject\DissertationProject\SFT\data" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.local_tool">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DissertationProject" />
       <option name="ENV_FILES" value="" />
@@ -127,6 +129,52 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EntityCollection/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DissertationProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EntityCollection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EntityCollection/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="entity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DissertationProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EntityCollection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EntityCollection/entity.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -181,6 +229,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="local_tool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DissertationProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/react_agent/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/react_agent/tools/local_tool.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DissertationProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/react_agent" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/react_agent/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DissertationProject" />
       <option name="ENV_FILES" value="" />
@@ -206,8 +300,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.local_tool" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.entity" />
         <item itemvalue="Python.__init__" />
       </list>
@@ -266,7 +360,8 @@
       <workItem from="1773077871124" duration="54000" />
       <workItem from="1773123856161" duration="47000" />
       <workItem from="1773123914883" duration="11885000" />
-      <workItem from="1773212177779" duration="4343000" />
+      <workItem from="1773212177779" duration="4859000" />
+      <workItem from="1773301892965" duration="3855000" />
     </task>
     <task id="LOCAL-00001" summary="process entity data">
       <option name="closed" value="true" />
@@ -372,7 +467,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773138511912</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add code for sft traj">
+      <option name="closed" value="true" />
+      <created>1773216956513</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1773216956513</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +504,8 @@
     <MESSAGE value="llm - semantic summary of trajectories" />
     <MESSAGE value="build mcp cache" />
     <MESSAGE value="implement IterResearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement IterResearch" />
+    <MESSAGE value="add code for sft traj" />
+    <option name="LAST_COMMIT_MESSAGE" value="add code for sft traj" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -431,11 +535,6 @@
           <line>2</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SFT/run_sft_traj.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -452,7 +551,7 @@
     <SUITE FILE_PATH="coverage/DissertationProject$entity__1_.coverage" NAME="entity (1) Coverage Results" MODIFIED="1769100938800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntityCollection" />
     <SUITE FILE_PATH="coverage/DissertationProject$tool_config.coverage" NAME="tool_config Coverage Results" MODIFIED="1772107721412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent/tools" />
     <SUITE FILE_PATH="coverage/DissertationProject$run_sft_traj.coverage" NAME="run_sft_traj Coverage Results" MODIFIED="1773215625485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SFT" />
-    <SUITE FILE_PATH="coverage/DissertationProject$local_tool.coverage" NAME="local_tool Coverage Results" MODIFIED="1772114232961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent/tools" />
+    <SUITE FILE_PATH="coverage/DissertationProject$local_tool.coverage" NAME="local_tool Coverage Results" MODIFIED="1773305698502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent/tools" />
     <SUITE FILE_PATH="coverage/DissertationProject$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1769789024182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntityCollection" />
   </component>
 </project>
