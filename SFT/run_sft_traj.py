@@ -8,15 +8,27 @@ from react_agent import ResearchLoop, llm_executor
 # 导入工具 (从工具包导入)
 from react_agent.tools import ToolConfig
 
+#导入评估逻辑
+from eval.qa_judge import extract_answer
+
 
 def load_qa_dataset(filepath: str) -> List[dict]:
-    """读取外部QA JSON文件"""
+    """读取外部QA JSONL文件"""
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"找不到数据集文件: {filepath}")
 
+    dataset = []
     with open(filepath, 'r', encoding='utf-8') as f:
-        return json.load(f)
+        for line in f:
+            line = line.strip()
+            # 跳过空行，防止 json.loads 报错
+            if not line:
+                continue
 
+            # 将每一行的 JSON 字符串解析为字典并存入列表
+            dataset.append(json.loads(line))
+
+    return dataset
 
 def main():
     """主函数：批量运行评估数据集"""
@@ -24,7 +36,7 @@ def main():
     # --- 1. 路径配置 ---
     base_dir = "D:\\DissertationProject\\DissertationProject"
     mcp_config_path = os.path.join(base_dir, "react_agent", "tools", "mcp_configs.json")
-    dataset_path = os.path.join(base_dir, "dataset", "qa_dataset.json")  # 替换为你的实际JSON路径
+    dataset_path = os.path.join(base_dir, "dataset", "general_dataset", "sft_candidates.jsonl")  # 替换为你的实际JSON路径
     trajectory_dir = os.path.join(base_dir, "SFT", "trajectories")
 
     if not os.path.exists(trajectory_dir):
@@ -47,7 +59,10 @@ def main():
     # --- 4. 批量执行 ---
     for index, item in enumerate(qa_data):
         question = item.get("question")
-        selected_tool_indices = item.get("selected_tools", [])
+        correct_answer = item.get("final answer")
+        task = question + "\tYour final response should be in the following format: Explanation: {{your explanation for your final answer}} Exact Answer: {{your succinct, final answer}} Confidence: {{your confidence score between 0% and 100% for your answer}}"
+
+        selected_tool_indices = [0, 1, 2, 3]
 
         if not question:
             print(f"跳过索引 {index}: 缺少 'question' 字段")
@@ -77,12 +92,17 @@ def main():
         reactor = ResearchLoop(
             tools=tools,
             llm_executor=llm_executor,
-            max_steps=30,
-            output_file=trajectory_filename,
+            max_steps=30
         )
 
         # 执行任务
-        final_result, trajectory = reactor.run(question)
+        final_result, trajectory, chatml_builder = reactor.run(task)
+
+        # 验证结果
+        judge_result = extract_answer(question, correct_answer, final_result, "en")
+        print(f"QA 验证结果: {judge_result.get('correct', '未知')}")
+        if judge_result.get("correct", "") == "yes":
+            chatml_builder.save_to_jsonl(trajectory_filename)
 
         # 输出结果
         print(f"\n✅ 任务 [{index + 1}] 完成！")
@@ -92,4 +112,20 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+
+    import time
+
+    start = time.time()
+    judge_result = extract_answer(
+        question="A mystery begins in a state whose flag bears an Osage shield, where a humorist known for his rope tricks and folksy wisdom was born, who shared a tragic fate with a pioneering aviatrix that vanished over the Pacific, whose academic patronage came from an institution famed for its engineering programs and a astronaut alumnus who took humanity's first steps on another world, ultimately leading to the vessel that carried him there.",
+        correct_answer="Apollo 11 Command Module (Columbia)",
+        response="Explanation: 谜题从描述一个州旗带有奥萨格盾牌的州开始，即俄克拉荷马州。该州出生的以绳索技巧和民间智慧闻名的幽默家是威尔·罗杰斯（Will Rogers），他于1935年因飞机失事身亡。他与在太平洋上空失踪的先驱女飞行员阿梅莉亚·埃尔哈特（Amelia Earhart）共享悲剧性的航空事故命运。罗杰斯的“学术资助”指向麻省理工学院（MIT），一所以工程闻名的机构，其仪器实验室开发了阿波罗制导计算机，对阿波罗计划至关重要。MIT的宇航员校友巴兹·奥尔德林（Buzz Aldrin）是阿波罗11号登月舱飞行员，第二个在月球上行走的人，MIT的贡献使人类在月球上的第一步成为可能。最终，线索指向将宇航员带到月球的飞船：阿波罗11号登月舱“鹰”（Apollo 11 Lunar Module \"Eagle\"）。Exact Answer: Apollo 11 Lunar Module \"Eagle\" Confidence: 95%",
+        language="en"
+    )
+    end = time.time()
+    print(f"QA 验证耗时: {end - start}s")
+
+    print(judge_result)
+
+    print(f"QA 验证结果: {judge_result.get('correct', '未知')}")

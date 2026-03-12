@@ -1,4 +1,3 @@
-import re
 from typing import List, Tuple, Callable
 from react_agent.tools import BaseTool
 from .parser import LLMOutputParser
@@ -13,15 +12,13 @@ class ResearchLoop:
     def __init__(self,
                  tools: List[BaseTool],
                  llm_executor: Callable[[str], str],
-                 max_steps: int = 10,
-                 output_file: str = "trajectories/trajectories.jsonl"
+                 max_steps: int = 10
                  ):
 
         self.tool_map = {tool.name: tool for tool in tools}
         self.max_steps = max_steps
         self.llm_executor = llm_executor
         self.parser = LLMOutputParser()
-        self.output_file = output_file
 
         # 基于 IterResearch 的 Prompt 模板
         self.xml_prompt = """你是一个深度研究智能体。你需要通过“思考→报告→行动”(Think-Report-Action) 的迭代循环来解决复杂问题。
@@ -64,7 +61,7 @@ class ResearchLoop:
             prev_observation=workspace_state["prev_observation"]
         ).strip()
 
-    def run(self, task: str) -> Tuple[str, List[dict]]:
+    def run(self, task: str) -> Tuple[str, List[dict], ChatMLBuilder]:
         workspace = StateManager()
         chatml_builder = ChatMLBuilder()
 
@@ -93,19 +90,19 @@ class ResearchLoop:
                 # 5. 重构状态并更新工作区
                 workspace.update_state(think, report, action, observation)
 
-                print(f"\n=== Step {step + 1} ===")
-                print(f"[Think]: {think}")
-                print(f"[Report Updated]: {report}")
-                print(f"[Action]: {action}")
-                print(f"[Observation]: {str(observation)[:50]}...")
+                # print(f"\n=== Step {step + 1} ===")
+                # print(f"[Think]: {think}")
+                # print(f"[Report Updated]: {report}")
+                # print(f"[Action]: {action}")
+                # print(f"[Observation]: {str(observation)[:50]}...")
 
-                chatml_builder.save_to_jsonl(self.output_file)
+                chatml_builder.add_to_jsonl()
                 chatml_builder.clear()
 
                 # 6. 检查是否完成任务
                 if action.startswith("finish["):
                     result = self.parser.parse_finish_action(action)
-                    return result, workspace.full_trajectory
+                    return result, workspace.full_trajectory, chatml_builder
 
             except ValueError as e:
                 error_observation = f"解析错误或格式不合规：{e}"
@@ -115,7 +112,7 @@ class ResearchLoop:
                                        error_observation)
                 print(f"step {step + 1} 错误：{error_observation}")
 
-        return f"任务未完成（已达最大步数{self.max_steps}）", workspace.full_trajectory
+        return f"任务未完成（已达最大步数{self.max_steps}）", workspace.full_trajectory, chatml_builder
 
     def _execute_action(self, action: str) -> str:
         """

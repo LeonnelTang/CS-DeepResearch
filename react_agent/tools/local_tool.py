@@ -254,7 +254,7 @@ class GetRecentAIPapers(BaseTool):
 import json
 import os
 from typing import Any
-from base import BaseTool  # 假设你的基类保存在 base.py 中
+from .base import BaseTool  # 假设你的基类保存在 base.py 中
 
 
 class ListSkillsTool(BaseTool):
