@@ -3,6 +3,7 @@ import datetime
 import os
 from typing import List
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import logging
 
 # 导入核心引擎 (从顶层包直接导入)
 from react_agent import ResearchLoop, llm_executor
@@ -11,6 +12,22 @@ from react_agent.tools import ToolConfig
 
 # 导入评估逻辑
 from eval.qa_judge import extract_answer
+
+# 配置日志格式和级别
+log_filename = f"sft_traj_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+logging.basicConfig(
+    level=logging.INFO,  # 日志级别
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    handlers=[
+        logging.FileHandler(log_filename, encoding='utf-8'),  # 保存到文件
+        logging.StreamHandler()  # 同时输出到控制台
+    ]
+)
+
+# 屏蔽 httpx 库的 HTTP 请求日志
+logging.getLogger('httpx').setLevel(logging.WARNING)
+logger = logging.getLogger(__name__)  # 获取当前模块的 logger
 
 
 def load_qa_dataset(filepath: str) -> List[dict]:
@@ -26,11 +43,10 @@ def load_qa_dataset(filepath: str) -> List[dict]:
                 continue
             dataset.append(json.loads(line))
 
-    return dataset
+    return dataset[100:]
 
 
-def process_single_task(index: int, item: dict, tool_config: ToolConfig, trajectory_dir: str, dataset_name: str,
-                        timestamp: str):
+def process_single_task(index: int, item: dict, tool_config: ToolConfig, trajectory_dir: str, dataset_name: str, timestamp: str):
     """处理单个任务的独立工作函数"""
     question = item.get("question")
     correct_answer = item.get("final answer")
@@ -41,8 +57,9 @@ def process_single_task(index: int, item: dict, tool_config: ToolConfig, traject
     if not question:
         return f"⚠️ 跳过索引 {index}: 缺少 'question' 字段"
 
-    # 记录开始信息 (在多线程中直接print可能会导致输出交错，这里简单处理，更好的方式是使用 logging 模块)
-    print(f"🚀 开始执行任务 [{index + 1}]...")
+    index = index + 100 # 从第101条开始
+
+    logger.info(f"🚀 开始执行任务 [{index + 1}]...")
 
     try:
         tools = tool_config.get_tools_by_indices(selected_tool_indices)
@@ -58,7 +75,7 @@ def process_single_task(index: int, item: dict, tool_config: ToolConfig, traject
     reactor = ResearchLoop(
         tools=tools,
         llm_executor=llm_executor,
-        max_steps=30
+        max_steps=100
     )
 
     try:
@@ -75,7 +92,7 @@ def process_single_task(index: int, item: dict, tool_config: ToolConfig, traject
         # 格式化返回结果
         result_msg = (
             f"✅ 任务 [{index + 1}] 完成！ (QA 验证: {judge_result.get('correct', '未知')})\n"
-            f"💡 最终结果：\n{final_result}\n"
+            # f"💡 最终结果：\n{final_result}\n"
         )
         if is_correct:
             result_msg += f"💾 轨迹已保存至: {trajectory_filename}"
@@ -106,9 +123,9 @@ def main():
     # --- 3. 加载数据集 ---
     try:
         qa_data = load_qa_dataset(dataset_path)
-        print(f"成功加载数据集，共 {len(qa_data)} 条测试用例。\n")
+        logger.info(f"成功加载数据集，共 {len(qa_data)} 条测试用例。\n")
     except Exception as e:
-        print(f"数据集加载失败: {e}")
+        logger.error(f"数据集加载失败: {e}")
         return
 
     dataset_name = "sft_traj"
@@ -118,8 +135,8 @@ def main():
     # 注意：max_workers 决定了并发数量。请根据你的 LLM API 的并发限制 (Rate Limit) 进行调整。
     # 如果设置过高，可能会导致触发 HTTP 429 Too Many Requests 错误。
     max_workers = 5
-    print(f"⚡ 启动线程池，最大并发数: {max_workers}")
-    print("=" * 60)
+    logger.info(f"⚡ 启动线程池，最大并发数: {max_workers}")
+    logger.info("=" * 60)
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # 提交所有任务到线程池
@@ -135,13 +152,13 @@ def main():
         for future in as_completed(futures):
             try:
                 result = future.result()
-                print(result)
-                print("-" * 60)
+                logger.info(result)
+                logger.info("-" * 60)
             except Exception as e:
-                print(f"任务执行出现未捕获的异常: {e}")
-                print("-" * 60)
+                logger.error(f"任务执行出现未捕获的异常: {e}")
+                logger.error("-" * 60)
 
-    print("\n🎉 所有并发任务执行完毕！")
+    logger.info("\n🎉 所有并发任务执行完毕！")
 
 
 if __name__ == "__main__":

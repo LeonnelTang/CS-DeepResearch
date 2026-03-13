@@ -46,7 +46,7 @@ class ToolConfig:
 
         # 2. 如果缓存命中，直接使用本地数据构建工具 (跳过网络请求)
         if server_url in cache_data:
-            print(f"⚡ 从本地缓存极速加载 MCP 工具: {server_url}")
+            # print(f"⚡ 从本地缓存极速加载 MCP 工具: {server_url}")
             for t_data in cache_data[server_url]:
                 mcp_base_tools.append(
                     MCPToolAdapter(
@@ -98,7 +98,7 @@ class ToolConfig:
         with open(self.cache_path, "w", encoding="utf-8") as f:
             json.dump(cache_data, f, ensure_ascii=False, indent=4)
 
-        print(f"✅ 成功加载并缓存 {len(mcp_base_tools)} 个 MCP 工具。")
+        # print(f"✅ 成功加载并缓存 {len(mcp_base_tools)} 个 MCP 工具。")
         return mcp_base_tools
 
     async def fetch_all_mcp_tools(self, mcp_configs: list[dict]) -> list:
@@ -156,7 +156,7 @@ class ToolConfig:
 
         # 4. 启动并发加载
         if mcp_configs:
-            print(f"准备并发加载 {len(mcp_configs)} 个 MCP 配置...")
+            # print(f"准备并发加载 {len(mcp_configs)} 个 MCP 配置...")
             mcp_tools = asyncio.run(self.fetch_all_mcp_tools(mcp_configs))
         else:
             print("没有有效的MCP配置需要加载")
@@ -164,7 +164,7 @@ class ToolConfig:
 
         all_tools = local_tools + mcp_tools
 
-        print(f"✅ 工具总数: {len(all_tools)} (本地: {len(local_tools)}, MCP: {len(mcp_tools)})")
+        # print(f"✅ 工具总数: {len(all_tools)} (本地: {len(local_tools)}, MCP: {len(mcp_tools)})")
 
         return all_tools
 
@@ -190,7 +190,7 @@ class ToolConfig:
             print("⚠️ 警告: 未匹配到任何有效的 MCP 配置，将返回空工具列表。")
             return []
 
-        print(f"🔄 准备加载配置: {selected_names}")
+        # print(f"🔄 准备加载配置: {selected_names}")
         # 复用现有的 config_tools 方法加载并初始化工具
         tools = self.config_tools(selected_names)
         return tools

@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcb105ba-b168-4af3-bd87-f8563e3b4a8d" name="Changes" comment="add code for sft traj">
-      <change afterPath="$PROJECT_DIR$/eval/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eval/prompts.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eval/qa_judge.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eval/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SFT/process_sft_data.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFT/async_run_sft_traj.py" beforeDir="false" afterPath="$PROJECT_DIR$/SFT/async_run_sft_traj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFT/clean_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFT/mcp_tools_cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/SFT/mcp_tools_cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SFT/run_sft_traj.py" beforeDir="false" afterPath="$PROJECT_DIR$/SFT/run_sft_traj.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/build_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/build_data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/qa_dataset.json" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/qa_dataset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_agent/core/chatml.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/core/chatml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_agent/core/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/core/engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_agent/tools/local_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/tools/local_tool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_agent/tools/mcp_configs.json" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/tools/mcp_configs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_agent/tools/tool_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/tools/tool_config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -77,6 +73,7 @@
   "keyToString": {
     "Python.__init__.executor": "Run",
     "Python.arxiv_search.executor": "Run",
+    "Python.async_run_sft_traj.executor": "Run",
     "Python.clean_data.executor": "Run",
     "Python.corpus.executor": "Run",
     "Python.entity (1).executor": "Run",
@@ -117,7 +114,7 @@
       <recent name="D:\DissertationProject\DissertationProject\EntityCollection" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run_sft_traj">
+  <component name="RunManager" selected="Python.async_run_sft_traj">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DissertationProject" />
       <option name="ENV_FILES" value="" />
@@ -141,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="async_run_sft_traj" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DissertationProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,12 +147,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EntityCollection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SFT" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EntityCollection/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SFT/async_run_sft_traj.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -327,11 +324,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.async_run_sft_traj" />
         <item itemvalue="Python.run_sft_traj" />
         <item itemvalue="Python.local_tool" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.entity" />
-        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
@@ -390,6 +387,7 @@
       <workItem from="1773123914883" duration="11885000" />
       <workItem from="1773212177779" duration="4859000" />
       <workItem from="1773301892965" duration="13349000" />
+      <workItem from="1773366074808" duration="1586000" />
     </task>
     <task id="LOCAL-00001" summary="process entity data">
       <option name="closed" value="true" />
@@ -576,6 +574,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DissertationProject$extract_entities.coverage" NAME="extract_entities Coverage Results" MODIFIED="1768577236168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntityCollection" />
+    <SUITE FILE_PATH="coverage/DissertationProject$async_run_sft_traj.coverage" NAME="async_run_sft_traj Coverage Results" MODIFIED="1773367113245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SFT" />
     <SUITE FILE_PATH="coverage/DissertationProject$tools_list.coverage" NAME="tools_list Coverage Results" MODIFIED="1771947980133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent/tools" />
     <SUITE FILE_PATH="coverage/DissertationProject$clean_data.coverage" NAME="clean_data Coverage Results" MODIFIED="1771310836236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SFT" />
     <SUITE FILE_PATH="coverage/DissertationProject$mcp_tool.coverage" NAME="mcp_tool Coverage Results" MODIFIED="1771938503125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent/tools" />
