@@ -43,21 +43,19 @@ def load_qa_dataset(filepath: str) -> List[dict]:
                 continue
             dataset.append(json.loads(line))
 
-    return dataset[100:]
+    return dataset
 
 
 def process_single_task(index: int, item: dict, tool_config: ToolConfig, trajectory_dir: str, dataset_name: str, timestamp: str):
     """处理单个任务的独立工作函数"""
     question = item.get("question")
-    correct_answer = item.get("final answer")
+    correct_answer = item.get("answer")
     task = question + "\tYour final response should be in the following format: Explanation: {{your explanation for your final answer}} Exact Answer: {{your succinct, final answer}} Confidence: {{your confidence score between 0% and 100% for your answer}}"
 
     selected_tool_indices = [0, 1, 2, 3]
 
     if not question:
         return f"⚠️ 跳过索引 {index}: 缺少 'question' 字段"
-
-    index = index + 100 # 从第101条开始
 
     logger.info(f"🚀 开始执行任务 [{index + 1}]...")
 
@@ -92,7 +90,7 @@ def process_single_task(index: int, item: dict, tool_config: ToolConfig, traject
         # 格式化返回结果
         result_msg = (
             f"✅ 任务 [{index + 1}] 完成！ (QA 验证: {judge_result.get('correct', '未知')})\n"
-            # f"💡 最终结果：\n{final_result}\n"
+            f"💡 最终结果：\n{final_result}\n"
         )
         if is_correct:
             result_msg += f"💾 轨迹已保存至: {trajectory_filename}"
@@ -111,8 +109,8 @@ def main():
     # --- 1. 路径配置 ---
     base_dir = "D:\\DissertationProject\\DissertationProject"
     mcp_config_path = os.path.join(base_dir, "react_agent", "tools", "mcp_configs.json")
-    dataset_path = os.path.join(base_dir, "dataset", "general_dataset", "sft_candidates.jsonl")
-    trajectory_dir = os.path.join(base_dir, "SFT", "trajectories")
+    dataset_path = os.path.join(base_dir, "dataset", "CS_dataset", "splits", "sft_seeds_100.jsonl")
+    trajectory_dir = os.path.join(base_dir, "SFT", "trajectories", "CS_traj")
 
     if not os.path.exists(trajectory_dir):
         os.makedirs(trajectory_dir)
@@ -128,13 +126,13 @@ def main():
         logger.error(f"数据集加载失败: {e}")
         return
 
-    dataset_name = "sft_traj"
+    dataset_name = "CS_sft_traj"
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
     # --- 4. 并发执行 ---
     # 注意：max_workers 决定了并发数量。请根据你的 LLM API 的并发限制 (Rate Limit) 进行调整。
     # 如果设置过高，可能会导致触发 HTTP 429 Too Many Requests 错误。
-    max_workers = 5
+    max_workers = 20
     logger.info(f"⚡ 启动线程池，最大并发数: {max_workers}")
     logger.info("=" * 60)
 

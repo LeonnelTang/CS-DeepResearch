@@ -48,7 +48,7 @@ def main():
     base_dir = "D:\\DissertationProject\\DissertationProject"
     mcp_config_path = os.path.join(base_dir, "react_agent", "tools", "mcp_configs.json")
     dataset_path = os.path.join(base_dir, "dataset", "general_dataset", "sft_candidates.jsonl")  # 替换为你的实际JSON路径
-    trajectory_dir = os.path.join(base_dir, "SFT", "trajectories")
+    trajectory_dir = os.path.join(base_dir, "SFT", "general_traj")
 
     if not os.path.exists(trajectory_dir):
         os.makedirs(trajectory_dir)
