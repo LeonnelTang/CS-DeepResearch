@@ -21,14 +21,31 @@ local_tools = [
 
 class ToolConfig:
     """工具配置类"""
-    def __init__(self, mcp_config_path, cache_path="mcp_tools_cache.json"):
+    def __init__(self, mcp_config_path, cache_path="./mcp_tools_cache.json"):
         self.mcp_config_path = mcp_config_path
         self.all_mcp_configs = []
         self.cache_path = cache_path
+        self.all_tool_options = []
 
         """获取所有MCP配置信息"""
         with open(self.mcp_config_path, "r", encoding="utf-8") as f:
             self.all_mcp_configs = json.load(f)
+            self.all_tool_options = [
+                {
+                    "name": mcp["name"],
+                    "description": mcp["description"]
+                }
+                for mcp in self.all_mcp_configs
+            ]
+            self.all_tool_options.extend(
+                [
+                    {
+                        "name": tool.name,
+                        "description": tool.description
+                    }
+                    for tool in local_tools
+                ]
+            )
 
     async def load_mcp_tools(self, server_url: str, api_key: str) -> list[BaseTool]:
         """连接 MCP 服务器并拉取所有可用工具，转换为 BaseTool 列表"""
@@ -46,7 +63,7 @@ class ToolConfig:
 
         # 2. 如果缓存命中，直接使用本地数据构建工具 (跳过网络请求)
         if server_url in cache_data:
-            # print(f"⚡ 从本地缓存极速加载 MCP 工具: {server_url}")
+            print(f"⚡ 从本地缓存极速加载 MCP 工具: {server_url}")
             for t_data in cache_data[server_url]:
                 mcp_base_tools.append(
                     MCPToolAdapter(
@@ -98,7 +115,7 @@ class ToolConfig:
         with open(self.cache_path, "w", encoding="utf-8") as f:
             json.dump(cache_data, f, ensure_ascii=False, indent=4)
 
-        # print(f"✅ 成功加载并缓存 {len(mcp_base_tools)} 个 MCP 工具。")
+        print(f"✅ 成功加载并缓存 {len(mcp_base_tools)} 个 MCP 工具。")
         return mcp_base_tools
 
     async def fetch_all_mcp_tools(self, mcp_configs: list[dict]) -> list:
@@ -137,7 +154,7 @@ class ToolConfig:
 
         return all_mcp_tools
 
-    def config_tools(self, selected_mcp_names: list[str] = None):
+    async def config_tools(self, selected_mcp_names: list[str] = None):
         """根据选择的MCP名称加载工具配置"""
 
         # 如果没有指定选择，则加载所有可用的MCP
@@ -156,19 +173,19 @@ class ToolConfig:
 
         # 4. 启动并发加载
         if mcp_configs:
-            # print(f"准备并发加载 {len(mcp_configs)} 个 MCP 配置...")
-            mcp_tools = asyncio.run(self.fetch_all_mcp_tools(mcp_configs))
+            print(f"准备并发加载 {len(mcp_configs)} 个 MCP 配置...")
+            mcp_tools = await self.fetch_all_mcp_tools(mcp_configs)
         else:
             print("没有有效的MCP配置需要加载")
             mcp_tools = []
 
         all_tools = local_tools + mcp_tools
 
-        # print(f"✅ 工具总数: {len(all_tools)} (本地: {len(local_tools)}, MCP: {len(mcp_tools)})")
+        print(f"✅ 工具总数: {len(all_tools)} (本地: {len(local_tools)}, MCP: {len(mcp_tools)})")
 
         return all_tools
 
-    def get_tools_by_indices(self, indices: list[int]):
+    async def get_tools_by_indices(self, indices: list[int]):
         """
         根据传入的索引列表获取对应的MCP工具配置 (用于自动化批量测试)
 
@@ -190,9 +207,9 @@ class ToolConfig:
             print("⚠️ 警告: 未匹配到任何有效的 MCP 配置，将返回空工具列表。")
             return []
 
-        # print(f"🔄 准备加载配置: {selected_names}")
+        print(f"🔄 准备加载配置: {selected_names}")
         # 复用现有的 config_tools 方法加载并初始化工具
-        tools = self.config_tools(selected_names)
+        tools = await self.config_tools(selected_names)
         return tools
 
     def interactive_select_tools(self):
@@ -226,7 +243,7 @@ class ToolConfig:
         return tools
 
 if __name__ == "__main__":
-    tool_config = ToolConfig("mcp_configs.json")
-    tool_config.interactive_select_tools()
+    tool_config = ToolConfig("react_agent\\tools\\mcp_configs.json", cache_path="D:\DissertationProject\DissertationProject\\backend\mcp_tools_cache.json")
+    _ = asyncio.run(tool_config.load_mcp_tools("https://mcp.api-inference.modelscope.net/afba08f1dd5e47/sse", "your_api_key"))
     
 
