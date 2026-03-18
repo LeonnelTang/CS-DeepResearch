@@ -5,21 +5,24 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # 配置 OpenAI 客户端
-client = OpenAI(
-    base_url=os.getenv("DEEPSEEK_API_BASE"),
-    api_key=os.getenv("DEEPSEEK_API_KEY")
-)
+
+# client = OpenAI(
+#     base_url=os.getenv("DEEPSEEK_API_BASE"),
+#     api_key=os.getenv("DEEPSEEK_API_KEY")
+# )
 
 # client = OpenAI(
 #     base_url=os.getenv("DMX_API_BASE"),
 #     api_key=os.getenv("DMX_API_KEY")
 # )
 
-# client = OpenAI(
-#     # 如果没有配置环境变量，请用阿里云百炼API Key替换：api_key="sk-xxx"
-#     api_key=os.getenv("DASHSCOPE_API_KEY"),
-#     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
-# )
+client = OpenAI(
+    api_key=os.getenv("DASHSCOPE_API_KEY"),
+    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+)
+
+# qwen3.5-35b-a3b
+# deepseek-chat
 
 def llm_executor(prompt: str) -> str:
     """
@@ -27,7 +30,7 @@ def llm_executor(prompt: str) -> str:
     """
     try:
         response = client.chat.completions.create(
-            model="deepseek-chat",  # 或者 gpt-3.5-turbo
+            model="qwen3.5-35b-a3b",  # 或者 gpt-3.5-turbo
             messages=[
                 {"role": "user", "content": prompt}
             ],
@@ -37,3 +40,6 @@ def llm_executor(prompt: str) -> str:
         return response.choices[0].message.content
     except Exception as e:
         raise e
+
+if __name__ == "__main__":
+    print(llm_executor("请用中文回答：1+1是多少"))

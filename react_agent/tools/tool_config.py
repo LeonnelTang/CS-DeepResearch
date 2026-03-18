@@ -212,7 +212,7 @@ class ToolConfig:
         tools = await self.config_tools(selected_names)
         return tools
 
-    def interactive_select_tools(self):
+    async def interactive_select_tools(self):
         """交互式选择要加载的MCP工具"""
         # 打印所有可用的MCP工具信息供用户选择
         print("可用的MCP工具:")
@@ -238,7 +238,7 @@ class ToolConfig:
             selected_names = None
 
         # 根据用户选择加载工具
-        tools = self.config_tools(selected_names)
+        tools = await self.config_tools(selected_names)
         print([t.name for t in tools])
         return tools
 

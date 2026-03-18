@@ -1,4 +1,6 @@
 # 导入核心引擎 (从顶层包直接导入)
+import asyncio
+
 from react_agent import ResearchLoop, llm_executor
 
 # 导入工具 (从工具包导入)
@@ -12,7 +14,7 @@ def main():
     # 初始化工具
     mcp_config_path = "D:\\DissertationProject\\DissertationProject\\react_agent\\tools\\mcp_configs.json"
     tool_config = ToolConfig(mcp_config_path)
-    tools = tool_config.interactive_select_tools()
+    tools = asyncio.run(tool_config.interactive_select_tools())
 
     print("可用工具列表：")
     for tool in tools:
