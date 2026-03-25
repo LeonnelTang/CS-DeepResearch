@@ -51,3 +51,36 @@ def safe_json_loads(text: str):
     # 4. 如果所有尝试都失败了，抛出异常或返回 None（这里选择记录日志并返回 None）
     print(f"[Warning] Failed to safely parse JSON. Raw text snippet: {text[:100]}...")
     return None
+
+def load_local_dataset(file_path: str):
+    """
+    加载本地 json 数据集
+    """
+    with open(file_path, "r", encoding="utf-8") as f:
+        local_data = json.load(f)
+
+    # 转换为与 HuggingFace dataset 相同的格式
+    dataset = {}
+    # 假设 JSON 文件是一个包含所有字段的字典列表
+    if isinstance(local_data, list):
+        # 如果是列表格式 [{}, {}, ...]
+        # 获取所有键并确保每个项目都包含这些键
+        all_keys = set()
+        for item in local_data:
+            all_keys.update(item.keys())
+
+        # 为每个项目添加缺失的键并设置默认值None
+        for item in local_data:
+            for key in all_keys:
+                if key not in item:
+                    item[key] = None
+
+        dataset = {
+            key: [item[key] for item in local_data]
+            for key in local_data[0].keys()
+        }
+    else:
+        # 如果是字典格式 {"field1": [...], "field2": [...]}
+        dataset = local_data
+
+    return dataset

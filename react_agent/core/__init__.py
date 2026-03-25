@@ -1,4 +1,4 @@
-# react_agent/core/__init__.py
+# react_agent/react_core/__init__.py
 
 from .engine import ResearchLoop
 from .memory import StateManager

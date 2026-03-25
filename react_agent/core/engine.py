@@ -1,17 +1,19 @@
 from typing import List, Tuple, Callable
 from react_agent.tools import BaseTool
+from react_agent.llm_client import LLMExecutor
 from .parser import LLMOutputParser
 from .memory import StateManager
 from .chatml import ChatMLBuilder
 from datetime import datetime
-
+import logging
+logger = logging.getLogger(__name__)
 
 class ResearchLoop:
     """Research 核心循环控制器"""
 
     def __init__(self,
                  tools: List[BaseTool],
-                 llm_executor: Callable[[str], str],
+                 llm_executor: LLMExecutor,
                  max_steps: int = 10
                  ):
 
@@ -101,7 +103,7 @@ class ResearchLoop:
             chatml_builder.add_message("user", prompt)
 
             # 2. 调用 LLM
-            llm_output = self.llm_executor(prompt)
+            llm_output = self.llm_executor.execute(prompt)
             chatml_builder.add_message("assistant", llm_output)
 
             try:
@@ -112,17 +114,22 @@ class ResearchLoop:
                 if not report:
                     report = current_state["report"]
 
+                # logger.info(f"=== Step {step + 1} ===")
+                # logger.info(f"[Action]: {action}")
+
                 # 4. 执行行动并获取观察
                 observation = self._execute_action(action)
+
+                # logger.info(f"[Observation]: {str(observation)[:10]}...")
 
                 # 5. 重构状态并更新工作区
                 workspace.update_state(think, report, action, observation)
 
-                print(f"\n=== Step {step + 1} ===")
-                print(f"[Think]: {think}")
-                print(f"[Report Updated]: {report}")
-                print(f"[Action]: {action}")
-                print(f"[Observation]: {str(observation)[:50]}...")
+                # print(f"\n=== Step {step + 1} ===")
+                # print(f"[Think]: {think}")
+                # print(f"[Report Updated]: {report}")
+                # print(f"[Action]: {action}")
+                # print(f"[Observation]: {str(observation)[:50]}...")
 
                 chatml_builder.add_to_jsonl()
                 chatml_builder.clear()
@@ -173,7 +180,7 @@ class ResearchLoop:
             prompt = self._build_prompt(task, current_state)
 
             # 这里调用 LLM
-            llm_output = self.llm_executor(prompt)
+            llm_output = self.llm_executor.execute(prompt)
 
             try:
                 think, report, action = self.parser.parse_tra(llm_output)

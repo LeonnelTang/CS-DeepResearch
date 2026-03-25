@@ -1,13 +1,18 @@
 # 导入核心引擎 (从顶层包直接导入)
 import asyncio
+from openai import OpenAI
+import os
 
-from react_agent import ResearchLoop, llm_executor
+from react_agent import ResearchLoop, LLMExecutor
 
 # 导入工具 (从工具包导入)
 from react_agent.tools import ToolConfig
 import datetime
 
-
+my_client = OpenAI(
+    api_key=None,
+    base_url="http://127.0.0.1:6009/v1"
+)
 
 def main():
     """主函数：演示ReAct循环的使用"""
@@ -30,7 +35,7 @@ def main():
 
     reactor = ResearchLoop(
         tools=tools,
-        llm_executor=llm_executor,
+        llm_executor=LLMExecutor(client=my_client, model_name="checkpoint-330-merged"),
         max_steps=30
     )
 

@@ -1,5 +1,5 @@
 import os
-from openai import OpenAI
+from openai import OpenAI, AsyncOpenAI
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -11,35 +11,45 @@ load_dotenv()
 #     api_key=os.getenv("DEEPSEEK_API_KEY")
 # )
 
-# client = OpenAI(
-#     base_url=os.getenv("DMX_API_BASE"),
-#     api_key=os.getenv("DMX_API_KEY")
-# )
-
-client = OpenAI(
-    api_key=os.getenv("DASHSCOPE_API_KEY"),
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+DMX_client = OpenAI(
+    base_url=os.getenv("DMX_API_BASE"),
+    api_key=os.getenv("DMX_API_KEY")
 )
 
 # qwen3.5-35b-a3b
 # deepseek-chat
 
-def llm_executor(prompt: str) -> str:
+class LLMExecutor:
     """
-    这是一个符合 ReactCoreLoop 要求的 llm_executor 函数
+    LLM 执行器
     """
-    try:
-        response = client.chat.completions.create(
-            model="qwen3.5-35b-a3b",  # 或者 gpt-3.5-turbo
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
-            # 关键设置：ReAct 需要逻辑严谨，温度设为 0 可以减少幻觉和随机性
-            temperature=0
-        )
-        return response.choices[0].message.content
-    except Exception as e:
-        raise e
+    def __init__(self,
+                 client: OpenAI,
+                 async_client: AsyncOpenAI = None,
+                 model_name="qwen3.5-35b-a3b",
+                 ):
+        self.client = client
+        self.async_client = async_client
+        self.model_name = model_name
+        pass
+
+    def execute(self, prompt: str) -> str:
+        """
+        符合 ReactCoreLoop 要求的 llm_executor 函数
+        """
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model_name,
+                messages=[
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0,
+                max_tokens=8192
+            )
+            return response.choices[0].message.content
+        except Exception as e:
+            raise e
 
 if __name__ == "__main__":
-    print(llm_executor("请用中文回答：1+1是多少"))
+    llm_executor = LLMExecutor(client=DMX_client)
+    print(llm_executor.execute("请用中文回答：1+1是多少"))

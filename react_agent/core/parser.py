@@ -52,7 +52,7 @@ class LLMOutputParser:
             ValueError: 解析失败时抛出异常
         """
         if not (action.startswith("finish[") and action.endswith("]")):
-            raise ValueError(f"无效的finish格式：{action}")
+            raise ValueError(f"无效的finish格式，正确格式：finish[...]，实际输出：{action}")
 
         return action[len("finish["):-1].strip()
 

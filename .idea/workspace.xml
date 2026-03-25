@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcb105ba-b168-4af3-bd87-f8563e3b4a8d" name="Changes" comment="add code for sft traj">
-      <change afterPath="$PROJECT_DIR$/SFT/process_sft_data.ipynb" afterDir="false" />
+    <list default="true" id="dcb105ba-b168-4af3-bd87-f8563e3b4a8d" name="Changes" comment="merged sft data">
+      <change afterPath="$PROJECT_DIR$/dataset/my_dataset_cache/artillerywu___deep_research-9_k/default/0.0.0/946870822ebf09b08b4c13a951d7b64da5dfd554/dataset_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval/async_run_react.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/合并的日志.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFT/async_run_sft_traj.py" beforeDir="false" afterPath="$PROJECT_DIR$/SFT/async_run_sft_traj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFT/clean_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFT/mcp_tools_cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/SFT/mcp_tools_cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFT/run_sft_traj.py" beforeDir="false" afterPath="$PROJECT_DIR$/SFT/run_sft_traj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/build_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/build_data.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFT/process_sft_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SFT/process_sft_data.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_agent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_agent/core/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/core/engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_agent/llm_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/llm_client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react_agent/tools/tool_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/react_agent/tools/tool_config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -73,6 +77,8 @@
   "keyToString": {
     "Python.__init__.executor": "Run",
     "Python.arxiv_search.executor": "Run",
+    "Python.asyncRun_model_predictions.executor": "Debug",
+    "Python.async_run_react.executor": "Run",
     "Python.async_run_sft_traj.executor": "Run",
     "Python.clean_data.executor": "Run",
     "Python.corpus.executor": "Run",
@@ -80,6 +86,7 @@
     "Python.entity.executor": "Run",
     "Python.extract_entities.executor": "Run",
     "Python.filter_rare_entity.executor": "Debug",
+    "Python.llm_client.executor": "Run",
     "Python.local_tool.executor": "Run",
     "Python.main.executor": "Run",
     "Python.mcp_tool.executor": "Debug",
@@ -90,32 +97,36 @@
     "Python.tools_list.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/DissertationProject/DissertationProject/eval",
+    "last_opened_file_path": "D:/DissertationProject/DissertationProject/dataset/CS_dataset/splits",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Python",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\DissertationProject\\DissertationProject\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DissertationProject\DissertationProject\dataset\CS_dataset\splits" />
       <recent name="D:\DissertationProject\DissertationProject\eval" />
+      <recent name="D:\DissertationProject\DissertationProject\backend" />
+      <recent name="D:\DissertationProject\DissertationProject\dataset\CS_dataset" />
       <recent name="D:\DissertationProject\DissertationProject\SFT\data" />
-      <recent name="D:\DissertationProject\DissertationProject\SFT" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DissertationProject\DissertationProject" />
+      <recent name="D:\DissertationProject\DissertationProject\web" />
+      <recent name="D:\DissertationProject\DissertationProject\SFT\trajectories" />
       <recent name="D:\DissertationProject\DissertationProject\dataset\general_dataset" />
       <recent name="D:\DissertationProject\DissertationProject\SFT\data\QA_dataset" />
-      <recent name="D:\DissertationProject\DissertationProject\react_agent\core" />
-      <recent name="D:\DissertationProject\DissertationProject\EntityCollection\data" />
-      <recent name="D:\DissertationProject\DissertationProject\EntityCollection" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.async_run_sft_traj">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.async_run_react">
+    <configuration name="asyncRun_model_predictions" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="DissertationProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,12 +135,35 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EntityCollection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/eval" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EntityCollection/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eval/asyncRun_model_predictions.py" />
+      <option name="PARAMETERS" value="--dataset cais/hle --model IterResearch --num_workers 5" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="async_run_react" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DissertationProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/eval" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eval/async_run_react.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +172,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="async_run_sft_traj" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="llm_client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DissertationProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,104 +181,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SFT" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/react_agent" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SFT/async_run_sft_traj.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="entity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DissertationProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EntityCollection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EntityCollection/entity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="entity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DissertationProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EntityCollection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EntityCollection/entity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="local_tool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DissertationProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/react_agent/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/react_agent/tools/local_tool.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="local_tool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DissertationProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/react_agent/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/react_agent/tools/local_tool.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/react_agent/llm_client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,7 +241,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_sft_traj" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="tool_config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DissertationProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -308,27 +250,37 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SFT" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/react_agent/tools" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SFT/run_sft_traj.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/react_agent/tools/tool_config.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.async_run_sft_traj" />
-        <item itemvalue="Python.run_sft_traj" />
-        <item itemvalue="Python.local_tool" />
+        <item itemvalue="Python.async_run_react" />
+        <item itemvalue="Python.llm_client" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.entity" />
+        <item itemvalue="Python.tool_config" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -387,7 +339,13 @@
       <workItem from="1773123914883" duration="11885000" />
       <workItem from="1773212177779" duration="4859000" />
       <workItem from="1773301892965" duration="13349000" />
-      <workItem from="1773366074808" duration="1586000" />
+      <workItem from="1773366074808" duration="37484000" />
+      <workItem from="1773673893268" duration="22273000" />
+      <workItem from="1773806463358" duration="14607000" />
+      <workItem from="1773926196292" duration="8921000" />
+      <workItem from="1774011616565" duration="1744000" />
+      <workItem from="1774052276454" duration="10160000" />
+      <workItem from="1774182482375" duration="6250000" />
     </task>
     <task id="LOCAL-00001" summary="process entity data">
       <option name="closed" value="true" />
@@ -509,7 +467,119 @@
       <option name="project" value="LOCAL" />
       <updated>1773306146438</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="sft traj">
+      <option name="closed" value="true" />
+      <created>1773368342762</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1773368342762</updated>
+    </task>
+    <task id="LOCAL-00017" summary="sft traj">
+      <option name="closed" value="true" />
+      <created>1773465242707</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1773465242707</updated>
+    </task>
+    <task id="LOCAL-00018" summary="sft traj">
+      <option name="closed" value="true" />
+      <created>1773490727978</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1773490727978</updated>
+    </task>
+    <task id="LOCAL-00019" summary="CS QA dataset">
+      <option name="closed" value="true" />
+      <created>1773490761168</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1773490761168</updated>
+    </task>
+    <task id="LOCAL-00020" summary="sft traj">
+      <option name="closed" value="true" />
+      <created>1773507190157</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1773507190157</updated>
+    </task>
+    <task id="LOCAL-00021" summary="cs qa dataset">
+      <option name="closed" value="true" />
+      <created>1773507221231</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1773507221231</updated>
+    </task>
+    <task id="LOCAL-00022" summary="cs qa dataset">
+      <option name="closed" value="true" />
+      <created>1773507236367</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1773507236367</updated>
+    </task>
+    <task id="LOCAL-00023" summary="sft traj">
+      <option name="closed" value="true" />
+      <created>1773514469997</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1773514469997</updated>
+    </task>
+    <task id="LOCAL-00024" summary="sft traj">
+      <option name="closed" value="true" />
+      <created>1773574790542</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1773574790542</updated>
+    </task>
+    <task id="LOCAL-00025" summary="sft traj">
+      <option name="closed" value="true" />
+      <created>1773769953420</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1773769953420</updated>
+    </task>
+    <task id="LOCAL-00026" summary="sft traj">
+      <option name="closed" value="true" />
+      <created>1773769997228</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1773769997228</updated>
+    </task>
+    <task id="LOCAL-00027" summary="frontend">
+      <option name="closed" value="true" />
+      <created>1773827779181</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1773827779181</updated>
+    </task>
+    <task id="LOCAL-00028" summary="sft traj">
+      <option name="closed" value="true" />
+      <created>1773852816810</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1773852816810</updated>
+    </task>
+    <task id="LOCAL-00029" summary="merged sft data">
+      <option name="closed" value="true" />
+      <created>1773852901760</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1773852901760</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +609,12 @@
     <MESSAGE value="build mcp cache" />
     <MESSAGE value="implement IterResearch" />
     <MESSAGE value="add code for sft traj" />
-    <option name="LAST_COMMIT_MESSAGE" value="add code for sft traj" />
+    <MESSAGE value="CS QA dataset" />
+    <MESSAGE value="cs qa dataset" />
+    <MESSAGE value="frontend" />
+    <MESSAGE value="sft traj" />
+    <MESSAGE value="merged sft data" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged sft data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,16 +623,6 @@
           <url>file://$PROJECT_DIR$/react_agent/tools/local_tool.py</url>
           <line>42</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/react_agent/core/engine.py</url>
-          <line>129</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/react_agent/tools/mcp_tool.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/react_agent/tools/arxiv-mcp-server/src/arxiv_mcp_server/resources/papers.py</url>
@@ -574,19 +639,22 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DissertationProject$extract_entities.coverage" NAME="extract_entities Coverage Results" MODIFIED="1768577236168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntityCollection" />
-    <SUITE FILE_PATH="coverage/DissertationProject$async_run_sft_traj.coverage" NAME="async_run_sft_traj Coverage Results" MODIFIED="1773367113245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SFT" />
+    <SUITE FILE_PATH="coverage/DissertationProject$llm_client.coverage" NAME="llm_client Coverage Results" MODIFIED="1774184151342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent" />
+    <SUITE FILE_PATH="coverage/DissertationProject$async_run_sft_traj.coverage" NAME="async_run_sft_traj Coverage Results" MODIFIED="1773674108075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SFT" />
     <SUITE FILE_PATH="coverage/DissertationProject$tools_list.coverage" NAME="tools_list Coverage Results" MODIFIED="1771947980133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent/tools" />
+    <SUITE FILE_PATH="coverage/DissertationProject$asyncRun_model_predictions.coverage" NAME="asyncRun_model_predictions Coverage Results" MODIFIED="1774057243961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/eval" />
     <SUITE FILE_PATH="coverage/DissertationProject$clean_data.coverage" NAME="clean_data Coverage Results" MODIFIED="1771310836236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SFT" />
     <SUITE FILE_PATH="coverage/DissertationProject$mcp_tool.coverage" NAME="mcp_tool Coverage Results" MODIFIED="1771938503125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent/tools" />
     <SUITE FILE_PATH="coverage/DissertationProject$entity.coverage" NAME="entity Coverage Results" MODIFIED="1771932224131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntityCollection" />
     <SUITE FILE_PATH="coverage/DissertationProject$corpus.coverage" NAME="corpus Coverage Results" MODIFIED="1771920558995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntityCollection" />
     <SUITE FILE_PATH="coverage/DissertationProject$tavily_search.coverage" NAME="tavily_search Coverage Results" MODIFIED="1768569621286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DissertationProject$main.coverage" NAME="main Coverage Results" MODIFIED="1773214091545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent" />
+    <SUITE FILE_PATH="coverage/DissertationProject$main.coverage" NAME="main Coverage Results" MODIFIED="1773841590258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent" />
     <SUITE FILE_PATH="coverage/DissertationProject$arxiv_search.coverage" NAME="arxiv_search Coverage Results" MODIFIED="1768568313178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DissertationProject$entity__1_.coverage" NAME="entity (1) Coverage Results" MODIFIED="1769100938800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntityCollection" />
-    <SUITE FILE_PATH="coverage/DissertationProject$tool_config.coverage" NAME="tool_config Coverage Results" MODIFIED="1772107721412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent/tools" />
+    <SUITE FILE_PATH="coverage/DissertationProject$tool_config.coverage" NAME="tool_config Coverage Results" MODIFIED="1773766305061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent/tools" />
     <SUITE FILE_PATH="coverage/DissertationProject$qa_judge.coverage" NAME="qa_judge Coverage Results" MODIFIED="1773318725347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/eval" />
     <SUITE FILE_PATH="coverage/DissertationProject$run_sft_traj.coverage" NAME="run_sft_traj Coverage Results" MODIFIED="1773321149069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SFT" />
+    <SUITE FILE_PATH="coverage/DissertationProject$async_run_react.coverage" NAME="async_run_react Coverage Results" MODIFIED="1774188244462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/eval" />
     <SUITE FILE_PATH="coverage/DissertationProject$local_tool.coverage" NAME="local_tool Coverage Results" MODIFIED="1773305698502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/react_agent/tools" />
     <SUITE FILE_PATH="coverage/DissertationProject$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1769789024182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntityCollection" />
   </component>

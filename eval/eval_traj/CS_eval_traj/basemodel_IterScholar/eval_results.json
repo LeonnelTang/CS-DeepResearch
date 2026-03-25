@@ -1,0 +1,203 @@
+[
+  {
+    "correct_answer": "Chengwei Qin",
+    "model_answer": "Chengwei Qin",
+    "reasoning": "The extracted final answer 'Chengwei Qin' exactly matches the provided correct answer 'Chengwei Qin' with no meaningful differences in spelling, formatting, or content.",
+    "correct": "yes",
+    "confidence": 95
+  },
+  {
+    "correct_answer": "Celcomen",
+    "model_answer": "Celcomen",
+    "reasoning": "The extracted final answer 'Celcomen' exactly matches the correct answer 'Celcomen' with no meaningful differences.",
+    "correct": "yes",
+    "confidence": 98
+  },
+  {
+    "correct_answer": "Yuanming Hu",
+    "model_answer": "Yuanming Hu",
+    "reasoning": "The extracted_final_answer 'Yuanming Hu' exactly matches the [correct_answer] 'Yuanming Hu' with no meaningful differences in spelling, formatting, or content.",
+    "correct": "yes",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "Kai Cui",
+    "model_answer": "Richard Bellman",
+    "reasoning": "The extracted final answer 'Richard Bellman' does not match the correct answer 'Kai Cui'. There is a meaningful difference between these two names, indicating they refer to different individuals.",
+    "correct": "no",
+    "confidence": 95
+  },
+  {
+    "correct_answer": "PHIER",
+    "model_answer": "HiCLPL",
+    "reasoning": "The extracted final answer 'HiCLPL' does not match the correct answer 'PHIER'. These are different strings with no meaningful equivalency.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "Maximilian Dax",
+    "model_answer": "Maximilian Dax",
+    "reasoning": "The extracted final answer 'Maximilian Dax' exactly matches the provided correct answer 'Maximilian Dax' with no differences in spelling, formatting, or content.",
+    "correct": "yes",
+    "confidence": 98
+  },
+  {
+    "correct_answer": "brain-tuned模型",
+    "model_answer": "BrainWhisperer",
+    "reasoning": "The extracted_final_answer 'BrainWhisperer' does not match the [correct_answer] 'brain-tuned模型'. These are different model names with no meaningful equivalence.",
+    "correct": "no",
+    "confidence": 95
+  },
+  {
+    "correct_answer": "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+    "model_answer": "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+    "reasoning": "The extracted_final_answer exactly matches the correct_answer provided. Both are identical strings with no differences in wording, punctuation, or formatting.",
+    "correct": "yes",
+    "confidence": 98
+  },
+  {
+    "question": "一项在关键视觉质量与同步精度指标上优于某个端到端音频驱动人体动画框架及其对标模型的技术，其所超越的后者模型中，存在一个被专门用于微视频推荐系统的图神经网络作为其图节点结构进行增强。请找出该图神经网络所增强的那个模型的首位主要贡献者（即第一作者）是谁？",
+    "prediction": null,
+    "judge_result": null
+  },
+  {
+    "correct_answer": "UniGlyph",
+    "model_answer": "None",
+    "reasoning": "The response '任务未完成（已达最大步数150）' indicates the task was not completed due to reaching maximum steps, and does not contain any final answer to extract. The correct answer 'UniGlyph' is not present in the response, so there is a meaningful difference between the response and the correct answer.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "DCNet",
+    "model_answer": "None",
+    "reasoning": "The response '任务未完成（已达最大步数150）' does not contain any answer to the question, let alone an exact final answer. It indicates the task was not completed due to reaching a maximum step count. Therefore, there is no answer to compare with the correct answer 'DCNet'.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "Gabriela Morillo",
+    "model_answer": "None",
+    "reasoning": "The response '任务未完成（已达最大步数150）' indicates the task was not completed due to reaching maximum steps, and does not provide any final answer to extract. Since there is no answer to compare with the correct answer 'Gabriela Morillo', there is no meaningful difference to analyze.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "Jiaxi Yang",
+    "model_answer": "Jiaxi Yang",
+    "reasoning": "The extracted_final_answer 'Jiaxi Yang' exactly matches the [correct_answer] 'Jiaxi Yang' with no meaningful differences.",
+    "correct": "yes",
+    "confidence": 98
+  },
+  {
+    "correct_answer": "Dropsembles",
+    "model_answer": "Dropsembles",
+    "reasoning": "The extracted final answer 'Dropsembles' exactly matches the correct answer 'Dropsembles' with no meaningful differences in spelling, wording, or meaning.",
+    "correct": "yes",
+    "confidence": 95
+  },
+  {
+    "correct_answer": "Poisoned Forgery Face",
+    "model_answer": "Poisoned Forgery Face",
+    "reasoning": "The extracted_final_answer 'Poisoned Forgery Face' exactly matches the correct_answer 'Poisoned Forgery Face' with no meaningful differences in spelling, formatting, or content.",
+    "correct": "yes",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "GPT-2",
+    "model_answer": "None",
+    "reasoning": "The response '任务未完成（已达最大步数150）' does not contain any answer to the question, let alone an exact match for the correct answer 'GPT-2'. Therefore, there is no meaningful comparison to make between the extracted answer and the correct answer.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "BroGNet",
+    "model_answer": "BroGNet",
+    "reasoning": "The extracted final answer 'BroGNet' exactly matches the correct answer 'BroGNet' with no differences in spelling, formatting, or meaning.",
+    "correct": "yes",
+    "confidence": 98
+  },
+  {
+    "correct_answer": "Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders",
+    "model_answer": "Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders",
+    "reasoning": "The extracted_final_answer matches the [correct_answer] exactly, character for character, with no meaningful differences. Both contain the same title: 'Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders'.",
+    "correct": "yes",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "Wenhao Chai",
+    "model_answer": "None",
+    "reasoning": "The response '任务未完成（已达最大步数150）' does not contain any name or final answer that can be compared to the correct answer 'Wenhao Chai'. It only states that the task was not completed due to reaching the maximum number of steps.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "INT_HMR_Model",
+    "model_answer": "None",
+    "reasoning": "The response '任务未完成（已达最大步数150）' indicates the task was not completed due to reaching maximum steps, and does not contain any answer to the question. There is no model name or answer provided to compare with the correct_answer 'INT_HMR_Model'.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "Jerry Yao-Chieh Hu",
+    "model_answer": "Jerry Yao-Chieh Hu",
+    "reasoning": "The extracted final answer 'Jerry Yao-Chieh Hu' exactly matches the correct answer 'Jerry Yao-Chieh Hu' with no differences in spelling, formatting, or content.",
+    "correct": "yes",
+    "confidence": 95
+  },
+  {
+    "correct_answer": "Subham Sekhar Sahoo",
+    "model_answer": "Subham Sekhar Sahoo",
+    "reasoning": "The extracted final answer 'Subham Sekhar Sahoo' exactly matches the provided correct answer 'Subham Sekhar Sahoo' with no meaningful differences in spelling, formatting, or content.",
+    "correct": "yes",
+    "confidence": 95
+  },
+  {
+    "correct_answer": "Masoud Shokrnezhad",
+    "model_answer": "None",
+    "reasoning": "The response '任务未完成（已达最大步数150）' does not contain any researcher name or final answer to extract. It only states that the task was not completed due to reaching the maximum step count. Therefore, there is no meaningful comparison possible with the correct answer 'Masoud Shokrnezhad'.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "Llama 3 8B",
+    "model_answer": "None",
+    "reasoning": "The response '任务未完成（已达最大步数150）' does not contain any final answer to extract. It indicates the task was not completed due to reaching a maximum step count, but provides no answer to the question about what Target_Entity is. Therefore, there is no meaningful comparison possible with the correct answer 'Llama 3 8B'.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "CK统一工作流",
+    "model_answer": "None",
+    "reasoning": "The response '任务未完成（已达最大步数150）' does not contain any final exact answer to extract. It indicates the task was not completed due to reaching a maximum step count, rather than providing an answer to the question.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "Glencora Borradaile",
+    "model_answer": "Claire Mathieu",
+    "reasoning": "The extracted final answer 'Claire Mathieu' does not match the correct answer 'Glencora Borradaile'. There is a meaningful difference between the two names as they refer to different individuals.",
+    "correct": "no",
+    "confidence": 98
+  },
+  {
+    "correct_answer": "receptive token",
+    "model_answer": "None",
+    "reasoning": "The response '任务未完成（已达最大步数150）' indicates the task was not completed due to reaching a maximum step limit, and does not provide any final answer to extract. Since there is no answer to compare with the correct answer 'receptive token', there is no meaningful difference to analyze.",
+    "correct": "no",
+    "confidence": 100
+  },
+  {
+    "correct_answer": "Mohammadreza Sadeghi",
+    "model_answer": "Mohammad-Reza Sadeghi",
+    "reasoning": "The extracted final answer 'Mohammad-Reza Sadeghi' differs from the correct answer 'Mohammadreza Sadeghi' in the presence of a hyphen and capitalization. The correct answer has no hyphen and uses lowercase 'r' in 'reza', while the extracted answer includes a hyphen and capitalizes 'Reza'. These are meaningful differences in the exact spelling of a proper name.",
+    "correct": "no",
+    "confidence": 95
+  },
+  {
+    "correct_answer": "Shaobin Zhuang",
+    "model_answer": "Weijiang Lai",
+    "reasoning": "The extracted_final_answer 'Weijiang Lai' does not match the correct_answer 'Shaobin Zhuang'. There is a clear and meaningful difference between the two names, indicating they are different individuals.",
+    "correct": "no",
+    "confidence": 100
+  }
+]
