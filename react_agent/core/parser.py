@@ -35,7 +35,7 @@ class LLMOutputParser:
 
             return think, report, action
         except (IndexError, ValueError) as e:
-            raise ValueError(f"解析LLM输出失败：{e}，原始输出：{llm_output}")
+            raise ValueError(f"解析LLM输出失败：{e}")
 
     @staticmethod
     def parse_finish_action(action: str) -> str:
@@ -52,7 +52,7 @@ class LLMOutputParser:
             ValueError: 解析失败时抛出异常
         """
         if not (action.startswith("finish[") and action.endswith("]")):
-            raise ValueError(f"无效的finish格式，正确格式：finish[...]，实际输出：{action}")
+            raise ValueError(f"无效的finish格式，正确格式：finish[...]")
 
         return action[len("finish["):-1].strip()
 
