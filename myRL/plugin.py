@@ -19,10 +19,10 @@ import sys
 import os
 
 
-from RL.tools.base import BaseTool
-from RL.tools.tool_config import ToolConfig
-from RL.core.parser import LLMOutputParser
-from RL.core.memory import StateManager
+from myRL.tools.base import BaseTool
+from myRL.tools.tool_config import ToolConfig
+from myRL.core.parser import LLMOutputParser
+from myRL.core.memory import StateManager
 
 # 强行将日志写入容器的 /root 目录下，方便你在宿主机查看
 debug_log_path = "/root/iter_research_debug.log"
@@ -655,7 +655,7 @@ class IterResearchScheduler_1(MultiTurnScheduler):
         super().__init__(*args, **kwargs)
 
         base_dir = "/root"
-        mcp_config_path = os.path.join(base_dir, "mcp_configs.json")
+        mcp_config_path = os.path.join(base_dir, "myRL", "tools", "mcp_configs.json")
         cache_path = os.path.join(base_dir, "mcp_tools_cache.json")
 
         try:
@@ -730,6 +730,8 @@ class IterResearchScheduler_1(MultiTurnScheduler):
 
     async def run(self, infer_request: 'RolloutInferRequest', request_config: 'RequestConfig',
                   **kwargs) -> List['RolloutOutput']:
+
+
         # 初始提问作为全局任务
         task = infer_request.messages[0]['content']
         current_request = infer_request
@@ -755,11 +757,23 @@ class IterResearchScheduler_1(MultiTurnScheduler):
             current_messages = current_request.messages.copy()
             current_messages.append({'role': 'assistant', 'content': completion})
 
+            # 获取当前轮次的 token ids
+            token_ids = response_choice.token_ids
+            # 生成完全等长的 loss mask (全部置为1，表示都要计算 Loss)
+            loss_mask = [1] * len(token_ids)
+
+            # 提取旧策略的对数概率 (用于 GRPO 的重要性采样)
+            logprobs = []
+            if response_choice.logprobs and 'content' in response_choice.logprobs:
+                logprobs = [item['logprob'] for item in response_choice.logprobs['content']]
+
             # 2. 封装并保存当前独立轮次的 Rollout 轨迹
             round_output = RolloutOutput(
                 response=response,
                 messages=current_messages,
-                response_token_ids=response_choice.token_ids,
+                response_token_ids=[token_ids],
+                response_loss_mask=[loss_mask],
+                rollout_logprobs=[logprobs] if logprobs else [],
                 rollout_infos={'num_turns': current_turn, 'task': task}
             )
             rollout_outputs.append(round_output)
@@ -833,6 +847,7 @@ class ThinkingModelTipsScheduler(MultiTurnScheduler):
     """
 
     def __init__(self, *args, **kwargs):
+        print("<<<<<<<<<<<<<<<<<<<<<<<<ThinkingModelTipsScheduler 初始化>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ", flush=True)
         super().__init__(*args, **kwargs)
         acc_func = kwargs.get('acc_function', None)
         if acc_func is None:
@@ -974,5 +989,5 @@ class ThinkingModelTipsScheduler(MultiTurnScheduler):
 multi_turns = {
     'thinking_tips_scheduler': ThinkingModelTipsScheduler,
     'iter_research_scheduler': IterResearchScheduler,
-    'iter_research_scheduler_1': IterResearchScheduler_1
+    'iter_research_scheduler_1': IterResearchScheduler_1,
 }

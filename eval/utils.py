@@ -52,17 +52,36 @@ def safe_json_loads(text: str):
     print(f"[Warning] Failed to safely parse JSON. Raw text snippet: {text[:100]}...")
     return None
 
+
+import json
+
+
 def load_local_dataset(file_path: str):
     """
-    加载本地 json 数据集
+    加载本地 json 数据集，同时支持标准 JSON 和 JSONL (逐行 JSON) 格式
     """
     with open(file_path, "r", encoding="utf-8") as f:
-        local_data = json.load(f)
+        try:
+            # 尝试作为标准 JSON 读取（如果是完整列表或字典，这里会成功）
+            local_data = json.load(f)
+        except json.JSONDecodeError:
+            # 如果报 JSONDecodeError (例如 Extra data 错误)
+            # 说明可能是 JSONL 格式，将文件指针移回开头，开始逐行读取
+            f.seek(0)
+            local_data = []
+            for line in f:
+                line = line.strip()
+                if line:  # 忽略空行
+                    local_data.append(json.loads(line))
 
     # 转换为与 HuggingFace dataset 相同的格式
     dataset = {}
+
     # 假设 JSON 文件是一个包含所有字段的字典列表
     if isinstance(local_data, list):
+        if not local_data:
+            return {}  # 防御性编程：如果数据为空，直接返回空字典
+
         # 如果是列表格式 [{}, {}, ...]
         # 获取所有键并确保每个项目都包含这些键
         all_keys = set()
@@ -75,9 +94,10 @@ def load_local_dataset(file_path: str):
                 if key not in item:
                     item[key] = None
 
+        # 因为前面已经统一了所有 item 的 keys，这里使用 all_keys 生成列
         dataset = {
             key: [item[key] for item in local_data]
-            for key in local_data[0].keys()
+            for key in all_keys
         }
     else:
         # 如果是字典格式 {"field1": [...], "field2": [...]}

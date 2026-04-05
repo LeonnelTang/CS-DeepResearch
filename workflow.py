@@ -1,14 +1,13 @@
-import asyncio
 from typing import List
-from .tools import ToolConfig
-from core.rllm_engine import IterResearchTrajectoryLoop
+from myRL.tools import ToolConfig
+from rllm_engine import IterResearchTrajectoryLoop
 from rllm.sdk import TrajectoryView
 
 class IterScholarWorkflow:
     def __init__(self, **kwargs):
         # 初始化我们重构好的多步研究 Agent
         # 传入系统中实际定义的 tools 列表
-        mcp_config_path = r"tools/mcp_configs.json"
+        mcp_config_path = r"myRL/tools/mcp_configs.json"
         tool_config = ToolConfig(mcp_config_path)
 
         selected_tool_indices = [0, 1, 2, 3]

@@ -63,7 +63,7 @@ class ToolConfig:
 
         # 2. 如果缓存命中，直接使用本地数据构建工具 (跳过网络请求)
         if server_url in cache_data:
-            # print(f"⚡ 从本地缓存极速加载 MCP 工具: {server_url}")
+            print(f"⚡ 从本地缓存极速加载 MCP 工具: {server_url}")
             for t_data in cache_data[server_url]:
                 mcp_base_tools.append(
                     MCPToolAdapter(
@@ -78,7 +78,7 @@ class ToolConfig:
 
         # 3. 如果没有缓存，建立连接拉取远程工具
         headers = {"Authorization": f"Bearer {api_key}"}
-        # print(f"正在连接 MCP 服务器加载工具: {server_url} ...")
+        print(f"正在连接 MCP 服务器加载工具: {server_url} ...")
         server_cache_entry = []  # 用于保存当前服务器的工具元数据
 
         async with sse_client(url=server_url, headers=headers) as (read_stream, write_stream):
