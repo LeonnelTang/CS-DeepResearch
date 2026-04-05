@@ -10,18 +10,18 @@ import sys
 
 import pandas as pd
 from pydantic import BaseModel
-from openai import OpenAI
+from openai import AsyncOpenAI
 from tqdm.asyncio import tqdm_asyncio
 from datasets import load_dataset
 from dotenv import load_dotenv
 
-from .utils import safe_json_loads
+from eval.utils import safe_json_loads, load_local_dataset
 
 load_dotenv()
 
-client = OpenAI(
-    base_url=os.getenv("DEEPSEEK_API_BASE"),
-    api_key=os.getenv("DEEPSEEK_API_KEY")
+client = AsyncOpenAI(
+    base_url=os.getenv("DMX_API_BASE"),
+    api_key=os.getenv("MY_DMX_API_KEY")
 )
 
 with open("D:\\DissertationProject\\DissertationProject\\eval\\prompts.json", "r", encoding='utf-8') as f:
@@ -40,7 +40,7 @@ def extract_answer(question, correct_answer, response, language):
     JUDGE_PROMPT = prompt_template.format(question=question, correct_answer=correct_answer, response=response)
     try:
         response = client.chat.completions.create(
-            model="deepseek-chat",
+            model=args.judge,
             max_completion_tokens=4096,  # overkill for judge
             messages=[
                 {"role": "user", "content": JUDGE_PROMPT}
@@ -92,15 +92,12 @@ async def async_extract_answer(question, correct_answer, response, language):
     prompt_template = prompt_templates["judge"][language]
     SYSTEM_PROMPT = prompt_template.format(question=question, correct_answer=correct_answer, response=response)
     try:
-        response = await client.beta.chat.completions.parse(
-            model="deepseek-reasoner",
+        response = await client.chat.completions.parse(
+            model=args.judge,
             max_completion_tokens=4096,  # overkill for judge
             messages=[
                 {"role": "user", "content": SYSTEM_PROMPT}
-            ],
-            response_format={
-                'type': 'json_object'
-            }
+            ]
         )
         content = response.choices[0].message.content
         judge_json = safe_json_loads(content)
@@ -142,17 +139,17 @@ async def async_extract_answer(question, correct_answer, response, language):
 
 
 async def add_judge_result(question, predictions):
-    unique_id = question["id"]
+    unique_id = str(question["id"])
     prediction = copy.deepcopy(predictions[unique_id])  # not in-place
     question_text = question["question"]
     correct_answer = question["answer"]
-    language = "zh" if question["language"] in ["zh", "chinese", "中文"] else "en"
+    # language = "zh" if question["language"] in ["zh", "chinese", "中文"] else "en"
 
     if "judge_result" in prediction:  # already judged
         return unique_id, prediction
 
     response = prediction["response"]
-    judge_result = await async_extract_answer(question_text, correct_answer, response, "en")
+    judge_result = await async_extract_answer(question_text, correct_answer, response, "zh")
 
     if judge_result is not None:
         prediction["judge_model"] = args.judge
@@ -259,7 +256,7 @@ def dump_metrics(predictions, n):
     }], columns=columns)  # ← 直接指定 columns
 
     # 结果文件路径
-    results_csv = "D:/AI_Lab_ICBC/FinHLE/eval/FinHLE_eval/evaluation_results.csv"
+    results_csv = "evaluation_results.csv"
 
     # 4. 已有结果 or 创建新 DataFrame
     if os.path.exists(results_csv):
@@ -282,7 +279,7 @@ def dump_metrics(predictions, n):
 def main(args):
     assert args.num_workers > 1, "num_workers must be 2 or greater"
 
-    output_dir = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), f"mini_test/judged_results/judge_{args.judge}"))
+    output_dir = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), f"judged_results/"))
     os.makedirs(output_dir, exist_ok=True)
 
     output_filepath = f"{output_dir}/judged_{os.path.basename(args.predictions)}"
@@ -307,7 +304,10 @@ def main(args):
     else:
         judged_predictions = {}
 
-    questions = [q for q in questions if q["id"] in predictions and q["id"] not in judged_predictions]
+    questions = [q for q in questions if str(q["id"]) in predictions and str(q["id"]) not in judged_predictions]
+
+    print(f"Total dataset questions: {total_questions}")
+    print(f"Questions needing to be judged (after filtering): {len(questions)}")
 
     # API will only be called for unjudged responses
     results = asyncio.run(judge_all_responses(questions, predictions))
@@ -330,7 +330,7 @@ if __name__ == "__main__":
     parser.add_argument("--predictions", type=str, help="Model Predictions")
     parser.add_argument("--num_workers", type=int, default=10,
                         help="Async semaphore size. This depends on your rate limit.")
-    parser.add_argument("--judge", type=str, default="gemini-3-pro-preview",
+    parser.add_argument("--judge", type=str, default="",
                         help="Judge model")  # prev: "gpt-4o-2024-08-06"
     args = parser.parse_args()
     main(args)

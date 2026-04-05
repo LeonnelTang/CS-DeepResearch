@@ -1,0 +1,1502 @@
+{
+    "1": {
+        "model": "claude-opus-4-6",
+        "response": "解析：题目描述的是深度神经网络中的\"过拟合\"(overfitting)问题。过拟合是指模型在训练数据上表现过于复杂，过度记忆训练样本的细节和噪声，导致泛化能力下降。为了应对过拟合，研究者提出了多种正则化技术，其中最著名且最有效的是 **Dropout**。\n\nDropout 技术在训练过程中随机\"丢弃\"（即临时移除）一定比例的神经元，这样做有以下效果：\n1. 防止神经元之间产生复杂的共适应关系\n2. 相当于训练多个子网络的集成\n3. 提供了对过拟合的抵抗力\n4. 定义性地提供了对非期望记忆（unwanted memorization）的抵抗能力\n\n题目中\"定义性地提供了一种抵抗非期望记忆的能力\"这一表述，正是 Dropout 的核心特征——通过随机失活神经元，模型无法完全依赖特定的神经元组合来记忆训练数据。\n\n确切答案：Dropout\n\n置信度：95%",
+        "usage": {
+            "completion_tokens": 620,
+            "prompt_tokens": 23,
+            "total_tokens": 643,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 249,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "symmetric loss function",
+            "model_answer": "Dropout",
+            "reasoning": "extracted_final_answer 为“Dropout”，而 correct_answer 为“symmetric loss function”。两者是不同的概念，不存在等价关系，因此答案不匹配。",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "2": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这道题描述的是一个模型对齐研究的实验链条。关键线索是：\n1. Entity_A通过Event_B生成监督和偏好对齐训练资源\n2. 这些资源用于对某开源大语言模型指令版本进行监督微调（Event_C）\n3. 效果对比链：Event_C > Event_D > 某个开源基础模型的指令版本\n4. Event_D是在特定数学指令数据集上对同系列基础模型微调\n5. 最后提到的基准模型是\"参数量约为数十亿\"的开源模型，其指令遵循版本常被用作进一步微调的基础\n\n这个描述模式符合典型的模型对齐研究论文结构。\"参数量数十亿\"、\"开源\"、\"指令遵循版本常作为微调基础\"这些特征指向Llama系列模型。在模型对齐和数学推理相关研究中，Llama 2（7B/13B）及其指令版本（Llama-2-Chat）经常被用作基准对比模型。\n\n确切答案：Llama 2（或Llama-2-Chat）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 614,
+            "prompt_tokens": 39,
+            "total_tokens": 653,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 428,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Llama3.1-8B-Instruct",
+            "model_answer": "Llama 2（或Llama-2-Chat）",
+            "reasoning": "提取出的答案是“Llama 2（或Llama-2-Chat）”，而正确答案是“Llama3.1-8B-Instruct”。两者不是同一个模型，型号和版本均存在实质性差异，因此不匹配。",
+            "correct": "no",
+            "confidence": 75
+        }
+    },
+    "3": {
+        "model": "claude-opus-4-6",
+        "response": "我需要逐步解析这个复杂的问题。\n\n**第一步：识别\"图像字幕编辑框架\"的论文**\n\n图像字幕编辑（Image Caption Editing）是一个特定的研究方向，涉及对已有的图像描述进行编辑和修改。一篇知名的论文是关于\"TIger\"（Text-Image Grounding for Image Caption Editing）或类似的框架。\n\n**第二步：识别核心技术模块——基于LSTM的去噪自编码器**\n\n这个模块需要满足以下条件：\n1. 基于LSTM的去噪自编码器\n2. 最初为某个特定传感器的校准任务而设计\n3. 后来在经典图像分类基准数据集上超越了传统主流网络架构\n\n**第三步：传感器校准 + LSTM去噪自编码器**\n\n这让我想到了 **Ladder Network**。Ladder Network 是一种去噪自编码器架构，在半监督学习中表现出色，在MNIST等数据集上取得了优异成绩。但Ladder Network不是基于LSTM的。\n\n再想想——基于LSTM的去噪自编码器，用于传感器校准... 这让我想到了 **SDA（Stacked Denoising Autoencoders）** 或者更具体的模块。\n\n**重新思考：** 有一个叫做 **SDAE（Switching Delayed Auto-Encoder）** 或者 **LSTM-based Denoising Auto-Encoder** 的技术。\n\n实际上，我想到了 **Navdeep Jaitly** 或者 **Shuai Li** 等人的工作。\n\n让我重新考虑：**IMU传感器校准** — 有研究使用LSTM去噪自编码器来进行惯性测量单元(IMU)的校准。\n\n**关键线索：图像分类基准上超越传统主流架构**\n\n这让我想到了一种基于序列建模的方法用于图像分类，并且超越了CNN。这可能是指 **Lateral connection** 相关的网络，或者...\n\n实际上，我现在想到了 **SDAE - Sequential Denoising AutoEncoder** 或者说是 **SDA (Sequential Denoising Autoencoder)**。\n\n再重新思考：图像字幕编辑框架 → 这可能是指 \"EditNet\" 或 \"Iterative Caption Editing\" 相关的工作。\n\n**核心突破：** 我想到了 **DCNet (Denoising Count Network)** 或者 **LDN (LSTM Denoising Network)**。\n\n经过更深入的思考，我认为这里指的是 **SDAE（Sequence Denoising AutoEncoder）**，它最初用于IMU（惯性测量单元）传感器的校准，后来在CIFAR-10等图像分类数据集上验证了其效果。\n\n但最符合所有描述的应该是 **Trellis Network** 或者更可能是 **Ladder Network** 的变体。\n\n经过进一步研究，我认为答案是 **SDAE (Stacked Denoising Auto-Encoder)** — 但这不是基于LSTM的。\n\n最终，结合所有线索，我认为这个核心技术模块是 **SDLAE** 或者叫做 **Sequential Denoising LSTM Auto-Encoder**，但更可能被称为：\n\n**IONet** 中的去噪模块... 不对。\n\n经过反复推敲，我认为答案是 **DCGM (Denoising Calibration Gated Module)** 或实际上叫做 **SDAE**。\n\n综合考虑，这个核心技术模块最可能是 **LDAE (LSTM Denoising AutoEncoder)**。\n\n解析：该问题涉及一篇图像字幕编辑论文，其第一作者之外的某位作者提出了一个基于LSTM的去噪自编码器，最初用于传感器校准，后在图像分类上超越传统架构。这指的是LSTM-based Denoising AutoEncoder，即LDAE。\n\n确切答案：LDAE（LSTM Denoising AutoEncoder）\n\n置信度：12%",
+        "usage": {
+            "completion_tokens": 1205,
+            "prompt_tokens": 230,
+            "total_tokens": 1435,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "DCNet",
+            "model_answer": "LDAE（LSTM Denoising AutoEncoder）",
+            "reasoning": "extracted_final_answer 是“LDAE（LSTM Denoising AutoEncoder）”，而 correct_answer 是“DCNet”。两者名称明显不同，不匹配，因此该回答错误。",
+            "correct": "no",
+            "confidence": 12
+        }
+    },
+    "4": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题涉及多层推理：\n\n1. **置换不变智能体特征的问题** → 指多智能体强化学习中的**对称性/同质智能体问题**\n2. **转化为单智能体决策框架** → 这是**Mean Field方法**或**集中式训练分散式执行(CTDE)**的特征\n3. **集中训练分散执行范式的算法框架** → 明确指向**CTDE算法**，如QMIX、COMA、MADDPG等\n4. **更广泛的算法领域，包含决策过程紧凑表示及策略规模理论** → 这指的是**马尔可夫决策过程(MDP)**及其扩展领域\n5. **专注于决策过程简洁策略规模问题的文献** → 这类研究探讨**策略复杂度(Policy Complexity)**或**简洁表示(Succinct Representation)**，典型的是关于**Factored MDP**或**策略大小界限**的研究\n6. **理论问题最初源自的核心问题概念** → 策略规模和紧凑表示问题源自**规划(Planning)**领域，特别是**STRIPS规划**和**状态空间搜索**\n\n这个核心问题的首位主要贡献者是**Richard Fikes**，他与Nils Nilsson在1971年共同提出了**STRIPS(Stanford Research Institute Problem Solver)**，这是人工智能规划领域的奠基性工作，首次系统性地研究了状态表示的紧凑性和规划问题的计算复杂度。\n\n确切答案：Richard Fikes\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 870,
+            "prompt_tokens": 38,
+            "total_tokens": 908,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 420,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Kai Cui",
+            "model_answer": "Richard Fikes",
+            "reasoning": "提取出的最终答案是“Richard Fikes”，而正确答案是“Kai Cui”。两者是不同的人名，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 75
+        }
+    },
+    "5": {
+        "model": "claude-opus-4-6",
+        "response": "我需要逐步解析这个问题的链条。\n\n**第一步：孟加拉语语法错误检测（Bangla Grammatical Error Detection）**\n\n这个任务使用了一个专用模型，该模型衍生自一个知名的\"文本到文本转换Transformer预训练模型\"。\n\n知名的文本到文本转换Transformer预训练模型，最著名的就是Google的**T5（Text-to-Text Transfer Transformer）**。\n\n对于孟加拉语，相关的模型是**BanglaT5**，它是T5针对孟加拉语的变体。\n\n**第二步：这个预训练模型是另一个\"终身少样本语言学习\"统一框架的构建基石**\n\n我需要找到一个基于T5（或其变体）的、旨在实现\"终身少样本语言学习（Lifelong Few-Shot Language Learning）\"的统一框架，其核心方法是**提示调优（Prompt Tuning）**。\n\n搜索相关研究：有一篇论文叫做 **\"LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5\"**。\n\n这篇论文的标题完美匹配：\n- 基于T5（文本到文本转换Transformer）\n- 终身少样本语言学习（Lifelong Few-shot Language Learning）\n- 提示调优（Prompt Tuning）\n- 统一框架（Unified Framework）\n\n**第三步：找到该论文的第一作者**\n\nLFPT5这篇论文的作者是 **Chengwei Qin（秦程伟）** 等人。该论文发表于2022年，第一作者是 **Chengwei Qin**。\n\n让我确认论文信息：\n\"LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5\" by Chengwei Qin and Shafiq Joty，发表于ICLR 2022。\n\n首位学者（第一作者）是 **Chengwei Qin（秦程伟）**。\n\n解析：通过追踪问题链条：孟加拉语语法错误检测任务使用了基于T5的模型（如BanglaT5），而T5正是论文\"LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5\"的基础模型。该论文提出了基于提示调优的终身少样本语言学习统一框架，其第一作者为Chengwei Qin（秦程伟）。\n\n确切答案：Chengwei Qin（秦程伟）\n\n置信度：82%",
+        "usage": {
+            "completion_tokens": 763,
+            "prompt_tokens": 237,
+            "total_tokens": 1000,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Chengwei Qin",
+            "model_answer": "Chengwei Qin（秦程伟）",
+            "reasoning": "correct_answer 是“Chengwei Qin”，而 extracted_final_answer 是“Chengwei Qin（秦程伟）”。两者指向同一人名，仅为中英文补充表达，不存在实质性差异，因此答案匹配。",
+            "correct": "yes",
+            "confidence": 82
+        }
+    },
+    "6": {
+        "model": "claude-opus-4-6",
+        "response": "# 分析推理过程\n\n这道题描述了一个学术研究工作，关键信息包括：\n\n1. **基于层级结构（hierarchy）**\n2. **增强少样本泛化能力（few-shot generalization）**\n3. **在关键指标上超越了现有同类技术**\n\n这些关键词指向了少样本学习（few-shot learning）领域中利用层级结构（hierarchical structure）来提升泛化能力的方法。\n\n在少样本学习领域，有一项重要的工作提出了利用类别层级结构来增强少样本学习泛化能力的方法。经过仔细考虑，这很可能是指：\n\n**HierVerb** 或者更可能是 **HSML (Hierarchical Structure for Meta-Learning)** —— 即 \"Hierarchically Structured Meta-learning\" 这篇工作，由Yingtian Zou等人或Huaxiu Yao等人提出。\n\n具体来说，Huaxiu Yao 等人提出的 **HSML（Hierarchically Structured Meta-learning）** 是一个经典工作，它利用层级结构来组织任务，从而增强元学习在少样本场景下的泛化能力，并在关键指标上超越了当时的同类方法。\n\n但也可能是指 **HRN (Hierarchical Representation Network)** 或 **HD (Hierarchical Decomposition)** 等方法。\n\n综合题目中\"基于层级结构\"和\"少样本泛化\"这两个核心描述，最匹配的是：\n\n**HSML (Hierarchically Structured Meta-learning)**\n\n解析：该问题描述的是一项利用层级结构（hierarchical structure）来增强少样本学习（few-shot learning）泛化能力的研究。这与 Huaxiu Yao 等人提出的 HSML（Hierarchically Structured Meta-learning）方法高度吻合。HSML 通过构建层级化的任务结构来定制元学习器，从而在少样本场景下实现更好的泛化性能，实验表明其在关键指标上超越了当时现有的元学习方法。\n\n确切答案：HSML（Hierarchically Structured Meta-learning）\n\n置信度：42%",
+        "usage": {
+            "completion_tokens": 642,
+            "prompt_tokens": 201,
+            "total_tokens": 843,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "PHIER",
+            "model_answer": "HSML（Hierarchically Structured Meta-learning）",
+            "reasoning": "提取出的最终答案是“HSML（Hierarchically Structured Meta-learning）”，而正确答案是“PHIER”。两者名称明显不同，不是同一个方法，也不等价，因此该回答错误。",
+            "correct": "no",
+            "confidence": 42
+        }
+    },
+    "7": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这道题目涉及生物信息学中的因果建模方法，关键信息包括：\n1. 能够保留位置信息的组学数据\n2. 依赖严谨的数学理论框架\n3. 用于因果推断\n\n在生物信息学领域，能够保留位置信息的组学数据主要指空间转录组学（spatial transcriptomics）数据。针对这类数据的因果建模方法中，比较前沿的是基于结构因果模型（Structural Causal Models, SCM）和因果图理论的方法。\n\n根据题目描述的特征——保留位置信息的组学数据、因果建模、严谨数学框架，这很可能指的是 **SPACIA**（Spatial Causal Inference Analysis）或类似的空间因果推断方法。不过，更具体且符合\"第一作者提出的新方法\"这一描述的，可能是 **SpaCCI**（Spatial Causal Cell Interaction）或 **COMMOT**（COMMunication analysis by Optimal Transport）等方法。\n\n但考虑到题目强调\"严谨的数学理论框架\"和\"因果建模\"，最符合的应该是基于因果推断理论（如do-calculus、结构方程模型）的空间组学分析方法。\n\n确切答案：由于题目信息有限，最可能的答案是 **SPACIA（Spatial Causal Inference Analysis）** 或 **SpaCCI（Spatial Causal Cell Interaction）**，这些是针对空间转录组学数据的因果建模方法。\n\n置信度：40%\n\n（注：此类前沿方法命名和具体技术细节可能需要查阅最新文献才能确定准确答案）",
+        "usage": {
+            "completion_tokens": 974,
+            "prompt_tokens": 21,
+            "total_tokens": 995,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 226,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Celcomen",
+            "model_answer": "SPACIA（Spatial Causal Inference Analysis） 或 SpaCCI（Spatial Causal Cell Interaction）",
+            "reasoning": "correct_answer 是 \"Celcomen\"，而 extracted_final_answer 是 \"SPACIA（Spatial Causal Inference Analysis） 或 SpaCCI（Spatial Causal Cell Interaction）\"。两者名称明显不一致，且回答给出了多个候选答案，并未与正确答案匹配，因此结论错误。",
+            "correct": "no",
+            "confidence": 40
+        }
+    },
+    "8": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这道题需要逐步解析多个线索：\n\n1. **正则化训练技术**：题目提到\"一种用于深度卷积神经网络的正则化训练技术\"，在图像识别基准数据集上达到先进性能，这指向的是**Dropout**技术（2014年在ImageNet等数据集上取得突破）。\n\n2. **医学影像中的特定噪声**：Dropout被指出未能有效处理医学影像中常见的**相关噪声（correlated noise）**或**结构化噪声**，这在医学影像（如MRI、CT扫描）中很常见。\n\n3. **量化非凸神经网络参数相似性的度量方法**：这是关键线索。能够量化不同神经网络架构（MLP、CNN、RNN）之间参数相似性的方法，指的是**CKA (Centered Kernel Alignment)** 或更可能是 **Mode Connectivity** 相关研究。但考虑到题目强调\"归一化处理\"，更直接指向的是**SVCCA (Singular Vector Canonical Correlation Analysis)** 或其改进版本。\n\n4. **核心归一化技术**：然而，题目问的是该方法\"所依赖的、专门用于对这些网络参数进行归一化处理的核心技术规则\"。在神经网络参数比较和相似性度量中，特别是在处理不同尺度的参数时，最核心的归一化技术是**权重归一化（Weight Normalization）**或**批归一化（Batch Normalization）**。\n\n但更精确地说，如果这个度量方法需要对参数进行归一化以进行公平比较，最可能使用的是**Frobenius范数归一化**或**谱归一化（Spectral Normalization）**。\n\n考虑到题目的完整逻辑链条和\"核心技术规则\"的表述，答案最可能是**Batch Normalization（批归一化）**，它是处理神经网络内部协变量偏移、使参数在可比尺度上的标准技术。\n\n确切答案：Batch Normalization（批归一化）\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 1219,
+            "prompt_tokens": 40,
+            "total_tokens": 1259,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 439,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "chain normalization rule",
+            "model_answer": "Batch Normalization（批归一化）",
+            "reasoning": "correct_answer 是 \"chain normalization rule\"，而 extracted_final_answer 是 \"Batch Normalization（批归一化）\"。两者是不同的概念，名称和含义都不匹配，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 65
+        }
+    },
+    "9": {
+        "model": "claude-opus-4-6",
+        "response": "\n\nLet me search for this information.\n\n解析：题目描述的是一个以9结尾的年份（很可能是2019年），一个研究团队参加了TREC Deep Learning Track竞赛，使用的方法是基于Transformer的端到端零样本学习方法，能够整合预训练语言模型的潜在语义知识。\n\nTREC Deep Learning Track首次举办于2019年，这与\"以9结尾的年份\"吻合。\n\n题目中描述的方法特征：\n- 面向零样本学习（zero-shot learning）\n- 整合预训练语言模型的潜在语义知识\n- 基于Transformer的端到端方法\n\n这非常符合Rodrigo Nogueira等人提出的利用预训练Transformer（如BERT、GPT-2等）进行文档排序的方法。Rodrigo Nogueira和Kyunghyun Cho在2019年发表了论文\"Passage Re-ranking with BERT\"，这是将预训练语言模型应用于信息检索的开创性工作。\n\n但更精确地看，题目强调\"零样本学习\"和\"整合预训练语言模型潜在语义知识\"的Transformer端到端方法，这更像是指Doc2Query或者类似的方法。Nogueira等人的团队确实参加了TREC 2019 Deep Learning Track。\n\n不过，仔细审视\"零样本学习\"这个关键词，结合预训练语言模型的潜在语义知识，这更可能指的是Nils Reimers和Iryna Gurevych的工作，或者是Sean MacAvaney等人的工作。Sean MacAvaney等人提出了CEDR（Contextualized Embeddings for Document Ranking），但这不完全是零样本的。\n\n再考虑，\"零样本\"+\"预训练语言模型潜在语义知识\"+\"Transformer端到端\"，这很可能是指Rodrigo Nogueira的工作，他提出了直接使用BERT进行passage re-ranking的方法，本质上是零样本/少样本地将预训练语言模型的知识迁移到检索任务中，并参加了TREC 2019 Deep Learning Track。\n\n确切答案：Rodrigo Nogueira\n\n置信度：62%",
+        "usage": {
+            "completion_tokens": 634,
+            "prompt_tokens": 211,
+            "total_tokens": 845,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Zhuo Chen",
+            "model_answer": "Rodrigo Nogueira",
+            "reasoning": "correct_answer 是 \"Zhuo Chen\"，而 extracted_final_answer 是 \"Rodrigo Nogueira\"。两者是不同的人名，不匹配，因此该回答错误。",
+            "correct": "no",
+            "confidence": 62
+        }
+    },
+    "10": {
+        "model": "claude-opus-4-6",
+        "response": "解析：Pix2Pix是基于生成对抗网络(GAN)的图像到图像转换技术，属于\"对抗\"思想的深度学习方法。题目提到的新型攻击方法有几个关键线索：1)名称暗示\"借用\"机制；2)首个针对非传统预测阶段的攻击；3)基于图像生成两大主流范式之一(GAN和扩散模型)。结合机器学习安全领域的最新研究，这指向的是针对联邦学习训练阶段的攻击。联邦学习中存在一种名为\"BadNet\"的后门攻击，但更符合所有线索的是\"Model Poisoning\"类攻击。然而，最精确匹配\"借用\"概念且针对训练阶段、基于GAN构建的攻击技术是\"**Backdoor Attack**\"或其变体。但考虑到\"借用\"这一关键词，最可能指的是\"**Model Inversion Attack**\"的GAN变体，或者是\"**GAN-based Backdoor Attack**\"。根据近期研究，最符合描述的应该是\"**BadGAN**\"或\"**TrojanGAN**\"这类攻击。但如果强调\"借用\"机制和首创性，答案很可能是\"**Model Extraction Attack**\"的GAN版本，或者是\"**Adversarial Reprogramming**\"。综合判断，最符合所有条件的应该是针对联邦学习的\"**BadNets**\"攻击或其GAN实现版本。\n\n确切答案：BadNets (或 GAN-based Backdoor Attack / TrojanGAN)\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 837,
+            "prompt_tokens": 29,
+            "total_tokens": 866,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 316,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "MOSHI",
+            "model_answer": "BadNets (或 GAN-based Backdoor Attack / TrojanGAN)",
+            "reasoning": "提取出的最终答案是“BadNets (或 GAN-based Backdoor Attack / TrojanGAN)”，而正确答案是“MOSHI”。两者名称完全不一致，也不是同一技术的等价表述，因此该答案错误。",
+            "correct": "no",
+            "confidence": 65
+        }
+    },
+    "11": {
+        "model": "claude-opus-4-6",
+        "response": "解析：在大模型对齐领域，近年来出现了一种强调自动化和细粒度反馈收集的重要技术方法——RLHF（Reinforcement Learning from Human Feedback，基于人类反馈的强化学习）。但更新兴的发展是RLAIF（Reinforcement Learning from AI Feedback，基于AI反馈的强化学习）以及Constitutional AI等方法。不过，如果特指\"自动化\"和\"细粒度\"这两个特征，最符合的应该是**RLAIF**或**Process-based Reward Modeling（基于过程的奖励建模）**。这些方法通过自动化的AI系统提供细粒度的、逐步的反馈，而不是仅依赖人类对最终输出的整体评价。另一个相关的新兴方向是**Scalable Oversight**技术，强调通过自动化方式扩展监督能力。\n\n确切答案：RLAIF（Reinforcement Learning from AI Feedback，基于AI反馈的强化学习）或 Process-based Reward Modeling（基于过程的奖励建模）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 641,
+            "prompt_tokens": 10,
+            "total_tokens": 651,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 94,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "FeedQuill",
+            "model_answer": "RLAIF（Reinforcement Learning from AI Feedback，基于AI反馈的强化学习）或 Process-based Reward Modeling（基于过程的奖励建模）",
+            "reasoning": "correct_answer 是“FeedQuill”，而 extracted_final_answer 是“RLAIF 或 Process-based Reward Modeling”。两者不是同一答案，存在实质性差异，因此不匹配。",
+            "correct": "no",
+            "confidence": 75
+        }
+    },
+    "12": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这是一个关于视觉文本生成（Visual Text Generation/Text Rendering）研究领域的学术问题。根据问题描述：\n\n- 基准A：由某位第一作者提出，有数百万多语言OCR标注数据集支撑 - 这很可能指的是**TextBench**，由Jingye Chen等人提出，基于LAION-OCR数据集\n- 基准B：由另一位不同的第一作者提出 - 可能是**DrawTextCreative**或其他视觉文本生成基准\n- CharGen方法在两个基准上都被测试过\n\n问题询问是否存在一种方法，它：\n1. 在基准A上表现超越了某个也在基准B上测试过的方法\n2. 在基准A上取得当前最优性能\n\n根据2024-2025年视觉文本生成领域的研究进展，**TextDiffuser-2**和**GlyphDraw**系列方法在TextBench等基准上取得了显著进展。特别是**GlyphDraw2**和**TextDiffuser-2**在多个基准测试中展现出色性能，超越了包括CharGen在内的多个先前方法。\n\n然而，由于我无法访问最新的学术数据库来确认具体的基准测试结果对比，我只能基于训练数据中的知识进行推断。\n\n确切答案：基于视觉文本生成领域的研究趋势，可能存在如GlyphDraw2或TextDiffuser-2这类方法在TextBench（基准A）上超越了同样在其他基准测试的方法，但无法确认具体哪个方法在基准A上取得当前绝对最优性能。\n\n置信度：35%",
+        "usage": {
+            "completion_tokens": 925,
+            "prompt_tokens": 36,
+            "total_tokens": 961,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 393,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "UniGlyph",
+            "model_answer": "None",
+            "reasoning": "response 没有给出一个明确且唯一的最终答案，只提出了“GlyphDraw2或TextDiffuser-2”这类不确定猜测，并明确表示无法确认；这与正确答案 UniGlyph 不匹配。",
+            "correct": "no",
+            "confidence": 35
+        }
+    },
+    "13": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题涉及多层技术关联。首先需要识别\"端到端音频驱动人体动画框架\"，这很可能指的是EMAGE或类似的音频驱动手势生成模型。这类模型通常会与多个baseline进行对比，其中可能包括使用了图神经网络增强的模型。关键线索是\"被专门用于微视频推荐系统的图神经网络\"——这指向了某个在短视频推荐领域有影响力的GNN模型，很可能是快手（Kuaishou）或类似平台开发的推荐系统中使用的图结构。\n\n然而，这个问题需要具体的论文引用关系和作者信息，这超出了我当前可以直接推理的范围。要准确回答需要：\n1. 确定具体的音频驱动动画框架论文\n2. 查看其对比实验中的baseline模型\n3. 识别哪个baseline使用了来自推荐系统的GNN\n4. 找到该baseline论文的第一作者\n\n这需要访问学术数据库或具体的论文文献。\n\n确切答案：无法基于现有信息确定，需要查阅相关学术论文的引用关系和作者信息。\n\n置信度：15%",
+        "usage": {
+            "completion_tokens": 704,
+            "prompt_tokens": 24,
+            "total_tokens": 728,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 255,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Shaobin Zhuang",
+            "model_answer": "None",
+            "reasoning": "response 中最终给出的结论是“无法基于现有信息确定，需要查阅相关学术论文的引用关系和作者信息”，未提供与 correct_answer“Shaobin Zhuang”一致的人名答案，因此不匹配。",
+            "correct": "no",
+            "confidence": 15
+        }
+    },
+    "14": {
+        "model": "claude-opus-4-6",
+        "response": "# 解析过程\n\n让我逐步分析这个问题：\n\n1. **项目A**：一个开源项目，专注于构建\"特定类型高性能模拟器\"，核心特征包括支持\"可微弹性变形\"和\"可微塑性变形\"。这指向的是 **DiffTaichi** 或更具体地说是 **PlasticineLab**（一个可微软体模拟器）。但更准确地说，考虑到\"高性能模拟器\"和支持可微弹性/塑性变形，这很可能是 **DiffTaichi** 项目系列中的工作，或者是 **ChainQueen**（一个可微物理模拟器）。\n\n2. 再仔细思考：\"构建特定类型高性能模拟器\"，支持\"可微弹性变形和可微塑性变形\"——这非常符合 **PlasticineLab** 的描述，它是一个基于可微物理的软体操作基准环境。但PlasticineLab的底层引擎是基于 **Taichi** 编程语言。\n\n3. **编程语言C**：一个\"专门定制的、属于某前沿研究领域B的新型可微编程语言\"，用作物理引擎。这指的是 **Taichi** 编程语言。Taichi 是一种专门为计算机图形学和物理模拟设计的可微编程语言。\n\n4. **前沿研究领域B**：可微编程/可微物理模拟，属于计算机图形学领域。\n\n5. **论文D**：介绍 Taichi 编程语言的学术论文。Taichi 的核心论文是：\n   - \"Taichi: A Language for High-Performance Computation on Spatially Sparse Data Structures\" (SIGGRAPH Asia 2019)\n   - \"DiffTaichi: Differentiable Programming for Physical Simulation\" (ICLR 2020)\n\n   考虑到题目强调\"可微编程语言\"，最相关的论文应该是 **\"DiffTaichi: Differentiable Programming for Physical Simulation\"**，其第一作者是 **Yuanming Hu（胡渊鸣）**。\n\n   或者，Taichi语言本身的论文 \"Taichi: A Language for High-Performance Computation on Spatially Sparse Data Structures\" 的第一作者也是 **Yuanming Hu（胡渊鸣）**。\n\n6. **第一作者**：**胡渊鸣 (Yuanming Hu)**，MIT CSAIL 的研究人员，Taichi 编程语言的创造者。\n\n确切答案：胡渊鸣（Yuanming Hu）\n置信度：92%",
+        "usage": {
+            "completion_tokens": 781,
+            "prompt_tokens": 231,
+            "total_tokens": 1012,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Yuanming Hu",
+            "model_answer": "Yuanming Hu",
+            "reasoning": "extracted_final_answer 是 “Yuanming Hu”，与 correct_answer “Yuanming Hu” 完全一致，因此答案正确。",
+            "correct": "yes",
+            "confidence": 92
+        }
+    },
+    "15": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题描述了一个研究工作的两个阶段：1) 为验证新发现而创建数据集，2) 为促进社区进步而公开数据集。但问题中没有提供任何具体的研究领域、时间、机构或其他可识别信息。这是一个过于宽泛的描述，可以匹配学术界成千上万个研究项目的模式。没有更多上下文信息（如研究领域、发表时间、研究机构、具体应用场景等），无法确定指向哪个具体的数据集。\n\n确切答案：无法确定。问题描述过于笼统，缺少可识别的具体信息。\n\n置信度：95%",
+        "usage": {
+            "completion_tokens": 402,
+            "prompt_tokens": 24,
+            "total_tokens": 426,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 259,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "OpenMMlo",
+            "model_answer": "无法确定",
+            "reasoning": "correct_answer 是“OpenMMlo”，而 extracted_final_answer 是“无法确定”。两者不匹配，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "16": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题描述的是视觉语言模型（Vision-Language Models, VLMs）面临的\"越狱攻击\"（jailbreak attacks）威胁。针对VLMs的越狱攻击通常利用图像模态来绕过文本层面的安全防护。为了防御这类攻击，研究人员开发了多种防护技术，其中一种重要的动态适配防护性提示技术被称为\"AdaShield\"（Adaptive Shield）或\"自适应防护提示\"（Adaptive Safety Prompting）。\n\nAdaShield是一种针对多模态大模型越狱攻击的防御机制，它能够根据输入的风险程度动态调整系统提示词的强度和内容，在保持模型正常功能的同时提供针对性的安全防护。这种技术相比静态的安全提示更加灵活和有效。\n\n另一个相关的技术名称是\"Defense Prompt\"或\"Safety Prompt\"，但\"AdaShield\"特指那种能够动态适配的版本。\n\n确切答案：AdaShield（自适应防护盾）或 Adaptive Safety Prompting（自适应安全提示）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 666,
+            "prompt_tokens": 41,
+            "total_tokens": 707,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 449,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Adaptive Shield Prompting (AdaShield)",
+            "model_answer": "AdaShield（自适应防护盾）或 Adaptive Safety Prompting（自适应安全提示）",
+            "reasoning": "correct_answer 是 \"Adaptive Shield Prompting (AdaShield)\"。extracted_final_answer 包含 \"AdaShield\"，但同时给出了另一个不同表述 \"Adaptive Safety Prompting\" 作为并列答案。由于最终答案不是与 correct_answer 完全一致的单一答案，且包含不等价/不精确的替代表述，因此应判定为不匹配。",
+            "correct": "no",
+            "confidence": 75
+        }
+    },
+    "17": {
+        "model": "claude-opus-4-6",
+        "response": "# 解析\n\n让我逐步分析这个问题中的线索：\n\n1. **\"在视觉-语言领域著名的预训练范式\"** — 这指的是 CLIP（Contrastive Language-Image Pre-training），它是视觉-语言领域最著名的预训练范式之一。\n\n2. **\"扩展了该预训练范式\"** — 即某个框架扩展了 CLIP 的方法。\n\n3. **\"在一个特定的零样本学习任务上进行了性能验证\"** — 该框架验证了零样本学习能力。\n\n4. **\"另一个能够将任意模态输入统一视为标记序列并学习联合嵌入的技术\"** — 这描述的是类似于 **data2vec** 或 **ImageBind** 的技术，但更准确地说，\"将任意模态输入统一视为标记序列（token sequences）并学习联合嵌入\"，这非常符合 **Data2Vec** 或更可能是 **Meta-Transformer** 的描述。但考虑到\"任意模态\"和\"标记序列\"以及\"联合嵌入\"，这更像是 **ImageBind**（将多种模态绑定到共同的嵌入空间）。\n\n5. **\"共同服务于一个更宏观的、旨在统一不同信息模态的学习目标\"** — 这个宏观目标是**多模态统一学习/Multimodal unified learning**。\n\n重新考虑：\n\n- 扩展 CLIP 的著名框架包括：**CLAP**（扩展到音频领域）、**PointCLIP**（扩展到点云）、**AudioCLIP** 等。\n- **CLAP (Contrastive Language-Audio Pretraining)** 将 CLIP 的对比学习范式扩展到音频-语言领域，并在零样本音频分类上验证了性能。\n- **ImageBind** 将多种模态（图像、文本、音频、深度、热图、IMU）统一到一个联合嵌入空间，可以视为将任意模态输入学习联合嵌入。\n\nCLAP 和 ImageBind 都服务于统一多模态学习的宏观目标。\n\n但再仔细思考，\"将任意模态输入统一视为标记序列\"更符合 **Meta-Transformer** 的描述——它将不同模态的数据都转化为token序列，用统一的transformer架构处理。\n\n不过，让我重新审视——考虑到\"扩展CLIP\"且在\"零样本任务上验证\"，**PointCLIP** 也是一个候选，它将CLIP扩展到3D点云理解的零样本任务。\n\n综合来看，最符合所有条件的答案是 **CLAP (Contrastive Language-Audio Pretraining)**：\n- 扩展了CLIP范式（从视觉-语言到音频-语言）\n- 在零样本音频分类上验证\n- 与ImageBind等技术共同服务于多模态统一学习目标\n\n确切答案：**CLAP（Contrastive Language-Audio Pretraining）**\n\n置信度：42%",
+        "usage": {
+            "completion_tokens": 921,
+            "prompt_tokens": 229,
+            "total_tokens": 1150,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Synergy-CLIP",
+            "model_answer": "CLAP（Contrastive Language-Audio Pretraining）",
+            "reasoning": "extracted_final_answer 与 correct_answer“Synergy-CLIP”不匹配，二者是不同的技术框架名称，存在实质性差异，因此答案错误。",
+            "correct": "no",
+            "confidence": 42
+        }
+    },
+    "18": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题描述的是信息检索系统中的\"位置偏差\"（position bias）或\"排序偏差\"现象。大规模检索模型在训练时会学习到用户倾向于点击排名靠前的结果，即使这些结果不一定是最相关的。这种偏差会形成恶性循环，影响整个信息生态系统。研究者建立了因果推断的理论框架来解释这一机制，并基于此框架设计了在推理阶段工作的去偏方法。最著名的解决方案是\"逆倾向加权\"（Inverse Propensity Weighting, IPW）或其在信息检索领域的变体\"逆倾向评分\"（Inverse Propensity Scoring, IPS）。但更具体针对检索模型位置偏差、在推理阶段应用的因果启发式方法通常被称为\"因果干预\"（Causal Intervention）或\"反事实推理\"（Counterfactual Reasoning）方法，具体实现中常见的名称是\"位置去偏\"（Position Debiasing）算法或\"因果解纠缠\"（Causal Disentanglement）方法。\n\n确切答案：逆倾向加权（Inverse Propensity Weighting, IPW）或位置去偏（Position Debiasing）\n\n置信度：70%",
+        "usage": {
+            "completion_tokens": 733,
+            "prompt_tokens": 29,
+            "total_tokens": 762,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 310,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Causal Diagnosis and Correction (CDC)",
+            "model_answer": "逆倾向加权（Inverse Propensity Weighting, IPW）或位置去偏（Position Debiasing）",
+            "reasoning": "correct_answer 是 \"Causal Diagnosis and Correction (CDC)\"，而 extracted_final_answer 是 \"逆倾向加权（IPW）或位置去偏（Position Debiasing）\"。两者名称明显不同，且 response 给出了与正确答案不一致的替代答案，因此不匹配。",
+            "correct": "no",
+            "confidence": 70
+        }
+    },
+    "19": {
+        "model": "claude-opus-4-6",
+        "response": "解析：题目描述的是引力波探测（\"探测宇宙中时空涟漪的观测技术\"）中使用的一种新型神经网络推断方法。关键信息包括：\n1. 应用于引力波数据分析\n2. 神经后验估计（Neural Posterior Estimation）\n3. 保持精确对称性/变换不变性\n4. 推断速度提升约1000倍\n\n这些特征指向的是使用等变神经网络（equivariant neural networks）或对称性保持架构进行引力波参数估计的研究。这类工作在2023-2024年间开始出现，代表性的是使用群等变神经网络（group equivariant networks）进行快速贝叶斯推断的方法。\n\n根据描述的技术特点，这很可能是指使用flow-based或normalizing flow等变架构的引力波参数估计工作。此类研究的代表性论文通常由引力波数据分析和机器学习交叉领域的研究者发表。\n\n基于\"保持精确对称性\"和\"神经后验估计\"这两个核心特征，以及引力波应用背景，首位贡献者最可能是 **Maximilian Dax** 或类似在该交叉领域做出开创性工作的研究者。\n\n确切答案：Maximilian Dax\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 758,
+            "prompt_tokens": 24,
+            "total_tokens": 782,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 260,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Maximilian Dax",
+            "model_answer": "Maximilian Dax",
+            "reasoning": "extracted_final_answer 为“Maximilian Dax”，与 correct_answer“Maximilian Dax”完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 65
+        }
+    },
+    "20": {
+        "model": "claude-opus-4-6",
+        "response": "解析：\n\n让我逐步拆解这个谜题：\n\n1. **\"专注于人类互动的研究团队\"** — 这指向研究人类交互/对话的学术团队。\n\n2. **\"某种特定媒介，具有双重属性\"**：\n   - 属性一：互联网上一种流行的**用户生成内容形式** — 这指向**聊天机器人（Chatbot）**，尤其是社交媒体上用户可以创建和互动的聊天机器人。\n   - 属性二：其技术实现依赖于一个**NLP领域知名的轻量级模型**。\n\n3. **\"内容主要发布在某个全球性的视频分享平台上\"** — 这指向 **YouTube**。\n\n4. **\"该平台曾有一项针对其特定用户群体的功能认知调查\"** — YouTube 确实常作为研究对象。\n\n综合来看，这里的\"媒介\"很可能是指 **Chatbot**（聊天机器人），而研究人类互动的团队利用聊天机器人作为研究工具。在 YouTube 上流行的用户生成内容形式中，与 NLP 轻量级模型相关联的，指向的是 **ELIZA**——这是 NLP 历史上最早、最知名的轻量级聊天机器人模型，由 Joseph Weizenbaum 在 MIT 开发，专门用于模拟人类对话互动。\n\n但更精确地重新审视：媒介既是\"用户生成内容形式\"又依赖轻量级NLP模型——这更可能指向**视频博客/vlog中的字幕或弹幕**，而弹幕/评论的情感分析等常用的轻量级模型是 **VADER**（Valence Aware Dictionary and sEntiment Reasoner）。不过，VADER 本身不算是\"媒介\"。\n\n回到核心线索：研究人类互动 + YouTube上的用户生成内容 + 背后依赖的轻量级NLP模型 — 这组合最契合的是对 YouTube **评论（comments）** 或 **聊天机器人** 的研究，而其中依赖的经典轻量级核心模型是 **ELIZA**。\n\n确切答案：**ELIZA**\n\n置信度：42%\n\n（说明：这道题的线索链较为隐晦，涉及多层隐喻嵌套。如果你能提供更多上下文或提示，我可以进一步缩小范围。）",
+        "usage": {
+            "completion_tokens": 687,
+            "prompt_tokens": 299,
+            "total_tokens": 986,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "GPT-2",
+            "model_answer": "ELIZA",
+            "reasoning": "extracted_final_answer 是“ELIZA”，而 correct_answer 是“GPT-2”。两者是不同的模型名称，存在实质性差异，因此答案不匹配。",
+            "correct": "no",
+            "confidence": 42
+        }
+    },
+    "21": {
+        "model": "claude-opus-4-6",
+        "response": "解析：根据题目描述的几个关键特征来分析：1）这是一种身份验证技术；2）用于区分授权用户与非授权欺诈者；3）不使用传统PIN或密码，而是依赖人体独特的物理特征；4）最早被一个公共服务部门（非营利）和一个商业部门（盈利性）采纳；5）有更先进的形态可以整合多种生物特征。这些特征都指向**生物识别认证技术（Biometric Authentication）**。具体来说，结合\"最早被两个不同性质部门采纳\"这一历史背景，指纹识别（Fingerprint Recognition）是最早被执法部门（公共服务/非营利）和银行/金融机构（盈利性）广泛采用的生物识别技术。其更先进的形态即**多模态生物识别（Multimodal Biometrics）**，能整合指纹、虹膜、面部、声纹等多种生物特征。\n\n确切答案：这项核心的身份验证技术是**生物识别认证（Biometric Authentication）**，其最具代表性的早期形式是**指纹识别（Fingerprint Recognition）**。它最早被执法/政府部门（非营利公共服务部门）和银行/金融机构（盈利性部门）所采纳，其高级形态为多模态生物识别系统（Multimodal Biometric System），可整合多种人体生物特征进行身份验证。\n\n置信度：82%",
+        "usage": {
+            "completion_tokens": 426,
+            "prompt_tokens": 260,
+            "total_tokens": 686,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "生物识别系统",
+            "model_answer": "生物识别认证（Biometric Authentication）",
+            "reasoning": "correct_answer 是“生物识别系统”，而 extracted_final_answer 是“生物识别认证（Biometric Authentication）”。两者核心指向同一类基于人体生物特征进行身份验证的技术，实质上等价，没有明显差异。",
+            "correct": "yes",
+            "confidence": 82
+        }
+    },
+    "22": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题涉及神经科学与自然语言处理交叉领域的研究。根据相关研究，特别是Meta AI和相关神经科学团队的工作，研究者们致力于使用语言模型来预测人类大脑对语音/语言刺激的神经响应。其中一项关键工作是对GPT-2等基础语言模型进行微调，使其更好地对齐人类大脑的语言处理机制。研究者采用的方法是利用脑成像数据（如fMRI或MEG数据）对基础模型进行微调（brain-tuning/brain fine-tuning），通过一种可扩展的训练策略，在少量参与者数据上训练后就能泛化到新参与者，从而降低所需数据量并提升预测对齐度。这项工作最终得到的模型被称为\"BrainGPT\"——即经过脑数据微调后的GPT模型，在模拟人类对语音信号的认知处理方面表现更优。\n\n确切答案：该模型是 **BrainGPT**，即通过脑成像数据对GPT基础模型进行微调（brain fine-tuning）后得到的模型，它在模拟人类对语音信号的认知处理方面表现更优，同时降低了预测新参与者大脑数据所需的数据量。\n\n置信度：42%\n\n（说明：由于我无法实时检索最新论文，此答案基于该领域已知的代表性研究推断。如果该问题指向的是某篇特定论文，实际模型名称可能有所不同，建议核实原始文献。）",
+        "usage": {
+            "completion_tokens": 444,
+            "prompt_tokens": 177,
+            "total_tokens": 621,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "brain-tuned模型",
+            "model_answer": "BrainGPT",
+            "reasoning": "correct_answer 是“brain-tuned模型”，而 extracted_final_answer 是“BrainGPT”。两者名称不一致，response 也未表明“BrainGPT”与“brain-tuned模型”是同一标准答案，因此不匹配。",
+            "correct": "no",
+            "confidence": 42
+        }
+    },
+    "23": {
+        "model": "claude-opus-4-6",
+        "response": "我需要找到两篇相关的论文，它们的第一作者是同一个人。\n\n**第一篇论文的线索：**\n- 提出了一个框架，解决交错内容生成（interleaved content generation）中的一致性问题\n- 配有基准测试集（benchmark）\n- 依托一种特定的图结构来捕捉跨模态关系\n\n这让我想到关于交错图文生成（interleaved text-and-image generation）中一致性问题的研究。使用图结构来捕捉跨模态关系，这指向了一种利用图（graph）来建模文本和图像之间关系的方法。\n\n**第二篇论文的线索（同一第一作者）：**\n- 提出了一种简单的微调方法（simple fine-tuning method）\n- 旨在解决参数冗余问题（parameter redundancy）\n- 在一个标准数据集上进行了测试\n\n解决参数冗余的简单微调方法，这听起来像是参数高效微调（Parameter-Efficient Fine-Tuning, PEFT）领域的工作，比如针对大语言模型或视觉模型的微调方法。\n\n让我思考关于交错内容生成一致性的论文。近期有一篇论文叫做 **\"InterleavedBench\"** 或类似的名字，使用图结构...\n\n我想到的是 **Mingyuan Zhou** 或其他研究者的工作。\n\n再想想，关于参数冗余的简单微调方法，可能是指 **LoftQ**、**DoRA** 或类似的方法。\n\n让我重新考虑。使用图结构捕捉跨模态关系来解决交错生成一致性问题——这可能是 **\"Interleaved-Modal Chain-of-Thought\"** 或者涉及场景图（scene graph）的工作。\n\n考虑到第二篇论文是关于参数冗余的简单微调方法，这让我想到 **SPT (Simple Parameter-efficient Fine-Tuning)** 或者类似的工作。\n\n经过进一步思考，我认为这可能涉及：\n\n第一篇论文：关于交错多模态生成，使用图结构（如实体关系图/场景图）来保持一致性，并提供benchmark。\n\n第二篇论文：解决参数冗余的微调方法——这可能是指 **\"SaRA: High-Efficient Diffusion Model Fine-tuning with Progressive Sparse Low-Rank Adaptation\"** 或类似的工作，处理参数冗余问题。\n\n如果第二篇论文是 **SaRA**，其第一作者是 **Teng Hu**。那第一篇论文可能也是 Teng Hu 的工作。\n\n但让我再想想——**InterleavedBench** 配合图结构... \n\n我认为这篇论文可能是 **\"Benchmarking Interleaved Content Generation: A Consistency-Aware Framework with Cross-Modal Graph\"** 之类的。\n\n经过更多思考，我相信这指的是微调方法为 **SaRA (Sparse Low-Rank Adaptation)**，其解决参数冗余问题。SaRA 的第一作者团队提出的关于交错内容生成一致性的框架论文，应该就是问题所问的那篇。\n\n根据线索匹配，第二篇关于参数冗余的微调论文叫 **SaRA**，在标准数据集上测试。第一作者是 **Teng Hu**。\n\n那么第一篇论文（即问题所问的论文）应该是 **\"InterleavedBench: Benchmarking Multimodal Interleaved Content Generation\"** 或类似名称，由 Teng Hu 领导。\n\n解析：根据线索，这篇论文提出了一个解决交错内容生成一致性问题的框架，使用图结构捕捉跨模态关系并配有基准测试集。其第一作者还提出了解决参数冗余的微调方法SaRA。该论文是关于交错多模态内容生成的基准和框架。\n\n确切答案：**InterleavedBench**（全称 \"InterleavedBench: Benchmarking Multimodal Interleaved Content Generation\"）\n\n置信度：32%",
+        "usage": {
+            "completion_tokens": 1236,
+            "prompt_tokens": 228,
+            "total_tokens": 1464,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+            "model_answer": "InterleavedBench",
+            "reasoning": "提取出的最终答案是“InterleavedBench”，而正确答案是“Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment”。两者名称明显不同，不是同一篇论文，也不存在等价表述，因此答案错误。",
+            "correct": "no",
+            "confidence": 32
+        }
+    },
+    "24": {
+        "model": "claude-opus-4-6",
+        "response": "# 分析推理过程\n\n让我逐步解析题目中的关键信息：\n\n1. **SFBC（空频分组编码）性能研究** - 针对特定移动通信系统的下行传输\n2. **多载波调制技术** - 广泛用于该系统，这指的是**OFDM**（正交频分复用）\n3. **两种高阶正交幅度调制方式** - 如16-QAM和64-QAM\n4. **近互补序列（Near-Complementary Sequences）** - 用于降低OFDM系统的PAPR（峰值平均功率比），具有不同阶数\n\n关键线索是\"近互补序列\"（Near-Complementary Sequences）用于降低OFDM的PAPR，这是一个比较特定的研究方向。\n\n结合以下几个研究方向的交叉：\n- SFBC + OFDM下行传输性能分析工具\n- 高阶QAM调制\n- 近互补序列降低PAPR\n\n这些研究方向的交叉指向了**李莹**（Ying Li）或相关学者。但更仔细考虑\"近互补序列\"这个特定概念，以及SFBC-OFDM的分析工具开发，这与**陈月云（Yue-Yun Chen）**或**许蓓（Bei Xu）**的研究相关。\n\n再仔细考虑，\"近互补序列\"（near-complementary sequences）用于PAPR降低是一个非常具体的研究领域。结合SFBC在LTE/WiMAX等系统下行链路中的应用，以及开发分析工具（analytical tool）来评估SFBC-OFDM性能，使用16-QAM和64-QAM两种高阶调制方式——\n\n这些特征综合指向的核心学者是 **李莹 (Ying Li)** 教授，或者更可能是 **Solomon W. Golomb** 的学生圈子中研究互补序列的学者。\n\n经过进一步思考，\"近互补序列\"与PAPR降低的结合，加上SFBC-OFDM性能分析工具的开发，这更符合**陈晓明（Xiaoming Chen）**或**许蓓（Bei Xu）**的研究特征。\n\n实际上，综合所有线索——SFBC-OFDM分析工具、近互补序列降PAPR、高阶QAM——这指向了**王忠勇（Zhongyong Wang）**或其团队成员的研究，但最可能的核心学者是：\n\n**李莹（Ying Li）**——她在SFBC-OFDM系统性能分析以及近互补序列降低PAPR方面有系统性的研究贡献。\n\n经过更深入的反思，这个问题的各个要素（SFBC、OFDM、PAPR、近互补序列、分析工具、高阶QAM）综合起来，核心学者最可能是**许蓓 (Bei Xu)**。\n\n解析：题目描述了一位学者在SFBC-OFDM系统下行传输性能分析方面的研究，该学者开发了整合OFDM的分析工具，使用16-QAM和64-QAM进行性能评估，并且其研究团队还涉及近互补序列降低OFDM系统PAPR的工作。综合这些高度具体的研究交叉方向，核心学者是**李莹（Ying Li）**。\n\n确切答案：李莹（Ying Li）\n置信度：25%",
+        "usage": {
+            "completion_tokens": 1045,
+            "prompt_tokens": 270,
+            "total_tokens": 1315,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Gabriela Morillo",
+            "model_answer": "李莹（Ying Li）",
+            "reasoning": "extracted_final_answer 为“李莹（Ying Li）”，而 correct_answer 为“Gabriela Morillo”。两者是不同的人名，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 25
+        }
+    },
+    "25": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题涉及机器学习中的不确定性估计方法。根据描述，研究使用低分辨率医学影像（特定身体部位）测试模型，该模型在合成解剖数据上训练。关键信息是提出了一种新方法，性能与深度集成（Deep Ensembles）相当但计算成本更低。\n\n在不确定性估计领域，有几种知名的低成本替代方法，包括：\n- Monte Carlo Dropout (MC Dropout)\n- Variational Inference相关方法\n- Single-pass uncertainty estimation方法\n\n根据\"性能与深度集成相当但计算成本更低\"这一特征，以及在医学影像领域的应用背景，这很可能指的是**Monte Carlo Dropout**方法，或者是基于此发展的变体如**Concrete Dropout**。\n\n然而，如果是\"新提出\"的方法，可能是指**Evidential Deep Learning**、**Laplace Approximation**或**SWAG (Stochastic Weight Averaging-Gaussian)**等较新的方法。\n\n由于问题中强调是\"新提出的\"且由\"主要学者\"提出，最有可能的答案是**MC Dropout (Monte Carlo Dropout)**或其改进版本，这是Yarin Gal等人提出的经典方法。\n\n确切答案：Monte Carlo Dropout (MC Dropout) 或 Concrete Dropout\n\n置信度：60%\n\n（注：由于缺少具体论文或研究者姓名等关键信息，无法给出100%确定的答案。如果您能提供更多细节如研究者姓名、发表年份或会议/期刊名称，我可以给出更精确的答案。）",
+        "usage": {
+            "completion_tokens": 968,
+            "prompt_tokens": 27,
+            "total_tokens": 995,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 297,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Dropsembles",
+            "model_answer": "Monte Carlo Dropout (MC Dropout) 或 Concrete Dropout",
+            "reasoning": "正确答案是“Dropsembles”，而提取出的最终答案是“Monte Carlo Dropout (MC Dropout) 或 Concrete Dropout)”。二者名称明显不同，且回答给出了与正确答案不一致的其他方法，并带有“或”的歧义，因此不匹配。",
+            "correct": "no",
+            "confidence": 60
+        }
+    },
+    "26": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这道题需要找到同时满足以下条件的研究者：\n1. 提出了一种用于视频详细字幕生成（video detailed captioning）评估的大型模型辅助指标\n2. 该指标采用了\"分而治之\"（divide-and-conquer）策略\n3. 同一作者还是低光视频增强（low-light video enhancement）领域某篇超越CNN方法论文的第一作者\n\n在视频字幕评估领域，近年来出现了基于大型语言模型的评估指标。其中比较知名的是用于详细视频字幕评估的指标，采用分治策略将长视频分解为片段进行评估。\n\n在低光视频增强领域，Transformer架构的方法开始超越传统CNN方法。结合这两个线索，符合条件的研究者应该是在这两个子领域都有重要贡献的学者。\n\n根据这些特征，这位研究者很可能是 **Tao Wang（王涛）** 或类似名字的学者，但我需要指出，由于这涉及非常具体的近期研究论文交叉信息，我无法完全确定具体是哪位研究者，因为我的知识库中可能没有覆盖所有最新的计算机视觉会议论文的详细作者信息。\n\n确切答案：无法完全确定，但根据描述特征，可能是活跃在视频理解和低光增强交叉领域的研究者\n\n置信度：30%",
+        "usage": {
+            "completion_tokens": 849,
+            "prompt_tokens": 36,
+            "total_tokens": 885,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 396,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Wenhao Chai",
+            "model_answer": "None",
+            "reasoning": "response 没有给出与 correct_answer 完全一致的明确最终答案。它先猜测是“Tao Wang（王涛）或类似名字的学者”，随后又明确表示“无法完全确定”，因此无法提取出一个确切且与 Wenhao Chai 匹配的最终答案。",
+            "correct": "no",
+            "confidence": 30
+        }
+    },
+    "27": {
+        "model": "claude-opus-4-6",
+        "response": "解析：根据题目描述的几个关键线索进行分析：\n\n1. **深度残差网络**：提到了在计算机视觉多个分支广泛采用的残差网络架构\n2. **人体姿态估计任务**：面向特定任务的学术竞赛冠军，涉及3D人体姿态\n3. **著名基准数据集**：包含丰富3D标注的人体姿态数据集，最著名的是Human3.6M\n4. **精细动作捕获数据集**：另一个专注于精细动作的数据集，很可能是HumanEva\n5. **毫米级精度指标**：与三维姿态误差相关，通常指MPJPE (Mean Per Joint Position Error)\n6. **论文标题线索**：\"捕捉每个关节的运动\"暗示\"Simple Baseline\"或类似表述\n\n综合这些线索，这指向的是**SimpleBaseline**模型，由微软亚洲研究院提出。该模型：\n- 使用ResNet作为骨干网络\n- 在ECCV 2018的3D人体姿态估计竞赛中表现优异\n- 在Human3.6M数据集上取得了当时最优的MPJPE指标\n- 论文标题为\"Simple Baselines for Human Pose Estimation and Tracking\"\n\n确切答案：SimpleBaseline (或称 Simple Baseline for 3D Human Pose Estimation)\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 747,
+            "prompt_tokens": 38,
+            "total_tokens": 785,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 415,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "INT_HMR_Model",
+            "model_answer": "SimpleBaseline",
+            "reasoning": "extracted_final_answer 为“SimpleBaseline”，而 correct_answer 为“INT_HMR_Model”。两者名称完全不同，不是同一模型，也不存在等价表述，因此答案不匹配。",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "28": {
+        "model": "claude-opus-4-6",
+        "response": "# 分析过程\n\n让我逐步分析这个问题的线索：\n\n1. **研究者A命名了一个缩写概念C**，这个概念在多个技术领域共用\n2. **针对概念C提出了两种算法**：算法D（最优解）和算法E（近优解，速度快）\n3. **研究者A是第一作者**，发表了关于**B5G/6G网络**下的：\n   - 云网资源集成分配\n   - 自主编排\n   - 语义通信\n\n这些研究方向非常前沿且具体，指向的是通信/网络领域的研究者。\n\n让我思考\"在多个技术领域共用的缩写概念C\"——这可能是类似于\"VNE\"（Virtual Network Embedding）、\"RAP\"（Resource Allocation Problem）或\"JSCO\"等概念。\n\n结合B5G/6G网络、云网资源集成分配（cloud-network integrated resource allocation）、自主编排（autonomous orchestration）、语义通信（semantic communication）这些关键词，这位研究者应该是在网络资源管理和未来网络领域非常活跃的学者。\n\n考虑到该研究者：\n- 命名了一个跨领域的缩写概念\n- 提出了最优算法和启发式算法两种方案\n- 在B5G/6G领域发表多篇第一作者论文\n\n经过综合分析，这些线索指向的研究者很可能是**尚凤军（Fengjun Shang）**或**张长旺**等人。但更仔细地考虑\"命名了某个缩写概念\"且该概念跨多个技术领域共用，结合云网资源编排和语义通信的交叉研究——\n\n这位研究者最可能是 **Peiying Zhang（张佩莹/张沛颖）**，她在B5G/6G网络资源编排、VNE（虚拟网络嵌入）等方面有大量第一作者论文，并且提出了针对VNE问题的精确算法和启发式算法。\n\n但再仔细考虑——\"命名了\"一个缩写概念，这是一个很强的线索。VNE这个概念的命名通常归功于早期研究者。\n\n综合所有线索，特别是\"命名缩写概念C\"、\"两种算法（最优+近优）\"、以及\"B5G/6G、云网资源集成分配、自主编排、语义通信\"的第一作者论文，这位研究者A最可能是：\n\n**张佩英（Peiying Zhang）**\n\n她在虚拟网络嵌入（VNE）和B5G/6G网络资源管理领域发表了大量论文，涉及云网融合资源分配、自主编排和语义通信等方向。\n\n解析：根据题目线索——命名了一个跨领域共用的缩写概念、提出了最优和近优两种算法、并以第一作者发表了B5G/6G网络下云网资源集成分配、自主编排及语义通信的多篇论文——综合这些高度具体的研究方向，这位研究者A是**Peiying Zhang（张佩英）**，她在虚拟网络嵌入及B5G/6G网络资源管理领域有系统性的研究贡献。\n\n确切答案：Peiying Zhang（张佩英）\n\n置信度：32%",
+        "usage": {
+            "completion_tokens": 1012,
+            "prompt_tokens": 272,
+            "total_tokens": 1284,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Masoud Shokrnezhad",
+            "model_answer": "Peiying Zhang（张佩英）",
+            "reasoning": "extracted_final_answer 是“Peiying Zhang（张佩英）”，而 correct_answer 是“Masoud Shokrnezhad”。两者为不同人物，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 32
+        }
+    },
+    "29": {
+        "model": "claude-opus-4-6",
+        "response": "# 解析\n\n这道题询问的是一种特定的评估基准构建方法，该方法旨在使评估与真实世界任务分布对齐，并采用了\"多模态基准混合与自适应校正的流水线\"（a pipeline of multi-modal benchmark mixture and adaptive correction）作为重建方法。\n\n这描述的是 **LiveBench** 或更可能是 **WildBench** 的相关工作，但更精确地来看，这个描述高度匹配的是 **Arena-Hard** 或 **Chatbot Arena** 相关的工作。\n\n经过仔细思考，这个描述最匹配的是 **\"LMSYS-Chat-1M\"** 或 **\"WildBench\"** 团队的工作，但\"多模态基准混合与自适应校正的流水线\"这一具体技术描述更符合：\n\n**BenchBuilder**，这是用于构建 **MEGA-Bench** 的方法。MEGA-Bench 是一个多模态评估基准，旨在与真实世界任务分布对齐，由 **Jiacheng Chen, Tianhao Liang, Sherman Siu, Zhengqing Wang, Kai Wang, Yubo Ma** 等人提出（来自 Waterloo 大学等机构）。\n\n但再仔细审视题目——\"多模态基准混合与自适应校正的流水线\"——这更像是描述一种将多个现有基准混合并通过自适应校正来重建一个新基准的方法，目的是对齐真实世界任务分布。\n\n这与 **OpenCompass** 团队提出的 **CompassBench** 或 **T-Eval** 相关工作也有关联。\n\n经过进一步考虑，这最符合的是 **Huggingface 的 LightEval** 或 **Open LLM Leaderboard v2** 的工作。\n\n实际上，最匹配的应该是 **\"Benchmark Self-Evolving (BSE)\"** 或者 **\"Auto-Arena\"** 相关工作。\n\n经过更深入的思考，这个描述最精确匹配的是 **Zhiyuan Hu, Yilun Zhao 等人** 提出的工作，或者是 **\"MixEval\"**——由 **Ni Junjie (倪俊杰)** 等人提出。\n\n**MixEval** 正是这样一个基准：\n- 目标：与真实世界任务分布对齐\n- 方法：通过将真实世界用户查询的主题分布映射到现有基准的混合中（benchmark mixture），并进行自适应校正\n- 提出者：**Ni Junjie, Xue Fuzhao, Xiang Yuting, et al.** (来自新加坡国立大学等)\n\nMixEval 的核心方法就是通过从网络上挖掘真实用户查询的分布，然后将多个现有基准按照该分布进行混合（multi-modal benchmark mixture），并通过自适应的方式进行校正（adaptive correction），从而构建出一个与真实世界对齐的评估基准。\n\n确切答案：**MixEval** 由 **Ni Junjie（倪俊杰）等人** 提出（论文作者包括 Ni Junjie, Xue Fuzhao, Xiang Yuting, Huang Dongfu, Shen Yicong 等，来自新加坡国立大学等机构）。\n\n置信度：72%",
+        "usage": {
+            "completion_tokens": 999,
+            "prompt_tokens": 156,
+            "total_tokens": 1155,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Jinjie Ni",
+            "model_answer": "Ni Junjie（倪俊杰）等人",
+            "reasoning": "correct_answer 是 \"Jinjie Ni\"，而 extracted_final_answer 是 \"Ni Junjie（倪俊杰）等人\"。两者姓名不一致，且回答还加入了“等人”，不能视为与给定正确答案严格匹配。",
+            "correct": "no",
+            "confidence": 72
+        }
+    },
+    "30": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题描述的是一项关于评估生成模型训练样本贡献的研究，提到了几个关键特征：首次提出的无需训练且适用于多种模型框架的技术、用于校准数据贡献偏差的特定视觉评估方法、高效估值的创新核心组件，以及新的方法论评估标准。\n\n然而，这个问题涉及的是特定学术研究论文的作者信息。我的知识截止日期是2025年4月，虽然我了解机器学习和生成模型领域的一般研究趋势，但问题中描述的这项具体研究的细节（特别是\"首次提出\"、\"特定视觉评估方法\"、\"创新核心组件\"等特征组合）不足以让我准确识别出具体是哪篇论文以及其第一作者是谁。\n\n学术论文的作者信息需要精确匹配，而基于这些相对笼统的技术特征描述，我无法确定地给出具体研究者的姓名。\n\n确切答案：基于提供的信息，我无法确定该研究的第一作者是谁。需要更具体的信息（如论文标题、发表会议/期刊、发表时间等）才能准确回答。\n\n置信度：15%",
+        "usage": {
+            "completion_tokens": 730,
+            "prompt_tokens": 30,
+            "total_tokens": 760,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 333,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Jiaxi Yang",
+            "model_answer": "None",
+            "reasoning": "response 中未给出具体人名答案，而是明确表示“无法确定该研究的第一作者是谁”。这与 correct_answer“Jiaxi Yang”不匹配，存在实质性差异。",
+            "correct": "no",
+            "confidence": 15
+        }
+    },
+    "31": {
+        "model": "claude-opus-4-6",
+        "response": "解析：根据题目描述，一个研究团队构建了一个评估体系（benchmark），用于测试已有的文档图像理解（Document Understanding）模型在面对非训练数据（out-of-distribution data）时的鲁棒性。该评估体系包含一个核心数据集合，由多个子集构成，覆盖三大任务方向：文档问答（Document QA）、信息提取（Information Extraction）和文档分类（Document Classification）。这与论文 \"DUDE: Document Understanding Dataset and Evaluation\" 的描述高度吻合。DUDE 是一个专门为评估文档理解模型而构建的综合性 benchmark。在 DUDE 的框架中，其核心数据集合就是 **DUDE dataset**，而研究者们在对已有模型进行鲁棒性评估时，直接使用的是该 benchmark 中的测试集部分。但更精确地说，题目问的是\"被直接使用的那个数据集组合\"的名字。在 DUDE 论文中，用于评估已有模型鲁棒性的核心数据集组合被称为 **DUDE benchmark dataset**。\n\n然而，更符合题意的另一个可能是论文 \"Out-of-Distribution Robustness of Document Understanding Models\" 相关工作。该研究构建了一个评估体系来测试文档理解模型的 OOD 鲁棒性，其核心数据集合覆盖了文档问答、信息提取和文档分类三大方向，由多个子集构成。在该工作中，被直接用于对已有模型进行鲁棒性评估的数据集组合叫做 **ROBUT**（Robustness benchmark for Document Understanding Transformers）。ROBUT 包含多个子数据集，分别对应不同的文档理解任务，研究者利用它来评估现有文档理解模型的鲁棒性表现。\n\n确切答案：**ROBUT**（Robustness Benchmark for Document Understanding Transformers）。该数据集组合由多个子集构成，覆盖文档问答、信息提取和文档分类三大任务，研究者直接使用它对已有的文档理解模型进行了鲁棒性评估。\n\n置信度：42%",
+        "usage": {
+            "completion_tokens": 556,
+            "prompt_tokens": 303,
+            "total_tokens": 859,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Do-GOOD分布外数据集",
+            "model_answer": "ROBUT",
+            "reasoning": "correct_answer 是“Do-GOOD分布外数据集”，而 extracted_final_answer 是“ROBUT”。两者名称明显不同，不是同一个数据集组合，存在实质性差异，因此答案错误。",
+            "correct": "no",
+            "confidence": 42
+        }
+    },
+    "32": {
+        "model": "claude-opus-4-6",
+        "response": "解析：根据描述，这是一个针对智能体（Agent）安全性的综合评估框架，涵盖了三种特定攻击类型：思维链/计划篡改（Thought Manipulation）、记忆投毒（Memory Poisoning）、提示注入（Prompt Injection），以及混合攻击和多种防御方法的系统性评估。这个描述与AgentDojo基准测试的特征高度吻合。AgentDojo是一个专门用于评估LLM智能体安全性的基准框架，系统地测试了多种攻击向量和防御机制。\n\n确切答案：AgentDojo\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 367,
+            "prompt_tokens": 26,
+            "total_tokens": 393,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 280,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "作者基于ASB进行基准测试",
+            "model_answer": "AgentDojo",
+            "reasoning": "correct_answer 是“作者基于ASB进行基准测试”，而 extracted_final_answer 是“AgentDojo”。两者名称不同，指代不一致，存在实质性差异，因此不匹配。",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "33": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这道题涉及软件工程领域一个著名的学术争议。根据题目描述：\n1. 一篇关于编程语言与代码质量的大规模实证研究\n2. 该研究受到某团队批评论文的挑战\n3. 该团队随后发表了复刻研究（replication study）\n4. 复刻研究发表年份以7结尾\n\n这指向的是Ray等人关于编程语言对软件质量影响的研究。原始研究发表于FSE 2014（ACM SIGSOFT Symposium on the Foundations of Software Engineering），题为\"A Large Scale Study of Programming Languages and Code Quality in GitHub\"。\n\n该研究后来受到Berger等人团队的批评，他们在2019年发表了批评论文，随后在2017年发表了复刻研究\"A Replication Study on the Evaluation of Programming Languages and Code Quality in GitHub\"（注意：虽然复刻研究通常在批评之后，但学术发表时间线可能因会议周期而交错）。\n\n原始研究首次发表的会议是FSE 2014（Foundations of Software Engineering 2014）。\n\n确切答案：FSE 2014（ACM SIGSOFT International Symposium on Foundations of Software Engineering 2014）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 772,
+            "prompt_tokens": 23,
+            "total_tokens": 795,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 241,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "FSE 2014",
+            "model_answer": "FSE 2014",
+            "reasoning": "extracted_final_answer 为“FSE 2014”，与 correct_answer“FSE 2014”完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 75
+        }
+    },
+    "34": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题询问的是一篇关于对伪造检测技术进行后门攻击的学术论文中提出的攻击框架名称。根据问题描述，该框架具有以下特征：\n1. 针对伪造检测技术的后门攻击\n2. 在评估中超越了现有高性能基准\n3. 属于干净标签后门攻击（clean-label backdoor attack）范畴\n\n然而，这个问题涉及的是特定学术论文的具体内容，需要查阅相关学术文献才能准确回答。这不属于我的专业领域（软件开发和工程任务），而是学术研究查询。我无法访问学术数据库或论文检索系统来查找这个特定框架的名称。\n\n确切答案：我无法提供这个特定攻击框架的名称。这需要查阅相关学术论文数据库，但我的功能主要集中在软件开发辅助，不包括学术文献检索。\n\n置信度：95%",
+        "usage": {
+            "completion_tokens": 575,
+            "prompt_tokens": 17,
+            "total_tokens": 592,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 184,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Poisoned Forgery Face",
+            "model_answer": "None",
+            "reasoning": "response 没有给出具体框架名称，而是明确表示“我无法提供这个特定攻击框架的名称”。这与正确答案“Poisoned Forgery Face”不匹配，存在实质性差异。",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "35": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题信息不足，无法给出确定答案。题目仅提供了\"一位学者\"、\"第一作者\"、\"两篇重要论文\"、\"克服深度学习局限\"、\"优于传统神经网络\"等模糊描述，但没有给出具体的学者姓名、论文标题、发表时间、期刊名称或任何可以定位到具体研究的信息。符合这些特征的AI方法可能有多种，例如：胶囊网络（Capsule Networks）、液态神经网络（Liquid Neural Networks）、神经符号AI、图神经网络等。不同学者在不同时期都提出过声称克服深度学习某些局限的方法。没有更多上下文信息，无法确定题目指向哪一种具体方法或哪位学者。\n\n确切答案：信息不足，无法确定具体的人工智能方法。\n\n置信度：95%",
+        "usage": {
+            "completion_tokens": 522,
+            "prompt_tokens": 17,
+            "total_tokens": 539,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 178,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "生物建模人工智能",
+            "model_answer": "信息不足，无法确定具体的人工智能方法",
+            "reasoning": "提取出的最终答案是“信息不足，无法确定具体的人工智能方法”，而正确答案是“生物建模人工智能”。两者明显不一致，前者并未给出正确方法名称，因此错误。",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "36": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这道题目涉及大语言模型评测领域的几个关键实体之间的关系。让我逐步分析：\n\n1. **Entity_A（原始基准）**：题目描述为\"更广为人知的原始基准\"，在LLM评测领域，最广为人知的综合基准是MMLU（Massive Multitask Language Understanding）\n\n2. **Entity_B（改进后的多语言基准）**：基于MMLU改进并支持多语言的基准是MMMLU（Massive Multitask Multilingual Understanding）\n\n3. **Entity_C（文化中立部分）**：MMMLU中包含一个被标注为文化中立的子集，称为MMMLU-neutral\n\n4. **Method_D（两步法）**：题目描述为\"提升线性化质量的简单两步法\"，这指向MART（Multitask Adaptive Reasoning with Task-specific linearization）方法，但更可能是指针对MMLU优化的简单方法\n\n5. **Target_Entity（目标模型）**：结合上述线索，这个被特定方法优化以提升MMLU性能的开源模型，最符合的是**Llama系列模型**，特别是Meta的Llama 2或Llama 3\n\n然而，如果Method_D特指某个具体的、公开宣称能提升MMLU表现的两步优化方法，那么最可能的Target_Entity是**Llama-2**或**Llama-3**系列中的某个具体变体。\n\n确切答案：Llama（或更具体地说是Llama-2/Llama-3系列模型）\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 880,
+            "prompt_tokens": 41,
+            "total_tokens": 921,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 452,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Llama 3 8B",
+            "model_answer": "Llama（或更具体地说是Llama-2/Llama-3系列模型）",
+            "reasoning": "correct_answer 是 \"Llama 3 8B\"，而 extracted_final_answer 仅给出 Llama 或 Llama-2/Llama-3 系列模型，既不唯一也未明确到具体的 \"Llama 3 8B\"。两者存在实质性差异，因此不匹配。",
+            "correct": "no",
+            "confidence": 65
+        }
+    },
+    "37": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题涉及机器学习中的分布偏移(distribution shift)问题。题目提到的\"技术框架\"应该是指Test-Time Adaptation (TTA，测试时适应)或相关的领域适应技术。关键线索包括：\n\n1. \"分布偏移场景下的全面梳理文献\" - 指向TTA/域适应的综述性工作\n2. \"安全威胁领域的攻击方法性能评估\" - 可能指对抗样本(adversarial examples)相关研究\n3. \"在信号处理任务上应用\" - 暗示音频或视觉信号处理\n4. \"整合了另一种信息模态\" - 关键特征是多模态融合\n5. \"推理阶段模型适应能力\" - 强调test-time阶段的适应\n\n结合这些线索，这应该指的是 **Test-Time Prompt Tuning (TPT)** 或其变体，特别是在多模态场景下的应用。但更具体地，如果涉及\"额外模态信息\"来增强适应能力，很可能是指 **Audio-Visual Test-Time Adaptation** 或 **Multi-modal Test-Time Adaptation**。\n\n不过，如果特指\"利用额外模态信息增强推理阶段适应\"且在近期研究中表现突出的技术，最可能是 **Test-Time Prompt Tuning with Auxiliary Modality** 或 **Cross-Modal Test-Time Adaptation**。\n\n确切答案：基于描述特征，这种技术最可能是 **Audio-Visual Test-Time Adaptation (AV-TTA)** 或 **Multi-modal Test-Time Prompt Tuning**，但需要更多上下文信息才能给出唯一确定的技术名称。\n\n置信度：60%",
+        "usage": {
+            "completion_tokens": 948,
+            "prompt_tokens": 34,
+            "total_tokens": 982,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 369,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "LI-TTA",
+            "model_answer": "Audio-Visual Test-Time Adaptation (AV-TTA) 或 Multi-modal Test-Time Prompt Tuning",
+            "reasoning": "提取出的答案是“Audio-Visual Test-Time Adaptation (AV-TTA) 或 Multi-modal Test-Time Prompt Tuning”，而正确答案是“LI-TTA”。两者名称明显不一致，且回答给出了两个备选答案而非唯一且匹配的技术名称，因此不匹配。",
+            "correct": "no",
+            "confidence": 60
+        }
+    },
+    "38": {
+        "model": "claude-opus-4-6",
+        "response": "解析：题目描述的是一家前沿模型研发公司发布的代码专用模型，该模型在HumanEval（以'Human'开头的著名代码生成基准）上表现出色。关键信息是该模型采用了\"状态空间特性的序列模型\"而非\"业界长期以来的主流骨干架构\"。状态空间模型的代表是Mamba架构，其官方开源实现库为state-spaces。题目提到基于这种新架构的数十亿参数模型在评测中超越了主流骨干架构，这里的对比对象是Transformer。Transformer自2017年\"Attention Is All You Need\"论文提出以来，一直是NLP和代码生成领域的主流架构，原始论文中确实采用了编码器-解码器（encoder-decoder）设计，并使用了Layer Normalization（层归一化）。近年来Mamba等状态空间模型被视为Transformer的潜在替代方案。\n\n确切答案：Transformer\n\n置信度：95%",
+        "usage": {
+            "completion_tokens": 597,
+            "prompt_tokens": 45,
+            "total_tokens": 642,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 503,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Transformer",
+            "model_answer": "Transformer",
+            "reasoning": "extracted_final_answer 是“Transformer”，与 correct_answer “Transformer” 完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "39": {
+        "model": "claude-opus-4-6",
+        "response": "解析：根据题目描述，该框架需要满足以下条件：\n1. 学习描述微粒随机运动的物理系统（布朗运动/朗之万动力学等）\n2. 整合了建模随机过程的数学工具（随机微分方程，SDE）\n3. 整合了处理图结构数据的深度学习方法（图神经网络，GNN）\n4. 能在未经训练的系统参数下进行有效模拟（泛化能力）\n\n这描述的是将随机微分方程（SDE）与图神经网络（GNN）结合的框架。该框架被称为 **BroGNet**（Brownian Graph Neural Network），用于学习布朗动力学（Brownian dynamics）。该研究提出了一种结合随机微分方程和图神经网络的框架来模拟布朗运动粒子系统，并展示了在未训练参数下的泛化能力。\n\n确切答案：BroGNet（Brownian Graph Neural Network）\n\n置信度：82%",
+        "usage": {
+            "completion_tokens": 306,
+            "prompt_tokens": 241,
+            "total_tokens": 547,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "BroGNet",
+            "model_answer": "BroGNet",
+            "reasoning": "extracted_final_answer 为“BroGNet”，与 correct_answer“BroGNet”完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 82
+        }
+    },
+    "40": {
+        "model": "claude-opus-4-6",
+        "response": "解析：让我逐步分析这个问题中的关键线索：\n\n1. **轻量级开源大语言模型系列，采用交错局部-全局注意力技术**：这指的是Gemma系列模型，它使用了sliding window attention和global attention交错的架构。\n\n2. **2B参数版本和9B参数版本**：Gemma系列确实有Gemma-2B和Gemma-9B版本。\n\n3. **改进的训练方法，将Top-K约束放宽到批次级别**：这描述的是Batch Top-K稀疏自编码器方法。\n\n4. **另一种性能领先的方法，名称中包含非线性的、有\"跳跃\"含义的激活函数**：这里的关键词是\"跳跃\"（Jump），指的是JumpReLU激活函数。因此这种方法是JumpReLU SAE（Sparse Autoencoder）。\n\n5. **最近在学术论文中被正式提出**：JumpReLU SAE方法在2024年末被正式提出，论文标题为\"Improving Dictionary Learning with Gated Sparse Autoencoders\"。\n\n该论文提出了使用JumpReLU激活函数的稀疏自编码器，在Gemma-9B等模型上取得了优异的重构性能，而Batch Top-K方法在Gemma-2B上与之表现相当。\n\n确切答案：Improving Dictionary Learning with Gated Sparse Autoencoders\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 788,
+            "prompt_tokens": 40,
+            "total_tokens": 828,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 440,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders",
+            "model_answer": "Improving Dictionary Learning with Gated Sparse Autoencoders",
+            "reasoning": "提取出的答案与正确答案“Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders”不匹配。两者论文标题明显不同，既不相同也不等价，属于实质性差异。",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "41": {
+        "model": "claude-opus-4-6",
+        "response": "解析：题目描述的是一个机器学习开源工具框架，其核心特点是：\n1. 用于ML系统研究复现和模型生产部署\n2. 采用将复杂系统拆解为带接口和元描述的可复用子组件的设计理念\n3. 与工业伙伴进行了有效性验证\n\n这些特征指向的是MLOps/ML工程领域的组件化框架。将系统拆解为带有接口和元数据描述的可复用组件，其核心价值在于能够通过这些标准化的组件和元数据自动生成部署所需的基础设施代码和配置文件，从而实现从实验到生产的自动化过渡。这种自动化技术能够根据组件的元描述和接口定义，自动生成Docker容器配置、Kubernetes部署文件、CI/CD流水线配置等生产环境所需的各类代码和配置。\n\n确切答案：自动生成生产部署所需的基础设施代码和配置文件（或：基于组件元数据自动生成部署代码/流水线配置）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 638,
+            "prompt_tokens": 25,
+            "total_tokens": 663,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 264,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "CK统一工作流",
+            "model_answer": "自动生成生产部署所需的基础设施代码和配置文件（或：基于组件元数据自动生成部署代码/流水线配置）",
+            "reasoning": "correct_answer 是“CK统一工作流”，而 extracted_final_answer 是“自动生成生产部署所需的基础设施代码和配置文件（或：基于组件元数据自动生成部署代码/流水线配置）”。两者指代的内容完全不同，前者是特定名称，后者是另一种自动化产出描述，存在实质性差异，因此不匹配。",
+            "correct": "no",
+            "confidence": 75
+        }
+    },
+    "42": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这道题需要通过多个线索逐步推理：\n\n1. **年份确定**：以3结尾的年份，结合\"东亚国家航天活动\"和\"能源服务公司公布油气勘探数据\"同一天发生。根据历史记录，2013年12月14日，中国\"嫦娥三号\"成功登月（东亚航天活动），同日挪威国家石油公司（Statoil）公布了挪威大陆架的油气勘探数据。因此年份是**2013年**。\n\n2. **计算机视觉论文**：2013年发表的重要计算机视觉论文中，最具影响力的是Girshick等人提出的**R-CNN（Regions with CNN features）**，发表于CVPR 2014但arXiv预印本在2013年11月发布。\n\n3. **注意力机制与辅助组件**：但R-CNN本身并不涉及注意力机制。更符合描述的是2013年另一篇重要论文——**OverFeat**，或者是**Network in Network (NiN)**。然而，最符合\"生成特定辅助组件的注意力机制\"描述的是后来发展出的**Spatial Transformer Networks**的前身概念。\n\n4. **重新审视**：2013年真正引入创新架构且与\"可学习嵌入\"相关的是**Network in Network (NiN, Lin et al., 2013)**，其中提出了使用1x1卷积的mlpconv层。但更直接相关的是**可变形卷积（Deformable Convolution）**的前身思想，以及**位置编码（Positional Embedding）**的概念。\n\n5. **关键突破**：题目强调\"辅助组件\"用于\"精确定位图像中关键像素区域的可学习嵌入\"。这指向的是**可学习的位置嵌入（Learnable Positional Embedding）**或**偏移量（Offset）**，最终目的是实现**可变形感受野**或**自适应空间采样**。\n\n确切答案：可学习的位置嵌入（Learnable Positional Embedding）或偏移场（Offset Field），用于实现可变形卷积（Deformable Convolution）中的自适应空间采样。\n\n置信度：45%\n\n（注：由于2013年的具体论文信息和\"同一天事件\"的对应关系存在多种可能性，且题目描述较为隐晦，答案可能需要更精确的文献考证）",
+        "usage": {
+            "completion_tokens": 1340,
+            "prompt_tokens": 36,
+            "total_tokens": 1376,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 402,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "receptive token",
+            "model_answer": "可学习的位置嵌入（Learnable Positional Embedding）或偏移场（Offset Field），用于实现可变形卷积（Deformable Convolution）中的自适应空间采样",
+            "reasoning": "correct_answer 是 \"receptive token\"，而提取出的最终答案是“可学习的位置嵌入或偏移场，用于实现可变形卷积中的自适应空间采样”。两者不是同一概念，存在实质性差异，不匹配。",
+            "correct": "no",
+            "confidence": 45
+        }
+    },
+    "43": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这个问题涉及中文指令跟随模型的技术栈。根据描述，这是一个资源高效的开源中文模型，基于知名架构（很可能是Meta的LLaMA），使用了低秩自适应微调技术。这里提到的\"低秩自适应微调技术\"指的是LoRA (Low-Rank Adaptation)。LoRA是一种参数高效的微调方法，由Microsoft的研究人员Edward Hu等人在2021年提出。关于LoRA计算极限的研究，有多位学者做出了贡献，但最直接相关的是研究LoRA理论基础和优化边界的学者们，包括原始LoRA论文的作者团队以及后续研究者如研究QLoRA等变体的Tim Dettmers等人。\n\n确切答案：研究LoRA（低秩自适应）技术计算极限的主要学者包括Edward Hu（LoRA原始论文第一作者，Microsoft Research）以及Tim Dettmers（华盛顿大学，QLoRA作者，研究了量化LoRA的效率边界）等研究者。\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 620,
+            "prompt_tokens": 22,
+            "total_tokens": 642,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 234,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Jerry Yao-Chieh Hu",
+            "model_answer": "Edward Hu 以及 Tim Dettmers",
+            "reasoning": "correct_answer 是 \"Jerry Yao-Chieh Hu\"，而 response 给出的最终答案是 \"Edward Hu 以及 Tim Dettmers\"。两者不是同一答案，且 response 提供了不同姓名并加入了额外人物，存在实质性不匹配，因此答案错误。",
+            "correct": "no",
+            "confidence": 75
+        }
+    },
+    "44": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这道题描述的是一种结合了梯度信息与符号方法的神经网络解释显著性方法。根据描述的特征：\n1. 结合梯度信息与符号方法\n2. 在MNIST（手写数字识别）、ImageNet（大规模图像分类）和文本情感分析数据集上评估\n3. 是一种显著性/归因方法\n\n这些特征指向的是DeepLIFT (Deep Learning Important FeaTures)方法，该方法由Avanti Shrikumar等人提出。但更符合\"结合梯度与符号方法\"这一描述的是Integrated Gradients方法，或者是Layer-wise Relevance Propagation (LRP)的某些变体。\n\n不过，最符合\"结合梯度信息与符号方法\"且在这三个经典数据集上都进行过评估的，应该是**SmoothGrad**或**Integrated Gradients**。但考虑到\"符号方法\"这一关键词，更可能指的是将梯度方法与基于规则的反向传播结合的方法。\n\n最有可能的是**Mukund Sundararajan**提出的**Integrated Gradients**方法，该论文发表于2017年ICML。\n\n确切答案：Mukund Sundararajan\n\n置信度：70%",
+        "usage": {
+            "completion_tokens": 705,
+            "prompt_tokens": 23,
+            "total_tokens": 728,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 252,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Subham Sekhar Sahoo",
+            "model_answer": "Mukund Sundararajan",
+            "reasoning": "extracted_final_answer 是 \"Mukund Sundararajan\"，而 correct_answer 是 \"Subham Sekhar Sahoo\"。两者是不同的人名，存在实质性不一致，因此该回答错误。",
+            "correct": "no",
+            "confidence": 70
+        }
+    },
+    "45": {
+        "model": "claude-opus-4-6",
+        "response": "# 解析\n\n让我逐步分析题目中的线索：\n\n1. **图论和算法设计领域的女性计算机科学家**\n\n2. **针对一个图论中的网络设计问题，给出了首个运行时间达到线性对数级别（near-linear logarithmic）的多项式时间近似方案（PTAS）**：这指向的是**Steiner树问题**或类似的网络设计问题的PTAS。\n\n3. **针对一个经典的组合优化问题，在欧几里得平面上提出了一个运行时间接近线性的随机近似方案**：这指向的是**欧几里得旅行商问题（Euclidean TSP）**的近线性时间随机近似方案。\n\n4. **早期代表性工作探讨过稀疏图中平面结构的提取问题**：这指向的是关于**planar subgraph extraction**或在稀疏图中寻找平面子图的工作。\n\n综合这些线索：\n\n- 关于欧几里得TSP的PTAS，最著名的工作是Arora（1998）和Mitchell（1999）的成果。但题目提到的是\"接近线性的随机近似方案\"，这是对Arora方案的改进。\n\n- **Sariel Har-Peled** 在欧几里得TSP的近线性时间近似方面有重要工作，但他是男性。\n\n- 考虑到是女性科学家，且涉及网络设计问题的PTAS和欧几里得优化问题的近线性时间算法，以及稀疏图中平面结构的提取——这些线索指向 **Glencora Borradaile**。\n\n实际上，再仔细思考：\n\n- **网络设计问题的首个$n \\log n$级别PTAS**：Borradaile, Klein, Mathieu 针对平面图中Steiner树问题的PTAS工作。\n- **欧几里得平面上经典组合优化问题的近线性随机近似方案**：这更可能指向 **Claire Kenyon**（Claire Mathieu，婚后改名）的工作。Claire Mathieu与Arora合作改进了欧几里得TSP的PTAS到近线性时间。\n- **稀疏图中平面结构的提取**：Claire Kenyon-Mathieu早期的工作。\n\n等等，让我重新考虑。**Claire Kenyon（Claire Mathieu）**：\n- 她与Arora合作了欧几里得TSP的近线性时间PTAS。\n- 她参与了网络设计问题（如Steiner树）在平面图上的PTAS。\n\n但关于\"稀疏图中平面结构的提取\"，这个更像是图的 planarity testing 或 extracting planar subgraphs 的工作。\n\n综合所有线索，最符合的人选是 **Glencora Borradaile**：\n- Steiner树问题在平面图上的近线性PTAS\n- 但欧几里得TSP的近线性随机近似方案不太确定\n\n再想想，也许是 **Sariel Har-Peled** 的合作者... 或者回到 **Claire Mathieu (née Kenyon)**，她的工作确实涵盖了这些领域。\n\n最终，综合所有线索，这位学者应该是 **Glencora Borradaile**。她在平面图Steiner树PTAS、以及相关近似算法方面有重要贡献，早期工作涉及平面子图提取。\n\n确切答案：**Glencora Borradaile**\n\n置信度：32%",
+        "usage": {
+            "completion_tokens": 1049,
+            "prompt_tokens": 290,
+            "total_tokens": 1339,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Glencora Borradaile",
+            "model_answer": "Glencora Borradaile",
+            "reasoning": "提取出的最终答案是“Glencora Borradaile”，与给定的正确答案“Glencora Borradaile”完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 32
+        }
+    },
+    "46": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这道题需要通过多个线索交叉定位一位跨领域学者。让我逐步分析：\n\n1. **编码理论线索**：两篇关于\"格结构\"（lattice）的论文，一篇关于\"实现容量\"，另一篇关于\"渐近性能分析\"，都与某个数学概念系综（Concept X）相关。在信息论中，能够实现容量的格码通常与Construction A、极化码（Polar codes）或LDPC码相关的格结构有关。\n\n2. **机器学习线索**：一篇关于\"基于成对相似性的自监督深度聚类\"的论文，这位学者是第一作者。\n\n3. **混合适配器线索**：另一篇关于\"混合适配器\"（可能是Mixed Adapter或类似技术）的论文，同一学者也是第一作者。\n\n4. **关键连接**：这位学者既是编码理论论文的核心贡献者，又是机器学习聚类和适配器论文的第一作者。\n\n基于这些线索，这很可能指向研究极化码（Polar codes）相关格结构的学者。极化码是Arıkan在2009年提出的能够达到信道容量的编码方案。而将极化码与格码结合，以及后来转向深度学习研究的学者，符合描述的可能是 **Eren Şaşoğlu** 或其合作者。\n\n但更符合\"从格码到深度聚类再到适配器\"这一跨度的，可能是近年来活跃在这些领域的华人学者。考虑到自监督聚类和混合适配器是较新的深度学习话题（2020年代），这位学者应该是较年轻的研究者。\n\n根据线索组合，这位学者很可能是 **Hamed Hassani** 的学生或合作者，或者是 **Santhosh Kumar** 等在格码和深度学习都有贡献的学者。\n\n确切答案：由于我无法访问最新的学术数据库来精确匹配所有这些特定论文，我无法给出100%确定的姓名。但基于描述的研究轨迹（极化格码→深度聚类→适配器），这位学者很可能是近年来从信息论转向深度学习的研究者，可能姓名为 **Hessam Mahdavifar** 或其博士生/合作者。\n\n置信度：35%\n\n（注：如果您能提供更具体的线索，如论文发表年份、会议名称或Concept X的更多提示，我可以给出更准确的答案）",
+        "usage": {
+            "completion_tokens": 1416,
+            "prompt_tokens": 43,
+            "total_tokens": 1459,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 481,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Mohammadreza Sadeghi",
+            "model_answer": "Hessam Mahdavifar",
+            "reasoning": "提取出的最终答案是“Hessam Mahdavifar”，而正确答案是“Mohammadreza Sadeghi”。两者是不同的人名，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 35
+        }
+    },
+    "47": {
+        "model": "claude-opus-4-6",
+        "response": "解析：这道题描述了一个后门攻击研究的场景。根据题目线索：\n- Entity_A：现有后门攻击的特定缺陷\n- Entity_B：近期发表的、标题极具冲击力的论文\n- Entity_C：并非原创于安全领域的策略\n- Entity_D：机器学习中的另一个常见问题\n- Entity_E：关键的攻击性能指标\n\n题目最后明确提到\"结合了特定策略以同时解决**过拟合**和保证**高成功率**\"，这是关键线索。在后门攻击领域，过拟合是一个常见问题——后门模式可能过度拟合训练数据而在测试时失效。而Dropout是机器学习中用于缓解过拟合的经典正则化技术。\n\n有一篇知名的后门攻击论文将Dropout策略引入后门攻击中，既解决了过拟合问题，又保持了高攻击成功率。这篇论文的标题通常包含\"Dropout\"字样，方法名称也直接体现了这一核心技术。\n\n根据后门攻击文献，这应该是指**DropoutAttack**或类似命名的方法，它创新性地将Dropout这一原本用于提升模型泛化能力的技术应用到后门攻击中。\n\n确切答案：DropoutAttack（或Dropout-based Backdoor Attack）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 787,
+            "prompt_tokens": 42,
+            "total_tokens": 829,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 470,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "Label-Smoothed Backdoor Attack",
+            "model_answer": "DropoutAttack（或Dropout-based Backdoor Attack）",
+            "reasoning": "extracted_final_answer 与 correct_answer“Label-Smoothed Backdoor Attack”不匹配。两者名称不同，指代的方法也不同，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 75
+        }
+    },
+    "48": {
+        "model": "claude-opus-4-6",
+        "response": "解析：\n\n让我逐一分析这三个条件：\n\n1. **法律领域预训练的专业模型的核心基础架构**：在法律领域，有一些知名的预训练模型，例如 Legal-BERT，它基于 BERT 架构。还有 LEGAL-BERT 的变体。另外还有基于 GPT 的法律模型。\n\n2. **利用生成式提示从临床笔记中挖掘信息以进行疾病诊断的研究项目，直接用作提示生成器**：这指向了一个使用语言模型生成提示（generative prompts）来从临床文本中提取诊断信息的研究。有一篇相关研究使用 GPT-2 作为提示生成器，结合临床笔记进行疾病诊断任务。\n\n3. **大规模语言模型编辑网络在多个基准模型中进行评估时所包含的模型之一**：这指的是类似 MEND（Model Editor Networks with Gradient Decomposition）这样的模型编辑方法。MEND 论文中评估了多个基准模型，其中包括 GPT-2、BERT、GPT-J 等。\n\n综合三个条件：\n\n- **条件1**：GPT-2 是一些法律领域模型的基础架构，但更经典的是 BERT。然而，法律领域也有基于 GPT-2 的模型。\n- **条件2**：GPT-2 被用作生成式提示生成器，用于临床笔记的疾病诊断任务，这与相关研究吻合。\n- **条件3**：MEND 论文中明确将 GPT-2 作为评估的基准模型之一。\n\n同时满足这三个条件的模型是 **GPT-2**。\n\n确切答案：GPT-2\n\n置信度：72%",
+        "usage": {
+            "completion_tokens": 488,
+            "prompt_tokens": 213,
+            "total_tokens": 701,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "GPT-J (6B)",
+            "model_answer": "GPT-2",
+            "reasoning": "提取出的最终答案是“GPT-2”，而正确答案是“GPT-J (6B)”。两者是不同的语言模型名称，存在实质性差异，因此该回答不匹配正确答案。",
+            "correct": "no",
+            "confidence": 72
+        }
+    },
+    "49": {
+        "model": "claude-opus-4-6",
+        "response": "# 解析\n\n让我逐步分析这个问题：\n\n1. **识别零样本工业异常分类与分割方法**：题目描述的是一种\"无需训练和提示的新型零样本工业异常分类与分割方法\"，这很可能指的是 **AnomalyCLIP** 或类似的基于CLIP的零样本异常检测方法。但更符合\"无需训练和提示\"描述的是 **APRIL-GAN** 或 **AnomalyGPT**。经过进一步思考，最符合\"training-free and prompt-free\"描述的方法是 **InCTRL** 或 **AnomalyCLIP**。\n\n2. **常用基准数据集**：工业异常检测领域最常用的基准数据集包括 **MVTec AD**、**VisA**、**BTAD** 等。\n\n3. **基于某个基准提出的更具挑战性的新数据集**：基于 MVTec AD 提出的更大规模、更多场景的挑战性数据集，最著名的是 **MVTec LOCO AD** 或 **Real-IAD**。但题目强调\"包含更多场景和图像\"且设立了公开评估平台，这更符合 **Real-IAD** 数据集的描述。\n\n经过重新考虑，题目中描述的方法很可能是 **APRIL-GAN (Anomaly Prompt-guided and Regularized Image-Level anomaly detection with CLIP)** 或更可能是 **AnomalyCLIP**。而基于 MVTec AD 扩展的更大规模数据集，设立了公开评估平台的，最可能是 **MVTec AD** 的扩展 —— 但实际上，**VisA** 数据集也是常用基准之一。\n\n重新审视：基于 MVTec AD 提出的包含更多场景和图像的新挑战性数据集是 **Real-IAD**，其发布团队在 **Leaderboard** 上设立了评估平台。\n\n实际上，最符合描述的是 **MVTec LOCO AD** 或者 **Real-IAD**。Real-IAD 数据集的团队在其官方网站上设立了 **benchmark leaderboard**（公开排行榜/评估平台）。\n\n经过进一步研究，**Real-IAD** 数据集的发布团队设立了基于 **CodaLab** 的公开评估平台（leaderboard）来促进算法比较。\n\n但也有可能指的是 **MVTec 3D-AD** 或 **BTAD**。\n\n综合考虑，最可能的答案是：该数据集是 **Real-IAD**，其团队在 **CodaLab** 上设立了公开的评估平台（leaderboard）来促进算法比较。\n\n确切答案：该数据集的发布团队在 **CodaLab** 上设立了公开的在线评估平台（leaderboard）来促进算法比较。\n\n置信度：32%\n\n---\n\n等等，让我重新思考。题目提到的方法是\"无需训练和提示的零样本\"方法，这很可能是 **CLIP-AD** 或 **WinCLIP**。WinCLIP 在 MVTec AD 和 VisA 上进行了评估。而基于 VisA 提出的更大规模数据集... 不太对。\n\n最可能的情况：该方法在 MVTec AD 等基准上取得了提升，而基于 MVTec AD 提出的更具挑战性的数据集可能是 **MVTec LOCO AD**，其评估平台设在其官方网站上。\n\n解析：该问题涉及的零样本异常检测方法（如AnomalyCLIP等）在MVTec AD、VisA等基准上取得了性能提升。基于这些基准之一扩展而来的更大规模挑战性数据集是 **Real-IAD**，其发布团队设立了基于 **CodaLab** 的公开评估平台（online leaderboard）来促进不同算法之间的公平比较。\n\n确切答案：该数据集的发布团队在 CodaLab 平台上设立了公开的在线评估排行榜（leaderboard）来促进算法比较。\n\n置信度：30%",
+        "usage": {
+            "completion_tokens": 1250,
+            "prompt_tokens": 194,
+            "total_tokens": 1444,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "MVTec AD 2 evaluation server",
+            "model_answer": "CodaLab 平台上的公开在线评估排行榜（leaderboard）",
+            "reasoning": "correct_answer 是 \"MVTec AD 2 evaluation server\"，而 extracted_final_answer 是 \"CodaLab 平台上的公开在线评估排行榜（leaderboard）\"。两者指代的平台名称不同，且不等价，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 30
+        }
+    },
+    "50": {
+        "model": "claude-opus-4-6",
+        "response": "解析：根据题目描述，这位学者参与提出了专为详细字幕任务设计的多样性评价指标，并且是核心作者。同时，该学者以第一作者身份撰写了关于通用多模态大语言模型的论文。该模型采用模块化网络设计，使用语言解码器作为管理不同模态的通用接口，并且是首个在纯文本和多模态场景中都展现出特定协作效应（likely指synergy/协同效应）的模型。这些特征指向的是NExT-GPT模型，该模型由新加坡国立大学NExT++研究中心提出，采用模块化设计，以语言模型为核心连接多个模态编码器和生成器，实现了端到端的多模态理解和生成能力。\n\n确切答案：NExT-GPT\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 497,
+            "prompt_tokens": 30,
+            "total_tokens": 527,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": null,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": null,
+                "cached_tokens_details": {}
+            },
+            "claude_cache_creation_5_m_tokens": 332,
+            "claude_cache_creation_1_h_tokens": 0
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "mPLUG-Owl2",
+            "model_answer": "NExT-GPT",
+            "reasoning": "extracted_final_answer 是 “NExT-GPT”，而 correct_answer 是 “mPLUG-Owl2”。两者是不同的模型名称，存在实质性差异，因此答案不匹配。",
+            "correct": "no",
+            "confidence": 85
+        }
+    }
+}

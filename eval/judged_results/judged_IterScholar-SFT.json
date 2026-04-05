@@ -1,0 +1,552 @@
+{
+    "1": {
+        "question": "有一种被设计用于实现特定安全概念（即区分授权用户与非授权欺诈者）的身份验证技术，它并非使用传统的PIN或密码，而是依赖于人体的某些独特物理特征。这项技术在某个特定年份被开发并推广，并且最早被两个不同性质的部门所采纳应用，其中一个是非营利的公共服务部门，另一个则是以盈利为目的的经营性部门。这项技术还有更先进的形态，能整合多种生物特征。请问，这项核心的身份验证技术具体是什么？",
+        "prediction": "Explanation: 该技术是手几何识别（hand geometry recognition），一种基于手部形状和尺寸测量的生物识别身份验证技术。它于1970年代早期开发（1971年专利，1974年商业系统），最早被营利性部门（如Shearson Hamil投资银行）和非营利公共服务部门（如1996年亚特兰大奥运会）采纳。其更先进的形态是多模态生物识别系统，整合多种生物特征（如手几何、指纹、虹膜等）。Exact Answer: 手几何识别（hand geometry recognition）Confidence: 95%\n\nReferences:\n[1] 维基百科：Hand geometry (https://en.wikipedia.org/wiki/Hand_geometry)\n[2] 亚特兰大奥运会手几何识别系统案例（来自维基百科引用）\n[3] Identimat系统用于Shearson Hamil（来自维基百科引用）",
+        "judge_result": {
+            "correct_answer": "生物识别系统",
+            "model_answer": "手几何识别（hand geometry recognition）",
+            "reasoning": "The extracted_final_answer \"手几何识别（hand geometry recognition）\" is a specific type of biometric authentication technology, while the [correct_answer] \"生物识别系统\" is a general category that encompasses all biometric authentication technologies including hand geometry recognition. There is a meaningful difference between a specific technology and the broader category it belongs to.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "2": {
+        "question": "在一个专注于构建特定类型高性能模拟器的开源项目A中，其底层依赖一个专门定制的、属于某前沿研究领域B的新型可微编程语言C作为物理引擎。已知项目A的核心特征之一是支持可微弹性变形和可微塑性变形。研究该编程语言C的学术论文D的第一作者，即该领域一位重要的研究人员，他叫什么名字？",
+        "prediction": "Explanation: 根据研究任务描述，项目A是支持可微弹性变形和可微塑性变形的开源高性能模拟器，这对应于ChainQueen项目（一个可微物质点法模拟器）。其底层依赖的可微编程语言C是Taichi，一种专门用于物理模拟的可微编程语言。研究Taichi的学术论文D是\"DiffTaichi: Differentiable Programming for Physical Simulation\"（arXiv:1910.00935）。通过搜索该论文，确认其第一作者为Yuanming Hu（胡元明），他是可微编程和物理模拟领域的研究人员。\n\nExact Answer: Yuanming Hu\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "Yuanming Hu",
+            "model_answer": "Yuanming Hu",
+            "reasoning": "The extracted final answer 'Yuanming Hu' exactly matches the correct answer 'Yuanming Hu' with no meaningful differences in spelling, formatting, or content.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "3": {
+        "question": "一个研究团队关注现有后门攻击方法普遍存在的一个特定缺陷（Entity_A）。他们检索文献后发现，有一篇近期发表的、标题极具冲击力的论文（Entity_B）提出了一种新的解决方案。该方案的核心是采用了一种并非原创于安全领域的策略（Entity_C），这种策略最初是为了缓解机器学习模型中的另一个常见问题（Entity_D）而设计的。令人印象深刻的是，应用该策略不仅能有效克服Entity_A，还能实现一个关键的攻击性能指标（Entity_E）。请问，这项结合了特定策略以同时解决过拟合和保证高成功率的后门攻击方法具体叫什么名字？",
+        "prediction": "Explanation: 根据对论文\"Under-confidence Backdoors Are Resilient and Stealthy Backdoors\" (arXiv:2202.11203v2)的详细分析，该方法完全匹配研究任务描述。论文针对后门攻击的过置信问题（Entity_A），提出了使用标签平滑策略（Entity_C，源自缓解过拟合的机器学习技术Entity_D）的新方案。实验证明该方法在保持高攻击成功率（Entity_E）的同时提高了隐蔽性。论文中描述的方法核心是数据级标签平滑应用于后门攻击，根据方法描述和学术命名惯例，该方法可称为\"Label-Smoothed Backdoor Attack (LSBA)\"。\n\nExact Answer: Label-Smoothed Backdoor Attack (LSBA)\nConfidence: 90%",
+        "judge_result": {
+            "correct_answer": "Label-Smoothed Backdoor Attack",
+            "model_answer": "Label-Smoothed Backdoor Attack (LSBA)",
+            "reasoning": "The extracted final answer 'Label-Smoothed Backdoor Attack (LSBA)' contains the exact correct answer 'Label-Smoothed Backdoor Attack' as a subset, with the addition of the abbreviation '(LSBA)' in parentheses. This abbreviation does not change the core answer and is consistent with the correct answer, so there is no meaningful difference between them.",
+            "correct": "yes",
+            "confidence": 90
+        }
+    },
+    "4": {
+        "question": "在深度神经网络领域，有一种常见属性被认为会导致模型在训练数据上表现过于复杂。为了应对由此属性引发的问题，研究者提出了一种特定的网络训练技术。该技术不仅能有效改善模型对此问题的抵抗力，还定义性地提供了一种抵抗非期望记忆的能力。请问这种技术是什么？",
+        "prediction": "Explanation: 根据深度神经网络研究，模型在训练数据上表现过于复杂的现象被称为\"记忆化\"（memorization），即网络能够精确记忆甚至随机标记的数据。为应对此问题，研究者提出使用对称损失函数（symmetric loss function）进行训练。该技术通过损失函数的对称性（对所有类别的损失求和为常数），形式化地提供了抵抗非期望记忆的能力，实证表明其能显著降低网络对随机标签的记忆化。Exact Answer: 对称损失函数训练（使用对称损失函数，如鲁棒对数损失RLL） Confidence: 95%\n\n[1] arXiv:2107.09957v2 - \"Memorization in Deep Neural Networks: Does the Loss Function matter?\"",
+        "judge_result": {
+            "correct_answer": "symmetric loss function",
+            "model_answer": "对称损失函数训练（使用对称损失函数，如鲁棒对数损失RLL）",
+            "reasoning": "The extracted final answer '对称损失函数训练（使用对称损失函数，如鲁棒对数损失RLL）' contains the core term '对称损失函数' which directly corresponds to the correct answer 'symmetric loss function'. The additional explanatory text in parentheses does not change the fundamental equivalence of the answers.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "5": {
+        "question": "有一个语言模型技术，它同时满足以下三个条件：1) 它是某个在法律领域进行预训练的专业模型的核心基础架构；2) 它被一个利用生成式提示从临床笔记中挖掘信息以进行疾病诊断的研究项目直接用作提示生成器；3) 它是一个大规模语言模型编辑网络在多个基准模型中进行评估时所包含的模型之一。请问这个语言模型技术是什么？",
+        "prediction": "Explanation: 经过系统性的文献检索和验证，BERT（Bidirectional Encoder Representations from Transformers）同时满足所有三个条件：1) 它是法律领域预训练专业模型（如Legal-BERT、CaseHOLD、LexGLUE）的核心基础架构；2) 在研究\"A Knowledge-Enhanced Disease Diagnosis Method Based on a Prompt Learning Framework\"（arXiv:2409.10403）中，BERT被用作提示学习框架中的核心语言模型，用于从临床笔记中挖掘疾病诊断信息；3) 在大规模语言模型编辑网络（如MEND、SERAC）的评估中，BERT是常用的基准模型之一。因此，BERT是唯一同时满足所有条件的语言模型技术。\n\nExact Answer: BERT (Bidirectional Encoder Representations from Transformers)\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "GPT-J (6B)",
+            "model_answer": "BERT (Bidirectional Encoder Representations from Transformers)",
+            "reasoning": "The extracted_final_answer 'BERT (Bidirectional Encoder Representations from Transformers)' does not match the correct_answer 'GPT-J (6B)'. These are different language model technologies with different names and architectures.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "6": {
+        "question": "某位学者作为第一作者，发表了一篇探讨对特定伪造检测技术进行后门攻击的学术论文。该论文提出的攻击框架在评估中超越了既有的高性能基准，且属于干净标签后门攻击范畴。这个框架的名称是什么？",
+        "prediction": "Explanation: 根据arXiv论文2402.11473的摘要，第一作者Jiawei Liang等人提出了一种针对人脸伪造检测的干净标签后门攻击框架，该框架在评估中超越了现有的最先进（SoTA）后门基准，在攻击成功率（BD-AUC）上提升了16.39%，在可见性上降低了12.65%。摘要中明确将该框架命名为\"Poisoned Forgery Face\"。Exact Answer: Poisoned Forgery Face Confidence: 100%",
+        "judge_result": {
+            "correct_answer": "Poisoned Forgery Face",
+            "model_answer": "Poisoned Forgery Face",
+            "reasoning": "The extracted_final_answer 'Poisoned Forgery Face' exactly matches the correct_answer 'Poisoned Forgery Face' with no differences in spelling, capitalization, or wording.",
+            "correct": "yes",
+            "confidence": 100
+        }
+    },
+    "7": {
+        "question": "一位学者作为第一作者发表了两篇重要的学术论文。其中一篇论文提出了一种人工智能方法，该方法旨在克服深度学习的某些局限，并且性能优于传统的人工神经网络。请问这种人工智能方法是什么？",
+        "prediction": "Explanation: 根据研究，学者Spyridon Chavlis作为第一作者发表了两篇重要论文。其中一篇（Nature Communications, 2025）提出了一种名为“树突状人工神经网络（dendritic artificial neural networks, dANNs）”的人工智能方法。该方法通过模拟生物树突的结构和计算特性（如稀疏连接、局部感受野采样），旨在克服深度学习的局限（如过拟合、高能耗、对噪声敏感）。实验表明，dANNs在多个图像分类任务上性能优于传统人工神经网络（vANNs），同时使用更少的可训练参数。另一篇论文（arXiv, 2021）则从理论层面阐述了从生物树突中汲取灵感以增强人工神经网络，为dANNs方法提供了支持。因此，所询问的人工智能方法是树突状人工神经网络（dANNs）。\n\nExact Answer: 树突状人工神经网络（dendritic artificial neural networks, dANNs）\n\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "生物建模人工智能",
+            "model_answer": "树突状人工神经网络（dendritic artificial neural networks, dANNs）",
+            "reasoning": "The extracted_final_answer '树突状人工神经网络（dendritic artificial neural networks, dANNs）' does not match the [correct_answer] '生物建模人工智能'. These are different terms with different meanings - one refers to a specific neural network architecture (dANNs), while the other refers to a broader category of AI approaches (biologically modeled AI).",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "8": {
+        "question": "一种用于深度卷积神经网络的正则化训练技术，在某个经典的图像识别基准数据集上达到了当时的先进性能，但被指出未能有效处理医学影像中常见的一种特定噪声。为了探究不同架构的神经网络在处理此类噪声时，其内部可训练参数的共性，研究人员引入了一种能够量化非凸神经网络参数相似性的度量方法。该方法在多层感知机、卷积神经网络和循环神经网络上均得到了研究和验证。请问，该方法所依赖的、专门用于对这些网络参数进行归一化处理的核心技术规则是什么？",
+        "prediction": "Explanation: 研究任务描述了一种用于深度卷积神经网络的正则化训练技术（推测为Batch Normalization），该技术在经典图像识别基准数据集（如ImageNet）上达到了先进性能，但未能有效处理医学影像中常见的一种特定噪声。为了探究不同架构的神经网络在处理此类噪声时其内部可训练参数的共性，研究人员引入了一种量化非凸神经网络参数相似性的度量方法，该方法在多层感知机（MLP）、卷积神经网络（CNN）和循环神经网络（RNN）上均得到了研究和验证。通过阅读相关论文（arXiv:2208.04369），我们确认了该方法所依赖的、专门用于对这些网络参数进行归一化处理的核心技术规则是“链归一化规则”（Chain Normalization Rule）。该规则通过计算权重序列的链式乘积及其转置（φ(W1, W2, ..., Wl) = W1W2...Wl Wl^T ... W2^T W1^T）来消除权重排列的影响，从而将神经网络的层级权重转换为一个不变的、可用于相似性度量的“共同数据”表示。Exact Answer: 链归一化规则（Chain Normalization Rule）\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "chain normalization rule",
+            "model_answer": "链归一化规则（Chain Normalization Rule）",
+            "reasoning": "The extracted final answer '链归一化规则（Chain Normalization Rule）' contains the English term 'Chain Normalization Rule' in parentheses, which matches exactly with the [correct_answer] 'chain normalization rule' when considering case-insensitive comparison. The Chinese translation '链归一化规则' is a direct translation of the English term and does not create any meaningful difference from the correct answer.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "9": {
+        "question": "某项研究工作包含两个关键事件。首先，为了验证一项在特定场景下的新发现，研究者们为此专门创建了一个数据集。之后，为了促进一个特定技术社区的共同进步，同一批研究者又将该数据集及其配套工具向外界开放。请问，在这个研究工作中，那个被创建并最终公开的数据集叫什么名字？",
+        "prediction": "Explanation: 根据研究论文\"MultiPLY: A Multisensory Object-Centric Embodied Large Language Model in 3D World\"（arXiv:2401.08577v1，CVPR 2024），研究者为了验证其提出的多感官具身大语言模型，创建了一个名为\"Multisensory Universe\"的大规模多感官交互数据集（包含500k数据）。随后，他们通过公开GitHub仓库（https://github.com/UMass-Embodied-AGI/MultiPLY）分享了模型代码、训练脚本和工具，以促进技术社区的进步。数据集名称在多个学术来源中一致确认 [1][2][3]。Exact Answer: Multisensory Universe Confidence: 95%",
+        "judge_result": {
+            "correct_answer": "OpenMMlo",
+            "model_answer": "Multisensory Universe",
+            "reasoning": "The extracted_final_answer 'Multisensory Universe' does not match the [correct_answer] 'OpenMMlo'. They are completely different strings with no meaningful similarity or equivalency.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "10": {
+        "question": "为了实现一个与真实世界任务分布对齐的评估目标，一项采用了特定重建方法（一种多模态基准混合与自适应校正的流水线）的技术，是由谁提出的？",
+        "prediction": "Explanation: 基于对arXiv论文\"MixEval-X: Any-to-Any Evaluations from Real-World Data Mixtures\" (arXiv:2410.13754v2)的全文阅读，该论文明确提出了\"多模态基准混合与自适应校正的流水线\"（multi-modal benchmark mixture and adaptation-rectification pipelines）来重建真实世界任务分布，以实现评估目标与真实世界对齐。论文作者列表为：Jinjie Ni, Yifan Song, Deepanway Ghosal, Bo Li, David Junhao Zhang, Xiang Yue, Fuzhao Xue, Zian Zheng, Kaichen Zhang, Mahir Shah, Kabir Jain, Yang You, Michael Shieh。\n\nExact Answer: Jinjie Ni, Yifan Song, Deepanway Ghosal, Bo Li, David Junhao Zhang, Xiang Yue, Fuzhao Xue, Zian Zheng, Kaichen Zhang, Mahir Shah, Kabir Jain, Yang You, Michael Shieh\n\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "Jinjie Ni",
+            "model_answer": "Jinjie Ni, Yifan Song, Deepanway Ghosal, Bo Li, David Junhao Zhang, Xiang Yue, Fuzhao Xue, Zian Zheng, Kaichen Zhang, Mahir Shah, Kabir Jain, Yang You, Michael Shieh",
+            "reasoning": "The extracted_final_answer contains multiple authors, while the correct_answer specifies only \"Jinjie Ni\". There is a meaningful difference because the extracted answer includes additional names beyond the single required author.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "11": {
+        "question": "为了实现降低预测新参与者大脑数据所需的数据量，同时提升模型预测与大脑响应的对齐程度这两个目标，研究者采用了一种特定、可扩展的训练方法对一个基础模型进行微调。最终得到的、在模拟人类对语音信号的认知处理方面表现更优的模型是什么？",
+        "prediction": "Explanation: 根据arXiv:2602.18253论文，研究者采用了一种特定、可扩展的训练方法：MEG-to-MEG迁移学习和跨任务解码。该方法预训练一个基于Conformer的基础模型（MEGConformer）在大规模单被试MEG数据（50小时）上，然后在少量多被试数据（每位参与者仅5分钟，共18人）上进行微调。这实现了两个目标：1) 显著降低预测新参与者大脑数据所需的数据量（从传统的大量数据降至每位参与者5分钟）；2) 通过迁移学习和跨任务解码提升模型预测与大脑响应的对齐程度。最终得到的模型是MEGConformer（基于Conformer的模型），它在模拟人类对语音信号的认知处理（跨任务解码，从生产到感知）方面表现更优，能够可靠地解码从语音生产到被动聆听的跨任务神经活动。\n\nExact Answer: MEGConformer模型（基于Conformer的模型），通过MEG-to-MEG迁移学习和跨任务解码微调得到。\n\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "brain-tuned模型",
+            "model_answer": "MEGConformer（基于Conformer的模型）",
+            "reasoning": "The extracted final answer 'MEGConformer（基于Conformer的模型）' does not match the correct answer 'brain-tuned模型'. These are different model names with no meaningful equivalence or overlap in terminology.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "12": {
+        "question": "在某个年份（以3结尾）的同一天，有两件看似毫不相关的事件在不同的领域被报道：一件是某东亚国家的航天活动，另一件是某能源服务公司公布其所在国家的油气勘探数据。查阅资料可知，在该年份发表的一篇重要计算机视觉论文中，提出了一种新的网络架构。该架构在设计中采纳了某种能够生成特定辅助组件的注意力机制。请问，这一辅助组件最终是为了辅助实现哪一种用于精确定位图像中关键像素区域的可学习嵌入概念？",
+        "prediction": "Explanation: 根据研究，目标年份为2023年，该年5月30日同时发生了中国发射神舟十六号载人飞船（航天活动）和中国石油发布油气勘探投资数据（能源公司数据公布）。在该年份发表的计算机视觉论文ARBEx (arXiv:2305.01486)中，提出了一种基于Vision Transformer的注意力特征提取框架。该框架使用了多头自注意力机制（multi-head self-attention mechanism）来生成可学习锚点（learnable anchor points）作为辅助组件。这些可学习锚点是在嵌入空间中学习的，用于优化性能、应对弱预测并提高标签分类的可靠性，从而辅助精确定位图像中的关键像素区域（在面部表情识别任务中）。因此，该辅助组件最终是为了辅助实现“可学习锚点”这一可学习嵌入概念。\n\nExact Answer: 可学习锚点 (learnable anchor points)\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "receptive token",
+            "model_answer": "可学习锚点 (learnable anchor points)",
+            "reasoning": "The extracted_final_answer '可学习锚点 (learnable anchor points)' does not match the [correct_answer] 'receptive token'. These are different concepts in computer vision - 'learnable anchor points' refers to specific positional embeddings while 'receptive token' refers to a different attention mechanism component. They are not equivalent or interchangeable terms.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "13": {
+        "question": "在最近的模型对齐研究中，一个关键的技术Entity_A通过Event_B，生成了用于监督和偏好对齐训练的关键资源。这些资源随后被用于对某个开源大语言模型的指令版本进行监督微调（Event_C）。实验结果表明，Event_C的效果优于另一个在特定数学指令数据集上对同系列基础模型进行微调的事件（Event_D）。而Event_D的效果，又优于一个开源的、参数量约为数十亿的大语言模型，它的指令遵循版本常被用作进一步微调的基础。请问，这个最后被提到的、作为比较基准的开源基础模型是什么？",
+        "prediction": "Explanation: 根据WizardMath论文（arXiv:2308.09583v3）的研究，该技术实体（Entity_A）是RLEIF（Reinforced Evol-Instruct Feedback）方法，通过该方法生成数学推理数据（Event_B）。这些资源被用于对开源LLM的指令版本进行监督微调（Event_C），具体是WizardMath-Mistral 7B。实验结果表明，Event_C的效果优于在特定数学指令数据集（GSM8k和MATH）上对同系列基础模型进行微调的事件（Event_D，即MetaMath-Mistral 7B）。而Event_D的效果又优于一个开源的、参数量约为数十亿的大语言模型，其指令遵循版本常被用作进一步微调的基础。该基准模型是Mistral-7B-Instruct（基于Mistral-7B基础模型），它是一个70亿参数的开源模型，其指令遵循版本在开源社区中广泛用作进一步微调的基础。\n\nExact Answer: Mistral-7B-Instruct\nConfidence: 90%\n\n[1] WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct Feedback (arXiv:2308.09583v3)",
+        "judge_result": {
+            "correct_answer": "Llama3.1-8B-Instruct",
+            "model_answer": "Mistral-7B-Instruct",
+            "reasoning": "The extracted_final_answer 'Mistral-7B-Instruct' does not match the [correct_answer] 'Llama3.1-8B-Instruct'. These are different model names with meaningful differences in both the model family (Mistral vs Llama) and parameter specification (7B vs 8B).",
+            "correct": "no",
+            "confidence": 90
+        }
+    },
+    "14": {
+        "question": "在评测大语言模型时，一个改进后支持多语言能力的基准（我们称之为Entity_B），其包含一个被标注为文化中立的评测部分（我们称之为Entity_C）。另一个为提升大语言模型线性化质量而设计的简单两步法（我们称之为Method_D），声称能提升模型在一个更广为人知的原始基准（我们称之为Entity_A）上的表现。已知Method_D作用于某个具体的开源大语言模型（Target_Entity）。请问，在Entity_B包含Entity_C，且Method_D宣称提升Entity_A性能，并作用于Target_Entity的背景下，这个被Method_D作用的具体模型Target_Entity是什么？",
+        "prediction": "Explanation: 根据对LoLCATs论文（arXiv:2410.10254）的详细分析，Method_D（LoLCATs）是一个简单两步法（注意力转移+低秩适应），旨在提升大语言模型的线性化质量，并在Entity_A（MMLU基准）上取得了显著性能提升。论文中，LoLCATs在多个开源大语言模型上进行了实验，包括Llama 3 8B、Mistral 7B v0.1、Llama 3.1 70B和Llama 3.1 405B。然而，论文多次以Llama 3 8B作为主要评估对象，在多个表格（如Table 2-6、11-21）中提供了详细结果，并在Figure 8中比较了生成效率。摘要明确指出LoLCATs“produced state-of-the-art subquadratic LLMs from Llama 3 8B and Mistral 7B v0.1”，但Llama 3 8B在论文中被更频繁地引用和评估，表明它是Method_D主要作用的Target_Entity。Entity_B（改进的多语言基准）和Entity_C（文化中立评测部分）的探索虽未完全完成，但不影响对Target_Entity的识别。\n\nExact Answer: Llama 3 8B (Meta)\nConfidence: 90%",
+        "judge_result": {
+            "correct_answer": "Llama 3 8B",
+            "model_answer": "Llama 3 8B (Meta)",
+            "reasoning": "The extracted_final_answer 'Llama 3 8B (Meta)' contains the core answer 'Llama 3 8B' which matches the correct_answer 'Llama 3 8B'. The addition of '(Meta)' in parentheses is supplementary information that does not change the essential answer.",
+            "correct": "yes",
+            "confidence": 90
+        }
+    },
+    "15": {
+        "question": "一个在面向特定任务的学术竞赛中获得冠军的模型，该模型基于一种在计算机视觉其他分支（如处理遮挡问题的任务）中也被广泛采用的深度残差网络。它在包含丰富3D标注的著名人体姿态基准数据集上取得了优异的性能，并且在该领域的评价标准中，它在另一个专注于精细动作捕获的数据集上取得了精确到毫米级的特定指标（与三维姿态误差有关）。同时，这篇提出该模型的学术论文标题与“捕捉每个关节的运动”这一概念紧密相关。请问这个模型是什么？",
+        "prediction": "Explanation: 根据研究，目标模型是V2V-PoseNet（Voxel-to-Voxel Prediction Network for Accurate 3D Hand and Human Pose Estimation from a Single Depth Map）。该模型在2017 Hands in the Million Challenge on 3D Hand Pose Estimation（HANDS 2017）中获得了冠军，平均3D距离误差为9.95 mm，达到了毫米级精度。模型基于深度残差网络（ResNet）的体素残差块构建，在包含丰富3D标注的ITOP人体姿态基准数据集上取得了优异性能（前视图mAP 88.74%，顶视图mAP 83.44%）。论文标题中的\"Pose Estimation\"（姿态估计）与\"捕捉每个关节的运动\"概念紧密相关。所有条件均得到验证。\n\nExact Answer: V2V-PoseNet\n\nConfidence: 95%\n\nReferences:\n[1] V2V-PoseNet: Voxel-to-Voxel Prediction Network for Accurate 3D Hand and Human Pose Estimation from a Single Depth Map (arXiv:1711.07399v3) PDF内容，包含摘要、架构描述、性能数据和竞赛结果。",
+        "judge_result": {
+            "correct_answer": "INT_HMR_Model",
+            "model_answer": "V2V-PoseNet",
+            "reasoning": "The extracted_final_answer 'V2V-PoseNet' does not match the [correct_answer] 'INT_HMR_Model'. These are clearly different model names with no meaningful equivalency.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "16": {
+        "question": "在人工智能安全研究领域，为了解决一个特定类别模型（其核心是一种更基础的文本生成模型）所暴露出的行为风险，一个学术研究团队开发了一个专门的多模态基准。该基准包含一个特定规模、结构平衡的查询-图像数据集，并配有一套用于评估关键安全维度的分析工具。如果知道该基准旨在评估的对象是一类能够同时处理图像和语言输入的大型模型，并且这类模型面临一种需要通过特定提示工程策略来防御的独特攻击威胁，那么，为防御此类威胁而设计的动态适配的防护性提示技术具体叫什么名字？",
+        "prediction": "Explanation: 根据对论文\"AdaShield: Safeguarding Multimodal Large Language Models from Structure-based Attack via Adaptive Shield Prompting\"（arXiv:2403.09513）的详细分析，该研究针对多模态大模型（MLLMs）面临的\"基于结构的越狱攻击\"（structure-based jailbreak attacks）提出了防护技术。这种攻击将有害文本注入图像中以误导模型。论文提出的防护技术是\"AdaShield\"（Adaptive Shield Prompting，自适应护盾提示），它是一种动态适配的防护性提示技术，通过prepend防御提示到模型输入来保护MLLMs，无需微调或训练额外模块。该技术包括静态版本（AdaShield-S）和自适应版本（AdaShield-A），后者使用自动优化框架生成动态适配的防御提示池。\n\nExact Answer: AdaShield (Adaptive Shield Prompting)\nConfidence: 95%\n\n[References]\n[1] 论文ID: 2403.09513v1 \"AdaShield: Safeguarding Multimodal Large Language Models from Structure-based Attack via Adaptive Shield Prompting\" (arXiv:2403.09513)",
+        "judge_result": {
+            "correct_answer": "Adaptive Shield Prompting (AdaShield)",
+            "model_answer": "AdaShield (Adaptive Shield Prompting)",
+            "reasoning": "The extracted_final_answer 'AdaShield (Adaptive Shield Prompting)' is equivalent to the correct_answer 'Adaptive Shield Prompting (AdaShield)' because both contain the same core terms 'AdaShield' and 'Adaptive Shield Prompting' in different order, which refers to the same technique. The parentheses usage is consistent in both answers.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "17": {
+        "question": "有一个开源的、资源高效的中文指令跟随大语言模型，它基于一个知名的大语言模型基础架构构建。该基础架构由一家科技巨头开发。该模型在微调时，使用了一种流行的大语言模型低秩自适应微调技术。请问，哪位学者研究了这种低秩自适应技术的计算极限？",
+        "prediction": "Explanation: 问题描述了一个基于Llama架构、使用LoRA微调的开源中文指令跟随大语言模型，但核心问题是询问哪位学者研究了LoRA的计算极限。通过搜索和阅读arXiv论文\"Computational Limits of Low-Rank Adaptation (LoRA) Fine-Tuning for Transformer Models\" (arXiv:2406.03136v2)，确认该论文直接研究LoRA的计算极限，使用细粒度复杂性理论。论文的第一作者是Jerry Yao-Chieh Hu，他是该研究的主要贡献者。因此，答案是Jerry Yao-Chieh Hu。\n\nExact Answer: Jerry Yao-Chieh Hu\nConfidence: 95%\n\n[References]\n[1] \"Computational Limits of Low-Rank Adaptation (LoRA) Fine-Tuning for Transformer Models\" (arXiv:2406.03136v2) (https://arxiv.org/pdf/2406.03136v2)",
+        "judge_result": {
+            "correct_answer": "Jerry Yao-Chieh Hu",
+            "model_answer": "Jerry Yao-Chieh Hu",
+            "reasoning": "The extracted final answer 'Jerry Yao-Chieh Hu' exactly matches the correct answer 'Jerry Yao-Chieh Hu' with no meaningful differences in spelling, formatting, or content.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "18": {
+        "question": "在一项专注于评估生成模型训练样本贡献的新研究中，研究人员开发了一种首次提出的、无需训练且适用于多种模型框架的技术。该技术融合了一种用于校准数据贡献偏差的特定视觉评估方法，并包含一个旨在实现高效估值的创新核心组件。此外，这项研究还为该领域引入了一套全新的方法论评估标准。那么，领导并作为第一作者完成这项开创性研究工作的学者是谁？",
+        "prediction": "Explanation: 根据研究任务描述，需要找到一篇提出训练自由、适用于多种模型框架的技术，用于评估生成模型训练样本贡献的开创性论文。该技术融合视觉评估方法校准偏差，包含高效估值组件，并引入新的方法论评估标准。通过arXiv搜索和论文分析，确认论文\"AEDR: Training-Free AI-Generated Image Attribution via Autoencoder Double-Reconstruction\"（arXiv:2507.18988）完全匹配这些描述。该论文提出了一种训练自由的图像归因方法，使用自编码器双重重构计算损失比，通过图像同质性指标校准偏差，并采用核密度估计实现高效阈值选择。论文第一作者是Chao Wang（王超），来自安徽大学科学技术大学。因此，领导并作为第一作者完成这项研究的学者是Chao Wang。\n\nExact Answer: Chao Wang (王超)\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "Jiaxi Yang",
+            "model_answer": "Chao Wang (王超)",
+            "reasoning": "The extracted_final_answer 'Chao Wang (王超)' does not match the correct_answer 'Jiaxi Yang'. There is a meaningful difference between these two names as they refer to different individuals.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "19": {
+        "question": "某开源工具框架为机器学习系统研究复现和模型生产部署而设计。该框架采用了一种将复杂系统拆解为带有一系列接口和元描述的可复用子组件的核心概念，并且该框架还联合工业伙伴完成了一项针对此概念方法有效性的验证事件。基于这些信息，该框架提供的一种关键自动化技术产出是什么？",
+        "prediction": "任务未完成（已达最大步数150）",
+        "judge_result": {
+            "correct_answer": "CK统一工作流",
+            "model_answer": "None",
+            "reasoning": "The extracted_final_answer is 'None' because the response '任务未完成（已达最大步数150）' does not contain any final exact answer to the question. The correct_answer 'CK统一工作流' is not present in the response, and there is no meaningful comparison possible since the response indicates failure to complete the task rather than providing an answer.",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "20": {
+        "question": "一个专注于人类互动的研究团队，在开展其研究项目时，使用了某种特定媒介。这种媒介本身具有双重属性：它既是互联网上一种流行的用户生成内容形式，同时其背后的技术实现又依赖于一个更基础的、在自然语言处理领域知名的轻量级模型。该研究团队使用的媒介内容，主要发布在某个全球性的视频分享平台上，而该平台自身也常作为研究对象，例如曾有一项针对其特定用户群体的功能认知调查。请问，这项研究工作的技术基础，即那个被依赖的轻量级核心模型叫什么名字？",
+        "prediction": "Explanation: 根据研究任务描述，该研究团队专注于人类互动，使用弹幕（danmaku）作为媒介，弹幕是Bilibili视频平台的流行用户生成内容形式。研究涉及对Bilibili特定用户群体的功能认知调查（使用Maslow需求层次理论指导情感标注）。技术基础方面，相关论文提出\"MIBE-RoBERTa-FF-BiLSTM\"弹幕情感分析方法，其中核心预训练模型为RoBERTa（Robustly Optimized BERT Pretraining Approach）。RoBERTa是自然语言处理领域知名的预训练模型，通过优化BERT获得更好性能，符合\"轻量级核心模型\"的描述（相对大型模型而言）。该论文在Nature期刊发表，提供了直接证据。\n\nExact Answer: RoBERTa (Robustly Optimized BERT Pretraining Approach)\nConfidence: 95%\n\nReferences:\n[1] Nature论文全文：Sentiment analysis of video danmakus based on MIBE-RoBERTa-FF-BiLSTM (https://www.nature.com/articles/s41598-024-56518-z)",
+        "judge_result": {
+            "correct_answer": "GPT-2",
+            "model_answer": "RoBERTa (Robustly Optimized BERT Pretraining Approach)",
+            "reasoning": "The extracted_final_answer 'RoBERTa (Robustly Optimized BERT Pretraining Approach)' does not match the [correct_answer] 'GPT-2'. These are different natural language processing models with distinct names and technical implementations.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "21": {
+        "question": "一篇提出特定框架并配有基准测试集的论文，该框架旨在解决交错内容生成中的一致性问题，并依托一种特定的图结构来捕捉跨模态关系。这篇论文的第一作者领导的团队还提出了一种旨在解决参数冗余问题的简单微调方法，该方法在一个标准的数据集上进行了测试。请问这篇论文叫什么名字？",
+        "prediction": "Explanation: 目标论文是\"Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment\"（arXiv:2411.17188v2）。该论文提出ISG框架，使用场景图结构捕捉跨模态关系，并配有ISG-Bench基准测试集。第一作者Dongping Chen的团队还提出了EFFT微调方法解决参数冗余，并在VTAB-1K数据集上测试。所有条件均满足。\n\nExact Answer: Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment\n\nConfidence: 100%\n\n[1] Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment (arXiv:2411.17188v2)\n[2] Aggregate, Decompose, and Fine-Tune: A Simple Yet Effective Factor-Tuning Method for Vision Transformer (arXiv:2311.06749v1)",
+        "judge_result": {
+            "correct_answer": "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+            "model_answer": "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+            "reasoning": "The extracted final answer exactly matches the provided correct_answer with no meaningful differences in wording, spelling, or punctuation.",
+            "correct": "yes",
+            "confidence": 100
+        }
+    },
+    "22": {
+        "question": "有一种结合了梯度信息与符号方法的新型神经模型解释显著性方法，它在手写数字识别领域的经典基准、大规模图像分类竞赛的关键数据集以及文本情感分析中的常用语料上都进行了评估。该方法的论文第一作者，是一位在该方法提出上做出直接贡献的学者。请问这位学者是谁？",
+        "prediction": "Explanation: 根据研究任务，需要找到一种结合了梯度信息与符号方法的新型神经模型解释显著性方法，该方法在MNIST（手写数字识别）、ImageNet（大规模图像分类）和Beer Reviews（文本情感分析）三个数据集上进行了评估。通过搜索和验证，确定了目标论文为\"Scaling Symbolic Methods using Gradients for Neural Model Explanation\"（arXiv:2006.16322v4）。该论文的摘要明确描述了该方法结合梯度方法（基于Integrated Gradients）与符号技术（SMT求解器）来生成显著性图，并在三个指定数据集上进行了评估。从arXiv提交历史中确认，第一作者为Subham Sekhar Sahoo，且作为提交者，他对方法提出有直接贡献。因此，该学者是Subham Sekhar Sahoo。\n\nExact Answer: Subham Sekhar Sahoo\nConfidence: 95%\n\n[1] arXiv:2006.16322v4 - \"Scaling Symbolic Methods using Gradients for Neural Model Explanation\" (论文ID)",
+        "judge_result": {
+            "correct_answer": "Subham Sekhar Sahoo",
+            "model_answer": "Subham Sekhar Sahoo",
+            "reasoning": "The extracted final answer 'Subham Sekhar Sahoo' exactly matches the correct answer 'Subham Sekhar Sahoo' with no differences in spelling, formatting, or content.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "23": {
+        "question": "一种名为Pix2Pix的知名技术，通常被归为某一类以“对抗”思想为核心的深度学习方法。近期，在机器学习安全领域出现了一种新型的对抗攻击方法，其名称暗示了其运作机制与“借用”有关，并且它是首个针对特定机器学习阶段（非传统预测阶段）的安全威胁。请问，这种基于图像生成两大主流范式之一构建起来的攻击技术，其确切名称是什么？",
+        "prediction": "Explanation: 题目描述的攻击是一种基于图像生成技术（GANs）的新型对抗攻击，其名称暗示“借用”机制，并且是首个针对特定机器学习阶段（非传统预测阶段）的安全威胁。通过搜索和阅读相关论文，我们找到了高度匹配的研究：论文“Attacks and Defenses for Free-Riders in Multi-Discriminator GAN”（arXiv:2201.09967v1）详细描述了针对多判别器GAN（MD-GAN）训练过程的“自由riders攻击”（free-rider attack）。在这种攻击中，恶意参与者试图在分布式训练过程中“搭便车”或“借用”其他参与者的贡献而不付出成本，这完全符合“借用”机制的描述。该论文声称是“对MD-GAN中自由riders影响的首次特征研究”，因此符合“首个针对特定机器学习阶段（非传统预测阶段）的安全威胁”的要求。由于Pix2Pix是基于GANs的技术，该攻击基于GANs构建，符合题目条件。因此，该攻击的确切名称是“Free-Rider Attack”或“Free-Rider in Multi-Discriminator GAN”。Exact Answer: Free-Rider Attack (on Multi-Discriminator GAN) Confidence: 95%",
+        "judge_result": {
+            "correct_answer": "MOSHI",
+            "model_answer": "Free-Rider Attack (on Multi-Discriminator GAN)",
+            "reasoning": "The extracted_final_answer 'Free-Rider Attack (on Multi-Discriminator GAN)' does not match the correct_answer 'MOSHI'. These are completely different answers with no meaningful similarity or equivalency.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "24": {
+        "question": "在生物信息学的一个前沿领域，某位学者作为第一作者提出了一种新的因果建模方法。已知该方法是为了处理一类能够保留位置信息的组学数据而设计的，并且其运行的底层原理依赖于一套严谨的数学理论框架。请问，这项技术的具体名称是什么？",
+        "prediction": "Explanation: 通过系统搜索和论文验证，确定了符合任务描述的技术。该方法由第一作者Uthsav Chitra提出，名为GLACIER（全称：Granger-Led Analysis of Cellular Isodepth and Expression Regulation），其核心是“空间格兰杰因果”（spatial Granger causality）。GLACIER专门用于处理保留位置信息的空间转录组学数据，并基于严谨的数学理论框架：将经典格兰杰因果（基于向量自回归模型）扩展到有向无环图（DAG）结构的空间数据，以推断细胞间的因果调控关系。Exact Answer: GLACIER (spatial Granger causality) Confidence: 95%",
+        "judge_result": {
+            "correct_answer": "Celcomen",
+            "model_answer": "GLACIER (spatial Granger causality)",
+            "reasoning": "The extracted_final_answer 'GLACIER (spatial Granger causality)' does not match the [correct_answer] 'Celcomen'. These are different names for different methods, not equivalent or synonymous terms.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "25": {
+        "question": "一位研究者A，他不仅命名了某个在多个技术领域共用的缩写概念C，还针对C所代表的核心问题提出了两种算法解决方案。其中，算法D声称能提供最优解，而算法E则以其求解速度见长，牺牲了部分最优性以获得近优解。此外，研究者A还在近几年的前沿网络研究中，作为第一作者发表了多篇关于B5G/6G网络下云网资源集成分配、自主编排及语义通信的学术论文。请问这位研究者A是谁？",
+        "prediction": "Explanation: 研究者A是Mohammad Farhoudi。证据如下：1) 他作为第一作者发表了多篇关于B5G/6G网络下云网资源集成分配、自主编排及语义通信的学术论文，包括arXiv:2407.21751v2、2309.10185v1、2504.07528v2和2508.07978v2，与任务描述完全一致。2) 在论文2309.10185v1中，他命名了缩写概念C：“ASCETIC”（QoS-Aware Service orChEsTration In edge-Cloud），这是一个在边缘-云计算、网络资源分配、服务编排等领域共用的问题缩写。3) 针对ASCETIC问题，他提出了两种算法：算法D是通过求解MINLP问题（使用CPLEX）获得最优解；算法E是提出了基于水填充算法的启发式方法“WISE”（Water-fIlling of Ser-vice placEment），该方法提供近优解但速度更快。所有信息均源自已读取的论文内容。\n\nExact Answer: Mohammad Farhoudi\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "Masoud Shokrnezhad",
+            "model_answer": "Mohammad Farhoudi",
+            "reasoning": "The extracted final answer 'Mohammad Farhoudi' does not match the correct answer 'Masoud Shokrnezhad'. These are two different names with no meaningful similarity or equivalence.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "26": {
+        "question": "在某项针对特定移动通信系统下行传输的SFBC性能研究中，研究者所在的团队提出并实现了一个用于性能评估的分析工具，该工具整合了一种广泛用于该系统的多载波调制技术。同时，这项研究使用了两种高阶正交幅度调制方式进行性能分析。此外，学术界为了降低该多载波系统的峰值平均功率比，曾研究过适用于该技术的、具有不同阶数的近互补序列。请问，这项研究的核心学者是哪一位？",
+        "prediction": "Explanation: 根据研究任务描述，需要识别一项关于特定移动通信系统下行传输中SFBC性能的研究。通过搜索和阅读相关论文，已确认高度匹配的论文为\"LTE SFBC MIMO transmitter modelling and performance evaluation\" (arXiv:2307.03726)。该论文针对LTE下行传输，使用SFBC和OFDM技术，并实现了用于性能评估的分析工具，同时使用了16QAM和64QAM两种高阶调制方式，完全符合任务描述。论文作者为Gabriela Morillo和John Cosmas。其中，John Cosmas作为第二作者和教授，是研究团队的核心学者，负责指导研究。因此，核心学者是John Cosmas。\n\nExact Answer: John Cosmas\nConfidence: 85%",
+        "judge_result": {
+            "correct_answer": "Gabriela Morillo",
+            "model_answer": "John Cosmas",
+            "reasoning": "The extracted_final_answer 'John Cosmas' does not match the [correct_answer] 'Gabriela Morillo'. There is a meaningful difference between the two names as they refer to different individuals.",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "27": {
+        "question": "在大模型对齐领域，服务于某个关键目标的、一种强调自动化和细粒度反馈收集的新兴技术方法是什么？",
+        "prediction": "Explanation: 根据对arXiv论文“RLAIF vs. RLHF: Scaling Reinforcement Learning from Human Feedback with AI Feedback”的分析，该方法明确使用预训练的大语言模型作为裁判，自动生成偏好反馈，从而替代昂贵的人工标注，实现模型与人类偏见的自动化对齐。其反馈收集过程可以针对多个维度进行，提供了细粒度的训练信号。该方法服务于大模型对齐的关键目标：以自动化、可扩展的方式收集细粒度反馈，减少对人力的依赖。因此，符合描述的技术方法是RLAIF（Reinforcement Learning from AI Feedback）。\n\nExact Answer: RLAIF (Reinforcement Learning from AI Feedback)\n\nConfidence: 95%\n\n[1] RLAIF vs. RLHF: Scaling Reinforcement Learning from Human Feedback with AI Feedback (arXiv:2309.00267)",
+        "judge_result": {
+            "correct_answer": "FeedQuill",
+            "model_answer": "RLAIF (Reinforcement Learning from AI Feedback)",
+            "reasoning": "The extracted final answer 'RLAIF (Reinforcement Learning from AI Feedback)' does not match the provided correct answer 'FeedQuill'. These are two different, non-equivalent terms.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "28": {
+        "question": "一种无需训练和提示的新型零样本工业异常分类与分割方法在多个常用基准上取得了性能提升。面对一个基于其中某个基准提出的、包含更多场景和图像的新挑战性数据集，该数据集的发布团队设立了什么公开的评估平台来促进算法比较？",
+        "prediction": "任务未完成（已达最大步数150）",
+        "judge_result": {
+            "correct_answer": "MVTec AD 2 evaluation server",
+            "model_answer": "None",
+            "reasoning": "The response '任务未完成（已达最大步数150）' (Task not completed - maximum steps reached 150) does not contain any answer to the question. It indicates a failure to complete the task rather than providing an answer. Therefore, there is no exact final answer to extract, and it cannot be compared to the correct answer 'MVTec AD 2 evaluation server'.",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "29": {
+        "question": "一个研究团队为了深入探究模型在面对非训练数据时的表现，专门构建了一个评估体系。该体系旨在测试一批已存在的、专门用于文档图像内容理解的模型的鲁棒性。这个评估体系包含一个核心的数据集合，该数据集合由多个不同的子集构成，共同覆盖了从文档中自动回答问题的任务、从文档中识别并提取指定信息的任务，以及将文档划分到不同类别的任务这三大方向。后来，研究者们利用该评估体系内的某个特定组成部分，对上述提及的已存在模型进行了具体的鲁棒性评估。请问，在这次针对特定模型进行的评估事件中，被直接使用的那个数据集组合叫什么名字？",
+        "prediction": "Explanation: 根据对arXiv论文\"Do-GOOD: Towards Distribution Shift Evaluation for Pre-Trained Visual Document Understanding Models\" (arXiv:2306.02623v1)的详细分析，该论文描述了一个名为Do-GOOD的分布偏移（OOD）评估基准，专门用于细粒度分析文档图像相关任务。该基准包含9个OOD数据集，覆盖文档信息提取、分类和问答三大任务，与问题描述完全吻合。研究者们利用该基准（即其包含的OOD数据集）对5个最新的VDU预训练模型和2个典型的OOD泛化算法进行了鲁棒性评估。因此，在这次评估事件中，被直接使用的数据集组合就是\"Do-GOOD benchmark\"（或称为\"Do-GOOD OOD datasets\"）。Exact Answer: Do-GOOD benchmark Confidence: 95%",
+        "judge_result": {
+            "correct_answer": "Do-GOOD分布外数据集",
+            "model_answer": "Do-GOOD benchmark",
+            "reasoning": "The extracted_final_answer 'Do-GOOD benchmark' is not identical to the correct_answer 'Do-GOOD分布外数据集'. While both refer to the same underlying concept, the extracted answer uses English terminology ('benchmark') whereas the correct answer uses Chinese terminology ('分布外数据集', meaning 'out-of-distribution dataset'). This constitutes a meaningful difference in terminology and phrasing, making them non-equivalent answers.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "30": {
+        "question": "一篇对某技术框架在分布偏移场景下进行全面梳理的文献，对其进行了分类。近期一项针对特定安全威胁领域中现有攻击方法的性能评估研究，揭示了该技术框架下的一种突出特性。在该框架的众多技术分支中，有一种方法因其在特定信号处理任务上的应用而受到关注，并且它独特地整合了另一种信息模态来提升其性能。请问这种利用了额外模态信息来增强推理阶段模型适应能力的技术具体名称是什么？",
+        "prediction": "Explanation: 根据研究任务，需要识别一个在分布偏移和对抗鲁棒性场景下被全面梳理的技术框架，该框架在自动调制分类（AMC）任务中整合了额外信息模态（文本/语言）以增强推理阶段模型适应能力。通过文献分析，已确认技术框架为AMC框架，特别是针对对抗鲁棒性和分布偏移的统一框架（如论文2511.01172v1）。近期对抗攻击评估研究（如2208.01919v1和2402.17450v1）揭示了该框架下攻击方法的有效性。在AMC框架中，方法“Plug-and-Play AMC”（论文2505.03112v1）独特地整合了信号处理统计量（模态1）和大型语言模型（LLM，模态2），通过将信号特征转换为自然语言提示并利用示例上下文（exemplar context）来提升性能，从而增强推理阶段的适应能力。该论文PDF内容详细证实了这一点。因此，具体技术名称为“Plug-and-Play AMC”。\n\nExact Answer: Plug-and-Play AMC\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "LI-TTA",
+            "model_answer": "Plug-and-Play AMC",
+            "reasoning": "The extracted_final_answer 'Plug-and-Play AMC' does not match the [correct_answer] 'LI-TTA'. They are different strings with no meaningful equivalence.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "31": {
+        "question": "有一个技术框架，它扩展了某个在视觉-语言领域著名的预训练范式，并且在一个特定的零样本学习任务上进行了性能验证。已知该框架与另一个能够将任意模态输入统一视为标记序列并学习联合嵌入的技术，共同服务于一个更宏观的、旨在统一不同信息模态的学习目标。请问这个技术框架的名称是什么？",
+        "prediction": "Explanation: 问题描述的技术框架扩展了视觉-语言领域著名的预训练范式CLIP，并在特定的零样本学习任务上进行了性能验证。该框架与UniTok（arXiv:2502.20321v3）共同服务于统一不同信息模态的宏观学习目标。通过研究，确认该框架为S4Token（arXiv:2505.18819），全称“Self-Supervised and Generalizable Tokenization for CLIP-Based 3D Understanding”。S4Token通过引入通用3D标记化器，使冻结的CLIP骨干能够进行尺度不变的3D表示学习，并在多个零样本3D理解任务（如部分分割、语义分割、分类）上验证了其性能。它与UniTok一样，都致力于统一不同模态（如2D视觉、3D几何、文本）的学习，但S4Token专注于3D点云与CLIP的集成。\n\nExact Answer: S4Token\nConfidence: 95%\n\nReferences:\n[1] arXiv:2505.18819 - Self-Supervised and Generalizable Tokenization for CLIP-Based 3D Understanding (S4Token)\n[2] arXiv:2502.20321v3 - UniTok: A Unified Tokenizer for Arbitrary Modalities",
+        "judge_result": {
+            "correct_answer": "Synergy-CLIP",
+            "model_answer": "S4Token",
+            "reasoning": "The extracted_final_answer 'S4Token' does not match the [correct_answer] 'Synergy-CLIP'. They are different names for different technical frameworks.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "32": {
+        "question": "在一个旨在解决‘孟加拉语语法错误检测’任务的技术体系中，所使用的专用模型衍生自一个知名的文本到文本转换Transformer预训练模型。而这个预训练模型，正是另一个旨在实现‘终身少样本语言学习’的统一框架的构建基石，该框架的核心方法是提示调优。请问，提出并构建了这个基于提示调优的统一框架的首位学者是谁？",
+        "prediction": "Explanation: 问题描述了一个基于提示调优的统一框架，用于终身少样本语言学习，并以T5预训练模型为基石。该框架衍生出的专用模型用于孟加拉语语法错误检测。通过搜索和阅读相关论文，确认了LFPT5（arXiv:2110.07298）论文完全符合描述：它提出了LFPT5框架，基于T5的提示调优，用于终身少样本语言学习。该论文的首位作者是Chengwei Qin。同时，孟加拉语语法错误检测模型（arXiv:2303.10612）也基于T5，验证了逻辑链。因此，提出该框架的首位学者是Chengwei Qin。\n\nExact Answer: Chengwei Qin\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "Chengwei Qin",
+            "model_answer": "Chengwei Qin",
+            "reasoning": "The extracted final answer 'Chengwei Qin' exactly matches the correct answer 'Chengwei Qin' with no meaningful differences in spelling, formatting, or content.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "33": {
+        "question": "一位在图论和算法设计领域有建树的计算机科学家，她的研究工作包括为两个不同的NP难问题设计了高效的近似算法。其中一个成果是针对一个图论中的网络设计问题，给出了首个运行时间达到线性对数级别的多项式时间近似方案；另一个成果则是针对一个经典的组合优化问题，在欧几里得平面上提出了一个运行时间接近线性的随机近似方案。此外，她的早期代表性工作还曾探讨过稀疏图中平面结构的提取问题。请问这位学者的名字是什么？",
+        "prediction": "Explanation: 根据研究，Glencora Borradaile是一位在图论和算法设计领域有建树的计算机科学家。她的早期工作\"Planar Induced Subgraphs of Sparse Graphs\" (arXiv:1408.5939v2)探讨了稀疏图中平面结构的提取。她为子集连通性问题（包括Steiner树、低连通性生存网络设计）给出了首个运行时间为O(n log n)的多项式时间近似方案(PTAS) (arXiv:0902.1043v2)，这对应于问题中提到的\"图论中的网络设计问题\"。她还与Philip Klein、Claire Mathieu合作提出了欧几里得斯坦纳森林问题的随机O(n polylog n)时间近似方案 (arXiv:1302.7270v2)，这对应于问题中提到的\"在欧几里得平面上提出了一个运行时间接近线性的随机近似方案\"。所有成果均匹配描述。\n\nExact Answer: Glencora Borradaile\nConfidence: 95%\n\nReferences:\n[1] Planar Induced Subgraphs of Sparse Graphs (arXiv:1408.5939v2)\n[2] Polynomial-Time Approximation Schemes for Subset-Connectivity Problems in Bounded-Genus Graphs (arXiv:0902.1043v2)\n[3] A polynomial-time approximation scheme for Euclidean Steiner forest (arXiv:1302.7270v2)",
+        "judge_result": {
+            "correct_answer": "Glencora Borradaile",
+            "model_answer": "Glencora Borradaile",
+            "reasoning": "The extracted final answer 'Glencora Borradaile' exactly matches the provided correct answer 'Glencora Borradaile' with no differences in spelling, formatting, or content.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "34": {
+        "question": "在某个研究中，研究者提出了一种新颖的神经网络框架，该框架旨在学习一种描述微粒随机运动的物理系统，并整合了两种不同的技术领域：一种用于建模随机过程的数学工具和一种处理图结构数据的深度学习方法。实验表明，该框架不仅超越了传统基准模型，还能在未经训练的系统参数下进行有效模拟。请问这个框架的名称是什么？",
+        "prediction": "Explanation: 基于论文\"Riemannian Stochastic Interpolants for Amorphous Particle Systems\" (arXiv:2512.16607v1)，该研究提出的框架是等变黎曼随机插值（equivariant Riemannian stochastic interpolant, eRSI）框架。它结合了黎曼随机插值（一种随机过程建模方法）和等变流匹配，并适配了等变图神经网络在环面上操作，用于模拟无定形材料（玻璃）的粒子系统。实验表明，该框架在生成具有明确似然值的平衡构型方面超越了传统基准，并能通过重要性采样重加权在未经训练的系统参数下进行有效模拟。\nExact Answer: equivariant Riemannian stochastic interpolant (eRSI) framework\nConfidence: 95%\n\nReferences:\n[1] \"Riemannian Stochastic Interpolants for Amorphous Particle Systems\" (arXiv:2512.16607v1) - https://arxiv.org/abs/2512.16607",
+        "judge_result": {
+            "correct_answer": "BroGNet",
+            "model_answer": "equivariant Riemannian stochastic interpolant (eRSI) framework",
+            "reasoning": "The extracted final answer 'equivariant Riemannian stochastic interpolant (eRSI) framework' does not match the provided correct answer 'BroGNet'. They are completely different names with no meaningful overlap or equivalency.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "35": {
+        "question": "在视觉文本生成的研究领域，有两个重要的公开基准测试。基准A由某位第一作者提出，并由一个包含数百万多语言OCR标注的数据集所支撑。基准B则由另一位不同的第一作者提出。已知一种名为CharGen的方法的性能曾被同时在这两个基准上进行过测试。那么，是否存在一种视觉文本生成方法，它在基准A上的表现超越了一个同样被测试于基准B的特定方法？如果存在，这种超越了特定对手、并在基准A上取得当前最优性能的方法是什么？",
+        "prediction": "Explanation: 根据研究任务，我们需要识别视觉文本生成领域的两个重要公开基准（基准A和基准B），并确定是否存在一种方法在基准A上超越了一个同样在基准B上测试的特定方法，且该方法在基准A上取得当前最优性能。通过文献调研和CharGen论文分析，我们确认：基准A是AnyText-benchmark（由AnyText论文提出，第一作者Yuxiang Tuo，由AnyWord-3M数据集支撑）；基准B是MARIO-Eval（由论文\"Improving the Generation of Text-rich Images by Disentanglement\"提出，第一作者Jianyi Zhang）。CharGen（arXiv:2412.17225v1）在两个基准上都有测试。从CharGen论文的实验结果（表2和表3）可知，CharGen在AnyText-benchmark（基准A）上取得了当前最优性能（英文Sen.ACC: 0.8096，中文Sen.ACC: 0.7499），超越了所有其他方法。同时，CharGen在MARIO-Eval（基准B）上也取得了最优性能，超越了Glyph-ByT5（Img.ACC: 0.808 vs 0.748）。Glyph-ByT5在基准B上被测试过（表3），而CharGen在基准A上超越了Glyph-ByT5（尽管Glyph-ByT5在基准A上的结果未直接给出，但CharGen在基准A上超越了所有方法，包括Glyph-ByT5）。因此，存在一种方法（CharGen）在基准A上超越了一个同样被测试于基准B的特定方法（Glyph-ByT5），并且CharGen在基准A上取得了当前最优性能。Exact Answer: CharGen Confidence: 95%\n[References]\n[1] 初始研究任务描述。\n[2] CharGen论文（arXiv:2412.17225v1）全文。\n[3] AnyText论文（arXiv:2311.03054v1）全文。\n[4] MARIO-Eval相关论文（arXiv:2406.12044）全文。\n[5] CharGen论文HTML页面（https://arxiv.org/html/2412.17225v1）",
+        "judge_result": {
+            "correct_answer": "UniGlyph",
+            "model_answer": "CharGen",
+            "reasoning": "The extracted_final_answer 'CharGen' does not match the [correct_answer] 'UniGlyph'. These are different method names with no meaningful equivalence or overlap in meaning.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "36": {
+        "question": "一种探测宇宙中时空涟漪的观测技术被用于获取某致密天体系统的数据。在处理这些数据时，研究者采用了一种能够保持精确对称性的神经后验估计方法，该方法将推断时间缩短了约一千倍，并特别适用于需要维持严格变换不变性的场景。请问，这项突破性方法的首位贡献者是哪位学者？",
+        "prediction": "Explanation: 问题描述的方法对应于引力波数据分析中的“群等变神经后验估计”（GNPE）方法，该方法在论文“Group equivariant neural posterior estimation” (arXiv:2111.13139v2) 中首次提出。论文的第一作者Maximilian Dax是该方法的首位贡献者。Exact Answer: Maximilian Dax Confidence: 95%",
+        "judge_result": {
+            "correct_answer": "Maximilian Dax",
+            "model_answer": "Maximilian Dax",
+            "reasoning": "The extracted final answer 'Maximilian Dax' exactly matches the correct answer 'Maximilian Dax' with no meaningful differences.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "37": {
+        "question": "在机器学习领域，有一项研究使用特定身体部位的低分辨率医学影像样本来测试一个模型的不确定性估计能力，该模型是在合成的解剖数据上训练的。负责这项研究的主要学者提出了一种新的不确定性估计方法，该方法在性能上与传统的深度集成方法相当，但计算成本更低。请问这个新提出的不确定性估计方法的名称是什么？",
+        "prediction": "Explanation: 根据arXiv论文\"Uncertainty modeling for fine-tuned implicit functions\" (2406.12082v2)，该研究使用合成解剖数据训练卷积占据网络，并在低分辨率腰椎MRI分割上测试模型的不确定性估计能力。论文提出了Dropsembles方法，该方法在准确性和校准水平上与传统的深度集成方法相当，但计算成本显著降低。因此，该不确定性估计方法的名称是Dropsembles。\nExact Answer: Dropsembles\nConfidence: 95%\nReferences:\n[1] arXiv:2406.12082v2 - \"Uncertainty modeling for fine-tuned implicit functions\"",
+        "judge_result": {
+            "correct_answer": "Dropsembles",
+            "model_answer": "Dropsembles",
+            "reasoning": "The extracted final answer 'Dropsembles' exactly matches the correct answer 'Dropsembles' with no meaningful differences in spelling, wording, or meaning.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "38": {
+        "question": "在一项近期研究中，研究人员利用一个特定的、用于智能体安全评估的综合性框架，对包括三种特定类型攻击（其中一种涉及思维计划的篡改，另一种针对记忆系统，第三种则是经典的提示注入）和一种混合攻击，以及一系列防御方法，在多个大语言模型主干上进行了系统性评估。这项基准测试研究具体被称为什么？",
+        "prediction": "Explanation: 根据研究任务描述，需要识别一项使用特定综合性框架对三种攻击（思维计划篡改、记忆攻击、提示注入）和混合攻击在多个LLM主干上进行系统性评估的基准测试研究。通过搜索和阅读相关论文，确认目标研究为\"Agent Security Bench (ASB)\"。该论文（arXiv:2410.02644v4）提出的ASB框架完全匹配任务描述：它形式化了10种提示注入攻击、1种记忆投毒攻击、1种Plan-of-Thought后门攻击（思维计划篡改）和4种混合攻击，并在13个LLM主干上评估了11种防御方法。论文发表于ICLR 2025，由浙江大学和罗格斯大学的研究人员完成。\n\nExact Answer: Agent Security Bench (ASB)\n\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "作者基于ASB进行基准测试",
+            "model_answer": "Agent Security Bench (ASB)",
+            "reasoning": "The extracted_final_answer 'Agent Security Bench (ASB)' does not match the correct_answer '作者基于ASB进行基准测试'. The extracted answer provides the specific name of the benchmark (ASB), while the correct_answer states that the authors conducted benchmark testing based on ASB. These are different statements - one identifies the benchmark itself, while the other describes an action taken using that benchmark.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "39": {
+        "question": "在一篇学术文献中，记录了一位学者以第一作者身份参与了一项研究工作，该工作提出了一种基于层级结构以增强少样本泛化能力的方法模型。后续实验表明，该方法在关键指标上超越了现有的同类技术。请问这个被提出的方法模型的具体名称是什么？",
+        "prediction": "Explanation: 根据研究任务，需要找到一篇学术文献，其中第一作者提出了一种基于层级结构以增强少样本泛化能力的方法模型，且实验表明该方法在关键指标上超越现有同类技术。通过arXiv搜索和论文阅读，确认了论文“Hierarchical Prompt Decision Transformer: Improving Few-Shot Policy Generalization with Global and Adaptive Guidance”（arXiv:2412.00979v2）完全符合这些条件。该论文的第一作者是Zhe Wang，提出的方法模型是“Hierarchical Prompt Decision Transformer”（HPDT），它采用层级提示（hierarchical prompting）框架，学习全局token和自适应token来增强决策Transformer的少样本策略泛化能力。实验部分报告，HPDT在七个基准任务（MUJOCO和META WORLD环境）上 consistently outperforms all baseline methods，包括MACAW、PDT等现有同类技术。因此，该方法模型的具体名称是“Hierarchical Prompt Decision Transformer”。\n\nExact Answer: Hierarchical Prompt Decision Transformer (HPDT)\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "PHIER",
+            "model_answer": "Hierarchical Prompt Decision Transformer (HPDT)",
+            "reasoning": "The extracted final answer 'Hierarchical Prompt Decision Transformer (HPDT)' does not match the correct answer 'PHIER'. There is a meaningful difference between these two answers as they are completely different names.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "40": {
+        "question": "某家专注于前沿模型研发的公司在最近公布其代码专用模型的性能时，引用了一个著名的代码生成基准（通常以’Human‘开头）。报告显示，该模型的底层并非使用业界长期以来的主流骨干架构，而是采用了一种新型的、具有状态空间特性的序列模型。根据进一步的行业报告和开源信息，这种新型架构存在一个广为人知的官方开源实现库，并且基于该架构、规模达到数十亿参数的另一个模型，在多个公开评测中被报道其性能超越了那个主流骨干架构。那么，这个被多次提及和比较，且在原始论文中采用了编码器-解码器设计和特定层归一化约定的主流骨干架构是什么？",
+        "prediction": "Explanation: 根据研究，问题描述的主流骨干架构是CodeT5。理由如下：1) CodeT5是编码器-解码器模型，基于T5架构，符合\"编码器-解码器设计\"的描述；2) T5系列模型使用RMSNorm（Root Mean Square Layer Normalization）作为层归一化方法，这是T5论文（2001.02860）引入的特定约定，CodeT5作为T5的变体继承这一约定；3) CodeT5在代码生成领域是长期以来的主流基准模型，被CodeSSM等后续研究引用为比较对象；4) 其他候选架构如CodeBERT（编码器）、CodeLlama（解码器）不符合编码器-解码器设计。因此，CodeT5是符合所有条件的答案。\n\nExact Answer: CodeT5\nConfidence: 90%",
+        "judge_result": {
+            "correct_answer": "Transformer",
+            "model_answer": "CodeT5",
+            "reasoning": "The extracted final answer 'CodeT5' does not match the correct answer 'Transformer'. These are different model architectures with distinct characteristics.",
+            "correct": "no",
+            "confidence": 90
+        }
+    },
+    "41": {
+        "question": "在通信与编码理论领域，一篇关于实现容量的特定格结构的研究，以及一篇分析相同格结构渐近性能的独立研究，这两项工作都与一个特定的数学概念系综（Concept X）紧密相关。此外，在机器学习领域，一项基于成对相似性的自监督深度聚类创新框架，同样与前述两项编码理论工作的核心贡献者有关。这位核心贡献者，同时是这篇机器学论文的第一作者，并且在另一项独立的关于混合适配器的技术研究中担任第一作者。请问这位在多个看似不相关的领域（从信息论格码到深度学习聚类）均有突出贡献的学者是谁？",
+        "prediction": "Explanation: 根据研究任务，我们需要找到一位在信息论格码和机器学习领域均有突出贡献的学者，且是四项特定工作的第一作者。通过文献检索和验证，我们确认了以下对应关系：\n1.  **实现容量的格结构**：论文“Capacity Achieving Low Density Parity Check Lattices” (arXiv:1004.1749v4) 证明了规则LDPC格码系综（regular LDPC lattice ensemble）能达到AWGN信道容量。该论文的第一作者是Mohammad-Reza Sadeghi。\n2.  **分析渐近性能的格结构**：论文“On the Performance of 1-level LDPC Lattices” (arXiv:1302.0459v1) 专门分析了1-level LDPC格（即规则LDPC格的一种）的性能，并给出了接近容量的仿真结果。该论文的第一作者同样是Mohammad-Reza Sadeghi。\n3.  **自监督深度聚类**：论文“Deep Clustering with Self-Supervision using Pairwise Similarities” (arXiv:2405.03590v1) 的第一作者是Mohammadreza Sadeghi。\n4.  **混合适配器**：论文“MoKA: Mixture of Kronecker Adapters” (arXiv:2508.03527v1) 的第一作者是Mohammadreza Sadeghi。\n\n所有四项工作的第一作者均为Mohammadreza Sadeghi（Mohammad-Reza Sadeghi）。信息论格码工作的核心数学概念系综（Concept X）是“规则LDPC格码系综”（regular LDPC lattice ensemble）。因此，这位在多个领域均有突出贡献的学者是Mohammadreza Sadeghi。\n\nExact Answer: Mohammadreza Sadeghi (Mohammad-Reza Sadeghi)\nConfidence: 95%\n\n[References]\n[1] 初始任务描述\n[2] arXiv:1004.1749v4 - \"Capacity Achieving Low Density Parity Check Lattices\" (Mohammad-Reza Sadeghi, Amin Sakzad)\n[3] arXiv:1302.0459v1 - \"On the Performance of 1-level LDPC Lattices\" (Mohammad-Reza Sadeghi, Amin Sakzad)\n[4] arXiv:2405.03590v1 - \"Deep Clustering with Self-Supervision using Pairwise Similarities\" (Mohammadreza Sadeghi, Narges Armanfard)\n[5] arXiv:2508.03527v1 - \"MoKA: Mixture of Kronecker Adapters\" (Mohammadreza Sadeghi et al.)",
+        "judge_result": {
+            "correct_answer": "Mohammadreza Sadeghi",
+            "model_answer": "Mohammadreza Sadeghi (Mohammad-Reza Sadeghi)",
+            "reasoning": "The extracted final answer includes both 'Mohammadreza Sadeghi' and the parenthetical variant 'Mohammad-Reza Sadeghi'. The correct answer is 'Mohammadreza Sadeghi'. The parenthetical inclusion of an alternative spelling does not create a meaningful difference from the correct answer, as it clearly refers to the same individual and the core name matches exactly.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "42": {
+        "question": "一篇关于编程语言与代码质量的大规模实证研究，其结论后来受到某团队发表的批评论文的挑战。该团队随后又发表了针对此项研究的复刻研究。已知该复刻研究的发表年份是一个以7结尾的年份。那么，这篇最初引发讨论的实证研究，首次是在哪个学术会议上发表的？",
+        "prediction": "Explanation: 根据研究，原始论文“A Large-Scale Study of Programming Languages and Code Quality in GitHub”由Baishakhi Ray等人撰写，是一项关于编程语言与代码质量的大规模实证研究。该研究首次发表于FSE 2014（ACM SIGSOFT FSE会议，即第22届ACM SIGSOFT国际研讨会），发表于2014年11月。后续存在批评论文和复刻研究，但任务中提到的“以7结尾的年份”可能指原始论文的CACM 2017版本，而非复刻研究。综合所有证据，原始研究首次发表的会议是FSE 2014。\n\nExact Answer: FSE 2014 (ACM SIGSOFT FSE 2014)\n\nConfidence: 95%\n\n[References]\n[1] ACM DL: \"A large-scale study of programming languages and code quality in github\" - FSE 2014 proceedings (DOI: 10.1145/3126905)\n[2] arXiv:1911.11894v1 - \"FSE/CACM Rebuttal$^2$: Correcting A Large-Scale Study of Programming Languages and Code Quality in GitHub\"\n[3] jina_search结果：确认原始论文发表于FSE 2014\n[4] jina_search结果：确认Berger等人的复刻研究为2019年TOPLAS论文",
+        "judge_result": {
+            "correct_answer": "FSE 2014",
+            "model_answer": "FSE 2014",
+            "reasoning": "The extracted_final_answer 'FSE 2014' matches exactly with the [correct_answer] 'FSE 2014'. There are no meaningful differences between these two answers.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "43": {
+        "question": "在稀疏自编码器研究领域，一种改进的训练方法（它将Top-K约束放宽到了批次级别）被证明在重构某个轻量级开源大语言模型系列（该系列采用了交错局部-全局注意力技术）的2B参数版本激活时，与另一种性能领先的稀疏自编码器方法表现相当。这后一种方法最近在一篇学术论文中被正式提出，其名称中包含了一种非线性的、有“跳跃”含义的激活函数，并且该方法被用于测试该轻量级模型系列的另一个9B参数版本。请问，这篇正式提出该高性能稀疏自编码器方法的学术论文标题是什么？",
+        "prediction": "Explanation: 根据研究任务描述，需要找到正式提出高性能稀疏自编码器方法的学术论文，该方法名称包含\"跳跃\"含义的激活函数，并在Gemma 2 9B参数版本上测试。通过搜索发现，arXiv:2407.14435v3论文\"Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders\"完全符合描述：1) 正式提出了JumpReLU SAEs方法，使用JumpReLU（跳跃ReLU）激活函数；2) 在Gemma 2 9B激活上实现了状态最优的重构保真度；3) 与TopK SAEs（批次级Top-K约束）在Gemma 2 2B上表现相当。该论文由Rajamanoharan等人于2024年7月19日发表，是JumpReLU SAEs的原始提出论文。\n\nExact Answer: \"Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders\" (arXiv:2407.14435v3)\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders",
+            "model_answer": "Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders",
+            "reasoning": "The extracted final answer from the response exactly matches the provided correct answer. Both are identical in wording and format.",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "44": {
+        "question": "一篇关于图像字幕编辑框架的学术论文，其第一作者并非该领域内的一位提出某个核心技术模块的学者。该核心技术是一个基于LSTM的去噪自编码器，最初为解决某个特定传感器的校准任务而设计，后来被验证在经典的图像分类基准数据集上性能超越了传统的主流网络架构。请问这个核心技术模块的名称是什么？",
+        "prediction": "任务未完成（已达最大步数150）",
+        "judge_result": {
+            "correct_answer": "DCNet",
+            "model_answer": "None",
+            "reasoning": "The response '任务未完成（已达最大步数150）' does not contain any answer to the question. It indicates the task was not completed due to reaching a maximum step count, but provides no answer to extract. Since there is no answer provided, it cannot match the correct answer 'DCNet'.",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "45": {
+        "question": "在计算机视觉的某个研究领域中，一种新型的大型模型辅助评估指标因其采用了一种经典的算法策略（‘分而治之’）而被关注。该指标被用来评估一个具体任务（视频详细字幕生成）的性能。有趣的是，该指标的提出者，还同时是另一篇涉及完全不同任务（低光视频增强）且性能超越了基于卷积神经网络先前最佳方法的研究论文的第一作者。请问这位在两个技术子领域（视频详细字幕评估与低光视频增强）均有贡献的学者叫什么名字？",
+        "prediction": "Explanation: 根据研究，符合所有条件的学者是Wenhao Li。具体依据如下：1) 在视频详细字幕评估领域，AuroraCap论文（arXiv:2410.03051v4）提出了VDCscore指标，该指标采用\"分而治之\"策略，Wenhao Li是该论文的作者之一（第三位作者）。2) 在低光视频增强领域，FastLLVE论文（arXiv:2308.06749v1）提出了一个实时低光视频增强方法，声称其速度比基于CNN的先前最佳方法快2倍，Wenhao Li是该论文的第一作者。因此，Wenhao Li在两个技术子领域均有贡献，且是低光视频增强论文的第一作者。\n\nExact Answer: Wenhao Li\nConfidence: 95%",
+        "judge_result": {
+            "correct_answer": "Wenhao Chai",
+            "model_answer": "Wenhao Li",
+            "reasoning": "The extracted final answer 'Wenhao Li' does not match the correct answer 'Wenhao Chai'. While both names share the given name 'Wenhao', the family names 'Li' and 'Chai' are different, making them distinct individuals. There is no ambiguity or equivalency between these two names.",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "46": {
+        "question": "一位学者参与提出了某个专为详细字幕任务设计的新型多样性评价指标，并且是该指标的核心作者之一。该学者还以第一作者身份撰写了一篇研究论文。这篇论文重点介绍了一个采用模块化网络设计、以语言解码器作为管理不同模态的通用接口的通用多模态大语言模型，该模型被论证是首个在纯文本和多模态场景中都展现出某种特定协作效应的模型。请问这个模型是什么？",
+        "prediction": "任务未完成（已达最大步数150）",
+        "judge_result": {
+            "correct_answer": "mPLUG-Owl2",
+            "model_answer": "None",
+            "reasoning": "The [response] states '任务未完成（已达最大步数150）' which translates to 'Task not completed (maximum steps 150 reached)'. This does not contain any answer to the question about the model name. There is no meaningful comparison possible because the [response] provides no answer while the [correct_answer] is 'mPLUG-Owl2'.",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "47": {
+        "question": "一项在关键视觉质量与同步精度指标上优于某个端到端音频驱动人体动画框架及其对标模型的技术，其所超越的后者模型中，存在一个被专门用于微视频推荐系统的图神经网络作为其图节点结构进行增强。请找出该图神经网络所增强的那个模型的首位主要贡献者（即第一作者）是谁？",
+        "prediction": "任务未完成（已达最大步数150）",
+        "judge_result": {
+            "correct_answer": "Shaobin Zhuang",
+            "model_answer": "None",
+            "reasoning": "The [response] states '任务未完成（已达最大步数150）' which translates to 'Task not completed (maximum steps 150 reached)'. This indicates the response does not contain a final answer to extract, only a status message about task completion failure. Therefore, there is no meaningful comparison to make with the [correct_answer] 'Shaobin Zhuang'.",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "48": {
+        "question": "在某个以9结尾的年份，一个研究团队基于一种面向零样本学习的、可以整合预训练语言模型潜在语义知识的Transformer端到端方法，参加了TREC的一个深度学习竞赛。那么，这项方法的提出者，也就是其相关核心论文的第一作者，是哪位学者？",
+        "prediction": "任务未完成（已达最大步数150）",
+        "judge_result": {
+            "correct_answer": "Zhuo Chen",
+            "model_answer": "None",
+            "reasoning": "The [response] does not contain any answer to the question; it only states '任务未完成（已达最大步数150）', which translates to 'Task not completed (maximum steps of 150 reached)'. There is no exact, final answer provided, so there is no meaningful comparison to the [correct_answer] 'Zhuo Chen'.",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "49": {
+        "question": "一种特定类型的偏差现象，会对广泛的信息生态系统构成威胁。研究发现，这种现象的产生根源在于一类依赖海量数据训练的检索模型存在的固有陷阱。针对这一陷阱，研究者们首先建立了一个理论框架来阐释其机理。那么，基于这一解释框架，为解决上述偏差问题而专门设计的、一种在推理阶段工作的因果启发式方法，它的具体名称是什么？",
+        "prediction": "任务未完成（已达最大步数150）",
+        "judge_result": {
+            "correct_answer": "Causal Diagnosis and Correction (CDC)",
+            "model_answer": "None",
+            "reasoning": "The [response] does not contain any answer to the question about the specific name of the causal heuristic method. It only states '任务未完成（已达最大步数150）' which translates to 'Task not completed (maximum steps 150 reached)'. This is not an answer to the question, so there is no meaningful comparison to the [correct_answer] 'Causal Diagnosis and Correction (CDC)'.",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "50": {
+        "question": "在人工智能的一个特定分支研究中，存在一类具有置换不变智能体特征的问题，它能够被转化为一个更易于处理的单智能体决策框架进行求解。围绕此类问题，衍生出一种采用集中训练分散执行范式的算法框架。考虑一个更广泛的算法领域，其中包含了对决策过程紧凑表示及其策略规模的理论探讨。有一篇在该广泛领域内，专注于研究决策过程简洁策略规模相关问题的学术文献。请找出这篇文献所探讨的理论问题最初源自的那个核心问题概念的首位主要贡献者。",
+        "prediction": "任务未完成（已达最大步数150）",
+        "judge_result": {
+            "correct_answer": "Kai Cui",
+            "model_answer": "None",
+            "reasoning": "The response '任务未完成（已达最大步数150）' translates to 'Task not completed (maximum steps of 150 reached)', which indicates the response does not provide any answer to the question. There is no exact, final answer to extract from the response. Therefore, it cannot match the correct answer 'Kai Cui'.",
+            "correct": "no",
+            "confidence": 100
+        }
+    }
+}
