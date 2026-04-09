@@ -25,12 +25,12 @@ load_dotenv()
 #     max_retries=1
 # )
 
-# client = AsyncOpenAI(
-#     api_key=os.getenv('UIUI_API_KEY'),
-#     base_url='https://sg.uiuiapi.com/v1',
-#     timeout=600.0,
-#     max_retries=1
-# )
+uiui_client = AsyncOpenAI(
+    api_key=os.getenv('UIUI_API_KEY'),
+    base_url='https://sg.uiuiapi.com/v1',
+    timeout=600.0,
+    max_retries=1
+)
 
 # client = AsyncOpenAI(
 #     api_key=os.getenv('DEEPSEEK_API_KEY'),
@@ -39,14 +39,14 @@ load_dotenv()
 #     max_retries=1
 # )
 
-client = AsyncOpenAI(
+dmx_client = AsyncOpenAI(
     api_key=os.getenv('MY_DMX_API_KEY'),
-    base_url="https://www.dmxapi.cn/v1",
+    base_url=os.getenv('DMX_API_BASE'),
     timeout=600.0,
     max_retries=1
 )
 
-with open("eval/prompts.json", "r", encoding='utf-8') as f:
+with open("D:\\DissertationProject\\DissertationProject\\eval\\prompts.json", "r", encoding='utf-8') as f:
     prompt_templates = json.load(f)
 
 def load_image_as_base64(image_path):
@@ -109,7 +109,7 @@ async def attempt_question(question):
         tokens = response.get("usage", None)
     else:
         try:
-            response = await client.chat.completions.create(
+            response = await dmx_client.chat.completions.create(
                 model=args.model,
                 temperature=args.temperature if "o1" not in args.model else None,
                 # max_completion_tokens=args.max_completion_tokens,
@@ -184,7 +184,7 @@ def main(args):
     if args.max_samples:
         questions = questions[:args.max_samples]
 
-    output_dir = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "eval_traj/other_models_results"))
+    output_dir = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "BrowseComp-ZH/predictions"))
     os.makedirs(output_dir, exist_ok=True)
 
     output_filepath = f"{output_dir}/{os.path.basename(args.model)}.json"
@@ -193,7 +193,7 @@ def main(args):
     if os.path.exists(output_filepath):
         with open(output_filepath, "r", encoding='utf-8') as f:
             predictions = json.load(f)
-        questions = [q for q in questions if q["id"] not in predictions]
+        questions = [q for q in questions if str(q["id"]) not in predictions]
     else:
         predictions = {}
 

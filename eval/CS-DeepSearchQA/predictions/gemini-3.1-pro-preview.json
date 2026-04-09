@@ -1,0 +1,272 @@
+{
+    "1": {
+        "model": "gemini-3.1-pro-preview",
+        "response": "解析：在深度神经网络中，模型由于参数量巨大（过参数化），极易在训练数据上表现出过拟合（Overfitting）现象。这会导致模型不仅学习到了数据的普遍特征，还记住了训练集中的具体细节甚至噪声。这种现象在机器学习安全与隐私领域被称为“非期望记忆”（Unintended Memorization），极易导致敏感训练数据的泄露。\n\n为了应对这一问题，研究者引入了**差分隐私（Differential Privacy, DP）**框架，并提出了**差分隐私随机梯度下降（DP-SGD）**这一特定的网络训练技术。与传统的正则化方法（如Dropout或权重衰减，它们只能在经验上缓解过拟合）不同，差分隐私训练通过在梯度更新过程中进行梯度裁剪（Gradient Clipping）并注入适量的随机噪声，从数学理论的“定义上”（by definition）严格保证了模型输出不会因为任何单个训练样本的加入或移除而发生显著变化。因此，该技术不仅能有效提升模型的泛化能力并抵抗过拟合，还“定义性地”提供了一种防止模型产生非期望记忆的严格保障。\n\n确切答案：差分隐私训练（Differentially Private Training）/ 差分隐私随机梯度下降（DP-SGD）\n\n置信度：95%",
+        "usage": {
+            "completion_tokens": 2693,
+            "prompt_tokens": 130,
+            "total_tokens": 2823,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 2415,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "text_tokens": 130,
+                "image_tokens": 0
+            },
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        }
+    },
+    "5": {
+        "model": "gemini-3.1-pro-preview",
+        "response": "解析：根据题干中的线索进行逆向推导：\n1. 题干中提到的“知名的文本到文本转换Transformer预训练模型”指的是 **T5** (Text-to-Text Transfer Transformer)。在“孟加拉语语法错误检测”任务中，研究人员通常使用衍生自 T5 的多语言或特定语言模型（如 mT5 或 BanglaT5）。\n2. 题干指出，T5 模型是另一个旨在实现“终身少样本语言学习 (Lifelong Few-Shot Language Learning)”且核心方法为“提示调优 (Prompt Tuning)”的统一框架的构建基石。\n3. 这个统一框架指的是 **LFPT5**。该框架出自发表于 ICLR 2022 的论文《LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5》。\n4. 查阅该论文可知，提出并构建该框架的第一作者（首位学者）是 **Chengwei Qin**（秦成伟）。\n\n确切答案：Chengwei Qin（秦成伟）\n\n置信度：100%",
+        "usage": {
+            "completion_tokens": 1735,
+            "prompt_tokens": 153,
+            "total_tokens": 1888,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 1493,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "text_tokens": 153,
+                "image_tokens": 0
+            },
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        }
+    },
+    "14": {
+        "model": "gemini-3.1-pro-preview",
+        "response": "解析：根据题目描述，该开源项目A是一个支持“可微弹性变形和可微塑性变形”的高性能物理模拟器（如 ChainQueen 或基于此的软体/连续介质模拟器），其底层依赖的专门定制的新型可微编程语言C是“Taichi”（太极）语言（或其可微版本 DiffTaichi）。Taichi 是一种专为高性能计算机图形学和物理模拟（特别是基于物质点法 MPM 的弹塑性形变模拟）设计的领域特定语言（DSL），支持自动微分。提出该编程语言的核心学术论文（如《Taichi: a language for high-performance computation on spatially sparse data structures》以及《DiffTaichi: Differentiable Programming for Physical Simulation》）的第一作者，也是该语言的创始人，是清华大学校友、麻省理工学院（MIT）博士胡渊鸣。\n\n确切答案：胡渊鸣（Yuanming Hu）\n\n置信度：100%",
+        "usage": {
+            "completion_tokens": 1739,
+            "prompt_tokens": 147,
+            "total_tokens": 1886,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 1530,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "text_tokens": 147,
+                "image_tokens": 0
+            },
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        }
+    },
+    "15": {
+        "model": "gemini-3.1-pro-preview",
+        "response": "解析：您提供的这段话是对某项研究工作的概括性描述，通篇使用了“某项”、“特定场景”、“新发现”、“特定技术社区”等泛指词汇，并没有给出任何具体的专有名词、研究领域或背景信息。因此，仅凭这段描述无法推断出该数据集的具体名字。这通常是因为提问时遗漏了相关的背景阅读材料或上下文（例如这是一道阅读理解题，但缺少了原文）。\n\n确切答案：文中未提及（缺少上下文信息，无法确定具体名称）\n\n置信度：100%",
+        "usage": {
+            "completion_tokens": 4691,
+            "prompt_tokens": 140,
+            "total_tokens": 4831,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 4568,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "text_tokens": 140,
+                "image_tokens": 0
+            },
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        }
+    },
+    "17": {
+        "model": "gemini-3.1-pro-preview",
+        "response": "解析：根据题干描述，我们可以逐步解构出以下关键信息：\n1. **“视觉-语言领域著名的预训练范式”**：指的是OpenAI提出的 **CLIP**（Contrastive Language-Image Pre-training，对比语言-图像预训练），它通过对比学习在视觉和语言之间建立了强大的对齐关系。\n2. **“扩展了该范式并在特定的零样本学习任务上进行了性能验证”**：这指向了Meta AI提出的 **ImageBind**。ImageBind扩展了CLIP的对比学习思想，以“图像”为核心枢纽，将文本、音频、深度图、热成像和IMU（惯性传感器）等6种模态绑定在同一个嵌入空间中，并在涌现的零样本（Zero-shot）跨模态检索和分类任务上验证了其强大的性能（例如无需直接对齐音频和文本，即可实现零样本音频-文本检索）。\n3. **“另一个能够将任意模态输入统一视为标记序列并学习联合嵌入的技术”**：这准确描述了 **Meta-Transformer**（或Data2Vec等基于Token的统一架构）。Meta-Transformer通过将不同模态的数据统一转化为标记序列（Token Sequences），并输入到共享的Transformer编码器中学习联合嵌入。\n4. **“共同服务于一个更宏观的学习目标”**：ImageBind（基于对比学习的多模态对齐）与Meta-Transformer（基于统一Token序列的共享编码）正是当前人工智能领域旨在实现 **“统一多模态学习”**（Unified Multimodal Learning / Omni-modal Learning）这一宏观目标的两大核心技术路径。\n\n确切答案：ImageBind\n\n置信度：95%",
+        "usage": {
+            "completion_tokens": 3887,
+            "prompt_tokens": 143,
+            "total_tokens": 4030,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 3521,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "text_tokens": 143,
+                "image_tokens": 0
+            },
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        }
+    },
+    "37": {
+        "model": "gemini-3.1-pro-preview",
+        "response": "解析：\n1. **技术框架（Technology Framework）**：题干中提到的“在分布偏移（Distribution Shift）场景下进行全面梳理”的框架指的是 **测试时适应（Test-Time Adaptation, TTA）** 或 **推理期适应**。该框架允许模型在推理阶段仅依赖无标签的测试数据进行动态参数更新，从而解决训练集与测试集分布不一致的问题。\n2. **安全威胁与突出特性（Security Threat & Characteristic）**：近期的安全评估研究聚焦于 TTA 在面对“对抗性攻击（Adversarial Attacks）”这一特定安全威胁时的表现，揭示了 TTA 具有**固有的对抗鲁棒性**。因为模型在推理阶段的动态更新会破坏攻击者基于静态模型生成的对抗扰动。\n3. **特定分支与额外模态（Specific Branch & Extra Modality）**：在信号处理任务（如受噪语音识别、生物医学信号处理等）中，单一信号模态往往容易受到严重干扰。为了提升推理阶段的适应能力，研究人员提出引入另一种不受干扰的“额外模态”（如视觉/唇语模态辅助语音信号）来指导模型的动态更新。这种独特地整合额外模态信息以增强推理阶段模型适应能力的技术，在学术界被称为 **跨模态测试时适应（Cross-Modal Test-Time Adaptation）** 或 **多模态测试时适应（Multimodal Test-Time Adaptation）**。\n\n确切答案：跨模态测试时适应 (Cross-Modal Test-Time Adaptation, CM-TTA) / 多模态测试时适应 (Multimodal TTA)\n\n置信度：90%",
+        "usage": {
+            "completion_tokens": 3528,
+            "prompt_tokens": 170,
+            "total_tokens": 3698,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 3169,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "text_tokens": 170,
+                "image_tokens": 0
+            },
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        }
+    },
+    "38": {
+        "model": "gemini-3.1-pro-preview",
+        "response": "解析：题干中提到的“以‘Human’开头的著名代码生成基准”是 HumanEval。提到的“具有状态空间特性的新型序列模型”指的是状态空间模型（State Space Model, SSM，如近期热门的 Mamba 架构，Mistral 等公司近期发布了基于 Mamba 的代码大模型 Codestral Mamba）。这种新型架构常被用来与业界长期以来的“主流骨干架构”进行对比。\n这个长期统治大语言模型领域的主流骨干架构正是 **Transformer**。在 Transformer 的原始论文《Attention Is All You Need》(2017) 中，它最初是为了机器翻译任务而设计的，因此采用了**编码器-解码器（Encoder-Decoder）**结构；同时，原始论文采用了一种特定的层归一化约定，即后置层归一化（Post-Layer Normalization，在残差连接之后进行归一化），这与后来许多仅解码器（Decoder-only）大模型所采用的前置层归一化（Pre-LN）有所不同。\n\n确切答案：Transformer（或 Transformer架构）\n\n置信度：100%",
+        "usage": {
+            "completion_tokens": 1470,
+            "prompt_tokens": 217,
+            "total_tokens": 1687,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 1227,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "text_tokens": 217,
+                "image_tokens": 0
+            },
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        }
+    },
+    "19": {
+        "model": "gemini-3.1-pro-preview",
+        "response": "解析：题干中提到的“探测宇宙中时空涟漪的观测技术”指的是引力波探测技术，而“致密天体系统”通常指双黑洞或双中子星等致密双星系统。在处理引力波数据进行参数推断时，传统的贝叶斯推断方法（如马尔可夫链蒙特卡洛 MCMC 方法）计算成本极高且耗时漫长。为了解决这一问题并处理信号中的时间平移等对称性，研究人员提出了一种名为“群等变神经后验估计”（Group-Equivariant Neural Posterior Estimation, 简称 GNPE）的深度学习方法。该方法不仅能够保持数据的精确对称性（维持严格变换不变性），还将引力波参数的推断时间相较于传统方法缩短了约一千倍。提出这项突破性方法的核心论文《Group-Equivariant Neural Posterior Estimation》（发表于 ICLR 2022）的第一作者（首位贡献者）是来自马克斯·普朗克研究所的学者 Maximilian Dax。\n\n确切答案：Maximilian Dax（马克西米利安·达克斯）\n置信度：100%",
+        "usage": {
+            "completion_tokens": 2686,
+            "prompt_tokens": 148,
+            "total_tokens": 2834,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 2430,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "text_tokens": 148,
+                "image_tokens": 0
+            },
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        }
+    },
+    "21": {
+        "model": "gemini-3.1-pro-preview",
+        "response": "解析：根据题目描述，这项技术不使用传统的PIN码或密码，而是依赖人体的独特物理特征（如指纹、虹膜、面部、静脉等）来区分授权用户与欺诈者，这正是“生物识别技术”（Biometrics）的核心定义。在发展历史上，生物识别（如自动化指纹识别系统）最早主要被警察局、政府等非营利性的公共服务部门（用于执法和身份登记）以及银行、金融机构等以盈利为目的的商业部门（用于金库门禁和客户身份验证）所采纳。此外，题目中提到的“能整合多种生物特征”的更先进形态，正是指代“多模态生物识别技术”（Multimodal Biometrics），即同时结合指纹、人脸、虹膜等多种特征进行综合验证的技术。因此，这项核心的身份验证技术是生物识别技术。\n\n确切答案：生物识别技术（Biometrics / 生物特征身份验证）\n\n置信度：100%",
+        "usage": {
+            "completion_tokens": 1869,
+            "prompt_tokens": 177,
+            "total_tokens": 2046,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 1653,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "text_tokens": 177,
+                "image_tokens": 0
+            },
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        }
+    },
+    "50": {
+        "model": "gemini-3.1-pro-preview",
+        "response": "解析：根据题干中的核心描述“采用模块化网络设计、以语言解码器作为管理不同模态的通用接口的通用多模态大语言模型”以及“首个在纯文本和多模态场景中都展现出某种特定协作效应的模型”，这完全对应了由阿里巴巴团队提出的多模态大语言模型 **mPLUG-Owl2**。\n\n在 mPLUG-Owl2 的论文《mPLUG-Owl2: Revolutionizing Multi-modal Large Language Model with Modality Collaboration》中，其摘要明确写道：“we propose mPLUG-Owl2, a versatile multi-modal large language model that leverages a modularized network design, with the language decoder acting as a universal interface for managing different modalities. mPLUG-Owl2 is the first MLLM to demonstrate the modality collaboration phenomenon in both pure-text and multi-modal scenarios...”（我们提出了mPLUG-Owl2……它采用模块化网络设计，以语言解码器作为管理不同模态的通用接口。mPLUG-Owl2是首个在纯文本和多模态场景中均展示出模态协作现象的MLLM）。该论文的第一作者 Qinghao Ye（叶青昊）也正是参与提出详细字幕（Detailed Captioning）多样性评价指标等相关视觉-语言任务研究的核心学者。\n\n确切答案：mPLUG-Owl2\n\n置信度：100%",
+        "usage": {
+            "completion_tokens": 3191,
+            "prompt_tokens": 169,
+            "total_tokens": 3360,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 2887,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "text_tokens": 169,
+                "image_tokens": 0
+            },
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+        }
+    }
+}

@@ -4,11 +4,19 @@ import random
 import asyncio
 from urllib import request
 from typing import List, Dict, Any, Optional
-from .base import BaseTool
 import arxiv
 from bs4 import BeautifulSoup
+import logging
+import requests
+import json
+import os
+from react_agent.tools import BaseTool  # 假设你的基类保存在 base.py 中
 
 logger = logging.getLogger(__name__)
+
+
+from dotenv import load_dotenv
+load_dotenv()
 
 
 class ArxivSearchEngine(BaseTool):
@@ -251,10 +259,6 @@ class GetRecentAIPapers(BaseTool):
             return f"获取最新 AI 论文时发生错误: {str(e)}"
 
 
-import json
-import os
-from typing import Any
-from .base import BaseTool  # 假设你的基类保存在 base.py 中
 
 
 class ListSkillsTool(BaseTool):
@@ -324,21 +328,143 @@ class GetSkillPromptTool(BaseTool):
             return f"Error: 读取技能 Prompt 时发生错误: {str(e)}"
 
 
+class JinaReaderTool(BaseTool):
+    """工具：使用 Jina Reader API 读取并提取指定 URL 的网页内容"""
+
+    def __init__(self, api_key: str = None):
+        super().__init__(
+            name="jina_reader",
+            description="读取并提取指定 URL 的网页文本内容，将其转换为适合 LLM 阅读的格式。参数格式为 {'url': '目标网址'}"
+        )
+        # 优先使用传入的 api_key，否则尝试从环境变量获取
+        self.api_key = api_key or os.environ.get("JINA_API_KEY", "")
+
+    def run(self, params: Any) -> str:
+        """核心执行方法，发送 GET 请求读取网页内容"""
+        # 1. 解析参数
+        url = ""
+        if isinstance(params, dict):
+            url = params.get("url", "")
+        elif isinstance(params, str):
+            try:
+                parsed_params = json.loads(params)
+                if isinstance(parsed_params, dict):
+                    url = parsed_params.get("url", "")
+                else:
+                    url = params
+            except json.JSONDecodeError:
+                url = params
+
+        if not url:
+            return "Error: 缺少必需的参数 'url'"
+
+        url = url.strip()
+
+        # 2. 构建请求
+        target_url = f"https://r.jina.ai/{url}"
+        headers = {}
+        if self.api_key:
+            headers["Authorization"] = f"Bearer {self.api_key}"
+
+        # 3. 发送请求并返回结果
+        try:
+            logger.info(f"正在使用 Jina Reader 读取 URL: {url}")
+            response = requests.get(target_url, headers=headers, timeout=15)
+
+            # 检查响应状态码
+            if response.status_code == 200:
+                return response.text
+            else:
+                return f"Error: 读取网页失败，状态码 {response.status_code} - {response.text}"
+
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Jina Reader 网络请求失败: {e}")
+            return f"Error: 请求网页时发生网络异常: {str(e)}"
+        except Exception as e:
+            logger.error(f"Jina Reader 执行失败: {e}")
+            return f"Error: 执行读取时发生未知错误: {str(e)}"
+
+
+class JinaSearchTool(BaseTool):
+    """工具：使用 Jina Search API 在网络上进行搜索并返回结果"""
+
+    def __init__(self, api_key: str = None):
+        super().__init__(
+            name="jina_search",
+            description="在网络上搜索信息并返回搜索引擎结果页面 (SERP) 的文本内容。参数格式为 {'query': '搜索关键词'}"
+        )
+        self.api_key = api_key or os.environ.get("JINA_API_KEY", "")
+
+    def run(self, params: Any) -> str:
+        """核心执行方法，发送 GET 请求进行搜索"""
+        # 1. 解析参数
+        query = ""
+        if isinstance(params, dict):
+            query = params.get("query", "")
+        elif isinstance(params, str):
+            logger.info(f"正在使用 Jina Search 解析参数: {params}")
+            try:
+                # 尝试解析大模型传来的 JSON 字符串
+                parsed_params = json.loads(params.strip())
+                if isinstance(parsed_params, dict):
+                    query = parsed_params.get('query', '')
+                else:
+                    query = params
+            except json.JSONDecodeError:
+                # 如果不是合法的 JSON 格式，说明大模型可能直接传了纯文本查询词
+                query = params
+
+
+        if not query:
+            return "Error: 缺少必需的参数 'query'"
+
+        query = query.strip()
+
+        # 2. 构建请求
+        target_url = "https://s.jina.ai/"
+        headers = {}
+        if self.api_key:
+            headers["Authorization"] = f"Bearer {self.api_key}"
+
+        headers["X-Respond-With"] = "no-content"
+
+        # 注意: 示例代码中包含 "X-Respond-With": "no-content"
+        # 如果携带此 header，API 可能不会返回具体内容。
+        # 作为给大模型提供的工具，我们需要搜索结果的具体文本，因此这里注释掉该 header。
+        # 若需要纯粹的 JSON 格式或特定行为，可以按需取消注释或修改。
+        # headers["X-Respond-With"] = "no-content"
+
+        # 3. 发送请求并返回结果
+        try:
+            logger.info(f"正在使用 Jina Search 搜索关键词: {query}")
+            # 使用 params 传递查询参数自动处理 URL 编码
+            response = requests.get(target_url, params={"q": query}, headers=headers, timeout=15)
+
+            if response.status_code == 200:
+                logger.info(f"Jina Search 搜索成功，正在返回结果...")
+                return response.text
+            else:
+                return f"Error: 搜索失败，状态码 {response.status_code} - {response.text}"
+
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Jina Search 网络请求失败: {e}")
+            return f"Error: 搜索时发生网络异常: {str(e)}"
+        except Exception as e:
+            logger.error(f"Jina Search 执行失败: {e}")
+            return f"Error: 执行搜索时发生未知错误: {str(e)}"
+
 # ==========================================
 # 测试代码 (Test Cases)
 # ==========================================
 if __name__ == "__main__":
+    # 为了测试方便，你可以在这里设置一个假的或真实的 API Key
+    # os.environ["JINA_API_KEY"] = "your_jina_api_key_here"
 
-    # 1. 测试获取列表
-    list_tool = ListSkillsTool()
-    print("--- 测试 ListSkillsTool ---")
-    print(list_tool.to_str())
-    print(list_tool.run({}))
 
-    # 2. 测试获取具体 Prompt
-    get_tool = GetSkillPromptTool()
-    print("\n--- 测试 GetSkillPromptTool ---")
-    print(get_tool.to_str())
-    # 模拟大模型传入的参数
-    print(get_tool.run({"skill_name": "data_analyst"}))
-    print(get_tool.run({"skill_name": "unknown_skill"}))
+    # 2. 测试 Jina Search
+    search_tool = JinaSearchTool()
+    print("--- 测试 JinaSearchTool ---")
+    print(search_tool.to_str())
+    # 填入搜索关键词进行测试
+    search_result = search_tool.run({"query": "2025年"})
+    print(f"Search 结果前 200 个字符: \n{search_result}...")

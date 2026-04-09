@@ -51,5 +51,29 @@
             "description": "Read the full content of a stored paper in markdown format\n参数格式: {\"type\": \"object\", \"properties\": {\"paper_id\": {\"type\": \"string\", \"description\": \"The arXiv ID of the paper to read\"}}, \"required\": [\"paper_id\"]}",
             "mcp_tool_name": "read_paper"
         }
+    ],
+    "https://mcp.api-inference.modelscope.net/a113bf4a49a546/sse": [
+        {
+            "name": "jina_reader",
+            "description": "Read and extract content from web page.\n参数格式: {\"type\": \"object\", \"properties\": {\"url\": {\"type\": \"string\", \"format\": \"uri\", \"description\": \"URL of the webpage to read and extract content from\"}, \"customTimeout\": {\"type\": \"number\", \"description\": \"Override timeout in seconds for slow sites\"}, \"page\": {\"type\": \"number\", \"default\": 1, \"description\": \"Page number for paginated content (1-indexed)\"}}, \"required\": [\"url\"], \"additionalProperties\": false, \"$schema\": \"http://json-schema.org/draft-07/schema#\"}",
+            "mcp_tool_name": "jina_reader"
+        },
+        {
+            "name": "jina_search",
+            "description": "Search the web. The response includes only partial contents of each web page. Use jina reader for full content.\n参数格式: {\"type\": \"object\", \"properties\": {\"query\": {\"type\": \"string\", \"minLength\": 1, \"description\": \"Search query\"}, \"count\": {\"type\": \"number\", \"default\": 5, \"description\": \"Number of search results to return\"}, \"siteFilter\": {\"type\": \"string\", \"description\": \"Limit search to specific domain (e.g., 'github.com')\"}}, \"required\": [\"query\"], \"additionalProperties\": false, \"$schema\": \"http://json-schema.org/draft-07/schema#\"}",
+            "mcp_tool_name": "jina_search"
+        }
+    ],
+    "https://mcp.api-inference.modelscope.net/d97fc1a9c49e4b/sse": [
+        {
+            "name": "jina_reader",
+            "description": "Read and extract content from web page.\n参数格式: {\"type\": \"object\", \"properties\": {\"url\": {\"type\": \"string\", \"format\": \"uri\", \"description\": \"URL of the webpage to read and extract content from\"}, \"customTimeout\": {\"type\": \"number\", \"description\": \"Override timeout in seconds for slow sites\"}, \"page\": {\"type\": \"number\", \"default\": 1, \"description\": \"Page number for paginated content (1-indexed)\"}}, \"required\": [\"url\"], \"additionalProperties\": false, \"$schema\": \"http://json-schema.org/draft-07/schema#\"}",
+            "mcp_tool_name": "jina_reader"
+        },
+        {
+            "name": "jina_search",
+            "description": "Search the web. The response includes only partial contents of each web page. Use jina reader for full content.\n参数格式: {\"type\": \"object\", \"properties\": {\"query\": {\"type\": \"string\", \"minLength\": 1, \"description\": \"Search query\"}, \"count\": {\"type\": \"number\", \"default\": 5, \"description\": \"Number of search results to return\"}, \"siteFilter\": {\"type\": \"string\", \"description\": \"Limit search to specific domain (e.g., 'github.com')\"}}, \"required\": [\"query\"], \"additionalProperties\": false, \"$schema\": \"http://json-schema.org/draft-07/schema#\"}",
+            "mcp_tool_name": "jina_search"
+        }
     ]
 }

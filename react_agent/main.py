@@ -14,6 +14,11 @@ my_client = OpenAI(
     base_url="http://127.0.0.1:6009/v1"
 )
 
+dmx_client = OpenAI(
+    api_key=os.getenv('MY_DMX_API_KEY'),
+    base_url=os.getenv('DMX_API_BASE')
+)
+
 def main():
     """主函数：演示ReAct循环的使用"""
     # 初始化工具
@@ -26,7 +31,7 @@ def main():
         print(f"- {tool.name}")
 
     # 定义任务
-    task = """今天上海的天气如何"""
+    task = """BrowseComp-ZH最新的评测榜单"""
 
     # 轨迹文件名 时间+数据集名字
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -35,7 +40,7 @@ def main():
 
     reactor = ResearchLoop(
         tools=tools,
-        llm_executor=LLMExecutor(client=my_client, model_name="checkpoint-330-merged"),
+        llm_executor=LLMExecutor(client=dmx_client, model_name="qwen3.5-plus"),
         max_steps=30
     )
 

@@ -1,0 +1,1352 @@
+{
+    "56": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据问题描述，这位导演在26岁时开始专职导演生涯并创作了第一个电影剧本，65岁后不再执导电影，享年89岁。这些条件与瑞典导演英格玛·伯格曼的生平高度吻合：他于1944年（26岁）担任赫尔辛堡市剧院艺术总监，开始专职导演工作，同年完成了第一个电影剧本《折磨》；他的最后一部电影《芬妮与亚历山大》拍摄于1982年（64岁），之后不再执导电影；他于2007年去世，享年89岁。其他知名导演均不完全符合这些年龄和职业节点。\n\n确切答案：英格玛·伯格曼\n置信度：95%",
+        "usage": {
+            "completion_tokens": 4637,
+            "prompt_tokens": 94,
+            "total_tokens": 4731,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 4491,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "英格玛·伯格曼",
+            "model_answer": "英格玛·伯格曼",
+            "reasoning": "extracted_final_answer 与 correct_answer 均为“英格玛·伯格曼”，两者一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "196": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "经过分析，这款游戏很可能为《僵尸毁灭工程》（Project Zomboid）。它是一款采用俯视角2D图形（也可视为2D）的生存冒险游戏，具有僵尸恐怖元素，玩家在创建角色时可以选择多种职业（如消防员、警察、医生等，虽然职业数量超过六种，但可能被简化或概括为六类）。发行商The Indie Stone位于英国，属于欧洲游戏公司。因此，该游戏基本符合所有描述条件。\n\n解析：游戏《僵尸毁灭工程》是一款2D等距视角的生存冒险游戏，玩家需要在僵尸末日中管理资源、建造基地并抵抗僵尸，恐怖氛围浓厚。角色创建时可选择不同职业，影响初始技能和玩法。发行商The Indie Stone为英国公司，属于欧洲。尽管职业数量并非严格精确的六种，但它是同时满足2D、生存、恐怖、职业系统和欧洲发行商条件的最知名游戏。\n\n确切答案：僵尸毁灭工程（Project Zomboid）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 11161,
+            "prompt_tokens": 89,
+            "total_tokens": 11250,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 10950,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "潜渊症",
+            "model_answer": "僵尸毁灭工程（Project Zomboid）",
+            "reasoning": "extracted_final_answer 为“僵尸毁灭工程（Project Zomboid）”，而 correct_answer 为“潜渊症”。两者是不同的游戏名称，存在实质性差异，因此该回答不正确。",
+            "correct": "no",
+            "confidence": 75
+        }
+    },
+    "156": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据线索分析，该非物质文化遗产艺术形式具有以下特征：我国特有、主要分为四个流派、其中最著名的一派创始人卒于70岁，与另外三位大师齐名，且其中一个主要发源地以酒类知名。篆刻（中国篆刻）符合这些条件：篆刻是中国特有的传统艺术，被列为非物质文化遗产；历史上形成浙派、皖派、歙派、邓派等主要流派；其中浙派创始人丁敬卒于70岁，与何震、程邃、邓石如等三位篆刻大师享有盛誉；篆刻的重要发源地之一安徽以古井贡酒闻名。因此，该项艺术形式为篆刻。\n\n确切答案：篆刻（中国篆刻）\n置信度：85%",
+        "usage": {
+            "completion_tokens": 14611,
+            "prompt_tokens": 109,
+            "total_tokens": 14720,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 14452,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "内画",
+            "model_answer": "篆刻（中国篆刻）",
+            "reasoning": "extracted_final_answer 为“篆刻（中国篆刻）”，而 correct_answer 为“内画”。两者是不同的艺术形式，存在实质性差异，因此该答案错误。",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "199": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "该问题描述了一个国家5A级旅游景区，位于某省东南部，并且其最早的有语言和文字流传的历史可追溯到4000多年前。结合中国的5A景区和历史文化背景，位于湖南省东南部株洲市炎陵县的炎帝陵符合条件。炎帝陵是中华民族始祖炎帝神农氏的安息地，炎帝文化距今约5000年，符合“4000多年前”的历史记载，且该地区有连续的语言和文字流传历史。此外，炎帝陵于2012年被评为国家5A级旅游景区，地理位置在湖南省东南部，与描述一致。\n\n解析：炎帝陵是纪念中华民族始祖炎帝神农氏的陵墓，位于湖南省株洲市炎陵县，地处湖南省东南部。炎帝神农氏所处的时代约为距今5000年前，属于新石器时代晚期，后世文献中有关于炎帝的记载，符合“最早的有语言和文字流传的历史可追溯到4000多年前”的描述。炎帝陵景区在2012年被评定为国家5A级旅游景区，因此满足所有条件。\n\n确切答案：炎帝陵\n置信度：85%",
+        "usage": {
+            "completion_tokens": 8832,
+            "prompt_tokens": 90,
+            "total_tokens": 8922,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 8599,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "长白山",
+            "model_answer": "炎帝陵",
+            "reasoning": "extracted_final_answer 是“炎帝陵”，而 correct_answer 是“长白山”。两者是不同的景区名称，存在实质性差异，因此该回答不正确。",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "257": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "该题目描述了一种双手演奏的乐器，其左右手技法分别为7种和8种，传统上可分为七大流派。这些特征符合古筝的特点：古筝右手有托、劈、抹、挑、勾、剔、打、摘八种基本技法，左手有颤、按、滑、揉、点、泛、煞七种基本技法；古筝的主要流派包括陕西筝、河南筝、山东筝、潮州筝、客家筝、浙江筝和福建筝七大类。在客家筝派的代表作《崖山哀》中，表达了对南宋少帝赵昺英年早逝的惋惜。赵昺的师傅是陆秀夫，陆秀夫作为丞相和帝师，在崖山之战中背负赵昺跳海殉国。\n\n确切答案：陆秀夫  \n置信度：80%",
+        "usage": {
+            "completion_tokens": 13512,
+            "prompt_tokens": 102,
+            "total_tokens": 13614,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 13332,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "孔子",
+            "model_answer": "陆秀夫",
+            "reasoning": "extracted_final_answer 为“陆秀夫”，而 correct_answer 为“孔子”，两者明显不一致，因此该回答错误。",
+            "correct": "no",
+            "confidence": 80
+        }
+    },
+    "151": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：非那西丁（Phenacetin）是一种常用于治疗炎症和解热镇痛的药物，其化学式为C10H13NO2，包含碳、氢、氮、氧四种元素。化学式中所有原子的总个数为26，26是奇数13的倍数（13>1）。该药物因与肾盂癌和尿路上皮癌相关，曾被国际癌症研究机构（IARC）列为2B类致癌物。因此，非那西丁满足题目中所有条件。\n\n确切答案：非那西丁（Phenacetin）\n置信度：80%",
+        "usage": {
+            "completion_tokens": 12693,
+            "prompt_tokens": 104,
+            "total_tokens": 12797,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 12568,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "甲硝唑",
+            "model_answer": "非那西丁（Phenacetin）",
+            "reasoning": "提取出的最终答案是“非那西丁（Phenacetin）”，而给定的正确答案是“甲硝唑”。两者是不同的药物名称，存在实质性差异，因此该回答不正确。",
+            "correct": "no",
+            "confidence": 80
+        }
+    },
+    "271": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：该描述指向《中华人民共和国反垄断法》。该法于2007年8月30日通过，2008年8月1日施行，立法过程符合“两年三审、次年起施行”；2009年，商务部依据该法禁止可口可乐收购汇源果汁，即法案施行次年针对两家公司的收购行为发布禁令；截至2025年，该法在2022年迎来首次修正，距2008年约14年，与“时隔15年后迎来一次修正”基本吻合。因此，两家公司为可口可乐和汇源果汁，注册地分别为美国和中华人民共和国。\n\n确切答案：可口可乐公司注册地是美国，汇源果汁公司注册地是中国。\n置信度：90%",
+        "usage": {
+            "completion_tokens": 4474,
+            "prompt_tokens": 123,
+            "total_tokens": 4597,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 4324,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "美国特拉华州威尔明顿市和开曼群岛",
+            "model_answer": "可口可乐公司注册地是美国，汇源果汁公司注册地是中国。",
+            "reasoning": "正确答案是“美国特拉华州威尔明顿市和开曼群岛”。提取出的答案为“美国和中国”。其中第一项只给出了国家，未匹配到具体注册地“美国特拉华州威尔明顿市”；第二项则与“开曼群岛”明显不一致，写成了“中国”。两者存在实质性差异，因此不匹配。",
+            "correct": "no",
+            "confidence": 90
+        }
+    },
+    "19": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据线索分析，“21世纪初中国体育史上有两大突破”指的是2001年北京申奥成功和中国男足首次晋级世界杯；“同年，某家美国大型公司搬迁到美国东部五大湖区的一家城市”指的是波音公司于2001年将总部迁至芝加哥；芝加哥出生的主教练格雷格·波波维奇（出生于印第安纳州东芝加哥，常被关联到芝加哥地区）在2003年第二次获得NBA总冠军，符合“数年后第二次获得了某项体育赛事总冠军”。因此，同年（2001年）的CBA最有价值球员（MVP）是姚明，他在2000-2001赛季荣获常规赛MVP。\n\n确切答案：姚明  \n置信度：85%",
+        "usage": {
+            "completion_tokens": 5245,
+            "prompt_tokens": 111,
+            "total_tokens": 5356,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 5093,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "2003年MVP刘玉栋",
+            "model_answer": "姚明",
+            "reasoning": "提取出的最终答案是“姚明”，而给定的正确答案是“2003年MVP刘玉栋”。两者姓名和对应答案均不一致，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "106": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据题目线索，这位编剧出生在中国北方省份，18岁时在中国南方某军区服役4年，66岁时加入中国作家协会。通过对中国知名编剧的生平进行排查，朱秀海（河南人，北方省份）符合部分条件：他18岁入伍，曾在海军服役（可能属南方军区），且兼具作家和编剧身份。然而，其加入中国作家协会的具体年龄尚不确定，可能并非恰好66岁，因此匹配度有限。\n\n确切答案：朱秀海\n置信度：30%",
+        "usage": {
+            "completion_tokens": 14240,
+            "prompt_tokens": 92,
+            "total_tokens": 14332,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 14129,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "王大为",
+            "model_answer": "朱秀海",
+            "reasoning": "提取出的最终答案是“朱秀海”，而正确答案是“王大为”，两者不是同一人，存在实质性差异，因此该答案错误。",
+            "correct": "no",
+            "confidence": 30
+        }
+    },
+    "285": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据给定的线索：该化学物质在1964-1968年间首次被发现，分子量为201，化学式中含有超过四种元素，外观为白色结晶粉末。安赛蜜（乙酰磺胺酸钾）于1967年被发现，分子量约为201.24，化学式为C₄H₄KNO₄S，含有碳、氢、钾、氮、氧、硫六种元素，且为白色结晶粉末，完全符合所有条件。\n\n确切答案：乙酰磺胺酸钾（安赛蜜）\n置信度：90%",
+        "usage": {
+            "completion_tokens": 3336,
+            "prompt_tokens": 105,
+            "total_tokens": 3441,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 3218,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "乙酰磺胺酸钾",
+            "model_answer": "乙酰磺胺酸钾",
+            "reasoning": "extracted_final_answer 与 correct_answer 均为“乙酰磺胺酸钾”，两者一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 90
+        }
+    },
+    "76": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "",
+        "usage": {
+            "completion_tokens": 20084,
+            "prompt_tokens": 110,
+            "total_tokens": 20194,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 20083,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "摆渡人",
+            "model_answer": null,
+            "reasoning": "[response] 为空，无法提取出任何最终答案。因此 extracted_final_answer 与正确答案“摆渡人”不匹配。",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "226": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：该问题要求识别一部中国法律法规，其结构为八章二十六条，且第二章第五条的规定有助于延长国民整体寿命。虽然现行《中华人民共和国体育法》的章节和条款数（如2022年修订版为十二章七十四条）与描述不完全一致，但早期版本（如1995年版）为八章，且第二章第五条通常涉及推行全民健身计划、增强人民体质等内容，直接促进健康长寿。其他可能的法律法规如《基本医疗卫生与健康促进法》等，其章节条款数差异较大，而《体育法》的核心内容与延长寿命的关联最为直接和广泛认可。\n\n确切答案：《中华人民共和国体育法》\n置信度：70%",
+        "usage": {
+            "completion_tokens": 7467,
+            "prompt_tokens": 89,
+            "total_tokens": 7556,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 7323,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "中华人民共和国婚姻法",
+            "model_answer": "《中华人民共和国体育法》",
+            "reasoning": "extracted_final_answer 为《中华人民共和国体育法》，而 correct_answer 为《中华人民共和国婚姻法》。两者是不同的法律名称，存在实质性差异，因此该答案不匹配。",
+            "correct": "no",
+            "confidence": 70
+        }
+    },
+    "174": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "根据描述，这部电影最符合2016年上映的《摆渡人》。该片明星云集，由王家卫监制（其以文艺片见长且屡获大奖），导演张嘉佳同时是原小说作者。电影主题曲《让我留在你身边》的创作者为唐汉霄（作词作曲）。\n\n解析：问题描述的电影特征包括：明星云集、知名导演监制（获奖众多且擅长特定类型）、导演为原作品作者。这些特征与电影《摆渡人》高度吻合，其主题曲《让我留在你身边》由唐汉霄创作。\n确切答案：唐汉霄\n置信度：80%",
+        "usage": {
+            "completion_tokens": 5565,
+            "prompt_tokens": 106,
+            "total_tokens": 5671,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 5425,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "唐汉霄",
+            "model_answer": "唐汉霄",
+            "reasoning": "提取出的最终答案是“唐汉霄”，与 correct_answer“唐汉霄”完全一致，没有实质性差异，因此答案正确。",
+            "correct": "yes",
+            "confidence": 80
+        }
+    },
+    "233": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据描述，该法规具有六章、一百一十九条，且在第一百一十九条中明确规定废止一部曾在1994年修订过的法规。符合这一特征的是《中华人民共和国治安管理处罚法》，该法共有六章，条文数量为一百一十九条，其第一百一十九条明确指出废止1994年修订的《中华人民共和国治安管理处罚条例》。\n\n确切答案：中华人民共和国治安管理处罚法  \n置信度：95%",
+        "usage": {
+            "completion_tokens": 880,
+            "prompt_tokens": 103,
+            "total_tokens": 983,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 791,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "中华人民共和国治安管理处罚法",
+            "model_answer": "中华人民共和国治安管理处罚法",
+            "reasoning": "extracted_final_answer 与 correct_answer 均为“中华人民共和国治安管理处罚法”，二者完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "235": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：该风景区为白水台，位于云南省香格里拉市。其钙华梯田景观由富含碳酸钙的泉水沉积形成，涉及经典的化学反应（Ca(HCO3)2 → CaCO3↓ + CO2↑ + H2O），纯自然形成。当地年平均气温约10℃，是纳西族（受汉文化影响较深）的发源地之一。香格里拉市于2014年撤县设市，符合2012-2014年的时间范围。\n\n确切答案：白水台\n置信度：85%",
+        "usage": {
+            "completion_tokens": 4781,
+            "prompt_tokens": 121,
+            "total_tokens": 4902,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 4664,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "白水台",
+            "model_answer": "白水台",
+            "reasoning": "提取出的最终答案是“白水台”，与给定的正确答案“白水台”完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 85
+        }
+    },
+    "99": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "",
+        "usage": {
+            "completion_tokens": 19789,
+            "prompt_tokens": 104,
+            "total_tokens": 19893,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 19788,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "《魔女之泉》",
+            "model_answer": "None",
+            "reasoning": "[response] 为空，无法提取出任何最终答案，因此与正确答案《魔女之泉》不匹配。",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "51": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "一种已灭绝的鲤科鱼类，其名称可能来源于地名，且最初发现地夏季盛开某种花卉。鲤科谐音“李科”，因此与李姓电影角色相关联，如李白或李世民，这些角色通常出现在以唐朝为背景的电影中，因此电影角色属于唐朝。\n\n确切答案：唐朝  \n置信度：60%",
+        "usage": {
+            "completion_tokens": 17303,
+            "prompt_tokens": 103,
+            "total_tokens": 17406,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 17230,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "南北朝",
+            "model_answer": "唐朝",
+            "reasoning": "提取出的最终答案是“唐朝”，而正确答案是“南北朝”。两者指代的朝代不同，存在实质性差异，因此该答案错误。",
+            "correct": "no",
+            "confidence": 60
+        }
+    },
+    "10": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据描述，这位音乐人出生于上世纪80年代，毕业于北京著名音乐院校（如中央音乐学院），会弹钢琴和吹小号，有自己的音乐工作室，曾前往美国学习音乐制作，与声音空灵悠远的男歌手（如周深）有过深入合作，并担任多个音乐类综艺的音乐总监。这些特征与音乐制作人赵兆高度吻合：赵兆出生于1980年，毕业于中央音乐学院，曾赴美国伯克利音乐学院学习，担任过《乘风破浪的姐姐》等节目的音乐总监，并与周深等歌手合作。尽管他2025年的专辑名称尚未正式公布，但基于其音乐风格和行业动态，推测可能使用《未来之音》作为专辑名。\n\n确切答案：《未来之音》\n置信度：30%",
+        "usage": {
+            "completion_tokens": 12053,
+            "prompt_tokens": 139,
+            "total_tokens": 12192,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 11888,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "1981",
+            "model_answer": "未来之音",
+            "reasoning": "correct_answer 是“1981”，而 extracted_final_answer 是“未来之音”。两者内容完全不一致，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 30
+        }
+    },
+    "109": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：题目要求找出一位日本音乐家，他在26岁时加入了一个名称中包含日本知名城市的知名乐团。经过分析，最符合条件的乐团是“东京事变”（Tokyo Jihen），其中包含“东京”这一城市。虽然椎名林檎是东京事变的核心创始成员，但她在乐团成立时年龄为24-25岁，并非26岁加入。然而，考虑到东京事变是与城市名关联最紧密的知名乐团，且椎名林檎是其最著名的代表人物，其他可能选项如坂本龙一（26岁加入YMO，但乐团名不含城市）或东京斯卡乐园成员（年龄不符）都不完全符合条件。因此椎名林檎是最可能的答案。\n\n确切答案：椎名林檎  \n置信度：65%",
+        "usage": {
+            "completion_tokens": 9873,
+            "prompt_tokens": 86,
+            "total_tokens": 9959,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 9710,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "椎名林檎",
+            "model_answer": "椎名林檎",
+            "reasoning": "提取出的最终答案是“椎名林檎”，与给定的 correct_answer“椎名林檎”完全一致，因此判断为正确。",
+            "correct": "yes",
+            "confidence": 65
+        }
+    },
+    "12": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：该地点名称出自战国时期赵国蔺相如避让廉颇的故事，属于周朝诸侯国时期的非战争行为。蔺相如作为上卿，为避免与廉颇冲突而选择回车退入窄巷，后来廉颇负荆请罪，将相和好，传为佳话。该地点即回车巷，位于河北省邯郸市，重建时的碑文由当地书法家题写，现已成为当地的文化象征。\n\n确切答案：回车巷（位于河北省邯郸市）\n置信度：85%",
+        "usage": {
+            "completion_tokens": 1257,
+            "prompt_tokens": 121,
+            "total_tokens": 1378,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 1144,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "回车巷",
+            "model_answer": "回车巷",
+            "reasoning": "extracted_final_answer 为“回车巷”，与 correct_answer“回车巷”一致，没有实质性差异，因此答案正确。",
+            "correct": "yes",
+            "confidence": 85
+        }
+    },
+    "270": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：题目描述的文件是《日本投降书》，于1945年9月2日由多国代表在东京湾密苏里号上签署，英文原件副本收藏于中国国家博物馆或中国人民革命军事博物馆。次日（9月3日），苏联领导人斯大林发表言论赞成该文件内容。斯大林有两次婚姻，其首任妻子叶卡捷琳娜·斯瓦尼泽于1907年因肺结核去世。\n\n确切答案：肺结核\n置信度：85%",
+        "usage": {
+            "completion_tokens": 8149,
+            "prompt_tokens": 116,
+            "total_tokens": 8265,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 8047,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "斑疹伤寒",
+            "model_answer": "肺结核",
+            "reasoning": "extracted_final_answer 是“肺结核”，而 correct_answer 是“斑疹伤寒”。两者是不同的疾病名称，存在实质性差异，因此答案不匹配。",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "35": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "",
+        "usage": {
+            "completion_tokens": 19969,
+            "prompt_tokens": 146,
+            "total_tokens": 20115,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 19968,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "成都",
+            "model_answer": null,
+            "reasoning": "[response] 为空，无法提取出任何最终答案。因此 extracted_final_answer 与正确答案“成都”不匹配。",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "24": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：散文集作家简媜的名字与外国电影《简爱》的中文译名高度相似。简媜的家乡在台湾宜兰，当地有草岭古道等景区，她的作品《石头记》中曾提及草岭古道及虎字碑。草岭古道上的虎字碑是著名的历史遗迹，由清朝台湾镇总兵刘明灯于同治六年（1867年）所立，因此立碑人为刘明灯。\n\n确切答案：刘明灯\n置信度：70%",
+        "usage": {
+            "completion_tokens": 11374,
+            "prompt_tokens": 100,
+            "total_tokens": 11474,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 11262,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "赵祖光",
+            "model_answer": "刘明灯",
+            "reasoning": "提取出的最终答案是“刘明灯”，而给定的正确答案是“赵祖光”。两者是不同的人名，存在实质性差异，因此该答案错误。",
+            "correct": "no",
+            "confidence": 70
+        }
+    },
+    "53": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据问题描述，需要找到一部满足以下条件的电影：导演在32岁时执导并上映该片，导演享年72岁，且电影主要场景发生在监狱中。经过分析，导演约翰·弗兰肯海默（John Frankenheimer，1930-2002）享年72岁，他在32岁时执导了电影《阿尔卡特兹的养鸟人》（Birdman of Alcatraz，1962年上映），该片以监狱为主要背景，完全符合所有条件。\n\n确切答案：《阿尔卡特兹的养鸟人》\n置信度：90%",
+        "usage": {
+            "completion_tokens": 4638,
+            "prompt_tokens": 88,
+            "total_tokens": 4726,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 4517,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "阿尔卡特兹的养鸟人",
+            "model_answer": "阿尔卡特兹的养鸟人",
+            "reasoning": "提取出的最终答案是“阿尔卡特兹的养鸟人”，与给定的正确答案“阿尔卡特兹的养鸟人”完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 90
+        }
+    },
+    "42": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据描述，电影改编自知名作家的同名小说，主角为刑警队长，由80后演员出演，画面具有粗粝朦胧的复古质感，这些特征与2023年上映的《河边的错误》高度吻合。该片改编自余华的同名小说，导演为新生代导演魏书钧，主演朱一龙为80后演员。魏书钧的公开资料显示其出生地为北京市。\n\n确切答案：北京  \n置信度：90%",
+        "usage": {
+            "completion_tokens": 1111,
+            "prompt_tokens": 136,
+            "total_tokens": 1247,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 1009,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "北京",
+            "model_answer": "北京",
+            "reasoning": "提取出的最终答案是“北京”，与给定的正确答案“北京”一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 90
+        }
+    },
+    "37": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据题目提供的线索，该专家为工科领域专家，80年代曾在法国学习研究，45岁前晋升副部级，拥有15项国家专利，并且其指导的学生在1998年升任北京某985高校副教授，2004年在英国QS前50学校做高级访问学者。综合这些条件，王树国教授最为符合：他于1985年至1989年在法国巴黎国立高等工艺学院攻读博士学位，符合80年代在法国学习研究的条件；2002年44岁时担任哈尔滨工业大学校长（副部级），符合45岁前晋升副部级的条件；作为机器人领域专家，他拥有多项国家专利，数量可能达到15项；他培养了许多研究生，其中可能有学生在1998年成为北京985高校副教授并于2004年赴英国访问。其他候选人如窦贤康、胡海岩等虽有法国背景，但未在45岁前晋升副部级，因此王树国是最佳匹配。\n\n确切答案：王树国\n置信度：80%",
+        "usage": {
+            "completion_tokens": 9466,
+            "prompt_tokens": 121,
+            "total_tokens": 9587,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 9251,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "王树国",
+            "model_answer": "王树国",
+            "reasoning": "提取出的最终答案是“王树国”，与给定的正确答案“王树国”一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 80
+        }
+    },
+    "70": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "根据问题描述，该5A风景区位于市中心，最早的记载可追溯到《春秋》，且由唐宋八大家之一命名，但百姓并不使用该名称。综合这些线索，最符合条件的是济南的趵突泉（现属天下第一泉风景区）。趵突泉在《春秋》中记载为“泺”（鲁桓公十八年“公会齐侯于泺”），距今超过2500年，景区位于济南市中心。北宋文学家曾巩（唐宋八大家之一）任齐州知州时，正式为此泉命名为“趵突泉”，但百姓曾长期使用“爆流泉”“槛泉”等旧称，因此符合“百姓却不用此名”的说法。\n\n解析：综合历史记载和景区特征，趵突泉符合所有条件，命名者为曾巩。\n确切答案：曾巩\n置信度：80%",
+        "usage": {
+            "completion_tokens": 7008,
+            "prompt_tokens": 100,
+            "total_tokens": 7108,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 6823,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "曾巩",
+            "model_answer": "曾巩",
+            "reasoning": "提取出的最终答案是“曾巩”，与给定的 correct_answer“曾巩”完全一致，没有实质性差异，因此判断为正确。",
+            "correct": "yes",
+            "confidence": 80
+        }
+    },
+    "110": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：该画家符合以下条件：日本画家；出生于由日本政治家建立的城市（大阪由丰臣秀吉建立）；先后在日本和法国学习；因病去世，享年30岁。佐伯祐三（1898-1928）出生于大阪，曾就读于东京美术学校并留学法国，后因肺结核去世，恰好30岁，因此满足所有条件。\n\n确切答案：佐伯祐三\n置信度：90%",
+        "usage": {
+            "completion_tokens": 2674,
+            "prompt_tokens": 99,
+            "total_tokens": 2773,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 2581,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "佐伯祐三",
+            "model_answer": "佐伯祐三",
+            "reasoning": "extracted_final_answer 为“佐伯祐三”，与 [correct_answer] “佐伯祐三”完全一致，没有实质性差异，因此答案正确。",
+            "correct": "yes",
+            "confidence": 90
+        }
+    },
+    "184": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "根据线索，A 是数学家与计算机科学家，父母均为犹太裔且分别入籍波兰和德国，曾师从科学家 B。B 在 48 岁时访问中国和日本，并在 30 年后获得诺贝尔奖。通过分析，B 符合哲学家、数学家伯特兰·罗素的特征，他于 1920 年（48 岁）访问中国和日本，1950 年获得诺贝尔文学奖，正好间隔 30 年。而 A 诺伯特·维纳是控制论之父，在数学和计算机科学领域有突出贡献，父母分别为波兰和德国犹太裔，且曾师从罗素，因此 A 是诺伯特·维纳。\n\n解析：伯特兰·罗素在 1920 年访问中国和日本时正好 48 岁，并于 1950 年获得诺贝尔文学奖，间隔 30 年。诺伯特·维纳是数学家和计算机科学家，父母分别是波兰和德国犹太裔，且他在剑桥大学学习时曾师从罗素，完全符合所有线索。\n\n确切答案：诺伯特·维纳（Norbert Wiener）\n置信度：95%",
+        "usage": {
+            "completion_tokens": 18132,
+            "prompt_tokens": 112,
+            "total_tokens": 18244,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 17888,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "诺伯特·维纳",
+            "model_answer": "诺伯特·维纳",
+            "reasoning": "extracted_final_answer 为“诺伯特·维纳”，与 correct_answer“诺伯特·维纳”完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "117": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据问题描述，作家本名与某功率单位相同，且早年业余创作、35岁成为全职作家，作品改编超过10部。这些特征指向中国作家马伯庸，其本名马力正是功率单位“马力”。马伯庸1980年出生，2015年辞职专职写作，恰好35岁，其多部作品如《长安十二时辰》《风起洛阳》等已被广泛改编。2019年改编自其作品的电视剧最可能是《长安十二时辰》，该剧的双男主角分别为易烊千玺饰演的李必和雷佳音饰演的张小敬。\n\n确切答案：易烊千玺饰演李必，雷佳音饰演张小敬。\n置信度：95%",
+        "usage": {
+            "completion_tokens": 2934,
+            "prompt_tokens": 129,
+            "total_tokens": 3063,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 2782,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": " 雷佳音和易烊千玺 ",
+            "model_answer": "易烊千玺饰演李必，雷佳音饰演张小敬",
+            "reasoning": "correct_answer 是“雷佳音和易烊千玺”，提取出的答案为“易烊千玺饰演李必，雷佳音饰演张小敬”。两者指向的是同两位男主角演员，仅顺序不同，且提取答案还补充了对应角色名，不构成实质性差异，因此匹配。",
+            "correct": "yes",
+            "confidence": 95
+        }
+    },
+    "275": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "根据题目描述，该化合物具有以下特征：\n1. 含有五种不同元素；\n2. 碳和氮的原子数之比为2:1；\n3. 氢和氮的原子数之和为8；\n4. 摩尔体积在80-85 cm³/mol之间；\n5. 在医疗和食品领域有广泛应用。\n\n这些条件指向牛磺酸（氨基乙磺酸），其分子式为C₂H₇NO₃S。验证如下：\n- 含有C、H、N、O、S五种元素；\n- 碳原子数2，氮原子数1，比例为2:1；\n- 氢原子数7，氮原子数1，和为8；\n- 牛磺酸的摩尔质量约为125 g/mol，若密度约为1.56 g/cm³，则摩尔体积约为80.1 cm³/mol，落在80-85范围内；\n- 牛磺酸广泛用于医药和食品添加剂（如能量饮料）。\n\n因此，该化合物的分子量为125。\n\n解析：通过条件推断化合物为牛磺酸，并计算其分子量。\n确切答案：125\n置信度：85%",
+        "usage": {
+            "completion_tokens": 12743,
+            "prompt_tokens": 120,
+            "total_tokens": 12863,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 12505,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "125.147",
+            "model_answer": "125",
+            "reasoning": "提取出的最终答案是 125，而正确答案是 125.147。两者仅相差 0.147，属于数值题中可接受的微小误差范围，因此可视为匹配。",
+            "correct": "yes",
+            "confidence": 85
+        }
+    },
+    "219": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据题目给出的线索分析：  \n1. 出生日期与某国独立日相同：赵雷出生于1986年7月20日，7月20日是哥伦比亚独立日，符合条件。  \n2. 23岁推出单曲包含出生城市：赵雷23岁时（2009年）创作或推出了包含北京（他的出生城市）的歌曲，如《未给姐姐递出的信》歌词中提及“北京”，且该作品在2010年前后已流传。  \n3. 24岁参加全国知名选秀节目：赵雷于2010年参加湖南卫视《快乐男声》，当时他24岁，该节目为全国知名选秀。  \n4. 30岁推出第三张专辑并获最佳创作歌手奖：赵雷在2016年（30岁）发行第三张专辑《无法长大》，并于2017年获得第25届东方风云榜最佳创作歌手奖。  \n综合以上，赵雷是唯一符合所有条件的歌手。\n\n确切答案：赵雷  \n置信度：85%",
+        "usage": {
+            "completion_tokens": 14654,
+            "prompt_tokens": 109,
+            "total_tokens": 14763,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 14433,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "赵雷",
+            "model_answer": "赵雷",
+            "reasoning": "提取出的最终答案是“赵雷”，与给定的正确答案“赵雷”完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 85
+        }
+    },
+    "136": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：用户描述了一篇2023年发表的计算机视觉论文，四位作者均来自同一家公司，其中三位作者跳槽后共同领导新公司在国外创立分部。在计算机视觉领域，2023年的主要顶级会议包括CVPR和ICCV。工业界研究团队发表的论文通常更常见于CVPR，因为CVPR是规模最大、影响力最广的计算机视觉会议之一，许多公司选择在此展示其研究成果。虽然具体论文和事件无法准确确认，但根据论文发表时间和领域特征，CVPR 2023是最有可能的会议。\n\n确切答案：CVPR 2023  \n置信度：50%",
+        "usage": {
+            "completion_tokens": 5403,
+            "prompt_tokens": 101,
+            "total_tokens": 5504,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 5270,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "ICCV",
+            "model_answer": "CVPR 2023",
+            "reasoning": "correct_answer 是 ICCV，而 extracted_final_answer 是 CVPR 2023，两者指向的会议不同，存在实质性差异，因此该答案错误。",
+            "correct": "no",
+            "confidence": 50
+        }
+    },
+    "112": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据题目线索，画家A需满足以下条件：出生于浙江；14岁时赴上海求学；其老师为知名画家B；B曾与画家C笔战；B和C都是知名艺术学校的校长。结合中国近现代美术史，最符合这些条件的是版画家赵延年。赵延年1924年生于浙江湖州，1938年14岁时考入上海美术专科学校，师从校长刘海粟（B）。刘海粟与徐悲鸿（C）曾有过著名的艺术论战（笔战），两人分别担任上海美专和中央美术学院的校长。因此，画家A是赵延年。\n\n确切答案：赵延年\n置信度：80%",
+        "usage": {
+            "completion_tokens": 15644,
+            "prompt_tokens": 114,
+            "total_tokens": 15758,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 15496,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "谢之光",
+            "model_answer": "赵延年",
+            "reasoning": "extracted_final_answer 是“赵延年”，而 correct_answer 是“谢之光”，两者是不同人物，答案不匹配。",
+            "correct": "no",
+            "confidence": 80
+        }
+    },
+    "236": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据题目描述，该村落海拔约2000米，位于河谷阶梯地段之上，地势规律单调倾斜，传统建筑形式多样，村民延续独特民俗，且有一条贯通著名山脉的古老道路从这里起始。综合考虑，云南怒江傈僳族自治州贡山县的丙中洛符合这些特征：丙中洛海拔约1750-2000米，位于怒江峡谷的阶地台地上，地势从山腰向江边倾斜；建筑融合藏族、怒族、傈僳族等多种民族风格；民俗有仙女节、圣诞节等独特传统；茶马古道（贯通横断山脉）从这里起始进入西藏。虽然丙中洛通常被视为一个镇或区域，但其核心聚落可视为村落，且是茶马古道的重要起点。\n\n确切答案：丙中洛\n置信度：80%",
+        "usage": {
+            "completion_tokens": 12601,
+            "prompt_tokens": 112,
+            "total_tokens": 12713,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 12422,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "琼库什台村",
+            "model_answer": "丙中洛",
+            "reasoning": "extracted_final_answer 为“丙中洛”，而 correct_answer 为“琼库什台村”。两者不是同一个地点，存在实质性差异，因此该答案不匹配。",
+            "correct": "no",
+            "confidence": 80
+        }
+    },
+    "177": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "根据描述，艺术家是徐悲鸿，他以画马闻名，曾推动建立中央美术学院。中央美术学院的校名题字来源于毛泽东，毛泽东出生于1893年。同年，表现主义画家爱德华·蒙克在散步时获得灵感，创作了名画《呐喊》。\n\n解析：首先确定艺术家为徐悲鸿，其推动建立的学府为中央美术学院；该校标识字样来源于毛泽东；毛泽东生于1893年；当年蒙克在走路时获得灵感创作了《呐喊》。  \n确切答案：《呐喊》  \n置信度：90%",
+        "usage": {
+            "completion_tokens": 2324,
+            "prompt_tokens": 169,
+            "total_tokens": 2493,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 2208,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "呐喊",
+            "model_answer": "呐喊",
+            "reasoning": "提取出的最终答案是“呐喊”，与给定的正确答案“呐喊”一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 90
+        }
+    },
+    "71": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：问题描述了一个地名始于唐代，文学作品常见，且10公里外有一处始于战国时期并见于《史记》的地理位置，两者共同构成一项世界文化遗产。结合线索，符合条件的是青城山（名字始于唐代，文学作品中常见）和都江堰（始建于战国，《史记·河渠书》有记载），两者相距约10公里，共同组成世界文化遗产“青城山-都江堰”。因此，问题所指的“这个地方”应是青城山。\n\n确切答案：青城山  \n置信度：90%",
+        "usage": {
+            "completion_tokens": 2133,
+            "prompt_tokens": 100,
+            "total_tokens": 2233,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 2016,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "青城山",
+            "model_answer": "青城山",
+            "reasoning": "extracted_final_answer 为“青城山”，与 correct_answer “青城山”完全一致，没有实质性差异。",
+            "correct": "yes",
+            "confidence": 90
+        }
+    },
+    "126": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "该疾病为遗传性耳聋，通常根据遗传方式分为常染色体显性、常染色体隐性、X连锁和线粒体遗传四种类型。其中，中国学者夏家辉等人于1998年首次克隆了该病的致病基因GJB3，实现了我国在该领域零的突破。\n\n解析：遗传性耳聋具有高度的遗传异质性，根据遗传方式可分为常染色体显性、常染色体隐性、X连锁和线粒体遗传四种类型，其中前两种为常染色体遗传。中国学者夏家辉团队于1998年成功克隆了该病的第一个致病基因GJB3，这一发现具有重要意义。\n确切答案：遗传性耳聋\n置信度：90%",
+        "usage": {
+            "completion_tokens": 8077,
+            "prompt_tokens": 87,
+            "total_tokens": 8164,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 7930,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "遗传性大疱性表皮松解症",
+            "model_answer": "遗传性耳聋",
+            "reasoning": "提取出的最终答案是“遗传性耳聋”，而给定的正确答案是“遗传性大疱性表皮松解症”。两者是不同疾病名称，存在实质性差异，因此该回答不正确。",
+            "correct": "no",
+            "confidence": 90
+        }
+    },
+    "217": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "根据提供的线索，该男歌手16岁出道，19岁发布个人首张单曲并获得广泛关注，第二年发布个人首张专辑，28岁发布公益歌曲，父亲在他20岁左右时离世。这些信息与香港歌手张敬轩的职业生涯和个人经历高度吻合。\n\n张敬轩出生于1981年，1997年（16岁）参加歌唱比赛出道。2000年（19岁）发行首张EP《Hins' First》，其中的单曲《My Way》获得广泛关注。2001年（20岁）发行首张专辑《My Way》。2009年（28岁）发行公益歌曲《My Way》（用于禁毒宣传）。他的父亲在他21岁时因癌症去世，时间点接近20岁左右。因此，该歌手应为张敬轩。\n\n解析：张敬轩的出道年龄、首张单曲和专辑的发布年龄、公益歌曲的发布年龄以及父亲去世的年龄均与线索相符。\n确切答案：张敬轩\n置信度：85%",
+        "usage": {
+            "completion_tokens": 19432,
+            "prompt_tokens": 107,
+            "total_tokens": 19539,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 19218,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "胡彦斌",
+            "model_answer": "张敬轩",
+            "reasoning": "提取出的最终答案是“张敬轩”，而给定的正确答案是“胡彦斌”。两者是不同的人名，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "202": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "根据问题线索，模拟养成游戏《偶像大师》系列符合多结局、计划上架平台但曾搁置的特点。主要配音演员高桥智秋血型AB，在《偶像大师》动画和游戏中为角色三浦梓配音，且她以喜欢狗闻名。因此推断游戏名称为《偶像大师》。\n\n解析：通过分析，模拟养成游戏《偶像大师》符合所有条件：多结局、计划上架PC平台但一度搁置。配音演员高桥智秋血型AB，为《偶像大师》动画和游戏中的女主角之一三浦梓配音，且她特别喜欢狗。\n确切答案：偶像大师\n置信度：70%",
+        "usage": {
+            "completion_tokens": 18560,
+            "prompt_tokens": 112,
+            "total_tokens": 18672,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 18419,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "火山的女儿",
+            "model_answer": "偶像大师",
+            "reasoning": "extracted_final_answer 是“偶像大师”，而 correct_answer 是“火山的女儿”。两者是不同的游戏名称，存在实质性差异，因此该回答错误。",
+            "correct": "no",
+            "confidence": 70
+        }
+    },
+    "188": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "根据描述，这位教授最可能是施一公。他在普林斯顿大学任教期间成为分子生物学系最年轻的正教授，研究方向涉及程序性细胞凋亡相关蛋白的结构与功能。2010年，他所指导的博士生可能在顶级期刊上发表了相关论文。施一公于2008年全职回国，加入清华大学，符合“回国并进入高校工作”的条件。\n\n解析：施一公教授在普林斯顿大学任教期间是该系最年轻的正教授，其研究包括程序性细胞凋亡相关领域。他于2008年回国并加入清华大学，此后当选中国科学院院士。因此，回国年份为2008年。  \n确切答案：2008年  \n置信度：70%",
+        "usage": {
+            "completion_tokens": 8062,
+            "prompt_tokens": 122,
+            "total_tokens": 8184,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 7913,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "2008年",
+            "model_answer": "2008年",
+            "reasoning": "extracted_final_answer 为“2008年”，与 correct_answer“2008年”完全一致，因此答案正确。",
+            "correct": "yes",
+            "confidence": 70
+        }
+    },
+    "103": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：描述中提到的艺术形式具有东西交融的特点，基于两个青年的动人故事，且涉及传统乐器，这些特征都指向中国小提琴协奏曲《梁山伯与祝英台》。该作品于1959年5月27日在上海首次公演，据历史记载，演出地点为上海音乐厅。\n\n确切答案：上海音乐厅\n置信度：85%",
+        "usage": {
+            "completion_tokens": 3711,
+            "prompt_tokens": 146,
+            "total_tokens": 3857,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 3631,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "兰心大剧院",
+            "model_answer": "上海音乐厅",
+            "reasoning": "extracted_final_answer 是“上海音乐厅”，而 correct_answer 是“兰心大剧院”。两者是不同地点，存在实质性差异，因此该答案错误。",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "167": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "该问题涉及一种含有两种主要成分的药物。其中一种成分于20世纪中晚期上市并引起重大轰动，另一种成分的化学式中前两位元素的原子数量相同。质子泵抑制剂奥美拉唑（1988年上市）符合第一种成分的描述，而碳酸氢钠（NaHCO₃）的化学式中钠（Na）和氢（H）的原子数均为1，满足第二种成分的条件。奥美拉唑碳酸氢钠复方药物通常用于治疗胃酸相关疾病，其最知名的生产厂家是阿斯利康（AstraZeneca）。\n\n解析：奥美拉唑是首个质子泵抑制剂，1988年上市后革新了消化性溃疡的治疗，属于轰动性药物；碳酸氢钠的化学式NaHCO₃中，前两位元素Na和H的原子数均为1，满足条件。该复方药物的知名生产商为阿斯利康。\n\n确切答案：阿斯利康（AstraZeneca）\n置信度：70%",
+        "usage": {
+            "completion_tokens": 14793,
+            "prompt_tokens": 105,
+            "total_tokens": 14898,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 14586,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "辉瑞",
+            "model_answer": "阿斯利康（AstraZeneca）",
+            "reasoning": "提取出的最终答案是“阿斯利康（AstraZeneca）”，而给定的正确答案是“辉瑞”。两者是不同的公司名称，存在实质性差异，因此该回答不正确。",
+            "correct": "no",
+            "confidence": 70
+        }
+    },
+    "95": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：\n1. 短片拓展：该电影的前身是2004年发布的动画短片，荣获多项国际奖项，最终扩展为院线长片。\n2. 制作团队与时间：由彼岸天、光线彩条屋影业等多家顶级动画团队历时12年共同制作完成。\n3. 主题内容：以女主角椿与爷爷、父母之间的亲情为核心主线，融合《庄子·逍遥游》等中国传统文化元素与现代价值观。\n4. 上映时间：原定于2015年上映，后多次推迟至2016年7月8日。\n5. 主题曲演唱者：虽然主题曲《在这个世界相遇》由陈奕迅演唱，但印象曲《大鱼》由周深演唱。周深常被误认为少数民族，且通过《中国好声音》成名，符合“靠一档音乐综艺成名”的描述。其他电影如《哪吒之魔童降世》虽部分符合，但上映时间未更改，且主题曲演唱者非少数民族。\n\n确切答案：《大鱼海棠》\n置信度：80%",
+        "usage": {
+            "completion_tokens": 13281,
+            "prompt_tokens": 127,
+            "total_tokens": 13408,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 13057,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "落凡尘",
+            "model_answer": "大鱼海棠",
+            "reasoning": "extracted_final_answer 为“大鱼海棠”，而 correct_answer 为“落凡尘”。两者是不同的作品名称，存在实质性差异，因此不匹配。",
+            "correct": "no",
+            "confidence": 80
+        }
+    },
+    "65": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "根据题目描述，1980年的故事片是导演的成名作，且片中有一首由中国小男孩演唱的时长为2分22秒的插曲。结合中国电影史，1980年电影《苗苗》是导演王君正的成名作，该片以小学教育为题材，其中有一个经典场景：调皮的小男孩包瑞在音乐课上独唱歌曲《小鸟在前面带路》（正式名称为《快乐的节日》），这首歌的时长约为2分22秒，与题目条件高度吻合。\n\n解析：电影《苗苗》于1980年上映，是导演王君正的处女作和成名作。片中由小男孩包瑞演唱的插曲《小鸟在前面带路》是一首经典儿童歌曲，时长约为2分22秒，符合题目所有条件。\n确切答案：《小鸟在前面带路》（又名《快乐的节日》）\n置信度：80%",
+        "usage": {
+            "completion_tokens": 12280,
+            "prompt_tokens": 101,
+            "total_tokens": 12381,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 12095,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "《小伞儿带着我飞翔》",
+            "model_answer": "《小鸟在前面带路》（又名《快乐的节日》）",
+            "reasoning": "提取出的最终答案是《小鸟在前面带路》（又名《快乐的节日》），而正确答案是《小伞儿带着我飞翔》。两者是不同的歌曲名称，存在实质性差异，因此该答案错误。",
+            "correct": "no",
+            "confidence": 80
+        }
+    },
+    "81": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "",
+        "usage": {
+            "completion_tokens": 19209,
+            "prompt_tokens": 102,
+            "total_tokens": 19311,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 19208,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "梁博",
+            "model_answer": null,
+            "reasoning": "response 为空，无法提取出任何最终答案，因此与 correct_answer“梁博”不匹配。",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "2": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "经过历史线索梳理，20世纪20年代中在上海成立的《中国青年》杂志是五卅运动的重要先导，上海大学在该运动中发挥了领导作用。近百年后，上海大学在21世纪初入学的演员中，有一位曾在少儿电视剧《快乐星球》中饰演重要角色。该剧男一号丁凯乐的扮演者李瑞的结婚时间为2021年10月20日。\n\n解析：结合历史与公开信息推断，但演员与高校的对应关系可能存在其他可能性，因此置信度较低。\n确切答案：2021年10月20日\n置信度：30%",
+        "usage": {
+            "completion_tokens": 12239,
+            "prompt_tokens": 111,
+            "total_tokens": 12350,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 12113,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "2019年4月23日",
+            "model_answer": "2021年10月20日",
+            "reasoning": "extracted_final_answer 为“2021年10月20日”，而 correct_answer 为“2019年4月23日”，两者日期明显不一致，因此该答案错误。",
+            "correct": "no",
+            "confidence": 30
+        }
+    },
+    "212": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "根据提供的线索，该演员在不同年龄段的演艺经历具有明显特征。38岁时在经典历史剧《三国演义》（1994年版）中饰演早期登场的李儒；52岁时在电视剧《永远的铭记》中饰演日本军官（外国人角色）；54岁时在电视剧《酒仙》中饰演酒鬼角色；60岁时出演大火剧集《芈月传》；66岁时又出演另一大火剧集《觉醒年代》。经核对，演员毕彦君的出生年份（1955年）与各年龄段对应的作品及角色基本吻合，因此推断为其本人。\n\n解析：通过比对演员毕彦君的出生年份及演艺生涯，发现其38岁（1994年）在《三国演义》中饰演李儒，52岁（2007年）在《永远的铭记》中饰演日本人，54岁（2009年）在《酒仙》中饰演酒鬼，60岁（2015年）出演《芈月传》，66岁（2021年）出演《觉醒年代》，符合所有线索。  \n确切答案：毕彦君  \n置信度：85%",
+        "usage": {
+            "completion_tokens": 19334,
+            "prompt_tokens": 111,
+            "total_tokens": 19445,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 19103,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "李建义",
+            "model_answer": "毕彦君",
+            "reasoning": "response 中提取出的最终答案是“毕彦君”，而 correct_answer 是“李建义”。两者是不同的人名，存在实质性差异，因此该回答不正确。",
+            "correct": "no",
+            "confidence": 85
+        }
+    },
+    "259": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：根据描述，作品是新海诚执导的日本动画电影《你的名字。》，音乐团队为RADWIMPS，其中歌曲《前前前世》时长为4分44秒。该歌曲的数字单曲于2016年7月25日在日本发行。发行后一天（7月26日），中国中央电视台综艺频道（CCTV-3）的猜歌节目《开门大吉》播出了一期以“动画世界”为主题的节目，其中包含该歌曲的猜歌环节。虽然具体播出主题可能因记忆偏差而有不同，但结合电影和歌曲的动漫属性，推测节目主题为“动画世界”是合理的。\n\n确切答案：动画世界  \n置信度：70%",
+        "usage": {
+            "completion_tokens": 11479,
+            "prompt_tokens": 180,
+            "total_tokens": 11659,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 11329,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "我的奥运梦",
+            "model_answer": "动画世界",
+            "reasoning": "extracte d_final_answer 为“动画世界”，而 correct_answer 为“我的奥运梦”。两者表述完全不同，不是同一答案，因此该回答错误。",
+            "correct": "no",
+            "confidence": 70
+        }
+    },
+    "121": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "解析：该药剂是治疗消化道疾病的固体药剂，主要成分包含多种植物。其中，地锦草为一年生草本植物，花果期在5-10月；香薷为唇形科植物，花期在7-10月。肠炎宁片的主要成分恰好包括这两种植物，且常用于治疗肠炎、腹泻等消化道疾病，与题目描述完全吻合。\n\n确切答案：肠炎宁片\n置信度：85%",
+        "usage": {
+            "completion_tokens": 1908,
+            "prompt_tokens": 108,
+            "total_tokens": 2016,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 1813,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "肠炎宁片",
+            "model_answer": "肠炎宁片",
+            "reasoning": "extracted_final_answer 为“肠炎宁片”，与 correct_answer“肠炎宁片”完全一致，因此判断为正确。",
+            "correct": "yes",
+            "confidence": 85
+        }
+    }
+}

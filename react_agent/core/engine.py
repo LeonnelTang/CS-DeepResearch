@@ -66,16 +66,17 @@ class ResearchLoop:
 
 【当前工作区状态】
 当前时间：{current_datetime}
-上一轮报告 (Report_{{i-1}})：
+当前轮次/最大轮次：{current_step}/{max_turns}
+上一轮报告 (Report_{prev_step})：
 {report}
 
-上一轮行动 (Action_{{i-1}})：{prev_action}
-上一轮结果 (Observation_{{i-1}})：{prev_observation}
+上一轮行动 (Action_{prev_step})：{prev_action}
+上一轮结果 (Observation_{prev_step})：{prev_observation}
 
 请输出当前步骤的 <think>, <report> 和 <action> (仅输出XML标签)：
 """
 
-    def _build_prompt(self, task: str, workspace_state: dict) -> str:
+    def _build_prompt(self, task: str, workspace_state: dict, current_step_index: int, max_turns: int) -> str:
         """构建 IterResearch 的 Prompt"""
         tool_descriptions = "\n".join([
             f"- {name}：{tool.description}"
@@ -88,7 +89,10 @@ class ResearchLoop:
             current_datetime=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             report=workspace_state["report"],
             prev_action=workspace_state["prev_action"],
-            prev_observation=workspace_state["prev_observation"]
+            prev_observation=workspace_state["prev_observation"],
+            current_step=current_step_index + 1,
+            prev_step=current_step_index,
+            max_turns=max_turns
         ).strip()
 
     def run(self, task: str) -> Tuple[str, List[dict], ChatMLBuilder]:
@@ -98,7 +102,7 @@ class ResearchLoop:
         for step in range(self.max_steps):
             # 1. 获取当前 MDP 状态并构建 prompt
             current_state = workspace.get_current_state()
-            prompt = self._build_prompt(task, current_state)
+            prompt = self._build_prompt(task, current_state, current_step_index=step, max_turns=self.max_steps)
 
             chatml_builder.add_message("user", prompt)
 
@@ -125,10 +129,10 @@ class ResearchLoop:
                 # 5. 重构状态并更新工作区
                 workspace.update_state(think, report, action, observation)
 
-                # print(f"\n=== Step {step + 1} ===")
-                # print(f"[Think]: {think}")
-                # print(f"[Report Updated]: {report}")
-                # print(f"[Action]: {action}")
+                print(f"\n=== Step {step + 1} ===")
+                print(f"[Think]: {think}")
+                print(f"[Report Updated]: {report}")
+                print(f"[Action]: {action}")
                 # print(f"[Observation]: {str(observation)[:50]}...")
 
                 chatml_builder.add_to_jsonl()

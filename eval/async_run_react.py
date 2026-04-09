@@ -33,19 +33,34 @@ logger = logging.getLogger(__name__)  # 获取当前模块的 logger
 
 
 def load_qa_dataset(filepath: str) -> List[dict]:
-    """读取外部QA JSONL文件"""
+    """读取外部QA数据集文件，支持JSONL和JSON格式"""
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"找不到数据集文件: {filepath}")
 
     dataset = []
-    with open(filepath, 'r', encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            dataset.append(json.loads(line))
+
+    # 根据文件扩展名判断格式
+    if filepath.endswith('.json'):
+        # JSON 格式
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            if isinstance(data, list):
+                dataset = data
+            else:
+                raise ValueError("JSON文件格式错误：根节点应为数组")
+    elif filepath.endswith('.jsonl'):
+        # JSONL 格式
+        with open(filepath, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                dataset.append(json.loads(line))
+    else:
+        raise ValueError(f"不支持的文件格式: {filepath}，仅支持 .json 和 .jsonl")
 
     return dataset
+
 
 DMX_client = OpenAI(
     base_url=os.getenv("DMX_API_BASE"),
@@ -69,7 +84,7 @@ async def process_single_task(index: int, item: dict, tool_config: ToolConfig, t
     correct_answer = item.get("answer")
     task = question + "\tYour final response should be in the following format: Explanation: {{your explanation for your final answer}} Exact Answer: {{your succinct, final answer}} Confidence: {{your confidence score between 0% and 100% for your answer}}"
 
-    selected_tool_indices = [0, 1, 2, 3]
+    selected_tool_indices = [-1]
 
     if not question:
         return f"⚠️ 跳过索引 {index}: 缺少 'question' 字段"
@@ -89,40 +104,21 @@ async def process_single_task(index: int, item: dict, tool_config: ToolConfig, t
     # 创建并运行 ResearchLoop
     reactor = ResearchLoop(
         tools=tools,
-        llm_executor=LLMExecutor(client=my_client, model_name="checkpoint-330-merged"),
-        max_steps=150
+        llm_executor=LLMExecutor(client=my_client, model_name="IterScholar-CS-35B-A3B-SFT"),
+        max_steps=30
     )
 
     try:
         # 执行任务
         final_result, trajectory, chatml_builder = await asyncio.to_thread(reactor.run, task)
 
-        # 验证结果
-        judge_result = extract_answer(question, correct_answer, final_result, "en")
-        is_correct = judge_result.get("correct", "") == "yes"
-
-        # # 只保存正确的
-        # if is_correct:
-        #     chatml_builder.save_to_jsonl(trajectory_filename)
-
         # 全部保存
         chatml_builder.save_to_jsonl(trajectory_filename)
 
-        # 格式化返回结果
-        result_msg = (
-            f"✅ 任务 [{index + 1}] 完成！ (QA 验证: {judge_result.get('correct', '未知')})\n"
-            f"💡 最终结果：\n{final_result}\n"
-        )
-        # if is_correct:
-        #     result_msg += f"💾 轨迹已保存至: {trajectory_filename}"
-        # else:
-        #     result_msg += "⚠️ 答案不匹配，轨迹未保存。"
 
         return_result = {
             "question": question,
-            "prediction": final_result,
-            "judge_result": judge_result,
-            "message": result_msg
+            "prediction": final_result
         }
 
         return return_result
@@ -130,9 +126,7 @@ async def process_single_task(index: int, item: dict, tool_config: ToolConfig, t
     except Exception as e:
         return_result = {
             "question": question,
-            "prediction": None,
-            "judge_result": None,
-            "message": f"❌ 任务 [{index + 1}] 运行过程中发生异常: {str(e)}"
+            "prediction": None
         }
 
         return return_result
@@ -144,8 +138,16 @@ async def main():
     # --- 1. 路径配置 ---
     base_dir = "D:\\DissertationProject\\DissertationProject"
     mcp_config_path = os.path.join(base_dir, "react_agent", "tools", "mcp_configs.json")
-    dataset_path = os.path.join(base_dir, "dataset", "CS_dataset", "splits", "benchmark_50.jsonl")
-    trajectory_dir = os.path.join(base_dir, "eval", "eval_traj", "CS_eval_traj", "SFT_IterScholar")
+    dataset_path = os.path.join(base_dir, "dataset", "BrowseComp-ZH", "browsecomp-zh-sample-50.json")
+    trajectory_dir = os.path.join(base_dir, "eval", "eval_traj", "BrowseComp-ZH_traj", "SFT_IterScholar")
+
+
+    dataset_name = "BrowseComp-ZH_traj"
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    # 动态生成文件名，加入时间戳和数据集名称，防止结果被覆盖
+    result_filename = f"{timestamp}_{dataset_name}_eval_results.json"
+    result_filepath = os.path.join(trajectory_dir, result_filename)
 
     if not os.path.exists(trajectory_dir):
         os.makedirs(trajectory_dir)
@@ -157,17 +159,25 @@ async def main():
     try:
         qa_data = load_qa_dataset(dataset_path)
         logger.info(f"成功加载数据集，共 {len(qa_data)} 条测试用例。\n")
+        q_to_id = {item['question'].strip(): item['id'] for item in qa_data}
     except Exception as e:
         logger.error(f"数据集加载失败: {e}")
         return
 
-    dataset_name = "CS_eval_traj"
-    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    # load only questions without responses
+    if os.path.exists(r'D:\DissertationProject\DissertationProject\eval\BrowseComp-ZH\prediction_results\formatted_eval_results.json'):
+        with open(r'D:\DissertationProject\DissertationProject\eval\BrowseComp-ZH\prediction_results\formatted_eval_results.json', "r", encoding='utf-8') as f:
+            predictions = json.load(f)
+        qa_data = [q for q in qa_data if str(q["id"]) not in predictions]
+        logger.info(f"当前还需处理 {len(qa_data)} 条测试用例。\n")
+    else:
+        predictions = {}
+
 
     # --- 4. 并发执行 ---
     # 注意：max_workers 决定了并发数量。请根据你的 LLM API 的并发限制 (Rate Limit) 进行调整。
     # 如果设置过高，可能会导致触发 HTTP 429 Too Many Requests 错误。
-    max_workers = 10
+    max_workers = 1
     logger.info(f"⚡ 启动异步任务，最大并发数: {max_workers}")
     logger.info("=" * 60)
 
@@ -180,7 +190,7 @@ async def main():
         """用信号量包装单个任务，以控制并发"""
         async with semaphore:
             return await process_single_task(
-                index, item, tool_config, trajectory_dir, dataset_name, timestamp
+                item["id"], item, tool_config, trajectory_dir, dataset_name, timestamp
             )
 
     # 创建所有协程任务
@@ -199,8 +209,7 @@ async def main():
             save_results.append(
                 {
                     "question": result.get("question"),
-                    "prediction": result.get("prediction"),
-                    "judge_result": result.get("judge_result")
+                    "prediction": result.get("prediction")
                 }
             )
 
@@ -212,15 +221,26 @@ async def main():
 
     # --- 保存最终评估结果 ---
     try:
-        # 动态生成文件名，加入时间戳和数据集名称，防止结果被覆盖
-        result_filename = f"{timestamp}_{dataset_name}_eval_results.json"
-        result_filepath = os.path.join(trajectory_dir, result_filename)
+        missing_count = 0
+
+        for entry in save_results:
+            # 这里的 question 字段可能在评估结果的字典里
+            q_text = entry.get('question', '').strip()
+            if q_text in q_to_id:
+                task_id = q_to_id[q_text]
+                predictions[task_id] = entry
+            else:
+                missing_count += 1
 
         with open(result_filepath, "w", encoding="utf-8") as f:
             # 直接使用 json.dump 序列化整个列表，确保生成标准的 JSON 格式
-            json.dump(save_results, f, ensure_ascii=False, indent=2)
+            json.dump(predictions, f, ensure_ascii=False, indent=2)
 
         logger.info(f"💾 所有评估结果已成功保存至: {result_filepath}")
+        print(f"\n处理完成！")
+        print(f"- 成功匹配并转换后总共: {len(predictions)} 条")
+        print(f"- 未能匹配条数: {missing_count}")
+        print(f"- 结果已保存至: {result_filepath}")
     except Exception as e:
         logger.error(f"❌ 保存评估结果时发生错误: {e}")
         raise

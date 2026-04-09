@@ -1,5 +1,5 @@
 import json
-from .local_tool import ArxivSearchEngine, GetRecentAIPapers, ListSkillsTool, GetSkillPromptTool
+from .local_tool import *
 import os
 from .mcp_tool import MCPToolAdapter, BaseTool
 import asyncio
@@ -13,10 +13,10 @@ load_dotenv()
 
 # 5. 将MCP工具与本地工具合并
 local_tools = [
-    # ArxivSearchEngine(),
-    # GetRecentAIPapers(),
     ListSkillsTool(),
-    GetSkillPromptTool()
+    GetSkillPromptTool(),
+    JinaSearchTool(),
+    JinaReaderTool()
 ]
 
 class ToolConfig:
@@ -78,7 +78,7 @@ class ToolConfig:
 
         # 3. 如果没有缓存，建立连接拉取远程工具
         headers = {"Authorization": f"Bearer {api_key}"}
-        # print(f"正在连接 MCP 服务器加载工具: {server_url} ...")
+        print(f"正在连接 MCP 服务器加载工具: {server_url} ...")
         server_cache_entry = []  # 用于保存当前服务器的工具元数据
 
         async with sse_client(url=server_url, headers=headers) as (read_stream, write_stream):
@@ -115,7 +115,7 @@ class ToolConfig:
         with open(self.cache_path, "w", encoding="utf-8") as f:
             json.dump(cache_data, f, ensure_ascii=False, indent=4)
 
-        # print(f"✅ 成功加载并缓存 {len(mcp_base_tools)} 个 MCP 工具。")
+        print(f"✅ 成功加载并缓存 {len(mcp_base_tools)} 个 MCP 工具。")
         return mcp_base_tools
 
     async def fetch_all_mcp_tools(self, mcp_configs: list[dict]) -> list:
@@ -160,6 +160,8 @@ class ToolConfig:
         # 如果没有指定选择，则加载所有可用的MCP
         if selected_mcp_names is None:
             mcp_configs = self.all_mcp_configs
+        elif selected_mcp_names == [-1]:
+            mcp_configs = None
         else:
             # 3. 根据用户选择过滤MCP配置
             mcp_configs = [config for config in self.all_mcp_configs
@@ -173,7 +175,7 @@ class ToolConfig:
 
         # 4. 启动并发加载
         if mcp_configs:
-            # print(f"准备并发加载 {len(mcp_configs)} 个 MCP 配置...")
+            print(f"准备并发加载 {len(mcp_configs)} 个 MCP 配置...")
             mcp_tools = await self.fetch_all_mcp_tools(mcp_configs)
         else:
             print("没有有效的MCP配置需要加载")
@@ -181,7 +183,7 @@ class ToolConfig:
 
         all_tools = local_tools + mcp_tools
 
-        # print(f"✅ 工具总数: {len(all_tools)} (本地: {len(local_tools)}, MCP: {len(mcp_tools)})")
+        print(f"✅ 工具总数: {len(all_tools)} (本地: {len(local_tools)}, MCP: {len(mcp_tools)})")
 
         return all_tools
 
@@ -200,6 +202,8 @@ class ToolConfig:
             # 确保索引在有效范围内
             if 0 <= idx < len(self.all_mcp_configs):
                 selected_names.append(self.all_mcp_configs[idx]["name"])
+            elif idx == -1:
+                selected_names.append(-1)
             else:
                 print(f"⚠️ 警告: 工具配置索引 {idx} 超出范围 (最大索引为 {len(self.all_mcp_configs) - 1})，已忽略。")
 

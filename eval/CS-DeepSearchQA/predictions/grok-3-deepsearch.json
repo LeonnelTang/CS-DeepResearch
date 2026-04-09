@@ -1,0 +1,552 @@
+{
+    "1": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：深度神经网络的一个常见属性是其高容量（high capacity）或表达能力强（expressive power），这使得模型容易在训练数据上**过度拟合**（overfitting），即表现过于复杂，捕捉噪声而非泛化模式，从而导致“非期望记忆”（unintended/unwanted memorization），即模型记住特定训练样本而非学习规律，可能引发隐私泄露等问题。研究者提出的针对性训练技术是**正则化**（regularization），它通过在损失函数中添加惩罚项（如L2权重衰减）、Dropout、早停等机制，限制模型复杂度，提高对过拟合的抵抗力，并有效减少非期望记忆（例如，通过平滑决策边界或引入噪声来防止精确记住个别样本）。这在深度学习文献中被广泛视为标准解决方案，与查询描述高度匹配（区别于对抗训练、差分隐私等更特定方法）。\n\n确切答案：正则化（regularization）。\n\n置信度：75%。",
+        "usage": {
+            "completion_tokens": 251,
+            "prompt_tokens": 173,
+            "total_tokens": 424,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "2": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述了一个最近的模型对齐研究，其中关键技术（Entity_A，可能指如Magpie或MoAA等合成数据生成方法）通过事件（Event_B，可能指使用开放模型集体或自生成合成指令/偏好数据）产生监督和偏好对齐训练的关键资源。这些资源用于对某个开源LLM的指令版本进行监督微调（Event_C），其效果优于在特定数学指令数据集上对同系列基础模型进行的微调（Event_D）。Event_D又优于一个开源的数十亿参数LLM，其指令遵循版本常作为进一步微调的基础。结合搜索结果，匹配模式最接近Magpie论文（或其他类似合成数据工作如MoAA）：合成数据（通过 prompting aligned LLMs 生成）用于SFT和DPO对齐，Event_C（合成SFT）在通用指令遵循（如AlpacaEval、Arena-Hard）上优于基线，Event_D可能对应数学专用SFT或特定比较，而基准模型是Llama-3-8B-Instruct（~8B参数，数十亿级别，其Instruct版本广泛用作进一步微调基础，SFT/DPO训练于大量数据，但合成方法能匹敌或超越其部分性能）。其他候选如Mistral-7B-Instruct或Qwen系列类似，但Llama-3-8B-Instruct是最常见比较基准。置信度适中，因精确事件标签未直接匹配，但整体结构高度一致。\n\n确切答案：Llama-3-8B-Instruct\n\n置信度：60%",
+        "usage": {
+            "completion_tokens": 378,
+            "prompt_tokens": 248,
+            "total_tokens": 626,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "3": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：题目描述了一篇关于**图像字幕编辑**（image caption editing）的学术论文，该论文提出了一个框架，其中包含一个核心技术模块：基于LSTM的去噪自编码器（denoising auto-encoder）。这个模块最初是为解决某个特定传感器的校准任务（或类似去噪/重建任务）而设计，后来在经典图像分类基准数据集上验证性能超越传统主流网络架构。匹配的论文是CVPR 2020的“Show, Edit and Tell: A Framework for Editing Image Captions”，第一作者Fawaz Sammani并非该LSTM去噪自编码器技术的原始提出者。该模块在论文中被明确命名为**DCNet**（Denoising Captioner Network，或类似描述为LSTM-based denoising auto-encoder），用于对现有字幕进行去噪处理，以辅助编辑框架。\n\n确切答案：DCNet\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 224,
+            "prompt_tokens": 186,
+            "total_tokens": 410,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "4": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述的特定分支是多智能体强化学习（MARL）中置换不变（permutation-invariant）同构智能体的问题，这类问题可简化为单智能体MDP求解（如Dec-POMFC模型）；围绕此类问题，CTDE（集中训练分散执行）范式是常见算法框架。更广泛领域是Dec-POMDP（去中心化部分可观测马尔可夫决策过程）及其规划求解算法，该领域广泛讨论决策过程的紧凑表示（如有限状态控制器FSC）和策略规模（policy size）的理论性质（如复杂度、紧凑性界限、剪枝等）。专注于决策过程简洁策略规模相关问题的学术文献多见于Dec-POMDP文献中讨论策略树/控制器大小、观察压缩、紧凑策略存在性等理论问题。这些理论问题的核心概念最初源自Dec-POMDP模型本身，其首位主要贡献者（引入Dec-POMDP框架并奠定其理论基础者）是Bernstein等人在2002年的工作。\n\n确切答案：Daniel S. Bernstein\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 268,
+            "prompt_tokens": 242,
+            "total_tokens": 510,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "5": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：题目描述了一个孟加拉语（Bangla）语法错误检测任务中使用的专用模型，该模型基于一个著名的文本到文本转换Transformer预训练模型（T5）。T5正是“终身少样本语言学习”（Lifelong Few-shot Language Learning, LFLL）统一框架的基石，该框架核心是提示调优（prompt tuning）。通过搜索确认，该框架即LFPT5（A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5），由Chengwei Qin（第一作者）于2021年提出并构建（发表于ICLR 2022），后续论文也多次引用其为该领域的开创性工作。孟加拉语相关论文中确有使用T5的语法错误检测研究，与描述匹配。\n\n确切答案：Chengwei Qin\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 206,
+            "prompt_tokens": 188,
+            "total_tokens": 394,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "6": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：用户查询描述了一篇学术文献，其中一位学者作为第一作者提出了一种基于层级结构（hierarchical structure）来增强少样本（few-shot）泛化能力的方法模型，后续实验显示该方法在关键指标上超越现有同类技术（state-of-the-art）。通过搜索相关学术论文，匹配度最高的描述对应2022年发表在《Information Sciences》上的论文“Few-shot learning based on hierarchical classification via multi-granularity relation networks”。该论文第一作者为Yuling Su（苏玉玲），提出了一种名为HMRN（Hierarchical Multi-granularity Relation Networks）的少样本层级分类模型，该模型考虑类内相似性和类间关系，利用多粒度关系网络构建层级结构以提升少样本场景下的泛化性能，并在基准数据集的实验中展示了优于现有方法的性能，符合查询中“基于层级结构增强少样本泛化”“第一作者”“超越同类技术”等所有关键要素。其他候选如HFFDK或Tree Structure-Aware方法虽涉及层级和少样本，但HMRN的标题、摘要和实验描述匹配最为精确。\n\n确切答案：HMRN（Hierarchical Multi-granularity Relation Networks，多粒度关系网络的层级少样本分类模型）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 324,
+            "prompt_tokens": 164,
+            "total_tokens": 488,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "7": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：该问题描述了一个前沿生物信息学因果建模方法，由第一作者提出，专门处理能够保留位置信息的组学数据（如非序列但具有因果关联的特征数据，例如多组学特征），其核心依赖严谨的数学理论框架（如广义结构方程模型、因果图嵌入双曲空间、旋转位置编码的理论分析等）。通过搜索生物信息学领域的因果建模、新方法及位置信息保留相关文献，最匹配的是CAPE（Causality-Aware Positional Encoder，或Causality-Induced Positional Encoding for Transformer-Based Representation Learning of Non-Sequential Features）。该方法由Kaichen Xu（第一作者）等提出，使用广义结构方程模型发现非序列特征的潜在因果DAG结构，将其嵌入双曲空间以保留因果强度和特异性，再转换为旋转形式融入Transformer，支持处理非序列但因果相关的组学/特征数据，同时提供严谨的理论证明（注意力衰减属性、鲁棒性等）。这符合“保留位置信息”（通过因果诱导的位置编码替代传统位置信息）、前沿因果建模、数学框架等所有关键要素。其他候选如HALO（分层因果建模，多组学但非强调位置保留）或一般空间组学方法均不完全匹配。\n\n确切答案：CAPE (Causality-Aware Positional Encoder / Causality-Induced Positional Encoding)\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 360,
+            "prompt_tokens": 162,
+            "total_tokens": 522,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "8": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：该问题描述了一种正则化训练技术（在经典图像识别基准如ImageNet上取得SOTA，但对医学影像特定噪声如speckle或Gaussian处理不足），随后引入量化非凸神经网络参数相似性的度量方法。该方法在MLP、CNN和RNN上验证，对应论文《Understanding Weight Similarity of Neural Networks via Chain Normalization Rule and Hypothesis-Training-Testing》（arXiv:2208.04369）。论文中，研究人员提出了一种新的权重相似性度量，依赖于一种专门的归一化规则来处理参数（权重），以量化不同架构下可训练参数的共性。该核心规则正是“chain normalization rule”（链式归一化规则），用于权重表示学习和相似性度量，使其适用于非凸优化场景下的参数比较。\n\n确切答案：链式归一化规则（chain normalization rule）\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 224,
+            "prompt_tokens": 247,
+            "total_tokens": 471,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "9": {
+        "model": "grok-3-deepsearch",
+        "response": "**解析：** 问题描述了一个特定方法：面向零样本学习（zero-shot learning）、基于Transformer的端到端（end-to-end）方法，能整合预训练语言模型的潜在语义知识（latent semantic knowledge），并在以9结尾的年份（最可能是2019年）参加了TREC Deep Learning Track（TREC DL track）竞赛。该竞赛于2019年首次举办，聚焦大规模数据下的ad-hoc排名，包含passage和document ranking任务（有full ranking/end-to-end和reranking子任务），并鼓励使用预训练模型如BERT等。  \n\n通过搜索TREC 2019 DL proceedings、参与论文列表和相关关键词（zero-shot、Transformer、end-to-end、pre-trained/pretraining、semantic knowledge/latent semantic、integrates），没有找到完全精确匹配“zero-shot + end-to-end Transformer + 整合预训练潜在语义知识”的单一核心论文。多数参与论文（如ICTNET使用pretraining knowledge的semantic matching component结合BM25；TU Wien的Transformer-Kernel (TK)模型使用轻量Transformer contextualize embeddings；Brown、UCAS、IDST等使用BERT/XLNet预训练模型进行reranking或fine-tuning；CMU的DeepCT等）都涉及预训练Transformer/BERT，但多为supervised fine-tuning或reranking，而非严格zero-shot end-to-end。零样本相关工作更多出现在后续年份（如2020+的zero-shot dense retrieval、BEIR基准）或其它TREC track（如CAsT）。  \n\n问题很可能指2019年TREC DL竞赛中某团队的参与方法，其核心论文的第一作者可能是参与论文的lead（如ICTNET的Jiangui Chen，使用pretraining knowledge的semantic component；或TU Wien的Sebastian Hofstätter，Transformer-based contextualization）。但由于描述中的“zero-shot”在2019 proceedings中无明确匹配（竞赛多依赖MS MARCO训练数据），最接近的是使用pre-trained Transformer整合语义的端到端/ full ranking方法。置信度较低，因为无确切论文标题/作者完全对齐所有细节，可能存在翻译或描述的细微偏差，或指未公开/特定工作笔记。  \n\n**确切答案：** Jiangui Chen（或Sebastian Hofstätter，视具体semantic/Transformer端到端匹配而定；无完全精确匹配）。  \n\n**置信度：** 40%",
+        "usage": {
+            "completion_tokens": 549,
+            "prompt_tokens": 157,
+            "total_tokens": 706,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "10": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：Pix2Pix是一种基于条件GAN（cGAN）的知名图像到图像翻译技术，属于以对抗（adversarial）思想为核心的生成模型范式之一（另一主流范式为扩散模型）。机器学习安全领域的对抗攻击通常针对预测/推理阶段（如 evasion attacks），而题目指出新型攻击针对特定非传统阶段（训练或生成阶段），名称暗示“借用”机制，且基于图像生成两大范式之一构建。经搜索分析，“借用”对应“hijacking”（劫持/借用模型能力），“训练阶段”匹配 data poisoning 型攻击，“图像生成范式”指向GAN-based image-to-image（Pix2Pix 为典型代表）。Neeko 是首个针对GANs（包括可扩展到条件图像生成模型）的 model hijacking attack，它在训练阶段通过伪装数据集污染，让模型“借用”能力生成隐藏恶意内容（下采样后显现），同时保持原功能，符合所有线索（非传统训练阶段、暗示借用、GAN范式）。\n\n确切答案：Neeko (或 Neeko model hijacking attack)\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 282,
+            "prompt_tokens": 198,
+            "total_tokens": 480,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "11": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：在大模型（LLM）对齐领域，传统RLHF依赖人工收集粗粒度偏好数据，成本高且难以扩展。一种新兴方法通过AI（而非人类）自动化生成反馈，实现可扩展的对齐，同时支持细粒度（如段落级、token级或基于详细标准的批判/修正/偏好）信号收集，以更好地指导奖励模型和策略优化。该方法的核心是利用现有LLM作为“评判者”自动标注偏好或提供结构化反馈，服务于提升模型安全性、有用性和一致性等关键对齐目标。它在多篇论文和综述中被确认为RLHF的可扩展替代，尤其在2023年后快速发展，实验显示其性能接近或在某些场景下媲美人工反馈，同时显著降低人力成本。\n\n确切答案：RLAIF（Reinforcement Learning from AI Feedback，基于AI反馈的强化学习）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 236,
+            "prompt_tokens": 110,
+            "total_tokens": 346,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "12": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：基准A是AnyText-benchmark，由Yuxiang Tuo（第一作者）提出，依托AnyWord-3M数据集（数百万多语言OCR标注图像）。基准B是MARIO-Eval，由TextDiffuser论文（第一作者不同，为TextDiffuser相关作者）提出。CharGen方法（第一作者Lichen Ma）同时在两者上测试，并取得SOTA性能：在AnyText-benchmark上显著超越AnyText方法（英文Sen.ACC提升8.8%至80.96%，中文提升5.5%至74.99%），在MARIO-Eval上也优于先前方法（如Glyph-ByT5）。因此存在视觉文本生成方法（CharGen）在基准A上超越特定对手（AnyText，该对手也在基准B相关评估中被测试/比较过），且CharGen在基准A上取得当前最优。\n\n确切答案：是，CharGen（在AnyText-benchmark上超越AnyText并取得SOTA）\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 218,
+            "prompt_tokens": 232,
+            "total_tokens": 450,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "13": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述了一项新技术，在关键视觉质量和同步精度上优于某个端到端音频驱动人体动画框架及其对标模型。该被超越的后者模型中，使用了一个专门用于微视频推荐系统的图神经网络（GNN）来增强其图节点结构。  \n通过搜索，SyncAnimation（Yujian Liu等，IJCAI 2025）是端到端音频驱动人体姿态和说话头部动画的实时框架，它在图像质量（PSNR、FID等）、唇同步（LMD、AUE等）和姿态/表情多样性上显著优于多个GAN-based、NeRF-based和SD-based对标模型（如EDTalk、GeneFace++、V-Express、EchoMimic等），符合“优于某个端到端音频驱动人体动画框架及其对标模型”。  \n被超越模型中涉及的GNN是微视频推荐领域的专用模型，最匹配的是“Concept-Aware Denoising Graph Neural Network (CONDE)”，专为微视频推荐设计（CIKM 2021），使用图节点结构增强推荐（概念感知去噪GNN）。其第一作者（首位主要贡献者）是Yiyu Liu（论文中常记为Y. Liu）。其他候选如HGCL（Desheng Cai第一作者）或CSGCL（Ying He第一作者）也与微视频推荐GNN相关，但CONDE的“概念感知去噪”与“图节点结构增强”最直接对应，且上下文匹配度最高。  \n确切答案：Yiyu Liu  \n置信度：65%（核心匹配度高，但未找到SyncAnimation论文直接引用具体GNN的明确链接，可能为领域关联或特定对标；若为HGCL则第一作者为Desheng Cai）。",
+        "usage": {
+            "completion_tokens": 396,
+            "prompt_tokens": 176,
+            "total_tokens": 572,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "14": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：项目A是PlasticineLab（一个开源软体操作基准，支持可微弹性变形和可微塑性变形），其底层物理引擎基于DiffTaichi（一个专门定制的新型可微编程语言C，用于高性能物理模拟，属于前沿可微物理仿真领域B）。学术论文D是《DiffTaichi: Differentiable Programming for Physical Simulation》（ICLR 2020），第一作者为Yuanming Hu（胡元明），他是该领域重要研究人员（Taichi语言的主要开发者之一）。\n\n确切答案：Yuanming Hu（胡元明）\n\n置信度：90%",
+        "usage": {
+            "completion_tokens": 140,
+            "prompt_tokens": 186,
+            "total_tokens": 326,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "15": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：根据用户描述的研究工作流程（先创建数据集以验证特定场景下的新发现，随后将数据集及配套工具开放给特定技术社区以促进共同进步），这与AI/机器学习领域常见的研究模式高度匹配，例如通过自建数据集验证模型或方法的有效性，再开源以推动社区发展。广泛搜索相关中文描述（如“创建了一个数据集”“验证新发现”“开放”“特定技术社区”）后，并未找到精确匹配的单一知名案例（常见结果涉及通用开源数据集如LAION、Common Crawl，或特定论文中的自建数据集如FineCLIP自建数据集用于验证，但未完全契合“两个关键事件”的顺序与目的）。可能指代特定论文、竞赛或项目中的数据集（如CodeXGLUE中的自建部分或数学推理相关合成数据集），但无确切公开记录指向唯一名称。基于可用信息，无法确定具体名字。\n\n确切答案：无法确定（或未知）\n\n置信度：30%",
+        "usage": {
+            "completion_tokens": 274,
+            "prompt_tokens": 178,
+            "total_tokens": 452,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "16": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：该问题描述了一个多模态安全基准，用于评估处理图像和语言输入的大型模型（即Vision-Language Models或VLMs/MLLMs，其核心基于文本生成模型），针对行为风险特别是需要特定提示工程防御的独特攻击威胁（如structure-based jailbreak攻击，将有害语义注入图像中）。基准通常包括结构平衡的查询-图像数据集和评估工具。匹配的关键防御技术是针对此类结构化攻击的动态适配防护提示：它通过预置防御提示（静态初始设计，后通过LLM-based生成器与目标模型协作迭代优化）来增强鲁棒性，无需微调模型，且在保持良性任务性能的同时有效降低攻击成功率。该技术名称直接源于相关学术论文（AdaShield，ECCV 2024），其核心即“adaptive shield prompting”，强调动态、自适应特性以应对VLMs的独特多模态漏洞。\n\n确切答案：Adaptive Shield Prompting (AdaShield)\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 258,
+            "prompt_tokens": 257,
+            "total_tokens": 515,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "17": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：该描述中的“著名的视觉-语言领域预训练范式”最匹配CLIP（Contrastive Language-Image Pretraining），其核心是通过对比学习在图像和文本间建立联合嵌入空间，支持零样本（zero-shot）分类等任务。描述中“扩展了”这一范式的技术框架需引入动态或离散视觉标记化机制，将视觉输入转化为与语言标记统一的离散标记序列（token sequence），并在统一生成式预训练下实现多模态联合建模。同时，该框架与另一个“将任意模态输入统一视为标记序列并学习联合嵌入”的技术（典型如Uni-Perceiver系列，其使用模态特定tokenizer将输入转为统一标记序列，通过相似性进行零/少样本感知建模）共同服务于统一不同信息模态的宏观目标。匹配这些要素的是LaVIT（Unified Language-Vision Pretraining in LLM with Dynamic Discrete Visual Tokenization），它基于EVA-CLIP等视觉编码器，通过动态离散视觉tokenizer将图像转为可变长度离散标记序列，与文本标记统一处理，在LLM框架下进行生成式预训练，支持零样本多模态理解与生成任务（如图像/视频理解、文本到图像生成），并与Uni-Perceiver等统一标记序列方法共同推进多模态统一学习目标。\n\n确切答案：LaVIT\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 353,
+            "prompt_tokens": 184,
+            "total_tokens": 537,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "18": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述了一种对信息生态系统构成威胁的偏差现象（源偏差或source bias，即神经检索模型偏好LLM生成的文本，即使语义相似），其根源在于依赖海量数据训练的检索模型的固有陷阱（训练数据中的伪影不平衡，如低困惑度风格被视为相关性的捷径，导致模型吸收非语义线索）。研究者首先建立了理论框架（因果图或贝叶斯最优评分器分解，解释对比学习如何不可避免地学习这些伪影，导致评分中出现语义+伪影线性项）。基于此框架，为解决偏差而在推理阶段（inference-time）专门设计的因果启发式方法，通过识别偏差向量并移除其在文档嵌入上的投影（或类似因果干预），从而中和伪影影响而不改变模型本身。\n\n确切答案：Causal Diagnosis（或推理时因果诊断/干预方法，具体为投影移除偏差向量的因果启发式干预）\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 264,
+            "prompt_tokens": 197,
+            "total_tokens": 461,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "19": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：问题描述的观测技术是引力波探测（LIGO/Virgo等探测宇宙时空涟漪，即gravitational waves），用于致密天体系统（如双黑洞或双中子星并合）的数据分析。采用的“神经后验估计方法”（neural posterior estimation, NPE）能保持精确对称性（group equivariant/invariant，即变换不变性或equivariance，如时间平移对称性），显著加速推断（文献中提到比传统数值方法快约一千倍或实现实时/快速inference）。这精确对应“Group Equivariant Neural Posterior Estimation (GNPE)”方法，其核心论文为arXiv:2111.13139（ICLR 2022），该方法专为引力波参数估计设计，强制网络保持严格的对称性，适用于需要变换不变性的场景。首位贡献者（first author）为Maximilian Dax（常简称M. Dax），他在相关系列工作中（如与Green、Macke、Schölkopf等合作）是这一突破性方法的首要提出者。\n\n确切答案：Maximilian Dax\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 250,
+            "prompt_tokens": 177,
+            "total_tokens": 427,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "20": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：题目描述了一个研究团队专注人类互动，使用一种特定媒介开展项目。该媒介是互联网流行用户生成内容（UGC）形式，主要发布在全球视频分享平台（如TikTok、Bilibili或YouTube Shorts，这些平台常被作为研究对象，包括用户对平台特定功能/特征的认知或感知调查）。其背后的技术实现依赖自然语言处理（NLP）领域知名的轻量级模型。结合线索，轻量级NLP模型中最知名且广泛用于UGC文本处理（如情感分析、内容分类、短视频文本理解）的就是DistilBERT（BERT的蒸馏版本，参数减少40%，速度提升60%，保留97%性能，常用于社交媒体短文本研究）。其他候选如ALBERT在短视频分类中有应用，但DistilBERT在NLP轻量级模型中更具标志性，且匹配“知名轻量级核心模型”。平台功能认知调查在TikTok/Bilibili相关研究中常见，进一步支持UGC短视频上下文。\n\n确切答案：DistilBERT\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 273,
+            "prompt_tokens": 247,
+            "total_tokens": 520,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "21": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：这项技术依赖人体独特物理特征（如指纹、虹膜等）而非PIN/密码来区分授权用户与欺诈者，属于生物识别身份验证范畴。其“特定年份开发并推广”结合“最早被非营利公共服务部门（福利/社保系统）和盈利经营性部门（银行/金融）采纳”，以及“更先进形态能整合多种生物特征（多模态）”的描述，与指纹识别（fingerprint biometrics/finger imaging）高度匹配。指纹技术早在19世纪末已概念化，但现代自动化系统在20世纪90年代开发并推广；1990年代美国多州福利项目（如加州、纽约、得克萨斯等的TANF/FSP福利发放）最早大规模采用指纹防“double dipping”（重复领取欺诈），属于非营利公共服务；同期或稍后银行/ATM等商业部门也开始采用（如防止欺诈交易）。多模态高级形态（如结合指纹+面部+虹膜）是其自然演进。其他选项如虹膜识别（1990s后期商业化，第一家银行1999年采用）或面部识别匹配度较低，未见明确“最早公共福利+商业”双部门同步记录。\n\n确切答案：指纹识别（或指纹生物识别技术，fingerprint biometrics/finger imaging）\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 335,
+            "prompt_tokens": 224,
+            "total_tokens": 559,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "22": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述的研究目标是降低预测新参与者大脑（fMRI）数据所需的数据量，同时提升模型与大脑响应的对齐程度。研究者采用的可扩展训练方法是对预训练的语音语言模型（pretrained speech language models）进行微调，具体是通过联合多个参与者对同一自然语音刺激的fMRI响应进行预测（jointly predict fMRI responses from multiple participants）。这种方法被称为“brain-tuning”，它在模拟人类对语音信号的认知处理（尤其是语义皮层区域的对齐）方面表现出色，最终得到的模型是经过brain-tuning的speech models（脑调优语音模型），其在脑对齐、泛化到新参与者和新数据集上均优于基线。\n\n确切答案：brain-tuned speech models（或称经过brain-tuning的语音语言模型）\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 220,
+            "prompt_tokens": 165,
+            "total_tokens": 385,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "23": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述了一篇提出特定框架（解决交错/交错式图像-文本内容生成中的一致性问题，使用特定图/树结构捕捉跨模态关系，并配有自定义基准测试集）的论文。第一作者领导的团队还提出了解决参数冗余的简单微调方法（在标准数据集上测试）。通过搜索“interleaved image-text generation consistency graph/tree structure benchmark”及相关作者/方法，匹配最接近的是Zeteng Lin（第一作者，联合）等人的论文。该文提出IUT-Plug框架，使用Image Understanding Tree（IUT，一种分层符号树结构，捕捉实体、属性、关系等跨模态信息）作为显式持久内存，解决多轮交错生成中的“Multimodal Context Drift”（实体、逻辑、风格一致性问题）。它构建了一个3000个人工标注样本的动态基准测试集，用于评估一致性。框架为即插即用、无需全参数微调（参数高效）。第一作者Zeteng Lin的团队/相关工作涉及参数高效方法（如LVLM-MIR等Jun Yu团队的类似PEFT，但核心匹配在一致性框架+树结构+基准上）；整体细节高度吻合“交错内容生成一致性+图结构+基准+参数高效微调”描述，虽“简单微调”部分可能指向团队其他贡献或框架本身的轻量特性，但论文主体最贴合。\n\n确切答案：Bridging the Consistency Gap: Explicit Structured Memory for Interleaved Image-Text Generation\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 384,
+            "prompt_tokens": 180,
+            "total_tokens": 564,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "24": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述了一项针对移动通信系统（很可能LTE）下行SFBC性能的研究，团队提出并实现了性能评估分析工具（analytical tool，常为MATLAB实现），该工具整合了广泛用于该系统的多载波调制技术（OFDM）。研究使用了两种高阶正交幅度调制方式（16-QAM和64-QAM）进行性能分析（查询中“两种高阶”与论文中16-QAM、64-QAM匹配，4-QAM为低阶基础）。此外，学术界为降低该多载波系统（OFDM）的峰值平均功率比（PAPR），研究了适用于OFDM的具有不同阶数/长度的近互补序列（near-complementary sequences of various lengths/orders，这是OFDM PAPR降低领域的已知研究方向，与查询中“不同阶数的近互补序列”完全吻合）。通过搜索匹配“LTE SFBC MIMO Transmitter Modelling and Performance Evaluation”论文，其作者Gabriela Morillo提出并实现了MATLAB分析工具，用于SFBC-OFDM下行性能评估（BER/SNR），系统整合OFDM，性能分析涵盖高阶QAM，且背景学术研究符合近互补序列部分。该论文核心/第一作者为Gabriela Morillo（团队所在研究者）。其他候选（如Ali Jemmali等）不完全匹配工具提出与QAM组合。\n\n确切答案：Gabriela Morillo\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 336,
+            "prompt_tokens": 215,
+            "total_tokens": 551,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "25": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：根据查询描述，该研究涉及在合成解剖数据上训练模型，然后使用特定身体部位的低分辨率医学影像样本测试其不确定性估计能力。新方法需在性能上与传统深度集成（deep ensembles）相当，但计算成本更低。深度集成是机器学习不确定性估计的常见基准方法，但因需训练多个独立模型而成本高昂。搜索多个相关关键词组合（包括合成解剖、医学影像、低分辨率、低计算成本不确定性方法、与深度集成相当等）后，未找到完全精确匹配“合成解剖数据训练 + 低分辨率特定身体部位测试”的单一论文。然而，最符合“新提出方法、性能相当但成本更低”特征的是“Local Gradients UQ”（局部梯度不确定性量化）方法。该方法由B. Schott等学者提出，是一种后验（post hoc）梯度-based不确定性量化技术，专为深度学习医学影像评估（如转移病灶勾画）设计。它利用模型的局部梯度空间评估对参数的敏感性，直接生成区域-wise不确定性，无需改变已训练模型输出或运行多个前向传播/模型。与概率输出-based非梯度方法相比，它在响应图像质量退化、假阳性过滤和医师评分一致性等方面表现出色，且作为单模型后处理方法，计算成本显著低于需多模型的深度集成。其他候选如checkpoint ensembles（检查点集成）也成本更低（从单一训练轨迹采样），但Local Gradients UQ更强调“新提出”和“梯度创新”以实现低成本高效不确定性。查询细节可能指该或类似工作；若有更多作者/年份线索可进一步精炼。\n\n确切答案：Local Gradients UQ (或 Local Gradients uncertainty quantification)\n\n置信度：60%",
+        "usage": {
+            "completion_tokens": 478,
+            "prompt_tokens": 192,
+            "total_tokens": 670,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "26": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：根据查询描述，视频详细字幕生成（video detailed captioning）的评估指标采用“分而治之”（divide-and-conquer）策略，将长字幕评估分解为多个短问答对（QA pairs），使用LLM辅助评估。该指标为VDCScore（或VDCscore），出自论文“AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark”（arXiv:2410.03051，第一作者Wenhao Chai）。该论文还引入了VDC基准。Wenhao Chai同时在低光图像/视频增强领域有贡献（如AGLLDiff等论文中作为合著者，相关工作涉及低光增强任务，超越或相关于先前CNN-based方法）。虽然低光部分为图像增强，但与查询中“低光视频增强”高度相关，且其为视频字幕论文第一作者，符合“同时是另一篇...第一作者”的核心匹配。无其他学者完全匹配所有细节。\n\n确切答案：Wenhao Chai\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 235,
+            "prompt_tokens": 230,
+            "total_tokens": 465,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "27": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：题目描述了一个基于深度残差网络（ResNet）的模型，该网络在计算机视觉中广泛用于处理遮挡等任务（如数据增强中的随机遮挡）。模型在著名3D人体姿态基准数据集（如Human3.6M、MPI-INF-3DHP等，含丰富3D标注）上性能优异，并在另一个专注于精细动作/野外姿态捕获的数据集（3DPW，3D Poses in the Wild）相关的学术竞赛（ECCV 2020 3DPW Challenge）中获得冠军（winning approach，使用ResNet backbone生成metric-scale truncation-robust heatmaps）。其论文标题“Metric-Scale Truncation-Robust Heatmaps for Absolute 3D Human Pose Estimation”（MeTRAbs）与“捕捉每个关节的运动”概念紧密相关（通过独立、鲁棒的热图精确捕获每个关节的3D位置/运动，处理截断和尺度问题，实现毫米级精度评估，如MPJPE指标）。这与描述的所有要素高度匹配，包括ResNet在遮挡处理中的应用和竞赛冠军身份。\n\n确切答案：MeTRAbs（或其基于ResNet的3D人体姿态估计模型）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 294,
+            "prompt_tokens": 241,
+            "total_tokens": 535,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "28": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：研究者A在B5G/6G云网集成资源分配领域作为第一作者发表关键论文，如“Near-optimal Cloud-Network Integrated Resource Allocation for Latency-Sensitive B5G”（与Tarik Taleb合作），提出近优算法解决方案，匹配“针对C（云网集成资源分配相关核心问题）提出两种算法，其中D声称最优解、E以速度见长牺牲部分最优性”的描述（论文中涉及最优/近优与高效求解权衡）。此外，A作为第一作者发表“Semantic Revolution from Communications to Orchestration for 6G: Challenges, Enablers, and Research Directions”等前沿论文，涵盖云网资源集成分配、自主编排及语义通信，高度匹配所有条件。C很可能指云网集成资源分配或语义感知编排相关共享概念，A为Masoud Shokrnezhad。\n\n确切答案：Masoud Shokrnezhad\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 231,
+            "prompt_tokens": 221,
+            "total_tokens": 452,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "29": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述了一项特定技术，其核心是采用“多模态基准混合与自适应校正的流水线”作为重建方法，目的是使评估目标与真实世界任务分布对齐。根据搜索结果，这直接对应于arXiv每日论文汇总中提及的一项工作（2024年10月左右的论文描述）：该工作明确提出“多模态基准混合和自适应校正管道来重建真实世界的任务分布”，以确保评估能有效推广到真实世界用例，并通过广泛元评估验证其有效性。该技术的提出者未在摘要片段中命名，但上下文指向相关多模态评估/基准论文的作者团队（常见于多模态大模型评测领域的研究者）。RecA等其他重建对齐方法虽涉及多模态重建与基准，但未匹配“基准混合+自适应校正流水线”这一精确表述。\n\n确切答案：该技术由提出“多模态基准混合与自适应校正管道”的论文作者团队提出（具体作者未在公开摘要中列出，源于arXiv每日论文描述）。\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 294,
+            "prompt_tokens": 126,
+            "total_tokens": 420,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "30": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：根据查询描述的关键特征（专注于生成模型训练样本贡献评估、首次提出的无需训练且适用于多种模型框架的技术、融合用于校准数据贡献偏差的特定视觉评估方法、包含高效估值的创新核心组件、引入全新的方法论评估标准），这与ICLR 2025论文“GMValuator: Similarity-based Data Valuation for Generative Models”高度匹配。该论文提出GMValuator，作为首个训练-free、model-agnostic的数据估值方法，用于图像生成任务。它从相似性匹配视角制定问题，引入图像质量评估（视觉评估方法）来校准偏差（消除偏差贡献测量），核心通过高效相似性匹配实现估值，并提出四种新评估方法来验证真实性（全新的方法论评估标准）。第一作者（领导并作为*标记）为Jiaxi Yang（杨嘉曦）。\n\n确切答案：Jiaxi Yang（杨嘉曦）\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 245,
+            "prompt_tokens": 207,
+            "total_tokens": 452,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "31": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：用户描述的研究团队构建了一个评估体系，用于测试文档图像内容理解模型的鲁棒性（尤其是面对非训练数据/分布偏移时的表现）。该体系的核心是一个由多个子集组成的数据集合，覆盖三大任务方向：从文档中自动回答问题（VQA类）、识别并提取指定信息（信息提取/KIE类）、将文档划分到不同类别（分类类）。随后，研究者利用该体系的特定组成部分对现有模型进行鲁棒性评估。这与“Do-GOOD: Towards Distribution Shift Evaluation for Pre-Trained Visual Document Understanding Models”（2023）高度匹配：它专门为预训练视觉文档理解（VDU）模型构建分布偏移评估基准，包含9个OOD数据集，覆盖 exactly 3类VDU任务（对应VQA、信息提取、分类），通过这些子集/组合评估现有模型在ID vs OOD下的性能差距，旨在探究鲁棒性。其他候选如DUDE（更侧重端到端基准）、WildDoc（真实场景野外采集，强调一致性分数但非多子集覆盖三大任务的OOD体系）或RVL-CDIP-OOD（仅分类）均不完全契合“多个子集构成的核心数据集合+三大方向+特定组成部分用于现有模型鲁棒性评估”。\n\n确切答案：Do-GOOD\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 347,
+            "prompt_tokens": 280,
+            "total_tokens": 627,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "32": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：根据查询描述，该研究涉及一个用于智能体（LLM-based agents）安全评估的综合性框架，对多种攻击类型（包括思维计划/Plan-of-Thought篡改即PoT backdoor、针对记忆系统的memory poisoning、经典提示注入prompt injection，以及混合攻击mixed attack）和对应防御方法，在多个LLM主干上进行了系统评估。搜索结果精准匹配“Agent Security Bench (ASB)”：它是一个正式化并基准测试LLM-based agents攻击与防御的综合框架，包含10个场景、10个智能体、23种攻击/防御（明确包括10种prompt injection变体、memory poisoning attack、新颖的Plan-of-Thought backdoor attack、mixed attack），并在13个LLM backbones上进行近90,000次测试。该基准由OSU-NLP-Group等提出，arXiv:2410.02644，对应描述中的“近期研究”和所有关键元素。其他基准如AgentDojo或INJECAGENT等仅覆盖部分攻击，未全面匹配混合类型与Plan-of-Thought篡改。\n\n确切答案：Agent Security Bench (ASB)\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 275,
+            "prompt_tokens": 187,
+            "total_tokens": 462,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "33": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：该描述匹配Baishakhi Ray等人的大型实证研究“A Large-Scale Study of Programming Languages and Code Quality in GitHub”。该研究最初于2014年在FSE（Foundations of Software Engineering，ACM SIGSOFT国际软件工程基础研讨会）上发表，后在2017年CACM重新发表。Emery D. Berger等团队在2019年发表复刻研究（reproduction study）“On the Impact of Programming Languages on Code Quality: A Reproduction Study”（发表于TOPLAS，并有FSE相关讨论），对原研究方法论缺陷提出挑战并进行独立复刻分析，复刻年份2019（以7结尾），完全符合“批评论文挑战后又发表复刻研究”及“复刻发表年份以7结尾”的条件。原研究首次正式发表会议为FSE 2014。\n\n确切答案：FSE 2014（或International Symposium on Foundations of Software Engineering 2014）\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 223,
+            "prompt_tokens": 171,
+            "total_tokens": 394,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "34": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：根据查询描述，论文讨论对特定伪造检测技术（尤其是面部伪造/Deepfake检测）的后门攻击，第一作者为Jiawei Liang（或类似学者），攻击属于干净标签（clean-label）后门攻击范畴，且提出的框架在评估中超越现有高性能基准。通过搜索学术论文，匹配的论文为《Towards Backdoor Attacks on Face Forgery Detection》（arXiv:2402.11473），其明确提出名为“Poisoned Forgery Face”的框架，用于实现干净标签后门攻击，并展示了优于既有基准的性能。\n\n确切答案：Poisoned Forgery Face\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 159,
+            "prompt_tokens": 147,
+            "total_tokens": 306,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "35": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：题目描述了一位学者作为第一作者发表的两篇重要学术论文，其中一篇提出了一种人工智能方法，旨在克服深度学习的某些局限（如过拟合、参数效率低、训练不稳定等），且性能优于传统人工神经网络（ANNs）。通过搜索相关学术背景，没有找到完全精确匹配“两篇论文+特定学者+该方法”的单一结果，但最贴近描述的是近年来关于“dendritic ANNs”（树突人工神经网络）的研究。该方法通过融入生物神经元树突的结构和采样特性，构建dANN模型，能显著减少可训练参数（少1-3个数量级）、提升鲁棒性、减少过拟合，并在图像分类任务上匹配或优于传统ANNs。这符合“克服深度学习局限+性能优于传统ANNs”的核心特征。其他候选（如Transformer变体、ResNet等）多为深度学习内部改进，而非明确“克服深度学习局限”的新范式；中文搜索也未定位到特定学者两篇论文的精确对应。因此，该方法最可能是dendritic artificial neural networks（或类似生物启发树突增强的神经网络架构）。置信度中等，因为“两篇论文”的具体学者细节未完全匹配，可能为特定上下文或新兴工作。\n\n确切答案：树突人工神经网络（dendritic ANNs，或dANNs）\n\n置信度：45%",
+        "usage": {
+            "completion_tokens": 361,
+            "prompt_tokens": 145,
+            "total_tokens": 506,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "36": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：根据查询描述，Entity_B 是一个改进后的多语言基准，包含文化中立部分 Entity_C；这与 Global-MMLU 高度匹配（一个扩展到 42 种语言的 MMLU 改进版本，包含文化敏感与文化中立/agnostic 的分类标注）。Entity_A 是更广为人知的原始基准，即经典的 MMLU。Method_D 是为提升 LLM 线性化质量设计的简单两步法，明确声称能大幅提升目标模型在 MMLU（Entity_A）上的表现；这精确对应 LoLCATs（Low-rank Linear Conversion via Attention Transfer），一个两步方法（先通过注意力转移训练线性注意力模拟 softmax，再用 LoRA 微调）。该方法明确作用于具体开源模型 Target_Entity，包括 Llama 3（8B 等）与 Mistral 7B v0.1，并产生显著 MMLU 提升（20+ 点），同时也扩展到 Llama 3.1 系列。在所有条件匹配（Entity_B 含 Entity_C 的多语言文化中立基准、Method_D 提升 Entity_A 并作用于 Target_Entity）的背景下，Target_Entity 指被 LoLCATs 线性化的核心开源模型 Llama-3（或其具体变体如 Llama-3 8B，常作为主要实验对象）。\n\n确切答案：Llama-3（或 Llama 3 8B）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 339,
+            "prompt_tokens": 249,
+            "total_tokens": 588,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "37": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述的“技术框架”指Domain Generalization（域泛化，DG），其应对分布偏移（distribution shift/out-of-distribution generalization）场景，有多篇全面综述文献对其方法进行分类（如Zhou et al. 2021/2023的Domain Generalization: A Survey，按数据操纵、表征学习、学习策略等分类；Wang et al.类似）。近期针对特定安全威胁（adversarial robustness/attacks）领域对DG/OOD模型的性能评估研究，揭示了DG模型在对抗攻击下的突出脆弱性特性（现有OOD泛化方法易受对抗攻击影响）。在DG众多分支中，关注信号处理任务（如音频/语音/动作识别，常涉及audio-visual）的分支里，一种方法独特整合额外模态（audio-visual cross-modal）来提升性能，该方法在推理阶段（test-time/inference）利用额外模态信息增强模型对分布偏移的适应能力，即多模态测试时适应（multimodal test-time adaptation, MMTTA）相关技术，其典型形式通过跨模态对齐、注意力引导或选择性适应等方式，在测试时用无标签目标数据和额外模态提升适应。结合信号处理应用（如audio-visual continual TTA或relative norm alignment等），最匹配的是利用audio-visual等额外模态的“Modality-Collaborative Test-Time Adaptation”或广义的“Multimodal Test-Time Adaptation”（具体如MC-TTA或BriMPR等框架，但核心名称为multimodal test-time adaptation，利用额外模态增强推理适应）。\n\n确切答案：Multimodal Test-Time Adaptation (MMTTA) 或 Modality-Collaborative Test-Time Adaptation (MC-TTA)\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 408,
+            "prompt_tokens": 221,
+            "total_tokens": 629,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "38": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：题目中“代码专用模型的性能”引用了以“Human”开头的著名代码生成基准（即HumanEval，常用于评估代码生成能力）。该公司模型底层采用“新型的、具有状态空间特性的序列模型”（指向Mamba或类似SSM架构，如Codestral Mamba等开源/行业案例，其在HumanEval等基准上被报道与Transformer模型比较或超越）。行业报告显示这种新型架构有广为人知的官方开源实现库（state-spaces/mamba等）。同时，基于该架构的数十亿参数模型在公开评测中性能被报道超越主流骨干架构。题目要求找出被多次提及/比较的“主流骨干架构”，其在原始论文中采用“编码器-解码器设计”和“特定层归一化约定”（即原始Transformer论文《Attention is All You Need》中的encoder-decoder结构，后接Add & Norm的layer normalization + residual connections，这是业界长期主流的骨干，尤其在早期代码/序列模型中被广泛比较）。新型SSM（如Mamba）正是作为其高效替代被提出和基准比较的。\n\n确切答案：Transformer（或原始Transformer的encoder-decoder架构）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 302,
+            "prompt_tokens": 278,
+            "total_tokens": 580,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "39": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述了一种新颖神经网络框架，用于学习微粒随机运动（Brownian dynamics）的物理系统。它整合了两种技术：用于建模随机过程的数学工具（随机微分方程 SDEs，常用于描述 Brownian motion）和处理图结构数据的深度学习方法（Graph Neural Networks, GNNs，将粒子建模为节点、相互作用建模为边）。实验显示该框架超越传统基准，并在未训练的系统参数下有效泛化模拟，这与 BroGNet（Brownian Graph Neural Networks，也称为 Brownian graph neural networks 或 BroGNet: Momentum-Conserving Graph Neural Stochastic Differential Equation）的论文描述完全匹配。该框架直接从粒子轨迹学习 Brownian dynamics，结合 SDEs 和 GNNs，具有动量守恒特性。\n\n确切答案：BroGNet（或 Brownian Graph Neural Networks）\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 212,
+            "prompt_tokens": 194,
+            "total_tokens": 406,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "40": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：问题是关于稀疏自编码器（SAE）研究中的一篇学术论文。该论文正式提出了一种高性能SAE方法，其名称包含非线性“跳跃”含义的激活函数（JumpReLU）。这种方法在Gemma 2（轻量级开源LLM系列，采用交错局部-全局注意力）9B参数版本的激活重构上表现领先。另一改进方法（BatchTopK SAE，将Top-K约束放宽到批次级别）在Gemma 2 2B版本上与该领先方法表现相当。这些细节与BatchTopK SAE论文（arxiv:2412.06410）的描述完全匹配，该论文明确提到BatchTopK在Gemma 2 2B上优于TopK并与state-of-the-art JumpReLU SAE相当，而JumpReLU SAE则在Gemma 2 9B上被评估并达到SOTA重建保真度。JumpReLU论文标题为“Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders”（arxiv:2407.14435），其中“Jumping Ahead”呼应“跳跃”含义，且JumpReLU是非线性激活函数（将ReLU替换为带正阈值的跳跃式零化操作）。Gemma 2系列的注意力机制也符合描述。\n\n确切答案：Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders\n\n置信度：95%",
+        "usage": {
+            "completion_tokens": 307,
+            "prompt_tokens": 255,
+            "total_tokens": 562,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "41": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：基于查询描述（开源框架、针对机器学习系统研究复现和模型生产部署设计、核心概念是将复杂系统拆解为带接口和元描述的可复用子组件、联合工业伙伴完成验证事件），这些特征高度匹配Collective Knowledge (CK)框架（后演进为Collective Mind/CM，由Grigori Fursin等开发，常与MLCommons/MLPerf相关）。CK的核心正是将研究工件（如代码、数据、模型、结果）组织为可复用组件，这些组件封装 artifacts，提供统一API、CLI、元描述（JSON metadata）和通用自动化动作，支持跨硬件/软件的便携工作流、复现和优化。该框架与工业伙伴（如Arm等）合作，在MLPerf等基准测试中验证了其有效性，用于自动化运行、比较和优化ML系统。由此推导，其关键自动化技术产出是可移植、可复现的工作流（portable/reproducible workflows），或更具体地说，是自动化、可复用的ML管道/基准测试工作流（常用于MLOps、复现挑战和部署自动化）。\n\n确切答案：可移植且可复现的工作流（portable and reproducible workflows）与自动化管道（automation scripts/pipelines for ML benchmarking, optimization, and deployment）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 319,
+            "prompt_tokens": 181,
+            "total_tokens": 500,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "42": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：题目描述的年份以3结尾（2023年），同一天报道中国航天活动（如长征火箭发射或天舟/神舟相关任务）和能源公司（如CNOOC公布油气勘探/生产数据或储备）的事件，经查阅2023年新闻和报告可匹配多起中国航天发射与CNOOC油气相关公布的时段重叠或同日报道情况。该年重要计算机视觉论文中，符合“新网络架构 + 注意力机制生成特定辅助组件 + 用于精确定位图像关键像素区域的可学习嵌入概念”的是涉及注意力生成辅助mask/attention map来辅助learnable positional/query embeddings的架构（如MAGE或类似masked generative/attention-based框架，或Pixel-aligned/ learnable embedding论文中注意力辅助定位），其中辅助组件（mask或attention map）最终辅助实现**pixel-level**（像素级）或dense pixel localization的learnable embedding（像素对齐的可学习嵌入，用于精确定位关键像素区域，如在referring localization、segmentation或dense grounding任务中）。\n\n确切答案：像素级（pixel-level）可学习嵌入（或dense/pixel-aligned learnable embedding，用于精确定位关键像素区域）\n\n置信度：60%",
+        "usage": {
+            "completion_tokens": 307,
+            "prompt_tokens": 230,
+            "total_tokens": 537,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "43": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：题目描述了一个开源、资源高效的中文指令跟随大语言模型，使用流行低秩自适应微调技术（LoRA）构建于科技巨头（如Meta）开发的知名基础架构（LLaMA系列）。这匹配众多基于LLaMA的中文开源模型（如Chinese-LLaMA、BayLing、Linly等），它们常采用LoRA/QLoRA进行高效指令微调。LoRA技术由Microsoft提出，题目询问研究其“计算极限”（computational limits）的学者。相关论文《COMPUTATIONAL LIMITS OF LOW-RANK ADAPTATION (LORA) FINE-TUNING FOR TRANSFORMER MODELS》直接探讨了LoRA在Transformer模型上的计算限制，作者包括Eran Malach等，其工作聚焦深度学习中的计算界限与LoRA效率分析。\n\n确切答案：Eran Malach（及其合作者）\n\n置信度：70%",
+        "usage": {
+            "completion_tokens": 197,
+            "prompt_tokens": 167,
+            "total_tokens": 364,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "44": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：该方法为SMUG（Scaling Symbolic Methods Using Gradients for Neural Model Explanation），它将梯度信息（例如Integrated Gradients）与符号方法（SMT求解器，如z3基于线性实数算术）结合，用于缩放神经网络的符号分析以生成稀疏且忠实的显著性解释（saliency maps），避免全网络编码的规模问题。该论文在手写数字识别（MNIST，小型前馈网络）、大规模图像分类（ImageNet，使用Inception-v1模型）和文本任务（Beer Reviews上的1D CNN用于香气评分预测，属于情感/属性分析语料）上进行了评估，展示了在紧凑性、忠实度和人类一致性方面的优势。论文于ICLR 2021发表，第一作者Subham S. Sahoo（也写作Subham Sekhar Sahoo）直接贡献了框架设计、梯度与SMT的集成、最小掩码优化问题制定以及跨数据集的实证评估。\n\n确切答案：Subham S. Sahoo（或Subham Sekhar Sahoo）\n\n置信度：95%",
+        "usage": {
+            "completion_tokens": 252,
+            "prompt_tokens": 174,
+            "total_tokens": 426,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "45": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：根据查询描述，该学者在图论和算法设计领域有突出贡献，具体包括：（1）为图论中的网络设计问题（network design problem，通常涉及Steiner树或连通性要求等NP难问题）设计首个运行时间为线性对数级别（linear-logarithmic，即O(n log n)或类似）的多项式时间近似方案（PTAS或近似算法）；（2）针对经典组合优化问题（很可能是Euclidean TSP或相关几何问题），在欧几里得平面上提出运行时间接近线性的随机近似方案（near-linear time randomized approximation scheme）；（3）早期工作涉及稀疏图中平面结构的提取（extracting planar structures from sparse graphs，如平面子图或相关结构）。这些特征指向一位女性计算机科学家。通过匹配这些具体成果（尤其是网络设计中的突破性线性对数时间近似、Euclidean平面上的近线性随机近似，以及稀疏图平面提取），该学者是Julia Chuzhoy。她在survivable network design、vertex-connectivity等问题上有O(k^3 log n)等高效近似算法（匹配线性对数相关），并有图论/平面图相关早期工作；整体与查询中两个NP难问题的近似成果高度一致（尽管部分细节如“随机”可能对应特定变体或相关几何工作，核心匹配度高）。其他候选（如Vera Traub在Steiner forest等网络设计上有改进，但不完全匹配“首个线性对数”和“早期平面提取”；或几何领域如Arora相关但非女性）均不如其匹配完整。\n\n确切答案：Julia Chuzhoy\n\n置信度：65%",
+        "usage": {
+            "completion_tokens": 417,
+            "prompt_tokens": 235,
+            "total_tokens": 652,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "46": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：查询描述了通信与编码理论中两项关于特定格结构（lattice structure）的研究：一项实现容量的构建工作，另一项分析其渐近性能（asymptotic performance），两者均与一个数学概念系综（Concept X，可能指特定lattice ensemble或polar-related概念）相关。机器学习领域有一篇基于成对相似性（pairwise similarities）的自监督深度聚类（deep clustering）框架论文，其第一作者与上述编码理论工作的核心贡献者相同。该贡献者还在另一篇独立的混合适配器（mixture of adapters）技术论文中担任第一作者。交叉搜索arxiv、Google Scholar等来源后，编码理论中的容量实现与渐近性能高度匹配LDPC lattices（或相关polar lattices）系列工作，由Mohammad-Reza Sadeghi主导（包括Capacity Achieving Low Density Parity Check Lattices等论文，涉及lattice ensemble构造与性能分析）；机器学习聚类论文《Deep Clustering with Self-Supervision using Pairwise Similarities》第一作者为Mohammadreza Sadeghi（McGill University，与Narges Armanfard合作）；混合适配器相关工作虽未精确匹配第一作者，但整体学者跨领域贡献（从lattice codes到深度学习聚类）唯一指向此人，Concept X可能指特定lattice ensemble或概念框架。其他候选（如polar lattices的Liu等）在ML聚类上无匹配。\n\n确切答案：Mohammad-Reza Sadeghi（或Mohammadreza Sadeghi）\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 353,
+            "prompt_tokens": 259,
+            "total_tokens": 612,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "47": {
+        "model": "grok-3-deepsearch",
+        "response": "**解析：** 题干描述了一个典型的近期后门攻击研究场景：现有方法常因后门样本与干净样本的优化冲突或后门信号过强而导致过拟合（Entity_A，通常表现为干净准确率下降或触发泛化差），从而限制攻击实用性。一篇标题冲击力的论文提出借用非安全领域（通常是泛化/正则化领域）的策略（Entity_C）来缓解这一问题，该策略原本设计用于缓解ML模型的另一常见问题（Entity_D，如模型过拟合、过自信或梯度冲突）。该方法同时保持/提升关键攻击指标（Entity_E，如高攻击成功率ASR，同时维持高干净准确率CA），实现“解决过拟合 + 保证高成功率”的平衡。  \n\n通过广泛检索近期文献（聚焦“backdoor attack overfitting high ASR” “prevents overfitting to adversarial/backdoor objective” “strategy from other ML problem”等），最匹配的是采用**统一优化框架**（或类似梯度冲突解决 + 正则化/选择性更新策略）的后门攻击方法。这些方法常借用知识蒸馏（KD）、标签平滑（label smoothing）、dropout-style正则化、mixup/CutMix数据增强或弹性权重整合（EWC）等原本用于缓解模型过拟合/过自信/泛化差的非安全策略，来平衡干净目标与后门目标，避免后门过拟合，同时实现高ASR与高CA。典型如2026年论文中“unified optimization framework for backdoor attacks”，它明确用策略防止“overfitting to the adversarial objective”，在LLM等架构上达成高ASR（平均88.4%，排除难题后近99%）与合理CA。其他候选（如SAB用dropout防止触发过拟合、Label-Smoothed Backdoor、CleanSheet等）也体现类似“借用正则化策略解决过拟合 + 高ASR”模式，但核心是“结合特定正则化/蒸馏/优化策略的后门攻击”，常被描述为“overfitting-aware”或“regularized backdoor attack”。由于题干强调“结合了特定策略以同时解决过拟合和保证高成功率”，这类方法统称为**正则化后门攻击**或**anti-overfitting backdoor attack**（具体论文中可能命名为Unified Backdoor Attack或类似冲击力标题如“Cracking/Overcoming Backdoor Overfitting”）。没有完全精确匹配的单一专有名词，但本质是“使用源于缓解过拟合的策略（如KD/正则化）的后门注入方法”。置信度不高是因为题干似指特定未公开/假设论文，但检索高度指向此类框架。  \n\n**确切答案：** 正则化/统一优化后门攻击（或Label-Smoothed/ Dropout-regularized Backdoor Attack，使用源于缓解模型过拟合的策略如标签平滑/KD/选择性更新）  \n\n**置信度：** 45%",
+        "usage": {
+            "completion_tokens": 707,
+            "prompt_tokens": 260,
+            "total_tokens": 967,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "48": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：该语言模型技术需同时满足三个条件：（1）作为法律领域专业预训练模型的核心基础架构（即底层架构被用于构建或继续预训练法律专用模型）；（2）在从临床笔记挖掘信息进行疾病诊断的研究中直接用作生成式提示生成器（prompt generator）；（3）在多个大规模语言模型编辑（model editing/knowledge editing）基准评估中被包含作为评估模型之一。经搜索匹配，GPT-J（6B参数的开源自回归语言模型，由EleutherAI开发）完全符合：它被用于LexGPT等法律领域预训练模型的基础（LexGPT基于GPT-J在法律语料Pile of Law上继续预训练）；在牙科/牙周病诊断研究中直接用于从电子牙科临床笔记生成提示以训练RoBERTa NER模型提取诊断信息；同时在知识编辑基准（如UNIEDIT、RippleEdits、CounterFact相关评估）中被广泛用作基准模型（常与GPT-2-XL等一起评估ROME、SERAC、IKE等编辑方法）。其他候选如BERT变体或LLaMA不完全同时满足所有三点，尤其是临床提示生成器和法律核心架构的组合。\n\n确切答案：GPT-J\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 317,
+            "prompt_tokens": 198,
+            "total_tokens": 515,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "49": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：用户查询描述了一种无需训练和提示的新型零样本工业异常分类与分割方法（对应MuSc论文，在MVTec AD和VisA等常用基准上显著提升性能）。MVTec AD是工业异常检测领域最经典的基准之一，其发布团队（MVTec）针对该基准提出了扩展版本MVTec AD 2（包含更多先进场景，如透明/重叠物体、暗场/背光照明、高方差正常数据、极小缺陷等，共8000+高分辨率图像，更具挑战性）。为促进公平算法比较，该团队设立了公开评估服务器（public evaluation server），隐藏测试集像素级ground truth，仅允许通过服务器提交结果进行标准化评估（防止测试集过拟合或不一致指标使用）。这与查询中“基于其中某个基准提出的、包含更多场景和图像的新挑战性数据集”及“公开的评估平台”完全匹配（Real-IAD系列虽也具挑战性，但无明确公开服务器描述，且MuSc论文直接提及MVTec AD/VisA基准）。\n\n确切答案：MVTec AD 2的公开评估服务器（https://benchmark.mvtec.com/）\n\n置信度：85%",
+        "usage": {
+            "completion_tokens": 307,
+            "prompt_tokens": 160,
+            "total_tokens": 467,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    },
+    "50": {
+        "model": "grok-3-deepsearch",
+        "response": "解析：根据查询描述，该学者作为核心作者参与提出专为详细字幕（detailed subtitles/captioning）任务设计的新型多样性评价指标（diversity metric），同时以第一作者身份撰写论文介绍一个通用多模态大语言模型。该模型采用模块化网络设计（modularized network design），以语言解码器（language decoder）作为管理不同模态的通用接口（universal interface），并被论证为首个在纯文本和多模态场景中展现特定协作效应（modality collaboration）的模型。匹配这些特征的模型是mPLUG-Owl2，其论文（CVPR 2024）由Qinghao Ye等作者完成，第一作者Qinghao Ye（或对应学者）符合描述，模型明确使用modularized设计、language decoder作为universal interface，并强调modality collaboration（协作效应），在文本与多模态任务中实现协同提升。\n\n确切答案：mPLUG-Owl2\n\n置信度：75%",
+        "usage": {
+            "completion_tokens": 231,
+            "prompt_tokens": 210,
+            "total_tokens": 441,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    }
+}

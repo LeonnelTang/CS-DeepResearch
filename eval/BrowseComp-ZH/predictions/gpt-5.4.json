@@ -1,0 +1,952 @@
+{
+    "56": {
+        "model": "gpt-5.4",
+        "response": "解析：题目给出的关键线索是：  \n1. **26岁开始做专职导演**；  \n2. **当年写出了第一个电影剧本**；  \n3. **65岁之后不再作为导演拍戏**；  \n4. **享年89岁**。  \n\n这些特征与**黑泽明**高度吻合。黑泽明生于1910年，1936年前后进入电影行业，约**26岁**时开始走上导演职业道路，并在早期参与编剧工作；他晚年高龄后基本不再亲自执导新片，**享年89岁**（1998年去世）。因此题目所指应是黑泽明。\n\n确切答案：**黑泽明**\n\n置信度：**68%**",
+        "usage": {
+            "completion_tokens": 183,
+            "prompt_tokens": 114,
+            "total_tokens": 297,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "196": {
+        "model": "gpt-5.4",
+        "response": "解析：题干给出的关键信息是：  \n1. **2D生存冒险游戏**  \n2. **带有恐怖元素**  \n3. **角色职业有六种**  \n4. **发行商是一家欧洲游戏公司**\n\n这些特征与 **《Darkwood》** 较为吻合。它是一款俯视角/2D风格的生存恐怖冒险游戏，带有明显恐怖氛围，发行相关公司来自欧洲（开发商 Acid Wizard Studio 为波兰团队）。综合这些线索，最符合的游戏名称是 **《Darkwood》**。\n\n确切答案：**《Darkwood》**\n\n置信度：**41%**",
+        "usage": {
+            "completion_tokens": 158,
+            "prompt_tokens": 108,
+            "total_tokens": 266,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "156": {
+        "model": "gpt-5.4",
+        "response": "解析：题干描述的是一种“中国特有的非物质文化遗产艺术形式”，且“主要分为四个流派”。这与“中国内画”高度吻合。内画通常分为京派、冀派、鲁派、粤派四大流派。其中特别著名的一派是“冀派内画”，创始人为王习三。王习三生于1938年，卒于2006年，享年68岁，常被表述为“70岁左右”或接近70岁；同时他与叶仲三、马少宣、周乐元等人都被视为内画艺术的重要大师。题干还说“其中一个主要发源地以酒类知名”，这也契合山东鲁派相关地区及中国内画重要传播地中与酒文化密切相关的地域特征。综合判断，答案是“内画”。\n\n确切答案：这项非物质文化遗产艺术形式是**内画艺术（鼻烟壶内画）**。\n\n置信度：78%",
+        "usage": {
+            "completion_tokens": 245,
+            "prompt_tokens": 149,
+            "total_tokens": 394,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "199": {
+        "model": "gpt-5.4",
+        "response": "解析：题干信息有几个关键点：  \n1. “国家5A级旅游景区”；  \n2. “位于某省东南部”；  \n3. “最早有语言和文字流传的历史可追溯到4000多年前”。  \n\n这类表述非常符合**龙虎山风景名胜区**的介绍。龙虎山位于**江西省东南部**（通常表述为江西省鹰潭市），其历史文化常被描述为可追溯到**4000多年前的古越人活动**，并且是著名的国家5A级旅游景区。  \n\n因此，题目所指的风景区应为**龙虎山风景区**。  \n\n确切答案：龙虎山风景区（龙虎山旅游景区）  \n\n置信度：72%",
+        "usage": {
+            "completion_tokens": 184,
+            "prompt_tokens": 116,
+            "total_tokens": 300,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "257": {
+        "model": "gpt-5.4",
+        "response": "解析：题干描述的是一种“双手演奏”的传统乐器，左右手技法分别很多，且“传统流派可分为七种”，这与**古琴**较吻合。古琴常说右手有多种指法、左手也有多种指法，并有“九嶷派、浙派、虞山派、广陵派、蜀派、梅庵派、诸城派”等传统七大流派。题中又说其代表作中有一首“表现对某人物英年早逝的惋惜”，这对应古琴名曲**《忆故人》**一类悼念性质作品，题目更可能是在指与“英年早逝人物”相关的典故人物。此类常见人物联想到**王勃**，其“英年早逝”极具代表性；若问“此人的师傅是”，通常是在考查王勃的老师。王勃曾受教于**曹元**。因此答案应为曹元。  \n\n确切答案：曹元  \n\n置信度：34%",
+        "usage": {
+            "completion_tokens": 261,
+            "prompt_tokens": 128,
+            "total_tokens": 389,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "151": {
+        "model": "gpt-5.4",
+        "response": "解析：题目要求一种“常用于治疗炎症的药物”，其“成分的化学式包含四种元素”，并且“化学式中所有元素的数量均是某一个大于一的奇数的倍数”，同时“该种药物曾被列入致癌物清单”。\n\n符合这一特征的典型药物是**保泰松（Phenylbutazone）**。  \n其分子式为 **C19H20N2O2**，包含四种元素：C、H、N、O。  \n各元素下标分别为 19、20、2、2。进一步看，若考虑题意中“曾被列入致癌物清单”的常见相关抗炎药，更贴近的是**非那西丁（Phenacetin）**这类历史上曾被列为致癌物的药物，但它主要不是抗炎常用药。  \n而在“治疗炎症”这一用途上，**保泰松**属于经典抗炎药，且曾因安全性问题受到严格限制。\n\n不过若严格按“所有元素数量均是某一个大于一的奇数的倍数”理解，需要存在同一个奇数公因子同时整除所有下标。常见抗炎药中并不多见，结合“曾被列入致癌物清单”这一线索，最可能是指**乙酰氨基酚相关混淆对象或保泰松类历史药物**。综合药物用途与历史背景，最合理答案仍是**保泰松**。\n\n确切答案：保泰松\n\n置信度：41%",
+        "usage": {
+            "completion_tokens": 367,
+            "prompt_tokens": 143,
+            "total_tokens": 510,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "271": {
+        "model": "gpt-5.4",
+        "response": "解析：题干所指的应是《中国反垄断法》。该法经历“两年三审”，于 2007 年 8 月 30 日在十届全国人大常委会第二十九次会议上表决通过，并于 2008 年 8 月 1 日起施行。到 2025 年，距其施行约 15 年后，已在 2022 年迎来首次修正，符合题意。  \n在《反垄断法》正式施行的次年，即 2009 年，中国有关方面曾针对“两家公司的一种商业行为”发布禁令，最著名对应事件是可口可乐并购汇源案被禁止。题目中的“两家公司”即：可口可乐公司与汇源果汁。它们的注册地分别为：  \n- 可口可乐公司：美国特拉华州  \n- 汇源果汁（中国汇源果汁集团有限公司）：开曼群岛\n\n确切答案：美国特拉华州；开曼群岛。\n\n置信度：78%",
+        "usage": {
+            "completion_tokens": 243,
+            "prompt_tokens": 148,
+            "total_tokens": 391,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "19": {
+        "model": "gpt-5.4",
+        "response": "解析：题干中的“21世纪初中国体育史上有两大突破”通常指 **2004年**中国体育的两件大事：  \n1. 中国男篮球员在NBA取得重大突破；  \n2. 中国网球在大满贯上取得突破。  \n\n题目说“同年，某家美国大型公司搬迁到美国东部五大湖区的一家城市”，可对应 **波音公司于2001年将总部迁至芝加哥**。芝加哥位于五大湖区。  \n“在此城市中诞生的一名主教练在数年后第二次获得了某项体育赛事总冠军”，芝加哥出生、后来第二次夺得总冠军的著名主教练可对应 **泰伦·卢**（出生于墨西哥，但不符）或其他NBA教练线索，但结合前文“中国体育史上两大突破同年”更关键的是锁定年份。  \n\n中国体育史上常被并称为“两大突破”的一年是 **2004年**。  \n而 **2004-2005赛季CBA常规赛MVP** 是 **唐正东**。\n\n确切答案：唐正东\n\n置信度：63%",
+        "usage": {
+            "completion_tokens": 275,
+            "prompt_tokens": 145,
+            "total_tokens": 420,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "106": {
+        "model": "gpt-5.4",
+        "response": "解析：题干描述的是一位“中国编剧”，出生于中国北方省份，18岁时到中国南方某军区服役4年，66岁加入中国作家协会。根据这一履历特征，较符合的是**魏明伦**：他出生于四川以外的北方籍贯说法常见混淆，但其经历中并不完全吻合；而结合“编剧”“18岁入伍南方军区4年”“66岁加入中国作协”这一组信息，最可能对应的是**高满堂**。不过高满堂出生于辽宁（中国北方省份）这一点吻合，但其公开履历中“18岁在南方某军区服役4年、66岁加入中国作协”的完整对应信息并不十分常见。题目里“编辑”应为“编剧”的笔误。综合判断，最可能答案是**高满堂**。  \n确切答案：高满堂  \n置信度：42%",
+        "usage": {
+            "completion_tokens": 226,
+            "prompt_tokens": 116,
+            "total_tokens": 342,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "285": {
+        "model": "gpt-5.4",
+        "response": "解析：题干信息较少，只给出“1964–1968 年间首次被发现、分子量约 201、化学式含超过四种元素、白色结晶粉末”这些条件。结合常见化学物质资料进行比对，较符合的是一种含 C、H、N、O、Cl 五种元素、相对分子质量约 201 的白色结晶粉末化合物——**氯硝柳胺**（Niclosamide，分子式 C13H8Cl2N2O4，分子量约 327 实际并不符）。但分子量 201 且五种元素的候选物较多，单凭题面无法唯一严格锁定。若按“白色结晶粉末、1960年代发现、含五种元素”的常见题库指向，较可能指向**阿斯巴甜**一类物质，但其分子量又不符。  \n因此，基于题干现有信息，**无法高置信唯一确定**；若必须给出一个最可能答案，我倾向于题目可能原始数据存在误差，目标答案可能是**甜蜜素/阿斯巴甜/三氯蔗糖**这类食品化学品中的一个，但它们的分子量也不等于 201。综合判断，目前**不能可靠作答**。\n\n确切答案：信息不足，**无法准确唯一确定该化学物质的中文化学名**。\n\n置信度：18%",
+        "usage": {
+            "completion_tokens": 350,
+            "prompt_tokens": 135,
+            "total_tokens": 485,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "76": {
+        "model": "gpt-5.4",
+        "response": "解析：题目线索可以这样串起来：\n\n1. “摘得5项世界文学奖”的小说  \n   这更像是在指一部获得多项国际文学奖、且知名度极高的小说。与后面“男主角中文译名后两个字”相结合，比较符合的是《追风筝的人》。\n\n2. “小说男主角的中文译名的后两个字与某世界顶级知名大学的前两个字重合”  \n   《追风筝的人》男主角常见中文译名是“阿米尔”。  \n   其后两个字是“米尔”。  \n   世界顶级大学中，“米尔”可对应“米尔斯、米尔大学”等并不典型；但若考虑小说中另一核心男性角色“哈桑”则不合。  \n   不过这类题常常把“男主角”按最核心人物“阿米尔”来认定，而“米尔”与“米尔…”开头高校的匹配度不算特别强，说明这里可能存在中文译名版本差异或题目表述略宽泛。\n\n3. “小说作者现居住地最知名的大学曾在小说出版那年的145年前发生过搬迁”  \n   《追风筝的人》作者卡勒德·胡赛尼长期居住美国加州。  \n   若取其现居住地相关最知名大学为斯坦福大学，则不符合“搬迁”线索。  \n   但若取其居住地为北加州湾区、最知名大学之一加州大学伯克利分校，其前身加州学院/相关建校迁址时间与小说出版年 2003 年往前推 145 年得到 1858 年，正好是许多加州高教机构历史变动时期。  \n   这一点与《追风筝的人》2003 年出版较能对上。\n\n4. 综合判断  \n   在中文世界里，“获多项国际文学奖”“人物译名”“作者旅居美国、关联知名大学历史搬迁”这些线索，最可能指向的仍是卡勒德·胡赛尼的《追风筝的人》。\n\n确切答案：该小说是《追风筝的人》。\n\n置信度：62%",
+        "usage": {
+            "completion_tokens": 524,
+            "prompt_tokens": 138,
+            "total_tokens": 662,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "226": {
+        "model": "gpt-5.4",
+        "response": "解析：题干给出的线索是：  \n1. **中国法律法规**；  \n2. **共八章二十六条**；  \n3. **第二章第五条**的内容“能够有效帮助延长国民的整体寿命”。\n\n“延长国民整体寿命”最直接相关的法律主题通常是 **公共卫生、疫苗接种、疾病预防** 等。其中，**疫苗接种**显著降低传染病死亡率，确实能有效提升人口平均寿命。\n\n与题干结构相符的法规是 **《中华人民共和国疫苗管理法》**。其内容围绕疫苗研制、生产、流通、预防接种和监督管理展开，核心目标正是预防、控制传染病，从而提升全民健康水平。题干所指“第二章第五条”应是对疫苗管理基本制度或预防接种相关原则的描述，因此符合“能够有效帮助延长国民整体寿命”的提示。\n\n确切答案：**《中华人民共和国疫苗管理法》**\n\n置信度：61%",
+        "usage": {
+            "completion_tokens": 240,
+            "prompt_tokens": 115,
+            "total_tokens": 355,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "174": {
+        "model": "gpt-5.4",
+        "response": "解析：题目提供的信息不足以唯一锁定具体电影。线索如“明星云集”“知名导演监制”“屡获国内外大奖”“擅长某种电影类型”“导演为原作品作者本人”都可能对应多部影片；而“主题曲的创作者”需要先明确电影名称才能准确回答。若您提供电影名、主演阵容、监制姓名、原作品名称，或主题曲名称中的任一项，我就能给出确定答案。\n\n确切答案：目前无法确定；请先明确是哪一部电影。\n\n置信度：18%",
+        "usage": {
+            "completion_tokens": 134,
+            "prompt_tokens": 131,
+            "total_tokens": 265,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "233": {
+        "model": "gpt-5.4",
+        "response": "解析：根据题干线索，需要找一部“截至2024年共有六章一百一十九条”的中国法律法规A，并且其第119条明确规定废止一部“曾于1994年修订”的法规B。与这一特征完全吻合的是《中华人民共和国公司法（2023年修订）》。该法全文共六章一百一十九条，其第一百一十九条规定：本法自2024年7月1日起施行，同时废止《中华人民共和国公司登记管理条例》。而《中华人民共和国公司登记管理条例》确曾于1994年修订。因此，A就是《中华人民共和国公司法》。\n\n确切答案：《中华人民共和国公司法》\n\n置信度：96%",
+        "usage": {
+            "completion_tokens": 157,
+            "prompt_tokens": 129,
+            "total_tokens": 286,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "235": {
+        "model": "gpt-5.4",
+        "response": "解析：题干关键信息有几层：  \n1. “自然风光形成与一项经典的化学反应强相关，没有人工雕琢，纯自然形成”——这很像典型的喀斯特地貌，其形成核心与二氧化碳、水、碳酸钙之间的溶蚀/沉积反应有关，即经典的“石灰岩被含碳酸的水溶蚀”的化学过程。  \n2. “平均温度10度左右”——指向中国西南高海拔、气候较凉爽地区。  \n3. “是某个受汉文化影响较深的民族的发源地”——这一描述很符合彝族的重要发源区域之一，尤其是贵州毕节一带常被称为古彝族发祥地。  \n4. “所属的城市在2012~2014年撤县设市”——贵州省毕节市下辖的黔西在2014年前后有撤县设市的行政区划变化线索。  \n结合这些信息，最符合的是贵州毕节黔西一带著名的天然喀斯特景观“乌江源百里画廊”相关区域中的“织金洞/九洞天/百里杜鹃”等候选。但“平均温度10度左右”“纯自然形成”“化学反应形成的著名风景区”最典型且知名度较高、又位于古彝族发祥地毕节范围内的，是“织金洞”这类洞穴景观。  \n不过题干问“这个风景区叫什么”，结合“所属的城市在2012~2014年撤县设市”以及“受汉文化影响较深的民族发源地”这一行政与民族线索，更大概率指向毕节市黔西一带的“乌江源百里画廊”或毕节整体景区群。但从“经典化学反应”直接对应石灰岩溶洞景观来看，最可能是**织金洞风景名胜区**。\n\n确切答案：织金洞风景名胜区\n\n置信度：58%",
+        "usage": {
+            "completion_tokens": 498,
+            "prompt_tokens": 149,
+            "total_tokens": 647,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "99": {
+        "model": "gpt-5.4",
+        "response": "解析：题干描述的是一款“有系列作品的角色扮演游戏”，其英文名里有一个词曾因一词多义而被误译。较符合这一特征的是 **Persona** 系列：早年常被误作“女神异闻录/启示录”相关背景下的延伸误解，其中英文词义和中文对应曾引发译名偏差。并且该系列第二部《Persona 2》的主角名为 **Tatsuya Suou（周防达哉）**，但这并不对应西方神话神名，因此不完全吻合。\n\n更吻合的是 **Breath of Fire** 系列。英文中的 **breath** 既可指“呼吸”，也可指龙的“吐息/龙息”，因此该系列早期中文常出现“火焰之纹章式误会”之外的错译讨论，正式常见译名为 **龙战士**，而不是直译“火焰的呼吸”。第二部主角名为 **Ryu**，而“Ryu”并非西方神话神名，也不符。\n\n再排查后，最符合的是 **Lufia** 系列，即《Estpolis/Lufia》相关作品，但第二部主角名 Maxim 也不符。\n\n综合“第二部主角名字与某位西方神话中神明同名”这一关键条件，最典型的是 **Grandia** 系列中的《Grandia II》，主角名 **Ryudo** 不符；《Wild Arms 2》主角 Ashley 不符；《Lunar 2》主角 Hiro 不符。\n\n因此更合理的答案应是 **圣剑传说（Seiken Densetsu / Trials of Mana 系列相关）**？但第二部主角并不明确符合。\n\n在经典日式RPG系列中，**Arc the Lad II** 主角“艾尔克（Elc）”不符，**Shining Force II** 主角 Bowie 不符。\n\n最终根据“英文名某个单词有两个不同中文意思导致错译”这一特征，最常被提及的就是 **Persona** 中对词义及标题体系的误读，但与第二部主角条件仍存在偏差。若按“主角名字与神同名”的线索，更可能指 **Tatsuya = Tethys?** 但不成立。\n\n题面信息存在一定歧义；在常见中文游戏译名讨论中，最可能被问到的是 **《龙战士》（Breath of Fire）** 这一系列，因为其英文名最容易因 “breath” 的理解而出现误译问题。\n\n确切答案：**《龙战士》（Breath of Fire）**\n\n置信度：34%",
+        "usage": {
+            "completion_tokens": 613,
+            "prompt_tokens": 129,
+            "total_tokens": 742,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "51": {
+        "model": "gpt-5.4",
+        "response": "解析：题目线索可串成这样：\n\n1. “一种已灭绝的鱼类”  \n   结合“它所属的纲科名称与一个电影角色有关”，最像的是**邓氏鱼**。  \n   - 邓氏鱼属于**盾皮鱼纲**。  \n   - “盾”很容易让人联想到电影角色**盾山**（出自相关影视/游戏改编语境中常见角色名）。\n\n2. “他所生存的时期，名字来源于一个地名”  \n   邓氏鱼生活在**泥盆纪晚期**。  \n   - **泥盆纪**（Devonian）的中文旧译对应的名称来源可追溯到地名系统，常见说法是与英国地名相关的地层命名体系。\n\n3. “这种鱼最初被发现的地方夏天会盛开一种花朵”  \n   邓氏鱼最早重要化石发现地在**美国俄亥俄州克利夫兰附近**。  \n   - 俄亥俄州常被联想到夏季盛开的州花——**红康乃馨**。\n\n4. “它所属的纲科名称与一个电影角色有关，这个电影角色属于哪个朝代”  \n   若这里影射的是“盾”→**盾山**，而“盾山”这一名字本身取材于古代人物意象，通常追溯到**春秋战国时期**的文化语境。  \n   因此题目要问的“这个电影角色属于哪个朝代”，可归为**战国**。\n\n确切答案：战国\n\n置信度：32%",
+        "usage": {
+            "completion_tokens": 377,
+            "prompt_tokens": 128,
+            "total_tokens": 505,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "10": {
+        "model": "gpt-5.4",
+        "response": "解析：题目描述指向的是音乐人 **荒井十一（Kenn C）**：他出生于 80 年代，毕业于北京著名音乐院校，擅长钢琴和小号，拥有自己的音乐工作室，曾赴美国学习音乐制作，并与以“声音空灵悠远”著称的男歌手 **许巍** 有深入合作，也曾担任多个音乐综艺的音乐总监。根据题意，问的是他在 **2025 年发布的专辑名称**。对应答案为 **《一天》**。\n\n确切答案：**《一天》**\n\n置信度：**58%**",
+        "usage": {
+            "completion_tokens": 150,
+            "prompt_tokens": 172,
+            "total_tokens": 322,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "109": {
+        "model": "gpt-5.4",
+        "response": "解析：题目给出的线索是：  \n1. 是“日本音乐家”；  \n2. 26岁开始加入一个“日本知名乐团”；  \n3. 这个乐团名称中包含“日本知名城市”。  \n\n较符合这一描述的是**坂本龙一**。他在26岁时加入了著名乐团 **Yellow Magic Orchestra（YMO）**。虽然该团英文名本身不直接写出城市，但其发展背景与“东京”这一日本知名城市高度相关，且在中文语境下常被归入东京流行电子音乐代表团体。结合题意，这一答案最可能指向坂本龙一。  \n\n确切答案：坂本龙一  \n\n置信度：34%",
+        "usage": {
+            "completion_tokens": 167,
+            "prompt_tokens": 103,
+            "total_tokens": 270,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "12": {
+        "model": "gpt-5.4",
+        "response": "解析：题干描述的是“将相和”中的“负荆请罪”相关典故。故事发生在战国赵国，不是战争行为，而是廉颇因不服蔺相如，蔺相如为避免冲突与羞辱，选择“引车避匿于狭道”退让。后来廉颇负荆请罪，二人和解成为千古佳话。由此得名并成为文化象征的地点就是“回车巷”（又称蔺相如回车巷）。题中所说重建碑文由地方书法家撰写，也与河北邯郸回车巷的相关文物记述相符。\n\n确切答案：回车巷（蔺相如回车巷，今河北邯郸）\n\n置信度：96%",
+        "usage": {
+            "completion_tokens": 194,
+            "prompt_tokens": 156,
+            "total_tokens": 350,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "270": {
+        "model": "gpt-5.4",
+        "response": "解析：题干中的“由多国代表共同签署、其英文件收藏于中国某博物院”的重大历史文件，最符合的是《开罗宣言》英文稿，现藏于中国国家博物馆。该宣言于 1943 年 12 月 1 日公布。次日（12 月 2 日），未参加开罗会议的毛泽东发表意见，表示赞成其内容。毛泽东一生有两段正式婚姻通常指杨开慧与江青，其中首任妻子杨开慧于 1930 年被国民党杀害，并非死于疾病，因此严格回答应为：不是病死，而是被处决。\n\n确切答案：其首任妻子杨开慧并非死于疾病，而是于 1930 年被国民党杀害（枪决）。\n\n置信度：72%",
+        "usage": {
+            "completion_tokens": 196,
+            "prompt_tokens": 143,
+            "total_tokens": 339,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "35": {
+        "model": "gpt-5.4",
+        "response": "解析：题干线索可对应到作家**都梁**及其成名作**《亮剑》**。  \n- 《亮剑》让都梁成名；其电视剧版《亮剑》于2005年播出并广受好评。  \n- 之后都梁入选过相关“百年人物/百年百人”类行业评选。  \n- 《亮剑》第一部中第四章标题带有动物元素。  \n- 剧中某反派演员有过调酒师经历。  \n- 都梁出生于**江苏省徐州市**。  \n再看后半句：徐州“设市”的那一年爆发了改变当时国内政治军事格局的著名事件，指的是**1927年徐州建市**，同年爆发了**四一二反革命政变/宁汉分裂前后的大变局**这一时期的重大事件。  \n因此该地是**徐州**。\n\n确切答案：江苏省徐州市\n\n置信度：56%",
+        "usage": {
+            "completion_tokens": 237,
+            "prompt_tokens": 188,
+            "total_tokens": 425,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "24": {
+        "model": "gpt-5.4",
+        "response": "解析：题干线索可定位到散文集《瓦尔登湖》的作者**梭罗**。  \n- “名称与某国外电影中文翻译名很相像的散文集”可对应《瓦尔登湖》，而“瓦尔登湖”也常让人联想到国外影视译名风格。  \n- 梭罗的家乡是**美国马萨诸塞州康科德**。  \n- 康科德著名景区是**Walden Pond（瓦尔登湖）**，梭罗在《瓦尔登湖》中正写到这个地方。  \n- 该景区附近的相关景点一般指**Sleepy Hollow Cemetery（沉睡谷公墓）/ 作者岭一带**，其中有纪念性碑刻。  \n- 该纪念碑的立碑人为**爱默生（Ralph Waldo Emerson）**。\n\n确切答案：立碑人是**爱默生**。  \n\n置信度：62%",
+        "usage": {
+            "completion_tokens": 227,
+            "prompt_tokens": 128,
+            "total_tokens": 355,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "53": {
+        "model": "gpt-5.4",
+        "response": "解析：题目给出的线索是：  \n1. 电影上映时导演 32 岁；  \n2. 导演享年 72 岁；  \n3. 电影主要地点发生在监狱中。  \n\n较符合这一条件的是弗兰克·德拉邦特执导的《肖申克的救赎》。不过严格核对后，德拉邦特生于 1959 年，影片上映于 1994 年，当时他约 35 岁，而非 32 岁，因此这道题的信息可能存在误差。若按“主要发生在监狱中的著名电影”这一核心线索判断，最可能指向《肖申克的救赎》。  \n\n确切答案：**《肖申克的救赎》**  \n\n置信度：34%",
+        "usage": {
+            "completion_tokens": 189,
+            "prompt_tokens": 107,
+            "total_tokens": 296,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "42": {
+        "model": "gpt-5.4",
+        "response": "解析：题干描述对应的是国产犯罪电影《平原上的摩西》（早期片名《平原上的火焰》）的相关特征：改编自双雪涛的同名小说，带有粗粝朦胧的复古影像风格，主演包括80后知名演员周冬雨、刘昊然等。不过该片导演张骥的出生地并非广为统一熟知的信息，公开资料中更常见的是其与东北背景、影片气质相关联。结合这类题目的常见设问，通常指向导演张骥，为东北地区出身，其中较常见答案为“辽宁”。\n\n确切答案：导演张骥出生于辽宁省。\n\n置信度：56%",
+        "usage": {
+            "completion_tokens": 170,
+            "prompt_tokens": 181,
+            "total_tokens": 351,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "37": {
+        "model": "gpt-5.4",
+        "response": "解析：根据线索筛选：  \n1. “某工科领域专家，80年代曾于法国进行学习、研究”——符合不少材料/土木/机械领域院士级专家履历。  \n2. “45岁不到晋升副部级”——这是非常强的识别点，说明其很早进入高校或教育系统高层领导岗位。  \n3. “申请国家专利15项”——常见于高校工科专家简介。  \n4. “其指导的一位学生1998年升任北京某985高校副教授，2004年在英国某QS前50高校为高级访问学者”——这位学生应是清华、北航、北理、同济等体系中的学者，通过学生履历可反向锁定导师。  \n\n综合这些线索，最符合的是**金东寒**：  \n- 工科专家；  \n- 1980年代曾赴法国学习研究；  \n- 较年轻时即担任副部级高校领导；  \n- 具有多项国家专利；  \n- 其培养学生中有在北京985高校任副教授并曾赴英国名校访学者。  \n\n确切答案：这位专家是 **金东寒**。  \n\n置信度：58%",
+        "usage": {
+            "completion_tokens": 281,
+            "prompt_tokens": 139,
+            "total_tokens": 420,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "70": {
+        "model": "gpt-5.4",
+        "response": "解析：题干信息可锁定为湖南长沙的“岳麓山”景区。它是5A景区，位于长沙市区（市中心范围），民间古时更常称“灵麓峰”等，而“岳麓”之名相传为唐宋八大家之一的韩愈所题。又有专家推测，岳麓山最早可追溯到距今3000多年的《春秋》时期记载。  \n因此，题目问“这位取名的人叫什么名字”，答案是韩愈。\n\n确切答案：韩愈\n\n置信度：86%",
+        "usage": {
+            "completion_tokens": 144,
+            "prompt_tokens": 128,
+            "total_tokens": 272,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "110": {
+        "model": "gpt-5.4",
+        "response": "解析：题干信息指向一位“日本画家”，其“先后在日本和法国学习”，并且“因病去世，享年30岁”。这一特征与日本洋画家**佐伯祐三**高度吻合：他是日本画家，曾先在日本学习绘画，后赴法国深造；他因病于30岁去世。题目中关于其出生城市由某位日本政治家建立的描述，也与其相关背景线索相契合。因此，该画家应为**佐伯祐三**。\n\n确切答案：佐伯祐三\n\n置信度：72%",
+        "usage": {
+            "completion_tokens": 145,
+            "prompt_tokens": 120,
+            "total_tokens": 265,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "184": {
+        "model": "gpt-5.4",
+        "response": "解析：题干关键信息是：  \n1. A 是“数学家与计算机科学家”；  \n2. A 的父母均为犹太裔；  \n3. A 后来分别入籍波兰和德国（更准确地说，其人生经历与波兰、德国密切相关）；  \n4. A 曾师从著名科学家 B；  \n5. B 在 48 岁时访问过中国和日本，并在 30 年后获得诺贝尔奖。  \n\n先看 B：符合“访问中国和日本，并在约 30 年后获诺奖”的著名科学家，很容易对应到伯特兰·罗素（Bertrand Russell）。罗素于 1920—1921 年访问中国和日本，出生于 1872 年，当时约 48 岁；1950 年获诺贝尔文学奖，正好相隔约 30 年。  \n\n那么，曾师从罗素、又兼具数学家和计算机科学家身份、并且有犹太家庭背景、与波兰和德国相关的人物，最符合的是阿尔弗雷德·塔斯基（Alfred Tarski）。塔斯基是著名逻辑学家、数学家，也被视为理论计算机科学的重要先驱；他出生于华沙的犹太家庭，后改宗并使用波兰化姓名，人生经历与波兰学界紧密相关，同时曾在学术上受到罗素思想传统影响。  \n\n因此，A 应是阿尔弗雷德·塔斯基。  \n\n确切答案：A 是阿尔弗雷德·塔斯基（Alfred Tarski）。  \n\n置信度：62%",
+        "usage": {
+            "completion_tokens": 373,
+            "prompt_tokens": 141,
+            "total_tokens": 514,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "117": {
+        "model": "gpt-5.4",
+        "response": "解析：题干中的作家“本名与某功率单位相同”，指向“瓦”。结合“早年利用业余时间创作、35岁成为全职作家、截至2025年有10多部作品被改编”为影视及话剧等信息，可对应到知名作家**匪我思存**，其本名为**艾晶晶**？这并不符合“功率单位”。进一步排查后，更符合的是本名中直接对应功率单位“瓦特”的作家线索。但结合“2019年根据其作品改编的电视剧、两位男主角”这一问法，最可能指的是**priest**作品改编的2019年电视剧《镇魂》？但年份不符。  \n综合中文网络常见题型，这里更大概率是在问**2019年播出的双男主电视剧《陈情令》**，原著作者为**墨香铜臭**，但其本名线索也不符。  \n不过若严格对应“2019年根据该作家作品改编的某部电视剧中，两位男主角分别由谁扮演”，最广为人知且符合“两位男主角”设问的答案是《陈情令》的两位主演，即**肖战**和**王一博**。\n\n确切答案：两位男主角分别由**肖战**和**王一博**扮演。\n\n置信度：31%",
+        "usage": {
+            "completion_tokens": 333,
+            "prompt_tokens": 160,
+            "total_tokens": 493,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "275": {
+        "model": "gpt-5.4",
+        "response": "解析：设该化合物化学式中五种元素分别为 C、H、N 和另外两种元素。已知碳与氮原子数之比为 2:1，可设为 C₂N；又知氢原子数与氮原子数之和为 8，因此若 N=1，则 H=7，所以骨架可写作 C₂H₇N。  \n题目还说明该化合物含有五种不同元素，并且“在医疗、食品等领域均有相关应用”，同时摩尔体积在 80–85 之间。符合这一特征的常见广泛用途化合物是乙二胺四乙酸二钠（EDTA 二钠）相关体系中的一种含结晶水形式，但其条件不完全吻合“C₂H₇N”。  \n进一步结合“五种元素”“C:N=2:1”“H+N=8”以及广泛应用于医疗和食品领域，最符合的是甘氨酸亚铁等并不满足全部条件，因此题目信息更贴近一种以 C₂H₇NO₃S 为分子式的化合物：牛磺酸。  \n检验：  \n- 元素种类：C、H、N、O、S，共 5 种；  \n- C:N = 2:1；  \n- H + N = 7 + 1 = 8；  \n- 牛磺酸广泛用于医疗、食品等领域；  \n- 其摩尔质量约 125.15 g/mol。  \n\n计算分子量：  \nC₂H₇NO₃S = 2×12.01 + 7×1.008 + 14.01 + 3×16.00 + 32.06  \n≈ 24.02 + 7.06 + 14.01 + 48.00 + 32.06  \n≈ 125.15  \n\n确切答案：该化合物的分子量约为 125.15 g/mol。  \n置信度：72%",
+        "usage": {
+            "completion_tokens": 459,
+            "prompt_tokens": 156,
+            "total_tokens": 615,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "219": {
+        "model": "gpt-5.4",
+        "response": "解析：关键信息链是：\n1. “出生那天同月同日一国家独立”——对应 8 月 14 日，常见线索是巴基斯坦独立日。\n2. “23岁推出的单曲包含他的出生城市”——若歌手出生于高雄，则作品名里含“高雄”会很吻合。\n3. “24岁参加某全国知名选秀节目”——符合台湾歌手参加大型选秀节目的经历。\n4. “30岁推出人生第三张专辑，并获某最佳创作歌手奖”——这一描述与台湾创作歌手卢广仲的履历高度吻合：他出生于 1985 年 8 月 14 日（与巴基斯坦独立日同月同日），23 岁时发表作品中有《早安，晨之美！》时期及带有“台北/高雄”相关作品线索，24 岁参加《超级偶像》，30 岁推出第三张专辑《What a Folk !!!!!!》，并获“最佳创作歌手奖”。\n\n综合判断，此人最可能是卢广仲。\n\n确切答案：卢广仲\n\n置信度：62%",
+        "usage": {
+            "completion_tokens": 278,
+            "prompt_tokens": 128,
+            "total_tokens": 406,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "136": {
+        "model": "gpt-5.4",
+        "response": "解析：根据题干，需先定位“2023年、计算机视觉领域、4位作者、均来自同一家公司，其中3位后来一起跳槽，并共同负责一家新公司在海外设立的分部”的论文。结合近年计算机视觉圈较知名的人才流动事件，这一描述较吻合的是原同属一家公司的四作者论文，而其中三位之后共同加入新公司并主导其海外分部建设。对应论文发表于 **CVPR 2023**。\n\n确切答案：这篇论文发表在 **CVPR 2023（IEEE/CVF Conference on Computer Vision and Pattern Recognition）**。\n\n置信度：58%",
+        "usage": {
+            "completion_tokens": 149,
+            "prompt_tokens": 122,
+            "total_tokens": 271,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "112": {
+        "model": "gpt-5.4",
+        "response": "解析：关键信息链是：\n1. 画家 A“出生于浙江，14 岁赴上海求学”；\n2. A 的老师是知名画家 B；\n3. B 曾与画家 C 发生“笔战”；\n4. B 和 C 都担任过知名艺术学校校长。\n\n符合“笔战”且双方都曾任艺术学校校长的著名组合，很典型的是**刘海粟**与**徐悲鸿**。  \n- 刘海粟：上海美术专科学校（后来的上海美术专科学校体系）创办者、校长。  \n- 徐悲鸿：曾任中央美术学院院长（或国立北平艺专校长/相关领导职务，属知名艺术学校领军人物）。  \n两人确有著名艺术论争。\n\n那么 B 若是刘海粟，就去找“浙江出生、14岁赴上海求学、师从刘海粟”的中国画家。这个条件最符合的是**谢稚柳**：  \n- 谢稚柳出生于江苏常州，这与“出生于浙江”不符；排除。  \n再看其他刘海粟弟子中，符合“浙江出生、少年赴沪”的著名中国画家，较可能是**陆俨少**：  \n- 陆俨少生于上海，不符；排除。  \n\n若 B 是徐悲鸿，则与之笔战的 C 可以是刘海粟；再找“浙江出生、14岁赴上海求学、师从徐悲鸿”的画家。较符合的是**潘天寿**相关弟子，但潘天寿本人不是徐悲鸿弟子。  \n\n进一步结合“出生于浙江，14岁赴上海求学”这一非常经典的人生经历，最著名的中国画家之一是**程十发**？但程十发生于上海，不符。  \n另一个高度符合少年赴沪、浙江籍、师承名家的人物是**朱屺瞻**，但他生于江苏。  \n\n综合中国画史常识，最可能的识别路径是：  \n- B = 刘海粟  \n- C = 徐悲鸿  \n- A = **潘天寿**  \n但潘天寿出生浙江宁海，后赴上海学习，也与上海求学经历相符。不过“14岁赴上海求学、老师是刘海粟”这一点并非潘天寿最标准的公开表述。  \n\n在常见人物传记中，“14岁赴上海，入上海美专，受教于刘海粟”等描述更接近**诸乐三**或浙江籍海派相关画家，但知名度和题面匹配度稍弱。\n\n因此，基于题干最可能指向的历史关系，答案我判断为**潘天寿**的可能性最大。\n\n确切答案：潘天寿\n\n置信度：45%",
+        "usage": {
+            "completion_tokens": 651,
+            "prompt_tokens": 139,
+            "total_tokens": 790,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "236": {
+        "model": "gpt-5.4",
+        "response": "解析：题干关键信息有：  \n1. **海拔约两千米**；  \n2. **位于河谷阶梯地带，地势呈规律单调倾斜**；  \n3. **村内传统建筑形式多样，且仍保留独特民俗**；  \n4. **有一条贯通著名山脉的古道从这里起始**。  \n\n这些特征与云南怒江、澜沧江流域一带的传统村落描述高度吻合，尤其是**丙中洛地区的雾里村**常被描述为位于高山峡谷中的河谷阶地，保留较完整的传统建筑和民俗文化，并且与**茶马古道/翻越高黎贡山的古道线路**相关联。综合判断，题目所指应是**雾里村**。\n\n确切答案：雾里村\n\n置信度：63%",
+        "usage": {
+            "completion_tokens": 223,
+            "prompt_tokens": 156,
+            "total_tokens": 379,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "177": {
+        "model": "gpt-5.4",
+        "response": "解析：题干中的“以笔墨与线条为工具、善于将人与自然的精神融入绘画作品、创作奔腾生命、四足动物经典作品”的艺术家，指的是徐悲鸿；其经典四足动物作品即“奔马”系列。徐悲鸿曾参与推动创办“国立北平艺术专科学校”，其后发展脉络与中央美术学院相关。题目进一步问“这所学府的学校标识的字来源的那个人出生的那一年”，中央美术学院校名题字常被认为出自毛泽东手书集字，因此对应人物是毛泽东，出生于1893年。再看1893年，有一位“表现强烈艺术家”在走路时获得灵感创作出震撼作品，这对应挪威表现主义画家爱德华·蒙克创作灵感的著名作品《呐喊》。因此答案是《呐喊》。\n\n确切答案：这个作品叫《呐喊》（The Scream）。\n\n置信度：74%",
+        "usage": {
+            "completion_tokens": 248,
+            "prompt_tokens": 222,
+            "total_tokens": 470,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "71": {
+        "model": "gpt-5.4",
+        "response": "解析：题干说“某地名字始于唐代，常在文学作品中多次出现”，并且“其地10公里外是另一处著名的地理位置，史记中记载其始于战国时期”，两者还“一起作为一项世界文化遗产”。\n\n这组线索高度对应中国世界文化遗产“莫高窟”与“玉门关”所在的敦煌遗产体系：\n- **莫高窟**之名形成和广泛使用可追溯至唐代，而且“敦煌”“莫高窟”在文学作品中出现频繁。\n- 距离其不远处有**玉门关**这一著名地理历史遗址，玉门关在古代文献尤其史籍中极为著名，相关建置可追溯到战国—汉代边塞体系的历史背景。\n- 二者同属**“丝绸之路：长安—天山廊道的路网”**世界文化遗产相关点位体系。\n\n因此，题目问“这个地方叫什么名字”，更可能指前者，即**莫高窟**。  \n\n确切答案：莫高窟\n\n置信度：62%",
+        "usage": {
+            "completion_tokens": 281,
+            "prompt_tokens": 130,
+            "total_tokens": 411,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "126": {
+        "model": "gpt-5.4",
+        "response": "解析：题干信息是“某种遗传性疾病，可分为四种类型，既有常染色体显性也有常染色体隐性遗传形式，其中一个致病基因由中国学者发现”。这与**先天性白内障**高度吻合。先天性白内障可按遗传方式和临床分型分为多种类型，存在常染色体显性和常染色体隐性遗传；其致病基因研究中，**中国学者发现了与先天性白内障相关的致病基因 GJA8（又称 CX50）**，这一点与题干描述相符。\n\n确切答案：先天性白内障\n\n置信度：62%",
+        "usage": {
+            "completion_tokens": 172,
+            "prompt_tokens": 114,
+            "total_tokens": 286,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "217": {
+        "model": "gpt-5.4",
+        "response": "解析：题干信息较符合**李宇春**的经历：她16岁开始崭露头角并进入演艺道路，19岁左右开始以个人身份发行作品并受到广泛关注，随后次年推出个人专辑；在28岁时也确有公益歌曲相关活动。另外，“父亲在她20岁左右时离世”这一点也常被用于人物识别线索。综合判断，题目所指应是李宇春。需要说明的是，题干中的“男歌手”与李宇春的性别并不一致，因此题目本身可能存在表述错误，或者线索有混淆。\n\n确切答案：李宇春\n\n置信度：38%",
+        "usage": {
+            "completion_tokens": 167,
+            "prompt_tokens": 128,
+            "total_tokens": 295,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "202": {
+        "model": "gpt-5.4",
+        "response": "解析：题干线索可串起来定位到配音演员“堀江由衣”。她的血型是AB型，也以喜欢狗闻名；同时她曾为《初音岛 / D.C. ～ダ・カーポ～》系列中的女主之一“白河小鸟”等作品配音。结合“模拟养成游戏、多个结局、曾计划上架某游戏平台但一度搁置”这一特征，最符合的是 **《秋之回忆：从今以后（Memories Off 〜それから〜）》** 这一类恋爱养成/视觉小说作品中的平台移植版本信息。不过更贴合“主要配音演员”为AB型且“给某部动漫和同名游戏的女主配音”的公开辨识线索，常见答案指向的是 **《D.C. Girl's Symphony》** 之外的另一批作品并不稳定。综合题目描述，最可能被问到的游戏是 **《初音岛Plus Situation》** 所属的恋爱养成系作品脉络，但“多个结局、上架平台搁置”最常见对应仍是 **《LovePlus》** 系或乙女向移植作。  \n由于题面信息存在一定歧义，我给出当前最可能答案为：**《秋之回忆：从今以后》**。\n\n确切答案：**《秋之回忆：从今以后》**\n\n置信度：**32%**",
+        "usage": {
+            "completion_tokens": 332,
+            "prompt_tokens": 133,
+            "total_tokens": 465,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "188": {
+        "model": "gpt-5.4",
+        "response": "解析：题干线索指向的是一位在海外大学培养博士生、研究“程序性细胞凋亡”并于 2010 年在该领域顶级期刊发表论文的中国院士导师。结合“其学术生涯黄金阶段”“该系最年轻的正教授”等表述，较符合施一公的经历：他曾在普林斯顿大学任教，并成为该校分子生物学系最年轻的终身正教授之一；其研究方向也与细胞凋亡机制密切相关。施一公后来回国到清华大学工作。公开经历显示，他于 **2008 年**回国并进入清华大学任教。\n\n确切答案：**2008 年**\n\n置信度：**72%**",
+        "usage": {
+            "completion_tokens": 175,
+            "prompt_tokens": 155,
+            "total_tokens": 330,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "103": {
+        "model": "gpt-5.4",
+        "response": "解析：题干线索指向中国小提琴协奏曲《梁山伯与祝英台》：\n- “东西交融的巅峰之作”对应这部融合西洋协奏曲形式与中国民族音乐元素的经典作品。\n- “两个青年间动人故事”指梁山伯与祝英台的爱情传说。\n- “曾经被誉为‘乐器之王’的演奏者”指小提琴演奏家；“宛如一只飞翔的生物，从大地到天空划出爱的轨迹”呼应“化蝶”的意象。\n这部作品的首演地点是**上海兰心大戏院**。\n\n确切答案：首次演出于**上海兰心大戏院**。\n\n置信度：92%",
+        "usage": {
+            "completion_tokens": 185,
+            "prompt_tokens": 201,
+            "total_tokens": 386,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "167": {
+        "model": "gpt-5.4",
+        "response": "解析：题目描述的“某种药物的主要成分可以分为两种”，较符合“减肥药/降糖药”中常见的两大类活性成分；其中“一种在20世纪中晚期上市后，引起重大轰动，广泛应用”高度对应**二甲双胍**，它于20世纪中期后期广泛上市并成为经典药物。另一种“化学式中前两位元素的原子数量相同”可对应一些同类药物成分，但题干最终问的是“生产此药品的最知名厂家”。若围绕最广为人知、由上述经典成分构成并具有全球知名度的药品厂家，通常指向**中美史克（SmithKline Beecham/现葛兰素史克相关品牌体系）**，其在中国市场上是相关经典大众药品中最知名的厂家之一。  \n不过，题干信息不够唯一，存在一定歧义，因此答案只能取最可能项。\n\n确切答案：中美史克\n\n置信度：41%",
+        "usage": {
+            "completion_tokens": 259,
+            "prompt_tokens": 141,
+            "total_tokens": 400,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "95": {
+        "model": "gpt-5.4",
+        "response": "解析：题干信息可对应到动画电影《昨日青空》。这部影片是由高人气获奖漫画/短片基础拓展而来的国产动画长片，主打青春、亲情与成长主题，并融入中国本土文化气质；其上映档期也曾调整。其主题曲相关演唱者中，有以音乐综艺走红、且具少数民族背景的歌手参与，因此综合判断，题目所指为《昨日青空》。\n\n确切答案：**《昨日青空》**\n\n置信度：**58%**",
+        "usage": {
+            "completion_tokens": 129,
+            "prompt_tokens": 160,
+            "total_tokens": 289,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "65": {
+        "model": "gpt-5.4",
+        "response": "解析：题干给出几个关键信息：  \n1. 是一部**1980年摄制的故事片**；  \n2. 这部片子是该导演的**成名作**；  \n3. 片中有一首由**中国小男孩演唱**的插曲；  \n4. 这首歌时长**2分22秒**。  \n\n结合这些线索，较符合的是电影**《苗苗》**。该片拍摄于1980年，常被视为导演**王君正**的成名作之一。片中著名插曲中，由小男孩演唱、时长约2分22秒的歌曲是**《小草》**。  \n\n确切答案：**《小草》**  \n\n置信度：**62%**",
+        "usage": {
+            "completion_tokens": 182,
+            "prompt_tokens": 128,
+            "total_tokens": 310,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "81": {
+        "model": "gpt-5.4",
+        "response": "解析：题干给出的时间线特征是：22岁参加“家乡的卫视”跨年晚会，23岁发行人生首张专辑，26岁有歌曲作为某网剧发行曲，29岁宣布成立自己的团队。该线索组合与歌手鞠婧祎的经历较为吻合：她是四川人，曾参加四川卫视跨年晚会；23岁前后发行个人首张音乐专辑；之后有歌曲用于影视/网剧相关发行；29岁时宣布成立个人工作室/团队。综合判断，这位歌手应是鞠婧祎。  \n确切答案：鞠婧祎  \n置信度：62%",
+        "usage": {
+            "completion_tokens": 163,
+            "prompt_tokens": 121,
+            "total_tokens": 284,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "2": {
+        "model": "gpt-5.4",
+        "response": "解析：题干中的“20世纪二十年代中在上海成立的刊物”应指 **《中国青年》**（1923年在上海创办），它被视为推动青年觉醒、成为后来中国知名学生运动先导的重要刊物之一。题干所说“此次运动中占据领导地位的高校”对应 **北京大学**。近百年后，曾在21世纪初少儿电视剧中扮演重要角色的一名演员进入北大，较符合这一描述的是 **关晓彤**（2016年入学北京电影学院并非北大，不符），因此这里更可能指与北大相关的童星演员线索所指向的电视剧是 **《家有儿女》**。该剧男一号通常指饰演“刘星”的 **张一山**。张一山截至目前 **未公开结婚**，因此不存在“什么时间结婚”的已知公开答案。\n\n确切答案：该电视剧男一号 **尚未公开结婚**，因此没有结婚时间。  \n置信度：34%",
+        "usage": {
+            "completion_tokens": 242,
+            "prompt_tokens": 144,
+            "total_tokens": 386,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "212": {
+        "model": "gpt-5.4",
+        "response": "解析：线索组合更符合**石兆琪**。他出生于1958年，38岁时约在1996年前后，曾在知名历史剧《东周列国·春秋篇》中饰演较早登场人物；52岁左右在2010年前后出演过“外国人”类型角色；54岁前后又演过“酒鬼”角色；60岁左右参演过大热剧《破冰行动》；66岁前后又出现在另一部大热剧《我是刑警》中。综合年龄节点与其长期活跃于影视剧中的履历，匹配度最高。\n\n确切答案：石兆琪\n\n置信度：41%",
+        "usage": {
+            "completion_tokens": 161,
+            "prompt_tokens": 130,
+            "total_tokens": 291,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "259": {
+        "model": "gpt-5.4",
+        "response": "解析：题干指向的是日本乐队 **RADWIMPS** 为动画电影 **《你的名字。》** 创作的原声音乐。  \n其中“4分44秒”的配乐应是原声带中的一首曲目；该原声音乐发行后“后一天”，题目又给出线索是“某个东方国家的官方电视频道有一个节目，聆听音乐猜歌”，这对应中国央视相关音乐竞猜节目。结合该日期对应的节目安排，可得当天节目的主题是 **“影视金曲”**。\n\n确切答案：当天这个节目的主题是 **影视金曲**。\n\n置信度：38%",
+        "usage": {
+            "completion_tokens": 156,
+            "prompt_tokens": 234,
+            "total_tokens": 390,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    },
+    "121": {
+        "model": "gpt-5.4",
+        "response": "解析：题干描述的是“一种固体药剂，用于治疗消化道疾病，主要成分由多种植物组成”。其中线索指向两味常见中药：\n- “一年生草本植物，花果期5-10月”对应**地锦草**；\n- “唇形科植物，花期7-10月”对应**广藿香/藿香类植物**。\n\n结合“用于治疗消化道疾病”的常见中成药固体制剂，最符合的是**复方地锦草片**。该药通常用于胃肠道感染、腹泻等消化道疾病，且成分中包含地锦草及其他植物药。\n\n确切答案：复方地锦草片\n\n置信度：72%",
+        "usage": {
+            "completion_tokens": 177,
+            "prompt_tokens": 132,
+            "total_tokens": 309,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    }
+}

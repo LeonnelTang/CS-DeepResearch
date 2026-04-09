@@ -104,7 +104,7 @@ def dump_metrics(prediction_model_name, judge_model, judged_results, n, results_
 
 def dump_all_metrics(judge_model):
 
-    judged_dir = f"D:\DissertationProject\DissertationProject\eval\judged_results"
+    judged_dir = f"D:\DissertationProject\DissertationProject\eval\judged_results\BrowseComp-ZH"
 
     # query_file = "D:\DissertationProject\DissertationProject\eval\objective.json"
     # with open(query_file, "r", encoding="utf-8") as f:
@@ -122,7 +122,7 @@ def dump_all_metrics(judge_model):
     # else:
     id_to_lang = {}
     language_filter = None
-    results_csv_path = "evaluation_results.csv"
+    results_csv_path = "browsecomp-zh_evaluation_results.csv"
 
     for filename in os.listdir(judged_dir):
         if filename.endswith(".json"):

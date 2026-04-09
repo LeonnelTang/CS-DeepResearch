@@ -12,9 +12,16 @@ project_root = current_dir.parent
 sys.path.insert(0, str(project_root))
 
 # 导入你的核心引擎和工具
-from react_agent import llm_executor
+from react_agent import LLMExecutor
 from react_agent import ResearchLoop
 from react_agent.tools import ToolConfig
+
+from openai import OpenAI, AsyncOpenAI
+
+client = OpenAI(
+    api_key=os.getenv('DMX_API_KEY'),
+    base_url=os.getenv('DMX_API_BASE'),
+)
 
 app = FastAPI(title="IterResearch API")
 
@@ -84,7 +91,7 @@ async def research_endpoint(query: str, tools_idx: str = ""):
     def event_stream():
         reactor = ResearchLoop(
             tools=tools,
-            llm_executor=llm_executor,
+            llm_executor=LLMExecutor(client=client, model_name="gpt-3.5-turbo"),
             max_steps=30
         )
 

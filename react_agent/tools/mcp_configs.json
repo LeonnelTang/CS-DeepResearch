@@ -1,6 +1,12 @@
 [
   {
-    "name": "Jina AI MCP 工具",
+    "name": "Jina MCP 官方工具",
+    "description": "Jina MCP 官方工具",
+    "env_url": "JINA_MCP_URL",
+    "env_api_key": "JINA_API_KEY"
+  },
+  {
+    "name": "ModelScope Jina AI MCP 工具",
     "description": "Jina Web Reader, Jina Web Search",
     "env_url": "MODELSCOPE_JINA_MCP_URL",
     "env_api_key": "MODELSCOPE_API_KEY"
