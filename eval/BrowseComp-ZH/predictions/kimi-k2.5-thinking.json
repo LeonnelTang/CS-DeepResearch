@@ -1048,5 +1048,26 @@
                 "text_tokens": 110
             }
         }
+    },
+    "263": {
+        "model": "kimi-k2.5-thinking",
+        "response": "",
+        "usage": {
+            "completion_tokens": 18254,
+            "prompt_tokens": 139,
+            "total_tokens": 18393,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 18254,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0,
+                "text_tokens": 139
+            }
+        }
     }
 }

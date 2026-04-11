@@ -148,7 +148,7 @@ async def add_judge_result(question, predictions):
     if "judge_result" in prediction:  # already judged
         return unique_id, prediction
 
-    response = prediction["response"]
+    response = prediction["prediction"]
     judge_result = await async_extract_answer(question_text, correct_answer, response, "zh")
 
     if judge_result is not None:
@@ -282,7 +282,7 @@ def main(args):
     output_dir = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), f"judged_results/"))
     os.makedirs(output_dir, exist_ok=True)
 
-    output_filepath = f"{output_dir}/judged_{os.path.basename(args.predictions)}"
+    output_filepath = f"{output_dir}/BrowseComp-ZH/judged_{os.path.basename(args.predictions)}"
 
     if args.local_dataset:  # 从本地文件加载
         dataset = load_local_dataset(args.local_dataset)

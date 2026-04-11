@@ -263,18 +263,6 @@
             "confidence": 100
         }
     },
-    "24": {
-        "question": "名称与某国外电影中文翻译名很相像的散文集作家的家乡里有一个景区，该作家著作中也提到过这个地方，该景区附近的景点内有一个纪念碑，请问立碑人是谁？",
-        "prediction": null,
-        "judge_model": "gpt-5.4",
-        "judge_result": {
-            "correct_answer": "赵祖光",
-            "model_answer": "None",
-            "reasoning": "correct_answer 是“赵祖光”，而 extracted_final_answer 为“None”，两者不匹配，存在实质性差异，因此该回答错误。",
-            "correct": "no",
-            "confidence": 100
-        }
-    },
     "53": {
         "question": "有这样一部电影，在导演32岁时上映，这位导演享年72岁，电影主要地点发生在监狱中，请问该电影的名字是什么？",
         "prediction": "Explanation: 根据研究，电影《Birdman of Alcatraz》（1962年）由导演John Frankenheimer执导。Frankenheimer生于1930年，1962年上映该片时正好32岁，符合“导演32岁时上映”的条件。他于2002年去世，享年72岁，符合“导演享年72岁”的条件。电影主要场景设定在阿尔卡特拉斯岛监狱，符合“电影主要地点发生在监狱中”的条件。所有条件均得到权威来源（如维基百科、IMDb）的一致确认。Exact Answer: Birdman of Alcatraz Confidence: 100%\n[References]\n[1] Birdman of Alcatraz (film) - Wikipedia (https://en.wikipedia.org/wiki/Birdman_of_Alcatraz_(film))\n[2] Birdman of Alcatraz (1962) - IMDb (https://www.imdb.com/title/tt0055798/)",
@@ -595,6 +583,30 @@
             "correct_answer": "肠炎宁片",
             "model_answer": "None",
             "reasoning": "response 中没有给出任何具体药剂名称，无法提取出与 correct_answer“肠炎宁片”一致的答案，因此不匹配。",
+            "correct": "no",
+            "confidence": 100
+        }
+    },
+    "263": {
+        "question": "这座历史悠久的城市，其历史可追溯至春秋时期并延续至今。因曾与某省一县重名而改名，截至 2024 年，拥有 1 处 5A 级、6 处 4A 级和 4 处 3A 级旅游景点。战国时期，此地爆发过一场重大战役，这场战役是什么？",
+        "prediction": "Explanation: 根据研究，符合问题描述的城市是湖南省张家界市。其历史可追溯至春秋时期（属古庸国），战国时属楚黔中郡。原名大庸市，因1914年与四川省大庸县重名而更名（先改县名，后改市名）。截至2024年，张家界市拥有1处5A级（武陵源-天门山旅游区）、6处4A级和4处3A级旅游景区。战国时期，在该城市所在的黔中郡地区爆发了重大战役——**黔中之战**（公元前280年），这是秦国（司马错为将）攻打楚国并夺取黔中郡的关键战役[1][3][7]。\n\nExact Answer: 黔中之战（亦称秦取楚黔中之战）\n\nConfidence: 95%",
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "长平之战",
+            "model_answer": "黔中之战（亦称秦取楚黔中之战）",
+            "reasoning": "correct_answer 是“长平之战”，而 extracted_final_answer 是“黔中之战（亦称秦取楚黔中之战）”。两者是不同的战役名称，存在实质性差异，因此该答案不匹配。",
+            "correct": "no",
+            "confidence": 95
+        }
+    },
+    "24": {
+        "question": "名称与某国外电影中文翻译名很相像的散文集作家的家乡里有一个景区，该作家著作中也提到过这个地方，该景区附近的景点内有一个纪念碑，请问立碑人是谁？",
+        "prediction": "任务未完成（已达最大步数30）",
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "赵祖光",
+            "model_answer": "None",
+            "reasoning": "response中没有给出任何确切答案，仅表示“任务未完成（已达最大步数30）”。这与正确答案“赵祖光”不匹配，因此答案错误。",
             "correct": "no",
             "confidence": 100
         }

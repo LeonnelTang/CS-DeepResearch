@@ -1348,5 +1348,32 @@
             "correct": "no",
             "confidence": 72
         }
+    },
+    "263": {
+        "model": "gpt-5.4",
+        "response": "解析：题干描述的是一座“历史可追溯至春秋时期、因与外省一县重名而改名、截至 2024 年有 1 处 5A、6 处 4A、4 处 3A 景区”的城市。该特征对应的是河南省鹤壁市：其前身曾名“朝歌市”，后因与贵州省清水江县朝歌区（常见表述为与外地重名）等情况而更名为“鹤壁”。鹤壁一带在战国时期属于赵、卫交界的重要区域，著名的重大战役即“桂陵之战”相关战场区域不符；而与鹤壁历史地望最紧密、且发生于今鹤壁浚县附近并广为记载的战国著名战役，是“马陵之战”。因此答案为马陵之战。  \n确切答案：马陵之战。  \n置信度：61%",
+        "usage": {
+            "completion_tokens": 228,
+            "prompt_tokens": 164,
+            "total_tokens": 392,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "长平之战",
+            "model_answer": "马陵之战",
+            "reasoning": "extracted_final_answer 为“马陵之战”，而 correct_answer 为“长平之战”。两者是不同的战役名称，存在实质性差异，因此答案不匹配。",
+            "correct": "no",
+            "confidence": 61
+        }
     }
 }

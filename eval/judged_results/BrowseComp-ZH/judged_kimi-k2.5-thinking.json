@@ -1448,5 +1448,34 @@
             "correct": "no",
             "confidence": 85
         }
+    },
+    "263": {
+        "model": "kimi-k2.5-thinking",
+        "response": "",
+        "usage": {
+            "completion_tokens": 18254,
+            "prompt_tokens": 139,
+            "total_tokens": 18393,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 18254,
+                "rejected_prediction_tokens": null,
+                "text_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0,
+                "text_tokens": 139
+            }
+        },
+        "judge_model": "gpt-5.4",
+        "judge_result": {
+            "correct_answer": "长平之战",
+            "model_answer": "None",
+            "reasoning": "response 为空，无法提取出任何最终答案，因此与正确答案“长平之战”不匹配。",
+            "correct": "no",
+            "confidence": 100
+        }
     }
 }

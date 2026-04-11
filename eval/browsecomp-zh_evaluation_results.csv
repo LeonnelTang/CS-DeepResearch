@@ -1,10 +1,10 @@
 Model,Accuracy (%),CalibrationError (%),Judge
-claude-opus-4-6,36.0,21.0,gpt-5.4
-claude-sonnet-4-6,20.0,22.0,gpt-5.4
-DeepSeek-V3.2-Thinking,40.0,40.0,gpt-5.4
-gpt-5.4,14.0,42.0,gpt-5.4
-grok-3-deepsearch,32.0,34.0,gpt-5.4
-IterScholar-SFT,36.0,62.0,gpt-5.4
-jina-deepsearch-v1,12.0,88.0,gpt-5.4
-kimi-k2.5-thinking,38.0,55.00000000000001,gpt-5.4
-qwen3.5-plus,26.0,65.0,gpt-5.4
+claude-opus-4-6,37.25,20.0,gpt-5.4
+claude-sonnet-4-6,21.57,21.0,gpt-5.4
+DeepSeek-V3.2-Thinking,39.22,41.0,gpt-5.4
+gpt-5.4,13.73,43.0,gpt-5.4
+grok-3-deepsearch,33.33,32.0,gpt-5.4
+IterScholar-SFT,35.29,63.0,gpt-5.4
+jina-deepsearch-v1,11.76,88.0,gpt-5.4
+kimi-k2.5-thinking,37.25,56.00000000000001,gpt-5.4
+qwen3.5-plus,25.49,66.0,gpt-5.4

@@ -948,5 +948,24 @@
                 "cached_tokens": 0
             }
         }
+    },
+    "263": {
+        "model": "DeepSeek-V3.2-Thinking",
+        "response": "",
+        "usage": {
+            "completion_tokens": 17539,
+            "prompt_tokens": 140,
+            "total_tokens": 17679,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 17538,
+                "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0
+            }
+        }
     }
 }

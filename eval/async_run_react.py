@@ -64,7 +64,7 @@ def load_qa_dataset(filepath: str) -> List[dict]:
 
 DMX_client = OpenAI(
     base_url=os.getenv("DMX_API_BASE"),
-    api_key=os.getenv("DMX_API_KEY")
+    api_key=os.getenv("MY_DMX_API_KEY")
 )
 
 Ali_client = OpenAI(
@@ -104,7 +104,7 @@ async def process_single_task(index: int, item: dict, tool_config: ToolConfig, t
     # 创建并运行 ResearchLoop
     reactor = ResearchLoop(
         tools=tools,
-        llm_executor=LLMExecutor(client=my_client, model_name="IterScholar-CS-35B-A3B-SFT"),
+        llm_executor=LLMExecutor(client=DMX_client, model_name="DeepSeek-V3.2"),
         max_steps=30
     )
 
@@ -138,7 +138,7 @@ async def main():
     # --- 1. 路径配置 ---
     base_dir = "D:\\DissertationProject\\DissertationProject"
     mcp_config_path = os.path.join(base_dir, "react_agent", "tools", "mcp_configs.json")
-    dataset_path = os.path.join(base_dir, "dataset", "BrowseComp-ZH", "browsecomp-zh-sample-50.json")
+    dataset_path = os.path.join(base_dir, "dataset", "BrowseComp-ZH", "browsecomp-zh-sample-51.json")
     trajectory_dir = os.path.join(base_dir, "eval", "eval_traj", "BrowseComp-ZH_traj", "SFT_IterScholar")
 
 
@@ -165,8 +165,8 @@ async def main():
         return
 
     # load only questions without responses
-    if os.path.exists(r'D:\DissertationProject\DissertationProject\eval\BrowseComp-ZH\prediction_results\formatted_eval_results.json'):
-        with open(r'D:\DissertationProject\DissertationProject\eval\BrowseComp-ZH\prediction_results\formatted_eval_results.json', "r", encoding='utf-8') as f:
+    if os.path.exists(r'D:\DissertationProject\DissertationProject\eval\BrowseComp-ZH\predictions\IterScholar-SFT.json'):
+        with open(r'D:\DissertationProject\DissertationProject\eval\BrowseComp-ZH\predictions\IterScholar-SFT.json', "r", encoding='utf-8') as f:
             predictions = json.load(f)
         qa_data = [q for q in qa_data if str(q["id"]) not in predictions]
         logger.info(f"当前还需处理 {len(qa_data)} 条测试用例。\n")
@@ -177,7 +177,7 @@ async def main():
     # --- 4. 并发执行 ---
     # 注意：max_workers 决定了并发数量。请根据你的 LLM API 的并发限制 (Rate Limit) 进行调整。
     # 如果设置过高，可能会导致触发 HTTP 429 Too Many Requests 错误。
-    max_workers = 1
+    max_workers = 2
     logger.info(f"⚡ 启动异步任务，最大并发数: {max_workers}")
     logger.info("=" * 60)
 

@@ -1,3 +1,4 @@
+import ast
 import logging
 import time
 import random
@@ -402,17 +403,31 @@ class JinaSearchTool(BaseTool):
         if isinstance(params, dict):
             query = params.get("query", "")
         elif isinstance(params, str):
-            logger.info(f"正在使用 Jina Search 解析参数: {params}")
+            params_str = params.strip()
+            logger.info(f"正在使用 Jina Search 解析参数: {params_str}")
+
             try:
-                # 尝试解析大模型传来的 JSON 字符串
-                parsed_params = json.loads(params.strip())
+                # 第一步：尝试标准的 JSON 解析（期望双引号）
+                parsed_params = json.loads(params_str)
                 if isinstance(parsed_params, dict):
                     query = parsed_params.get('query', '')
                 else:
-                    query = params
+                    query = params_str
+
             except json.JSONDecodeError:
-                # 如果不是合法的 JSON 格式，说明大模型可能直接传了纯文本查询词
-                query = params
+                try:
+                    # 第二步：如果标准 JSON 解析失败，尝试解析 Python 字典格式（处理单引号情况）
+                    parsed_params = ast.literal_eval(params_str)
+                    if isinstance(parsed_params, dict):
+                        query = parsed_params.get('query', '')
+                    else:
+                        query = params_str
+
+                except (ValueError, SyntaxError):
+                    # 第三步：如果既不是 JSON 也不是字典格式，说明大模型真的是直接传了纯文本
+                    query = params_str
+
+        logger.info(f"最终提取到的查询词: {query}")
 
 
         if not query:
