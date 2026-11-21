@@ -12,9 +12,10 @@ import asyncio
 load_dotenv()
 
 # 5. 将MCP工具与本地工具合并
+skills_path = os.path.join(os.path.dirname(__file__), "skills.json")
 local_tools = [
-    ListSkillsTool(),
-    GetSkillPromptTool(),
+    ListSkillsTool(skills_path),
+    GetSkillPromptTool(skills_path),
     JinaSearchTool(),
     JinaReaderTool()
 ]

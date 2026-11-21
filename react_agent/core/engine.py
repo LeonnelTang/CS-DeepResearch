@@ -110,6 +110,7 @@ class ResearchLoop:
             llm_output = self.llm_executor.execute(prompt)
             chatml_builder.add_message("assistant", llm_output)
 
+            action = "未知"
             try:
                 # 3. 解析 Think, Report, Action
                 think, report, action = self.parser.parse_tra(llm_output)
@@ -147,7 +148,7 @@ class ResearchLoop:
                 error_observation = f"解析错误或格式不合规：{e}"
                 chatml_builder.add_message("user", error_observation)
                 # 遇到错误时，维持之前的报告，只更新失败的 action 和 observation
-                workspace.update_state("解析失败", current_state["report"], action if 'action' in locals() else "未知",
+                workspace.update_state("解析失败", current_state["report"], action,
                                        error_observation)
                 print(f"step {step + 1} 错误：{error_observation}")
 
@@ -174,18 +175,18 @@ class ResearchLoop:
         except ValueError:
             return f"无效行动：{action}，支持的工具为{list(self.tool_map.keys())}"
 
-        # 请将此方法添加到 engine.py 的 IterResearchLoop 类中
     def run_stream(self, task: str):
         """流式运行核心循环，使用 yield 返回状态 (用于前端 SSE)"""
         workspace = StateManager()
 
         for step in range(self.max_steps):
             current_state = workspace.get_current_state()
-            prompt = self._build_prompt(task, current_state)
+            prompt = self._build_prompt(task, current_state, current_step_index=step, max_turns=self.max_steps)
 
             # 这里调用 LLM
             llm_output = self.llm_executor.execute(prompt)
 
+            action = "未知"
             try:
                 think, report, action = self.parser.parse_tra(llm_output)
                 if not report:
@@ -227,8 +228,8 @@ class ResearchLoop:
                     "type": "step_update",
                     "step": step + 1,
                     "think": "遇到异常",
-                    "action": action if 'action' in locals() else "未知",
-                    "report": current_state["report"] if 'current_state' in locals() else "",
+                    "action": action,
+                    "report": current_state["report"],
                     "observation": error_obs
                 }
                 workspace.update_state("异常重置", current_state["report"], "error", error_obs)

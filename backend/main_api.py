@@ -91,7 +91,7 @@ async def research_endpoint(query: str, tools_idx: str = ""):
     def event_stream():
         reactor = ResearchLoop(
             tools=tools,
-            llm_executor=LLMExecutor(client=client, model_name="gpt-3.5-turbo"),
+            llm_executor=LLMExecutor(client=client, model_name=os.getenv("RESEARCH_MODEL", "gpt-3.5-turbo")),
             max_steps=30
         )
 
