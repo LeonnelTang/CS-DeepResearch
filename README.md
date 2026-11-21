@@ -12,6 +12,8 @@ IterScholar 通过多轮检索回答需要组合多条文献线索的问题。�
 
 ## 研究循环
 
+IterScholar 的研究循环参考了阿里巴巴通义实验室等团队提出的 IterResearch。智能体把已收集的证据整理到一份持续更新的报告中，作为下一轮文献检索的工作记忆。[IterResearch 论文（ICLR 2026）](https://openreview.net/pdf?id=qQ5MZ5Mx7p)
+
 ![研究循环。模型根据原始问题与上一轮状态更新报告，随后调用工具或提交答案。工具观察、动作和报告一同进入下一轮。](docs/images/research-loop-zh.png)
 
 每轮提示包含原始问题、当前报告、上一步动作及工具反馈。模型依次生成 `<think>`、`<report>` 和 `<action>`。引擎执行工具调用，用返回的观察结果和新报告重建下一轮状态。模型给出 `finish[答案]` 时返回答案，达到步数上限时返回未完成状态。完整轨迹单独保留，便于事后检查证据如何进入报告。见[引擎](react_agent/core/engine.py)、[状态管理](react_agent/core/memory.py)和[归档轨迹](react_agent/trajectories/)。

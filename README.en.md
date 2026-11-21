@@ -12,6 +12,8 @@ IterScholar answers questions that require piecing together clues from the compu
 
 ## How the research loop works
 
+IterScholar’s research loop draws on IterResearch, a collaboration involving Alibaba’s Tongyi Lab. The agent keeps a running report of the evidence it gathers and uses that report as working memory for the next literature search. [IterResearch paper (ICLR 2026)](https://openreview.net/pdf?id=qQ5MZ5Mx7p)
+
 ![The agent updates its report, then calls a tool or returns an answer. The report, action, and tool observation feed the next step.](docs/images/research-loop-en.png)
 
 Each prompt contains the original question, the current report, the previous action, and its tool observation. The model emits `<think>`, `<report>`, and `<action>`. The engine executes the action and builds the next state from the updated report and observation. A `finish[answer]` action returns the answer. Reaching the step limit returns an incomplete status. A separate trajectory preserves the steps for inspecting how evidence entered the report. See the [engine](react_agent/core/engine.py), [state manager](react_agent/core/memory.py), and [archived trajectories](react_agent/trajectories/).
